@@ -26,7 +26,7 @@ export function fakeFetch(routes: Record<string, Route>) {
     const url = input instanceof Request ? input.url : String(input);
     const route = all[url];
     if (!route) throw new Error(`unexpected fetch: ${url}`);
-    return route(typeof init?.body === "string" ? JSON.parse(init.body) : undefined);
+    return route(init?.body ? JSON.parse(await new Response(init.body).text()) : undefined);
   });
 }
 

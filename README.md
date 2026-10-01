@@ -31,6 +31,17 @@ curl -s localhost:8787/api/check \
 
 Up to 50 names per request; `ecosystem` is `npm` or `pypi`.
 
+## Guard npm installs
+
+```bash
+npm config set registry http://localhost:8787/npm/
+```
+
+Every package npm asks for, including dependencies and downloads listed in a lockfile, is checked first. A blocked
+package fails the install with its reasons; anything else installs normally. `npm config delete registry` turns it
+off. Only installs and `npm audit` go through: publish, login and search are refused, and npm credentials are never
+forwarded, so private packages won't install through it.
+
 ## Test
 
 ```bash

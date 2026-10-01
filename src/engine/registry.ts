@@ -33,13 +33,16 @@ const REPO_URL = /^https?:\/\/(?:www\.)?(?:github\.com|gitlab\.com|bitbucket\.or
 
 type DownloadStats = { weeklyDownloads: number; firstSeenAt: string | null } | { downloadsError: string };
 
+export const NPM_REGISTRY = "https://registry.npmjs.org";
+export const npmRecordUrl = (name: string) => `${NPM_REGISTRY}/${name.replace("/", "%2F")}`;
+
 // Names reaching here are already validated, so they are safe to place in a URL path.
 export async function lookup(ecosystem: Ecosystem, name: string, now = Date.now()): Promise<RegistryCheck> {
   if (ecosystem === "pypi") {
     return toCheck(await fetchJson(`https://pypi.org/pypi/${name}/json`, { maxBytes: PYPI_MAX_BYTES }), parsePypi);
   }
 
-  const recordUrl = `https://registry.npmjs.org/${name.replace("/", "%2F")}`;
+  const recordUrl = npmRecordUrl(name);
   const full = await fetchJson(recordUrl, { maxBytes: NPM_RECORD_MAX_BYTES });
   if (full.status === "error" && full.reason === TOO_LARGE) {
     const [latest, downloads] = await Promise.all([fetchJson(`${recordUrl}/latest`), npmDownloads(name)]);

@@ -1,4 +1,5 @@
 import { handleCheck, jsonError } from "./api";
+import { handleNpm } from "./proxy";
 
 export default {
   async fetch(request, env) {
@@ -6,6 +7,7 @@ export default {
     if (pathname === "/api/check") {
       return request.method === "POST" ? handleCheck(request, env.CACHE) : jsonError(405, "method not allowed", { allow: "POST" });
     }
+    if (pathname.startsWith("/npm/")) return handleNpm(request, pathname.slice("/npm".length), env.CACHE);
     return jsonError(404, "not found");
   },
 } satisfies ExportedHandler<Env>;

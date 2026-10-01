@@ -3,7 +3,7 @@ export type FetchResult = { status: "ok"; data: unknown } | { status: "not_found
 const ALLOWED_HOSTS = new Set(["registry.npmjs.org", "api.npmjs.org", "pypi.org", "api.osv.dev"]);
 const TIMEOUT_MS = 5_000;
 const DEFAULT_MAX_BYTES = 2 * 1024 * 1024;
-const USER_AGENT = "pkgmirage/0.1";
+export const USER_AGENT = "pkgmirage/0.1";
 export const TOO_LARGE = "response too large";
 
 class TooLarge extends Error {}
