@@ -18,8 +18,7 @@ const tarball = (bytes: string) => () =>
   new Response(bytes, { headers: { "content-type": "application/octet-stream" } });
 
 // Outbound requests the guard made for the client, beyond what the check itself needed.
-const upstreamCalls = (spy: ReturnType<typeof fakeFetch>, url: string) =>
-  spy.mock.calls.filter(([input]) => String(input instanceof Request ? input.url : input) === url);
+const upstreamCalls = (spy: ReturnType<typeof fakeFetch>, url: string) => spy.mock.calls.filter(([input]) => input === url);
 
 describe("guard", () => {
   it("passes a safe package record through", async () => {
@@ -39,6 +38,20 @@ describe("guard", () => {
       expect(res.status).toBe(200);
       expect(await res.json()).toMatchObject({ name: "@types/node" });
     }
+  });
+
+  it("lets npm revalidate a cached record", async () => {
+    const spy = fakeFetch({
+      ...npmPackage("react"),
+      [`${NPM}/react`]: () => new Response(null, { status: 304, headers: { etag: '"v1"', "last-modified": "Wed, 01 Oct 2026 00:00:00 GMT" } }),
+    });
+    const res = await guard("/react", { headers: { "if-none-match": '"v1"', "if-modified-since": "Wed, 01 Oct 2026 00:00:00 GMT" } });
+    expect(res.status).toBe(304);
+    expect(res.headers.get("etag")).toBe('"v1"');
+    expect(res.headers.get("last-modified")).toBe("Wed, 01 Oct 2026 00:00:00 GMT");
+    const headers = new Headers(upstreamCalls(spy, `${NPM}/react`).at(-1)![1]?.headers);
+    expect(headers.get("if-none-match")).toBe('"v1"');
+    expect(headers.get("if-modified-since")).toBe("Wed, 01 Oct 2026 00:00:00 GMT");
   });
 
   it("never forwards credentials upstream", async () => {
