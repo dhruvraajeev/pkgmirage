@@ -92,6 +92,6 @@ export function score(ecosystem: Ecosystem, name: string, checks: Checks, now = 
 }
 
 function vulnerabilityReason(ids: string[]): string {
-  const listed = ids.slice(0, MAX_LISTED_ADVISORIES).join(", ") + (ids.length > MAX_LISTED_ADVISORIES ? ", …" : "");
+  const listed = ids.slice(0, MAX_LISTED_ADVISORIES).join(", ") + (ids.length > MAX_LISTED_ADVISORIES ? ", ..." : "");
   return `${ids.length} known ${ids.length === 1 ? "vulnerability" : "vulnerabilities"} in the latest version (${listed})`;
 }

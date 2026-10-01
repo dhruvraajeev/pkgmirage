@@ -78,7 +78,7 @@ describe("check", () => {
     const [result] = await checkPackages("pypi", ["old-web"]);
     expect(result).toMatchObject({
       verdict: "caution",
-      reasons: ["4 known vulnerabilities in the latest version (GHSA-1, GHSA-2, PYSEC-3, …)"],
+      reasons: ["4 known vulnerabilities in the latest version (GHSA-1, GHSA-2, PYSEC-3, ...)"],
     });
 
     vi.restoreAllMocks();

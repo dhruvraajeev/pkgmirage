@@ -8,7 +8,7 @@ const AUDIT_PATH = "/-/npm/v1/security/advisories/bulk";
 const PACKAGE = /^((?:@[^/]+\/)?[^/]+)(?:\/-\/([\w.-]+\.tgz))?$/;
 const UNSUPPORTED = "pkgMirage only handles installs; use https://registry.npmjs.org for anything else";
 // Validators let npm revalidate a cached record with a 304 instead of downloading it again (next is 31 MB).
-const REQUEST_HEADERS = ["accept", "if-none-match", "if-modified-since"];
+const VALIDATORS = ["if-none-match", "if-modified-since"];
 const RESPONSE_HEADERS = ["content-type", "etag", "last-modified"];
 
 // npm is pointed here as its registry. Records and tarballs are checked by package name (installs from a lockfile
@@ -32,11 +32,23 @@ export async function handleNpm(request: Request, path: string, cache: KVNamespa
 
   // A failed check comes back as a caution, so only a definite block stops the install.
   const [result] = await checkPackages("npm", [requested], cache);
-  const { name, verdict, reasons } = result!;
-  if (verdict === "block") return jsonError(403, `pkgMirage blocked ${name}: ${reasons.join("; ")}`);
+  const { name, verdict, reasons, suggestions } = result!;
+  if (verdict === "block") {
+    const didYouMean = suggestions.length ? `. Did you mean: ${suggestions.join(", ")}?` : "";
+    const message = `pkgMirage blocked ${name}: ${reasons.join("; ")}${didYouMean}`;
+    return jsonError(403, message, { "npm-notice": headerSafe(message) });
+  }
 
   const url = file ? `${NPM_REGISTRY}/${name}/-/${file}` : npmRecordUrl(name);
-  return forward(url, { headers: pick(request.headers, REQUEST_HEADERS) });
+  if (verdict === "safe") return forward(url, { headers: pick(request.headers, ["accept", ...VALIDATORS]) });
+
+  // npm prints an npm-notice header only on a response it didn't replay from its own cache, so a caution is never
+  // stored or revalidated (a 304 would be replayed). The body stays as npm sent it, so its ETag stays truthful.
+  const res = await forward(url, { headers: pick(request.headers, ["accept"]) });
+  for (const validator of ["etag", "last-modified"]) res.headers.delete(validator);
+  res.headers.set("cache-control", "no-store");
+  res.headers.set("npm-notice", headerSafe(`pkgMirage caution for ${name}: ${reasons.join("; ")}`));
+  return res;
 }
 
 // Bodies are streamed, never parsed: records reach 39 MB and tarballs are binary.
@@ -53,4 +65,9 @@ async function forward(url: string, init: RequestInit & { headers: Record<string
 
 function pick(headers: Headers, names: string[]): Record<string, string> {
   return Object.fromEntries(names.flatMap((n) => (headers.has(n) ? [[n, headers.get(n)!]] : [])));
+}
+
+// Header values must be bytes; an invalid name can hold any character, so show it escaped rather than fail.
+function headerSafe(text: string): string {
+  return text.replace(/[^\x20-\x7e]/g, (c) => `\\u${c.charCodeAt(0).toString(16).padStart(4, "0")}`);
 }

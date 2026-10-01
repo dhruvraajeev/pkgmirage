@@ -38,7 +38,8 @@ npm config set registry http://localhost:8787/npm/
 ```
 
 Every package npm asks for, including dependencies and downloads listed in a lockfile, is checked first. A blocked
-package fails the install with its reasons; anything else installs normally. `npm config delete registry` turns it
+package fails the install with its reasons and, for copycat names, the package you probably meant. A `caution`
+package installs, and npm prints the reasons as an `npm notice` line (hidden by `--loglevel=warn` or `--silent`). `npm config delete registry` turns it
 off. Only installs and `npm audit` go through: publish, login and search are refused, and npm credentials are never
 forwarded, so private packages won't install through it.
 

@@ -1,6 +1,6 @@
 import { vi } from "vitest";
 
-type Route = (body?: unknown) => Response | Promise<Response>;
+type Route = (body?: unknown, init?: RequestInit) => Response | Promise<Response>;
 
 export const OSV_URL = "https://api.osv.dev/v1/querybatch";
 
@@ -26,7 +26,7 @@ export function fakeFetch(routes: Record<string, Route>) {
     const url = input instanceof Request ? input.url : String(input);
     const route = all[url];
     if (!route) throw new Error(`unexpected fetch: ${url}`);
-    return route(init?.body ? JSON.parse(await new Response(init.body).text()) : undefined);
+    return route(init?.body ? JSON.parse(await new Response(init.body).text()) : undefined, init);
   });
 }
 
