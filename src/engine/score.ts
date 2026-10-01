@@ -1,0 +1,97 @@
+import type { Ecosystem } from "./normalize";
+import type { OsvCheck } from "./osv";
+import type { RegistryCheck } from "./registry";
+
+export type Verdict = "safe" | "caution" | "block";
+
+export interface Checks {
+  registry: RegistryCheck;
+  osv: OsvCheck;
+  lookalike: string[];
+}
+
+export interface CheckResult {
+  name: string;
+  ecosystem: Ecosystem;
+  verdict: Verdict;
+  reasons: string[];
+  suggestions: string[];
+  checks: Checks;
+  checkedAt: string;
+}
+
+// Starting points, not tuned yet: loose enough that established small packages pass, tight enough to
+// catch a freshly registered squat. Revisit once there is accuracy data.
+const RISK = {
+  newPackageDays: 30,
+  minWeeklyDownloads: 100,
+};
+
+const DAY_MS = 86_400_000;
+const MAX_LISTED_ADVISORIES = 3;
+const REGISTRY_NAMES: Record<Ecosystem, string> = { npm: "npm", pypi: "PyPI" };
+
+export function score(ecosystem: Ecosystem, name: string, checks: Checks, now = Date.now()): CheckResult {
+  const { registry, osv, lookalike } = checks;
+  const result = (verdict: Verdict, reasons: string[]): CheckResult => ({
+    name,
+    ecosystem,
+    verdict,
+    reasons,
+    suggestions: lookalike,
+    checks,
+    checkedAt: new Date(now).toISOString(),
+  });
+
+  switch (registry.status) {
+    case "skipped":
+      return result("block", [registry.reason]);
+    case "not_found":
+      return result("block", [`doesn't exist on ${REGISTRY_NAMES[ecosystem]} (likely hallucinated)`]);
+    case "error":
+      return result("caution", [`unverified: couldn't reach ${REGISTRY_NAMES[ecosystem]} (${registry.reason})`]);
+  }
+
+  const advisories = osv.status === "ok" ? osv.advisories : [];
+  const malware = advisories.find((id) => id.startsWith("MAL-"));
+  if (malware) return result("block", [`known malicious package (${malware})`]);
+  // npm swaps removed malware for a "0.0.1-security" placeholder so the name can't be reused.
+  if (ecosystem === "npm" && registry.latestVersion?.endsWith("-security")) {
+    return result("block", ["taken down by npm for security reasons"]);
+  }
+
+  const strong: string[] = [];
+  if (registry.firstSeenAt !== null) {
+    const ageDays = Math.floor((now - Date.parse(registry.firstSeenAt)) / DAY_MS);
+    if (ageDays < RISK.newPackageDays) strong.push(`first seen ${ageDays} ${ageDays === 1 ? "day" : "days"} ago`);
+  } else if (ecosystem === "pypi") {
+    // npm age comes from download history, so its absence is already covered by the download reasons.
+    strong.push("unverified: publish date unavailable");
+  }
+  if (registry.installScripts.length) strong.push(`runs install scripts (${registry.installScripts.join(", ")})`);
+  if (registry.downloadsError) strong.push(`unverified: download count unavailable (${registry.downloadsError})`);
+  if (registry.weeklyDownloads !== undefined && registry.weeklyDownloads < RISK.minWeeklyDownloads) {
+    strong.push(`only ${registry.weeklyDownloads} downloads last week`);
+  }
+  if (osv.status === "error") strong.push(`unverified: malware check unavailable (${osv.reason})`);
+  if (advisories.length) strong.push(vulnerabilityReason(advisories));
+  // Plenty of established packages have one maintainer or no repo link (@types/node lists one maintainer),
+  // so these only add context when something else already looks off.
+  const weak: string[] = [];
+  if (registry.maintainers === 1) weak.push("only one maintainer");
+  if (!registry.hasRepo) weak.push("no source repository linked");
+
+  if (lookalike.length) {
+    // A copycat name on a package that is also new, unused or unverifiable is how slopsquats look.
+    return strong.length
+      ? result("block", [`looks like popular package "${lookalike[0]}"`, ...strong, ...weak])
+      : result("caution", [`name is close to popular package "${lookalike[0]}"`]);
+  }
+  const reasons = strong.length ? [...strong, ...weak] : [];
+  return result(reasons.length ? "caution" : "safe", reasons);
+}
+
+function vulnerabilityReason(ids: string[]): string {
+  const listed = ids.slice(0, MAX_LISTED_ADVISORIES).join(", ") + (ids.length > MAX_LISTED_ADVISORIES ? ", …" : "");
+  return `${ids.length} known ${ids.length === 1 ? "vulnerability" : "vulnerabilities"} in the latest version (${listed})`;
+}
