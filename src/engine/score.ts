@@ -8,6 +8,8 @@ export interface Checks {
   registry: RegistryCheck;
   osv: OsvCheck;
   lookalike: string[];
+  // When callers first saw this name not exist, if it is watched and registered since.
+  seenInvented?: string;
 }
 
 export interface CheckResult {
@@ -83,6 +85,10 @@ export function score(ecosystem: Ecosystem, name: string, checks: Checks, now = 
   if (registry.maintainers === 1) weak.push("only one maintainer");
   if (!registry.hasRepo) weak.push("no source repository linked");
 
+  if (checks.seenInvented) {
+    // Some AI keeps inventing this name and somebody registered it: the slopsquatting pattern itself.
+    return result("block", [`registered after being seen as an invented name on ${checks.seenInvented.slice(0, 10)}`, ...strong, ...weak]);
+  }
   if (lookalike.length) {
     // A copycat name on a package that is also new, unused or unverifiable is how slopsquats look.
     return strong.length

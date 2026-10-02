@@ -2,6 +2,7 @@ import { jsonError, readBody } from "./api";
 import { checkPackages } from "./engine/check";
 import { USER_AGENT } from "./engine/fetch";
 import { NPM_REGISTRY, npmRecordUrl } from "./engine/registry";
+import { watchFor } from "./engine/watch";
 
 const AUDIT_PATH = "/-/npm/v1/security/advisories/bulk";
 // npm gzips the audit body: 9,654 bytes for a 1,175-package project, so this is room for about 100,000 packages.
@@ -16,7 +17,7 @@ const RESPONSE_HEADERS = ["content-type", "etag", "last-modified"];
 // npm is pointed here as its registry. Records and tarballs are checked by package name (installs from a lockfile
 // fetch tarballs without the record), audit passes through, and everything else is refused so no npm token ever
 // reaches pkgMirage's upstream requests.
-export async function handleNpm(request: Request, path: string, cache: KVNamespace): Promise<Response> {
+export async function handleNpm(request: Request, path: string, env: Env): Promise<Response> {
   if (path === AUDIT_PATH && request.method === "POST") {
     const body = await readBody(request, AUDIT_MAX_BYTES);
     if (!body) return jsonError(413, "request body too large");
@@ -35,7 +36,7 @@ export async function handleNpm(request: Request, path: string, cache: KVNamespa
   if (request.method !== "GET") return jsonError(405, UNSUPPORTED, { allow: "GET" });
 
   // A failed check comes back as a caution, so only a definite block stops the install.
-  const [result] = await checkPackages("npm", [requested], cache);
+  const [result] = await checkPackages("npm", [requested], env.CACHE, watchFor(env, request, "npm"));
   const { name, verdict, reasons, suggestions } = result!;
   if (verdict === "block") {
     const didYouMean = suggestions.length ? `. Did you mean: ${suggestions.join(", ")}?` : "";

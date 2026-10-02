@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { checkPackages } from "./engine/check";
+import { watchFor } from "./engine/watch";
 
 // The MCP tools take the same fields, so there is one set of input rules for every front door.
 export const ecosystemInput = z.enum(["npm", "pypi"], { error: 'must be "npm" or "pypi"' });
@@ -27,7 +28,7 @@ export async function readBody(request: Request, maxBytes: number): Promise<Blob
   return new Blob(chunks);
 }
 
-export async function handleCheck(request: Request, cache: KVNamespace): Promise<Response> {
+export async function handleCheck(request: Request, env: Env): Promise<Response> {
   const raw = await readBody(request, MAX_BODY_BYTES);
   if (!raw) return jsonError(413, "request body too large");
   let body: unknown;
@@ -41,5 +42,6 @@ export async function handleCheck(request: Request, cache: KVNamespace): Promise
     const issue = parsed.error.issues[0]!;
     return jsonError(400, `${issue.path.join(".") || "body"}: ${issue.message}`);
   }
-  return Response.json({ results: await checkPackages(parsed.data.ecosystem, parsed.data.names, cache) });
+  const { ecosystem, names } = parsed.data;
+  return Response.json({ results: await checkPackages(ecosystem, names, env.CACHE, watchFor(env, request, "api")) });
 }

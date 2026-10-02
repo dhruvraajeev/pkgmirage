@@ -8,7 +8,7 @@ verdict with plain-English reasons and, for copycat names, the package you proba
 |---|---|
 | `safe` | exists, established, no risk signals |
 | `caution` | exists but looks risky (brand new, install scripts, very few downloads, known vulnerabilities in the latest version, a name close to a popular package), or a check failed and it couldn't be verified |
-| `block` | doesn't exist (likely hallucinated), known malware, taken down by npm, a new or unused copycat of a popular package, or a name with invisible or look-alike characters |
+| `block` | doesn't exist (likely hallucinated), known malware, taken down by npm, a new or unused copycat of a popular package, a name with invisible or look-alike characters, or a name callers saw invented that was registered in the last 30 days |
 
 A failed check is never reported as `safe`.
 
@@ -16,10 +16,17 @@ Checks use the npm and PyPI registries, [OSV](https://osv.dev) for malware and v
 the 10,000 most-downloaded packages on each registry for copycat detection (`node scripts/popular.mjs`
 refreshes them). Results are cached in Workers KV.
 
+Names checked and found not to exist go on a watchlist in D1. A name counts once per caller per day, and needs
+callers on two different networks before it is trusted; if such a name is registered later, the new package is
+blocked for its first 30 days. Daily counts of distinct names checked, blocked, cautioned and invented are kept with
+it.
+
 ## Run locally
 
 ```bash
 npm install
+npx wrangler d1 migrations apply pkgmirage --local
+echo "SIGHTING_KEY=$(openssl rand -hex 32)" > .dev.vars
 npm run dev
 ```
 
@@ -63,8 +70,9 @@ assistant gets the same verdicts as the API, with only pkgmirage's own wording: 
 A cold `npm install` of next, react, react-dom, express, typescript, eslint and vitest peaked at 382 requests in
 10 seconds; a 1,174-package project at 453. Over a limit the answer is `429` with `Retry-After`; npm retries it on
 its own after 10 seconds. Limits are counted per Cloudflare location and are approximate. The caller is the
-connecting IP address (an IPv6 address by its /64); it is used only as the rate limiter's key and is never stored or
-logged.
+connecting IP address (an IPv6 address by its /64). It is never stored or logged: it is the rate limiter's key, and
+the watchlist keeps only an HMAC of it keyed with the `SIGHTING_KEY` secret (with the day and the package name, deleted
+after that day; with the package name alone, erased once a second caller sees the name).
 
 Errors never include internal details: an unexpected failure is a `500` with `{"error": "internal error"}`, and an
 MCP check that fails tells the assistant to treat the packages as unverified.

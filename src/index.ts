@@ -1,4 +1,5 @@
 import { handleCheck, jsonError } from "./api";
+import { caller } from "./engine/watch";
 import { handleMcp } from "./mcp";
 import { handleNpm } from "./proxy";
 
@@ -35,7 +36,7 @@ async function route(request: Request, env: Env): Promise<Response> {
       const message = rateLimited(NPM_WINDOW_SECONDS);
       return jsonError(429, message, { "retry-after": `${NPM_WINDOW_SECONDS}`, "npm-notice": message });
     }
-    return handleNpm(request, pathname.slice("/npm".length), env.CACHE);
+    return handleNpm(request, pathname.slice("/npm".length), env);
   }
 
   // Each API call or MCP call can mean up to 50 lookups, so they share one, tighter budget.
@@ -54,7 +55,7 @@ async function route(request: Request, env: Env): Promise<Response> {
     return res;
   }
   if (pathname === "/api/check") {
-    return request.method === "POST" ? handleCheck(request, env.CACHE) : jsonError(405, "method not allowed", { allow: "POST" });
+    return request.method === "POST" ? handleCheck(request, env) : jsonError(405, "method not allowed", { allow: "POST" });
   }
   return jsonError(404, "not found");
 }
@@ -70,20 +71,4 @@ async function overLimit(limiter: RateLimit, request: Request): Promise<boolean>
     console.error("rate limiter unavailable", error);
     return false;
   }
-}
-
-// The IP is only the limiter's key: never stored or logged. One IPv6 user usually holds a whole /64, so a /64 is one
-// caller.
-function caller(ip: string | null): string {
-  if (!ip) return "unknown";
-  if (!ip.includes(":")) return ip;
-  const mapped = /^::ffff:(\d+\.\d+\.\d+\.\d+)$/i.exec(ip);
-  if (mapped) return mapped[1]!;
-  const [head, tail] = ip.split("::");
-  const groups = head ? head.split(":") : [];
-  if (tail !== undefined) {
-    const rest = tail ? tail.split(":") : [];
-    groups.push(...Array<string>(8 - groups.length - rest.length).fill("0"), ...rest);
-  }
-  return `${groups.slice(0, 4).map((g) => parseInt(g, 16).toString(16)).join(":")}::/64`;
 }

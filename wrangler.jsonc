@@ -5,6 +5,10 @@
   "compatibility_date": "2026-08-15",
   "observability": { "enabled": true },
   "kv_namespaces": [{ "binding": "CACHE" }],
+  // No database_id until the database is created on the production account; local dev and tests don't need one.
+  "d1_databases": [{ "binding": "DB", "database_name": "pkgmirage" }],
+  // Keys the hashes that count sightings once per caller per day; locally from .dev.vars.
+  "secrets": { "required": ["SIGHTING_KEY"] },
   // Per caller, per Cloudflare location. A cold install peaked at 453 requests in 10 s; npm retries a 429 after
   // 10 s, which lands in a fresh window. The periods are repeated in src/index.ts for Retry-After.
   "ratelimits": [

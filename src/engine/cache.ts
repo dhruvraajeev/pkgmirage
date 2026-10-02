@@ -25,13 +25,14 @@ export async function writeCached(cache: KVNamespace, result: CheckResult): Prom
   }
 }
 
-// Missing names get registered (that's the attack), so "doesn't exist" is trusted briefly; a block on a package
-// that exists rarely reverses. Anything unverified is never stored, so the next request tries again.
+// Missing names get registered (that's the attack), so "doesn't exist" is trusted briefly; so is a block for
+// registering a watched name, so clearing the name takes effect soon. Any other block on a package that exists
+// rarely reverses. Anything unverified is never stored, so the next request tries again.
 function cacheSeconds({ verdict, checks }: CheckResult): number | null {
   const { registry, osv } = checks;
   if (registry.status === "skipped" || registry.status === "error" || osv.status === "error") return null;
   if (registry.status === "found" && registry.downloadsError) return null;
-  if (registry.status === "not_found") return 10 * MINUTE;
+  if (registry.status === "not_found" || checks.seenInvented) return 10 * MINUTE;
   if (verdict === "block") return 24 * HOUR;
   return verdict === "safe" ? 6 * HOUR : HOUR;
 }

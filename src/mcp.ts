@@ -5,6 +5,7 @@ import { ecosystemInput, MAX_BODY_BYTES, nameInput, namesInput } from "./api";
 import { checkPackages } from "./engine/check";
 import type { Ecosystem } from "./engine/normalize";
 import type { CheckResult } from "./engine/score";
+import { watchFor } from "./engine/watch";
 
 const VERDICT_TEXT = { safe: "SAFE", caution: "CAUTION.", block: "BLOCK, do not install." } as const;
 
@@ -28,7 +29,7 @@ const UNVERIFIED = "pkgMirage couldn't complete the check (internal error); trea
 const annotations = { readOnlyHint: true, idempotentHint: true, openWorldHint: true };
 
 const handler = createMcpHandler(
-  () => {
+  ({ requestInfo }) => {
     // The tools never change, so no change notifications are offered (the SDK offers them by default).
     const server = new McpServer({ name: "pkgmirage", version: "0.1.0" }, { capabilities: { tools: { listChanged: false } } });
     server.registerTool(
@@ -44,7 +45,7 @@ const handler = createMcpHandler(
         outputSchema: output,
         annotations,
       },
-      ({ ecosystem, name }) => check(ecosystem, [name]),
+      ({ ecosystem, name }) => check(ecosystem, [name], requestInfo),
     );
     server.registerTool(
       "check_packages",
@@ -55,7 +56,7 @@ const handler = createMcpHandler(
         outputSchema: output,
         annotations,
       },
-      ({ ecosystem, names }) => check(ecosystem, names),
+      ({ ecosystem, names }) => check(ecosystem, names, requestInfo),
     );
     return server;
   },
@@ -71,10 +72,10 @@ const handler = createMcpHandler(
 
 export const handleMcp = (request: Request) => handler.fetch(request);
 
-async function check(ecosystem: Ecosystem, names: string[]) {
+async function check(ecosystem: Ecosystem, names: string[], request: Request | undefined) {
   let checked: CheckResult[];
   try {
-    checked = await checkPackages(ecosystem, names, env.CACHE);
+    checked = await checkPackages(ecosystem, names, env.CACHE, watchFor(env, request, "mcp"));
   } catch (error) {
     // The SDK would put the error's message in the result; the AI only needs to know nothing was verified.
     console.error("mcp check failed", error);
