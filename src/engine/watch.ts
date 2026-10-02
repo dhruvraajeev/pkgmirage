@@ -1,7 +1,6 @@
 import { waitUntil } from "cloudflare:workers";
-import { mapLimit } from "./check";
 import type { Ecosystem } from "./normalize";
-import { exists } from "./registry";
+import { exists, mapLimit } from "./registry";
 import type { CheckResult } from "./score";
 
 export type Source = "api" | "mcp" | "npm";
@@ -183,11 +182,12 @@ export async function recheck(env: Env, now = Date.now()): Promise<void> {
 
   const checks = await mapLimit(names, RECHECK_CONCURRENCY, (n) => exists(n.ecosystem, n.name));
   const registered: typeof names = [];
+  let unverified = 0;
   const writes: D1PreparedStatement[] = [];
   for (const [i, check] of checks.entries()) {
     const { ecosystem, name } = names[i]!;
-    if (check.status === "error") {
-      console.error("recheck unverified", ecosystem, name, check.reason);
+    if (check.status === "not_found") {
+      writes.push(db.prepare("UPDATE watch SET checked_at = ? WHERE ecosystem = ? AND name = ?").bind(now, ecosystem, name));
     } else if (check.status === "found") {
       registered.push(names[i]!);
       const created = check.firstSeenAt === null ? null : Date.parse(check.firstSeenAt);
@@ -197,7 +197,8 @@ export async function recheck(env: Env, now = Date.now()): Promise<void> {
           .bind(created, now, ecosystem, name),
       );
     } else {
-      writes.push(db.prepare("UPDATE watch SET checked_at = ? WHERE ecosystem = ? AND name = ?").bind(now, ecosystem, name));
+      unverified++;
+      console.error("recheck unverified", ecosystem, name, check.reason);
     }
   }
   try {
@@ -212,5 +213,5 @@ export async function recheck(env: Env, now = Date.now()): Promise<void> {
       env.CACHE.delete(`res:${ecosystem}:${name}`).catch((error) => console.error("recheck cache delete failed", name, error)),
     ),
   );
-  console.log("recheck", { names: names.length, registered: registered.length, unverified: names.length - writes.length, ms: Date.now() - started });
+  console.log("recheck", { names: names.length, registered: registered.length, unverified, ms: Date.now() - started });
 }

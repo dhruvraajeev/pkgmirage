@@ -43,7 +43,11 @@ async function watched(
 }
 
 const missing = (...names: string[]) => Object.fromEntries(names.map((n) => [`${NPM}/${n}`, status(404)]));
-const record = (name: string, firstSeenDaysAgo: number) => ({ [`${NPM}/${name}`]: npmPackage(name, { firstSeenDaysAgo })[`${NPM}/${name}`]! });
+// Only the package's record is routed, so a call to the downloads API would fail the test.
+const record = (name: string, firstSeenDaysAgo: number) => {
+  const url = `${NPM}/${name.replace("/", "%2F")}`;
+  return { [url]: npmPackage(name, { firstSeenDaysAgo })[url]! };
+};
 
 describe("nightly re-check", () => {
   it("the scheduled handler re-checks watched names", async () => {
@@ -126,6 +130,29 @@ describe("nightly re-check", () => {
     await recheck(env);
     expect(await row("ghost-py")).toMatchObject({ status: "registered", registered_at: Date.parse(created) });
     expect(await row("ghost-huge")).toMatchObject({ status: "registered", registered_at: null });
+  });
+
+  it("a malformed creation date doesn't stop the run's other writes", async () => {
+    await watched("ghost-odd-date");
+    await watched("ghost-gone");
+    fakeFetch({
+      [`${NPM}/ghost-odd-date`]: json({ "dist-tags": { latest: "1.0.0" }, versions: { "1.0.0": { version: "1.0.0" } }, time: { created: "not a date" } }),
+      ...missing("ghost-gone"),
+    });
+    const now = Date.now();
+    await recheck(env, now);
+    expect(await row("ghost-odd-date")).toMatchObject({ status: "registered", registered_at: null, checked_at: now });
+    expect((await row("ghost-gone")).checked_at).toBe(now);
+  });
+
+  it("a scoped name is looked up encoded and its cached answer dropped", async () => {
+    await watched("@ghost/scoped");
+    await env.CACHE.put("res:npm:@ghost/scoped", "{}");
+    const spy = fakeFetch(record("@ghost/scoped", 1));
+    await recheck(env);
+    expect(spy.mock.calls.map(([url]) => String(url))).toEqual([`${NPM}/@ghost%2Fscoped`]);
+    expect((await row("@ghost/scoped")).status).toBe("registered");
+    expect(await env.CACHE.get("res:npm:@ghost/scoped")).toBeNull();
   });
 
   it("a name that still doesn't exist only moves its check time", async () => {

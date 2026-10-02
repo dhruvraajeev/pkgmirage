@@ -2,7 +2,7 @@ import { readCached, writeCached } from "./cache";
 import { findLookalikes } from "./lookalike";
 import { normalizeBatch, type Ecosystem } from "./normalize";
 import { checkOsv, type OsvCheck } from "./osv";
-import { lookup, type RegistryCheck } from "./registry";
+import { lookup, mapLimit, type RegistryCheck } from "./registry";
 import { score, type CheckResult } from "./score";
 import { record, WATCH_BLOCK_DAYS, watchedNames, type Watch } from "./watch";
 
@@ -42,18 +42,5 @@ export async function checkPackages(ecosystem: Ecosystem, names: string[], cache
   );
   if (cache) await Promise.all(results.filter((_, i) => parsed[i]!.ok && !cached[i]).map((r) => writeCached(cache, r)));
   if (watch) record(watch, results);
-  return results;
-}
-
-export async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T) => Promise<R>): Promise<R[]> {
-  const results: R[] = new Array(items.length);
-  let next = 0;
-  const worker = async () => {
-    while (next < items.length) {
-      const i = next++;
-      results[i] = await fn(items[i]!);
-    }
-  };
-  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
   return results;
 }

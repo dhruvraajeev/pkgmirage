@@ -35,11 +35,12 @@ type DownloadStats = { weeklyDownloads: number; firstSeenAt: string | null } | {
 
 export const NPM_REGISTRY = "https://registry.npmjs.org";
 export const npmRecordUrl = (name: string) => `${NPM_REGISTRY}/${name.replace("/", "%2F")}`;
+const pypiRecordUrl = (name: string) => `https://pypi.org/pypi/${name}/json`;
 
 // Names reaching here are already validated, so they are safe to place in a URL path.
 export async function lookup(ecosystem: Ecosystem, name: string, now = Date.now()): Promise<RegistryCheck> {
   if (ecosystem === "pypi") {
-    return toCheck(await fetchJson(`https://pypi.org/pypi/${name}/json`, { maxBytes: PYPI_MAX_BYTES }), parsePypi);
+    return toCheck(await fetchJson(pypiRecordUrl(name), { maxBytes: PYPI_MAX_BYTES }), parsePypi);
   }
 
   const recordUrl = npmRecordUrl(name);
@@ -59,14 +60,19 @@ export async function lookup(ecosystem: Ecosystem, name: string, now = Date.now(
 }
 
 // Only whether a name exists and when it was created: the record alone, never the rate-limited downloads API.
-export async function exists(ecosystem: Ecosystem, name: string): Promise<RegistryCheck> {
-  if (ecosystem === "pypi") return lookup(ecosystem, name);
-  const full = await fetchJson(npmRecordUrl(name), { maxBytes: NPM_RECORD_MAX_BYTES });
-  // Only long-lived packages have records this big; it exists, its creation date is unknown.
-  if (full.status === "error" && full.reason === TOO_LARGE) {
-    return { status: "found", latestVersion: null, firstSeenAt: null, maintainers: 0, installScripts: [], hasRepo: false };
-  }
-  return toCheck(full, parseNpmRecord);
+export async function exists(
+  ecosystem: Ecosystem,
+  name: string,
+): Promise<{ status: "found"; firstSeenAt: string | null } | { status: "not_found" } | { status: "error"; reason: string }> {
+  const full =
+    ecosystem === "pypi"
+      ? await fetchJson(pypiRecordUrl(name), { maxBytes: PYPI_MAX_BYTES })
+      : await fetchJson(npmRecordUrl(name), { maxBytes: NPM_RECORD_MAX_BYTES });
+  // Only long-lived npm packages have records this big; it exists, its creation date is unknown.
+  if (full.status === "error" && full.reason === TOO_LARGE && ecosystem === "npm") return { status: "found", firstSeenAt: null };
+  if (full.status !== "ok") return full;
+  const check = ecosystem === "pypi" ? parsePypi(record(full.data)) : parseNpmRecord(record(full.data));
+  return check.status === "found" ? check : { status: "not_found" };
 }
 
 // The downloads API rate-limits, so lookups take turns (per isolate) and a 429 backs off before retrying.
@@ -189,4 +195,18 @@ function record(value: unknown): Record<string, unknown> {
 
 function string(value: unknown): string | undefined {
   return typeof value === "string" ? value : undefined;
+}
+
+// Runs fn over items with at most `limit` in flight, keeping results in order.
+export async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T) => Promise<R>): Promise<R[]> {
+  const results: R[] = new Array(items.length);
+  let next = 0;
+  const worker = async () => {
+    while (next < items.length) {
+      const i = next++;
+      results[i] = await fn(items[i]!);
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
+  return results;
 }
