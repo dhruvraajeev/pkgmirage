@@ -17,6 +17,10 @@ const guard = (path: string, init?: RequestInit) => exports.default.fetch(`http:
 const tarball = (bytes: string) => () =>
   new Response(bytes, { headers: { "content-type": "application/octet-stream" } });
 
+// Established but runs an install script, so it installs with a warning.
+const myTool = npmPackage("my-tool", { scripts: { postinstall: "node setup.js" } });
+const MY_TOOL_NOTICE = "pkgMirage caution for my-tool: runs install scripts (postinstall)";
+
 // Outbound requests the guard made for the client, beyond what the check itself needed.
 const upstreamCalls = (spy: ReturnType<typeof fakeFetch>, url: string) => spy.mock.calls.filter(([input]) => input === url);
 
@@ -98,33 +102,38 @@ describe("guard", () => {
     expect(spy).not.toHaveBeenCalled();
   });
 
+  it("escapes line breaks so a name can't add response headers", async () => {
+    const res = await guard("/x%0D%0Aset-cookie:%20a=b");
+    expect(res.status).toBe(403);
+    expect(res.headers.get("npm-notice")).toMatch(/^pkgMirage blocked x\\u000d\\u000aset-cookie: a=b: /);
+    expect(res.headers.get("set-cookie")).toBeNull();
+  });
+
   it("warns about a caution package without changing its record", async () => {
-    const pkg = npmPackage("my-tool", { scripts: { postinstall: "node setup.js" } });
-    const upstream = JSON.stringify(await (await pkg[`${NPM}/my-tool`]!()).json());
+    const upstream = await (await myTool[`${NPM}/my-tool`]!()).text();
     fakeFetch({
-      ...pkg,
+      ...myTool,
       [`${NPM}/my-tool`]: () => new Response(upstream, { headers: { "content-type": "application/json", etag: '"v1"', "last-modified": "Wed, 01 Oct 2026 00:00:00 GMT" } }),
     });
     const res = await guard("/my-tool");
     expect(res.status).toBe(200);
     expect(await res.text()).toBe(upstream);
-    expect(res.headers.get("npm-notice")).toBe("pkgMirage caution for my-tool: runs install scripts (postinstall)");
+    expect(res.headers.get("npm-notice")).toBe(MY_TOOL_NOTICE);
     expect(res.headers.get("cache-control")).toBe("no-store");
     expect(res.headers.get("etag")).toBeNull();
     expect(res.headers.get("last-modified")).toBeNull();
   });
 
   it("a caution is never revalidated from npm's cache", async () => {
-    const pkg = npmPackage("my-tool", { scripts: { postinstall: "node setup.js" } });
     const spy = fakeFetch({
-      ...pkg,
+      ...myTool,
       // npm's registry answers a matching validator with 304; the guard must not send one for a caution.
       [`${NPM}/my-tool`]: (_, init) =>
-        new Headers(init?.headers).has("if-none-match") ? new Response(null, { status: 304 }) : pkg[`${NPM}/my-tool`]!(),
+        new Headers(init?.headers).has("if-none-match") ? new Response(null, { status: 304 }) : myTool[`${NPM}/my-tool`]!(),
     });
     const res = await guard("/my-tool", { headers: { "if-none-match": '"v1"', "if-modified-since": "Wed, 01 Oct 2026 00:00:00 GMT" } });
     expect(res.status).toBe(200);
-    expect(res.headers.get("npm-notice")).toMatch(/^pkgMirage caution for my-tool/);
+    expect(res.headers.get("npm-notice")).toBe(MY_TOOL_NOTICE);
     const headers = new Headers(upstreamCalls(spy, `${NPM}/my-tool`).at(-1)![1]?.headers);
     expect(headers.get("if-none-match")).toBeNull();
     expect(headers.get("if-modified-since")).toBeNull();
@@ -132,13 +141,13 @@ describe("guard", () => {
 
   it("warns on tarballs of caution packages", async () => {
     fakeFetch({
-      ...npmPackage("my-tool", { scripts: { postinstall: "node setup.js" } }),
+      ...myTool,
       [`${NPM}/my-tool/-/my-tool-1.0.0.tgz`]: tarball("tool-bytes"),
     });
     const res = await guard("/my-tool/-/my-tool-1.0.0.tgz");
     expect(res.status).toBe(200);
     expect(await res.text()).toBe("tool-bytes");
-    expect(res.headers.get("npm-notice")).toBe("pkgMirage caution for my-tool: runs install scripts (postinstall)");
+    expect(res.headers.get("npm-notice")).toBe(MY_TOOL_NOTICE);
     expect(res.headers.get("cache-control")).toBe("no-store");
   });
 

@@ -8,7 +8,7 @@ const AUDIT_PATH = "/-/npm/v1/security/advisories/bulk";
 const PACKAGE = /^((?:@[^/]+\/)?[^/]+)(?:\/-\/([\w.-]+\.tgz))?$/;
 const UNSUPPORTED = "pkgMirage only handles installs; use https://registry.npmjs.org for anything else";
 // Validators let npm revalidate a cached record with a 304 instead of downloading it again (next is 31 MB).
-const VALIDATORS = ["if-none-match", "if-modified-since"];
+const REQUEST_HEADERS = ["accept", "if-none-match", "if-modified-since"];
 const RESPONSE_HEADERS = ["content-type", "etag", "last-modified"];
 
 // npm is pointed here as its registry. Records and tarballs are checked by package name (installs from a lockfile
@@ -40,7 +40,7 @@ export async function handleNpm(request: Request, path: string, cache: KVNamespa
   }
 
   const url = file ? `${NPM_REGISTRY}/${name}/-/${file}` : npmRecordUrl(name);
-  if (verdict === "safe") return forward(url, { headers: pick(request.headers, ["accept", ...VALIDATORS]) });
+  if (verdict === "safe") return forward(url, { headers: pick(request.headers, REQUEST_HEADERS) });
 
   // npm prints an npm-notice header only on a response it didn't replay from its own cache, so a caution is never
   // stored or revalidated (a 304 would be replayed). The body stays as npm sent it, so its ETag stays truthful.
