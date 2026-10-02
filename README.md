@@ -40,6 +40,29 @@ curl -s localhost:8787/api/check \
 
 Up to 50 names per request; `ecosystem` is `npm` or `pypi`.
 
+## Scan a project
+
+```bash
+curl -s localhost:8787/api/scan --data-binary @package-lock.json
+```
+
+Send a `package-lock.json` (npm 7 or newer) or a `package.json` as it is. Every package in a lockfile is checked,
+including dependencies of dependencies; a `package.json` gives its direct dependencies (`dependencies`,
+`devDependencies`, `optionalDependencies`, `peerDependencies`). The report lists blocks first, then cautions, then safe
+packages, each with where it came from (`dependencies`, `devDependencies`, ... or `transitive`), plus counts for CI:
+
+```json
+{ "summary": { "checked": 267, "block": 0, "caution": 1, "safe": 266, "unverified": 0, "skipped": 0 },
+  "results": [ ... ], "skipped": [ { "name": "my-lib", "reason": "git source" } ] }
+```
+
+Git, local, linked and tarball dependencies and packages from other registries are listed under `skipped` and never
+fetched. Up to 750 distinct packages per scan. Files are not stored, and scanned names don't go on the watchlist (a
+lockfile lists packages that were already installed). The project above (next, react, react-dom, express,
+typescript, eslint, vitest; 267 packages) took 16 s with an empty cache and 22 ms with a warm one, locally on
+2026-10-02. The registry's download-count API rate-limits, so a cold scan of a large project can come back with a
+few packages `unverified`; scanning again checks just those.
+
 ## Guard npm installs
 
 ```bash
@@ -67,7 +90,8 @@ assistant gets the same verdicts as the API, with only pkgmirage's own wording: 
 | Route | Rate limit per caller | Request body |
 |---|---|---|
 | `/npm/*` | 1,000 requests per 10 seconds | `npm audit`: 1 MiB as sent |
-| `/api/*` and `/mcp` (shared) | 60 requests per minute | 64 KiB |
+| `/api/check` and `/mcp` (shared) | 60 requests per minute | 64 KiB |
+| `/api/scan` | 5 scans per minute | 1 MiB |
 
 A cold `npm install` of next, react, react-dom, express, typescript, eslint and vitest peaked at 382 requests in
 10 seconds; a 1,174-package project at 453. Over a limit the answer is `429` with `Retry-After`; npm retries it on

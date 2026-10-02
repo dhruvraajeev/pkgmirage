@@ -1,18 +1,30 @@
 import type { Ecosystem } from "./normalize";
+import { chunks } from "./registry";
 import type { CheckResult } from "./score";
+
+// KV allows 1,000 operations per request; a bulk read of up to 100 keys is one, so a big scan doesn't run out.
+const BULK_READ_KEYS = 100;
 
 const MINUTE = 60;
 const HOUR = 60 * MINUTE;
 
 const key = (ecosystem: Ecosystem, name: string) => `res:${ecosystem}:${name}`;
 
-// The cache only saves work; if KV misbehaves the check still runs.
-export async function readCached(cache: KVNamespace, ecosystem: Ecosystem, name: string): Promise<CheckResult | null> {
-  try {
-    return await cache.get<CheckResult>(key(ecosystem, name), "json");
-  } catch {
-    return null;
-  }
+// The cached verdicts among `names`. The cache only saves work; if KV misbehaves the check still runs.
+export async function readCached(cache: KVNamespace, ecosystem: Ecosystem, names: string[]): Promise<Map<string, CheckResult>> {
+  const hits = new Map<string, CheckResult>();
+  await Promise.all(
+    chunks(names, BULK_READ_KEYS).map(async (batch) => {
+      try {
+        const found = await cache.get<CheckResult>(batch.map((name) => key(ecosystem, name)), "json");
+        for (const name of batch) {
+          const result = found.get(key(ecosystem, name));
+          if (result) hits.set(name, result);
+        }
+      } catch {}
+    }),
+  );
+  return hits;
 }
 
 export async function writeCached(cache: KVNamespace, result: CheckResult): Promise<void> {

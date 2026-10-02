@@ -277,6 +277,7 @@ describe("protect", () => {
       await checkJson({ ecosystem: "npm", names: ["react"] }),
       await check("{"),
       await send("/api/check"),
+      await send("/api/scan", { method: "POST", body: "{}" }),
       await send("/nope"),
       await send("/npm/react"),
       await send("/npm/my-tool"),
@@ -287,7 +288,7 @@ describe("protect", () => {
     for (const res of responses) {
       for (const [name, value] of Object.entries(SECURITY_HEADERS)) expect(res.headers.get(name)).toBe(value);
     }
-    const [, , , , safe, caution, blocked] = responses;
+    const [, , , , , safe, caution, blocked] = responses;
     expect(safe!.headers.get("etag")).toBe('"v1"');
     expect(safe!.headers.get("last-modified")).toBe("Wed, 01 Oct 2026 00:00:00 GMT");
     expect(caution!.headers.get("cache-control")).toBe("no-store");
@@ -304,6 +305,9 @@ describe("protect", () => {
       ["/mcp", "HEAD", 405, "POST"],
       ["/api/check", "OPTIONS", 405, "POST"],
       ["/api/check", "HEAD", 405, "POST"],
+      ["/api/scan", "GET", 405, "POST"],
+      ["/api/scan", "OPTIONS", 405, "POST"],
+      ["/api/scan", "HEAD", 405, "POST"],
       ["/npm/react", "OPTIONS", 405, "GET"],
       ["/npm/react", "HEAD", 405, "GET"],
       ["/", "OPTIONS", 404, null],

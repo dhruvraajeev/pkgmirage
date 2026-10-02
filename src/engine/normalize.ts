@@ -6,6 +6,7 @@ export type NameResult = { ok: true; name: string } | { ok: false; name: string;
 const NPM_NAME = /^(?:@[a-z0-9~-][a-z0-9._~-]*\/)?[a-z0-9~-][a-z0-9._~-]*$/i;
 // PEP 508 name syntax
 const PYPI_NAME = /^[a-z0-9](?:[a-z0-9._-]*[a-z0-9])?$/i;
+const MAX_NPM_NAME = 214;
 const INVISIBLE = /[\p{Cc}\p{Cf}]/u;
 const LATIN = /\p{Script=Latin}/u;
 const NON_LATIN_LETTER = /(?!\p{Script=Latin})\p{L}/u;
@@ -17,7 +18,7 @@ export function normalizeName(ecosystem: Ecosystem, raw: string): NameResult {
     return { ok: false, name, reason: "uses look-alike characters from another alphabet" };
   }
   if (ecosystem === "npm") {
-    return NPM_NAME.test(name) ? { ok: true, name } : { ok: false, name, reason: "not a valid npm package name" };
+    return NPM_NAME.test(name) && name.length <= MAX_NPM_NAME ? { ok: true, name } : { ok: false, name, reason: "not a valid npm package name" };
   }
   return PYPI_NAME.test(name)
     ? { ok: true, name: name.replace(/[-_.]+/g, "-").toLowerCase() }

@@ -14,6 +14,12 @@ export function jsonError(status: number, message: string, headers?: HeadersInit
   return Response.json({ error: message }, { status, headers });
 }
 
+// Names the first problem and where it is, e.g. "names.3: name is empty".
+export function inputError(error: z.ZodError): string {
+  const issue = error.issues[0]!;
+  return `${issue.path.join(".") || "body"}: ${issue.message}`;
+}
+
 // Stops as soon as a body is known to be too big (by its declared length or by counting what arrives), so an endless
 // body is never read to the end.
 export async function readBody(request: Request, maxBytes: number): Promise<Blob | null> {
@@ -38,10 +44,7 @@ export async function handleCheck(request: Request, env: Env): Promise<Response>
     return jsonError(400, "body must be JSON");
   }
   const parsed = checkRequest.safeParse(body);
-  if (!parsed.success) {
-    const issue = parsed.error.issues[0]!;
-    return jsonError(400, `${issue.path.join(".") || "body"}: ${issue.message}`);
-  }
+  if (!parsed.success) return jsonError(400, inputError(parsed.error));
   const { ecosystem, names } = parsed.data;
   return Response.json({ results: await checkPackages(ecosystem, names, env.CACHE, watchFor(env, request, "api")) });
 }

@@ -65,6 +65,16 @@ describe("cache", () => {
     expect(result!.verdict).toBe("safe");
   });
 
+  it("cached verdicts are read 100 names at a time", async () => {
+    const names = Array.from({ length: 150 }, (_, i) => `pkg-${i}`);
+    fakeFetch(Object.assign({}, ...names.map((name) => npmPackage(name))));
+    await checkPackages("npm", names, env.CACHE);
+    const get = vi.spyOn(env.CACHE, "get");
+    const results = await checkPackages("npm", names, env.CACHE);
+    expect(results.map((r) => r.verdict)).toEqual(names.map(() => "safe"));
+    expect(get.mock.calls.map(([keys]) => (keys as string[]).length)).toEqual([100, 50]);
+  });
+
   it("keeps the original check time on a cache hit", async () => {
     fakeFetch(pypiPackage("requests", { created: daysAgo(900) }));
     const [first] = await checkPackages("pypi", ["requests"], env.CACHE);

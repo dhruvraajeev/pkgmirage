@@ -11,7 +11,8 @@ const DAY_MS = 86_400_000;
 
 export async function checkPackages(ecosystem: Ecosystem, names: string[], cache?: KVNamespace, watch?: Watch): Promise<CheckResult[]> {
   const parsed = normalizeBatch(ecosystem, names);
-  const cached = await Promise.all(parsed.map((p) => (p.ok && cache ? readCached(cache, ecosystem, p.name) : null)));
+  const hits = cache ? await readCached(cache, ecosystem, parsed.flatMap((p) => (p.ok ? [p.name] : []))) : new Map<string, CheckResult>();
+  const cached = parsed.map((p) => (p.ok && hits.get(p.name)) || null);
   const misses = parsed.filter((p, i) => p.ok && !cached[i]).map((p) => p.name);
 
   const registry = new Map<string, RegistryCheck>(
@@ -41,6 +42,8 @@ export async function checkPackages(ecosystem: Ecosystem, names: string[], cache
       }),
   );
   if (cache) await Promise.all(results.filter((_, i) => parsed[i]!.ok && !cached[i]).map((r) => writeCached(cache, r)));
-  if (watch) record(watch, results);
+  // A scan lists packages someone already installed: a missing one is more likely removed or private than invented,
+  // and a lockfile's hundreds of names would swamp the daily counts.
+  if (watch && watch.source !== "scan") record(watch, results);
   return results;
 }

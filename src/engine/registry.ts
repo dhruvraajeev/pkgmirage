@@ -197,6 +197,10 @@ function string(value: unknown): string | undefined {
   return typeof value === "string" ? value : undefined;
 }
 
+export function chunks<T>(items: T[], size: number): T[][] {
+  return Array.from({ length: Math.ceil(items.length / size) }, (_, i) => items.slice(i * size, (i + 1) * size));
+}
+
 // Runs fn over items with at most `limit` in flight, keeping results in order.
 export async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T) => Promise<R>): Promise<R[]> {
   const results: R[] = new Array(items.length);

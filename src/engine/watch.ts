@@ -1,9 +1,9 @@
 import { waitUntil } from "cloudflare:workers";
 import type { Ecosystem } from "./normalize";
-import { exists, mapLimit } from "./registry";
+import { chunks, exists, mapLimit } from "./registry";
 import type { CheckResult } from "./score";
 
-export type Source = "api" | "mcp" | "npm";
+export type Source = "api" | "mcp" | "npm" | "scan";
 
 // Who asked and through which front door, so names seen not to exist can be counted once per caller per day.
 export interface Watch {
@@ -27,6 +27,8 @@ const RECHECK_UNCONFIRMED_DAYS = 90;
 // An unconfirmed name's first-caller hash is kept only this long after its last sighting.
 const FORGET_CALLER_DAYS = 30;
 const DAY_MS = 86_400_000;
+// D1 allows 100 bound parameters per query, and a failed read means "not watched", so names are read in batches.
+const WATCH_READ_NAMES = 90;
 
 export const watchFor = (env: Env, request: Request | undefined, source: Source): Watch => ({
   db: env.DB,
@@ -57,14 +59,18 @@ export function caller(ip: string | null): string {
 export async function watchedNames(db: D1Database, ecosystem: Ecosystem, names: string[]): Promise<Map<string, number>> {
   if (!names.length) return new Map();
   try {
-    const { results } = await db
-      .prepare(
-        `SELECT name, first_seen FROM watch WHERE ecosystem = ? AND confirmed_at IS NOT NULL AND status != 'cleared'
-         AND name IN (${names.map(() => "?").join(", ")})`,
-      )
-      .bind(ecosystem, ...names)
-      .all<{ name: string; first_seen: number }>();
-    return new Map(results.map((r) => [r.name, r.first_seen]));
+    const reads = await Promise.all(
+      chunks(names, WATCH_READ_NAMES).map((batch) =>
+        db
+          .prepare(
+            `SELECT name, first_seen FROM watch WHERE ecosystem = ? AND confirmed_at IS NOT NULL AND status != 'cleared'
+             AND name IN (${batch.map(() => "?").join(", ")})`,
+          )
+          .bind(ecosystem, ...batch)
+          .all<{ name: string; first_seen: number }>(),
+      ),
+    );
+    return new Map(reads.flatMap(({ results }) => results.map((r) => [r.name, r.first_seen] as const)));
   } catch (error) {
     console.error("watchlist read failed", error);
     return new Map();

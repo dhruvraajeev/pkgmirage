@@ -2,6 +2,7 @@ import { env } from "cloudflare:test";
 import { exports } from "cloudflare:workers";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { checkPackages } from "../src/engine/check";
+import { watchFor } from "../src/engine/watch";
 import { daysAgo, fakeFetch, mcp, npmPackage, rpcAnswer, status } from "./fakes";
 
 const NPM = "https://registry.npmjs.org";
@@ -218,6 +219,19 @@ describe("watchlist", () => {
     const prepare = vi.spyOn(env.DB, "prepare");
     expect((await apiResults(["old-pkg"], A)).map((r) => r.verdict)).toEqual(["safe"]);
     expect(prepare.mock.calls.filter(([sql]) => sql.includes("FROM watch"))).toEqual([]);
+  });
+
+  it("a watched name is found in a batch of more than 100 young packages", async () => {
+    const names = Array.from({ length: 120 }, (_, i) => `young-${i}`);
+    await watched("young-110");
+    fakeFetch(Object.assign({}, ...names.map((name) => npmPackage(name, { firstSeenDaysAgo: 2 }))));
+    const prepare = vi.spyOn(env.DB, "prepare");
+    const results = await checkPackages("npm", names, env.CACHE, watchFor(env, undefined, "api"));
+    expect(results[110]).toMatchObject({ verdict: "block", reasons: [expect.stringMatching(/^registered after/), "first seen 2 days ago"] });
+    expect(results.filter((r) => r.verdict === "block")).toHaveLength(1);
+    // D1 allows 100 bound parameters per query.
+    const reads = prepare.mock.calls.map(([sql]) => sql).filter((sql) => sql.includes("FROM watch"));
+    for (const sql of reads) expect(sql.split("?").length - 1).toBeLessThanOrEqual(100);
   });
 
   it("a malformed caller address still gets its verdict and counts as a caller", async () => {

@@ -11,7 +11,7 @@ describe("normalize", () => {
   });
 
   it("rejects npm names that break registry rules", () => {
-    for (const name of [".hidden", "_private", "has space", "semi;colon", "@scope", "@scope/", "a/b", "@a/b/c", "caf%C3%A9"]) {
+    for (const name of [".hidden", "_private", "has space", "semi;colon", "@scope", "@scope/", "a/b", "@a/b/c", "caf%C3%A9", "a".repeat(215)]) {
       const result = normalizeName("npm", name);
       expect(result.ok, name).toBe(false);
       expect(result).toMatchObject({ reason: expect.stringContaining("not a valid npm package name") });

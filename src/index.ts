@@ -2,10 +2,12 @@ import { handleCheck, jsonError } from "./api";
 import { caller, recheck } from "./engine/watch";
 import { handleMcp } from "./mcp";
 import { handleNpm } from "./proxy";
+import { handleScan } from "./scan";
 
 // The windows of the rate limits in wrangler.jsonc, for Retry-After.
 const NPM_WINDOW_SECONDS = 10;
 const CHECK_WINDOW_SECONDS = 60;
+const SCAN_WINDOW_SECONDS = 60;
 // Every response is JSON or a proxied npm file, never a page: nothing may sniff, frame or load from it.
 const SECURITY_HEADERS = {
   "x-content-type-options": "nosniff",
@@ -40,6 +42,14 @@ async function route(request: Request, env: Env): Promise<Response> {
       return jsonError(429, message, { "retry-after": `${NPM_WINDOW_SECONDS}`, "npm-notice": message });
     }
     return handleNpm(request, pathname.slice("/npm".length), env);
+  }
+
+  // A scan can mean up to 750 lookups, so scans get their own, much smaller budget.
+  if (pathname === "/api/scan") {
+    if (await overLimit(env.SCAN_LIMIT, request)) {
+      return jsonError(429, rateLimited(SCAN_WINDOW_SECONDS), { "retry-after": `${SCAN_WINDOW_SECONDS}` });
+    }
+    return request.method === "POST" ? handleScan(request, env) : jsonError(405, "method not allowed", { allow: "POST" });
   }
 
   // Each API call or MCP call can mean up to 50 lookups, so they share one, tighter budget.
