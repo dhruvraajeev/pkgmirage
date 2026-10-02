@@ -1,7 +1,7 @@
 import { env } from "cloudflare:test";
 import { exports } from "cloudflare:workers";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { fakeFetch, npmPackage, status } from "./fakes";
+import { fakeFetch, mcp, npmPackage, rpcAnswer, status } from "./fakes";
 
 afterEach(async () => {
   vi.restoreAllMocks();
@@ -9,45 +9,16 @@ afterEach(async () => {
   await Promise.all(keys.map(({ name }) => env.CACHE.delete(name)));
 });
 
-const MODERN = "2026-07-28";
-const LEGACY = "2025-11-25";
-
 interface ToolResult {
   content: { type: string; text: string }[];
   structuredContent?: { results: Record<string, unknown>[] };
   isError?: boolean;
 }
 
-// One JSON-RPC exchange. 2026 clients put their version and capabilities on every request; 2025 clients send only
-// the version header (a stateless server answers them without the initialize handshake).
 async function rpc(method: string, params: Record<string, unknown> = {}, era: "modern" | "legacy" = "legacy") {
-  const headers: Record<string, string> = {
-    "content-type": "application/json",
-    accept: "application/json, text/event-stream",
-    "mcp-protocol-version": era === "modern" ? MODERN : LEGACY,
-  };
-  if (era === "modern") {
-    headers["mcp-method"] = method;
-    if (typeof params.name === "string") headers["mcp-name"] = params.name;
-    params = {
-      ...params,
-      _meta: {
-        "io.modelcontextprotocol/protocolVersion": MODERN,
-        "io.modelcontextprotocol/clientCapabilities": {},
-        "io.modelcontextprotocol/clientInfo": { name: "test", version: "1.0.0" },
-      },
-    };
-  }
-  const res = await exports.default.fetch("http://localhost/mcp", {
-    method: "POST",
-    headers,
-    body: JSON.stringify({ jsonrpc: "2.0", id: 1, method, params }),
-  });
+  const res = await mcp(method, params, era);
   expect(res.status).toBe(200);
-  const text = await res.text();
-  // Answers come back as plain JSON or as a one-message event stream.
-  const body = text.startsWith("{") ? text : text.split("\n").find((line) => line.startsWith("data: "))!.slice(6);
-  return JSON.parse(body) as { result?: Record<string, unknown>; error?: { code: number; message: string } };
+  return rpcAnswer(res);
 }
 
 async function callTool(name: string, args: Record<string, unknown>) {

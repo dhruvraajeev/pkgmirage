@@ -218,6 +218,26 @@ describe("guard", () => {
     expect(spy).not.toHaveBeenCalled();
   });
 
+  it("concurrent installs queue for download lookups without hanging", async () => {
+    // Young packages need a download lookup, and only two run at once, so later requests wait for a slot that an
+    // earlier request frees.
+    const names = ["young-a", "young-b", "young-c", "young-d"];
+    const routes: Record<string, (body?: unknown) => Response | Promise<Response>> = Object.assign(
+      {},
+      ...names.map((name) => npmPackage(name, { firstSeenDaysAgo: 100 })),
+    );
+    for (const url of Object.keys(routes).filter((u) => u.startsWith("https://api.npmjs.org/"))) {
+      const answer = routes[url]!;
+      routes[url] = async () => {
+        await new Promise((resolve) => setTimeout(resolve, 20));
+        return answer();
+      };
+    }
+    fakeFetch(routes);
+    const responses = await Promise.all(names.map((name) => guard(`/${name}`)));
+    expect(responses.map((r) => r.status)).toEqual([200, 200, 200, 200]);
+  });
+
   it("reports an unreachable registry as a bad gateway", async () => {
     fakeFetch({
       ...npmPackage("react"),

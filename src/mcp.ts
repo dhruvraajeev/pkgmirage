@@ -1,9 +1,10 @@
 import { createMcpHandler, McpServer } from "@modelcontextprotocol/server";
 import { env } from "cloudflare:workers";
 import { z } from "zod";
-import { ecosystemInput, nameInput, namesInput } from "./api";
+import { ecosystemInput, MAX_BODY_BYTES, nameInput, namesInput } from "./api";
 import { checkPackages } from "./engine/check";
 import type { Ecosystem } from "./engine/normalize";
+import type { CheckResult } from "./engine/score";
 
 const VERDICT_TEXT = { safe: "SAFE", caution: "CAUTION.", block: "BLOCK, do not install." } as const;
 
@@ -22,11 +23,14 @@ const output = z.object({
 });
 type Result = z.infer<typeof output>["results"][number];
 
+const UNVERIFIED = "pkgMirage couldn't complete the check (internal error); treat these packages as unverified";
+
 const annotations = { readOnlyHint: true, idempotentHint: true, openWorldHint: true };
 
 const handler = createMcpHandler(
   () => {
-    const server = new McpServer({ name: "pkgmirage", version: "0.1.0" });
+    // The tools never change, so no change notifications are offered (the SDK offers them by default).
+    const server = new McpServer({ name: "pkgmirage", version: "0.1.0" }, { capabilities: { tools: { listChanged: false } } });
     server.registerTool(
       "check_package",
       {
@@ -55,14 +59,28 @@ const handler = createMcpHandler(
     );
     return server;
   },
-  // Nothing is sent mid-call, so every answer is a single JSON body.
-  { responseMode: "json" },
+  {
+    // Nothing is sent mid-call, so every answer is a single JSON body.
+    responseMode: "json",
+    // With no change notifications, a subscription stream would only sit open; refuse it at once.
+    maxSubscriptions: 0,
+    maxRequestBodySize: MAX_BODY_BYTES,
+    onerror: (error) => console.warn("mcp request rejected", error),
+  },
 );
 
 export const handleMcp = (request: Request) => handler.fetch(request);
 
 async function check(ecosystem: Ecosystem, names: string[]) {
-  const results: Result[] = (await checkPackages(ecosystem, names, env.CACHE)).map((r) => ({
+  let checked: CheckResult[];
+  try {
+    checked = await checkPackages(ecosystem, names, env.CACHE);
+  } catch (error) {
+    // The SDK would put the error's message in the result; the AI only needs to know nothing was verified.
+    console.error("mcp check failed", error);
+    return { content: [{ type: "text" as const, text: UNVERIFIED }], isError: true };
+  }
+  const results: Result[] = checked.map((r) => ({
     name: shown(r.name),
     ecosystem: r.ecosystem,
     verdict: r.verdict,

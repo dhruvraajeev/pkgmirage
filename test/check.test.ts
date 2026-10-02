@@ -378,6 +378,32 @@ describe("check", () => {
     expect(peak).toBe(2);
   });
 
+  it("a download slot its request never released frees up in time", async () => {
+    // A request cancelled mid-lookup (the client hung up) never releases its slot; two of those would otherwise block
+    // download lookups in this isolate for good.
+    vi.useFakeTimers({ toFake: ["setTimeout", "Date"] });
+    const routes = Object.assign({ [OSV_URL]: osv() }, ...["stuck-a", "stuck-b", "young"].map((n) => npmPackage(n, { firstSeenDaysAgo: 100 })));
+    const hangUps: (() => void)[] = [];
+    vi.spyOn(globalThis, "fetch").mockImplementation(async (input, init) => {
+      const url = String(input);
+      if (url.startsWith(`${DOWNLOADS}/stuck-`)) return new Promise<Response>((_, reject) => hangUps.push(() => reject(new Error("gone"))));
+      return routes[url](typeof init?.body === "string" ? JSON.parse(init.body) : undefined);
+    });
+    void checkPackages("npm", ["stuck-a"]);
+    void checkPackages("npm", ["stuck-b"]);
+    await vi.advanceTimersByTimeAsync(100);
+    let done = false;
+    const young = checkPackages("npm", ["young"]).finally(() => (done = true));
+    await vi.advanceTimersByTimeAsync(20_000);
+    expect(done).toBe(false);
+    await vi.advanceTimersByTimeAsync(10_000);
+    expect(done).toBe(true);
+    expect((await young)[0]!.verdict).toBe("safe");
+    hangUps.forEach((hangUp) => hangUp());
+    await vi.advanceTimersByTimeAsync(100);
+    vi.useRealTimers();
+  });
+
   it("large pypi records get the larger size cap", async () => {
     // botocore's record is 3.8 MB, past the default 2 MB cap.
     const routes = pypiPackage("big-py");

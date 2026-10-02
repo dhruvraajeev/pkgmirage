@@ -1,3 +1,4 @@
+import { exports } from "cloudflare:workers";
 import { vi } from "vitest";
 
 type Route = (body?: unknown, init?: RequestInit) => Response | Promise<Response>;
@@ -26,7 +27,13 @@ export function fakeFetch(routes: Record<string, Route>) {
     const url = input instanceof Request ? input.url : String(input);
     const route = all[url];
     if (!route) throw new Error(`unexpected fetch: ${url}`);
-    return route(init?.body ? JSON.parse(await new Response(init.body).text()) : undefined, init);
+    // JSON bodies arrive parsed; anything else (an audit's gzip bytes) as raw bytes.
+    const raw = init?.body ? new Uint8Array(await new Response(init.body).arrayBuffer()) : undefined;
+    let body: unknown = raw;
+    try {
+      body = raw && JSON.parse(new TextDecoder().decode(raw));
+    } catch {}
+    return route(body, init);
   });
 }
 
@@ -126,4 +133,42 @@ export function pypiPackage(name: string, opts: PypiOptions = {}): Record<string
     urls: latestFiles,
   };
   return { [`https://pypi.org/pypi/${name}/json`]: json(doc) };
+}
+
+const MODERN = "2026-07-28";
+const LEGACY = "2025-11-25";
+
+// One JSON-RPC request to /mcp. 2026 clients put their version and capabilities on every request; 2025 clients send
+// only the version header (a stateless server answers them without the initialize handshake).
+export function mcp(method: string, params: Record<string, unknown> = {}, era: "modern" | "legacy" = "legacy", extra: Record<string, string> = {}) {
+  const headers: Record<string, string> = {
+    "content-type": "application/json",
+    accept: "application/json, text/event-stream",
+    "mcp-protocol-version": era === "modern" ? MODERN : LEGACY,
+    ...extra,
+  };
+  if (era === "modern") {
+    headers["mcp-method"] = method;
+    if (typeof params.name === "string") headers["mcp-name"] = params.name;
+    params = {
+      ...params,
+      _meta: {
+        "io.modelcontextprotocol/protocolVersion": MODERN,
+        "io.modelcontextprotocol/clientCapabilities": {},
+        "io.modelcontextprotocol/clientInfo": { name: "test", version: "1.0.0" },
+      },
+    };
+  }
+  return exports.default.fetch("http://localhost/mcp", {
+    method: "POST",
+    headers,
+    body: JSON.stringify({ jsonrpc: "2.0", id: 1, method, params }),
+  });
+}
+
+// Answers come back as plain JSON or as a one-message event stream.
+export async function rpcAnswer(res: Response) {
+  const text = await res.text();
+  const body = text.startsWith("{") ? text : text.split("\n").find((line) => line.startsWith("data: "))!.slice(6);
+  return JSON.parse(body) as { result?: Record<string, unknown>; error?: { code: number; message: string }; id?: unknown };
 }

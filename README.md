@@ -53,6 +53,22 @@ claude mcp add --transport http pkgmirage http://localhost:8787/mcp
 assistant gets the same verdicts as the API, with only pkgmirage's own wording: nothing written by package authors
 (descriptions, READMEs) is passed on, and rejected names have unusual characters shown as `\uXXXX` codes.
 
+## Limits
+
+| Route | Rate limit per caller | Request body |
+|---|---|---|
+| `/npm/*` | 1,000 requests per 10 seconds | `npm audit`: 1 MiB as sent |
+| `/api/*` and `/mcp` (shared) | 60 requests per minute | 64 KiB |
+
+A cold `npm install` of next, react, react-dom, express, typescript, eslint and vitest peaked at 382 requests in
+10 seconds; a 1,174-package project at 453. Over a limit the answer is `429` with `Retry-After`; npm retries it on
+its own after 10 seconds. Limits are counted per Cloudflare location and are approximate. The caller is the
+connecting IP address (an IPv6 address by its /64); it is used only as the rate limiter's key and is never stored or
+logged.
+
+Errors never include internal details: an unexpected failure is a `500` with `{"error": "internal error"}`, and an
+MCP check that fails tells the assistant to treat the packages as unverified.
+
 ## Test
 
 ```bash

@@ -1,4 +1,4 @@
-import { fetchJson, TOO_LARGE, type FetchResult } from "./fetch";
+import { fetchJson, TIMEOUT_MS, TOO_LARGE, type FetchResult } from "./fetch";
 import type { Ecosystem } from "./normalize";
 
 export type RegistryCheck =
@@ -62,19 +62,34 @@ export async function lookup(ecosystem: Ecosystem, name: string, now = Date.now(
 // Note: isolates don't coordinate; caching the stats is what keeps the volume down.
 const MAX_CONCURRENT_DOWNLOAD_LOOKUPS = 2;
 const DOWNLOAD_RETRY_DELAYS_MS = [1_000, 2_000, 4_000];
-let downloadLookups = 0;
-const waitingForDownloads: (() => void)[] = [];
+// Every attempt timing out plus every backoff: no lookup holds a slot longer than this.
+const LONGEST_LOOKUP_MS = (DOWNLOAD_RETRY_DELAYS_MS.length + 1) * TIMEOUT_MS + DOWNLOAD_RETRY_DELAYS_MS.reduce((a, b) => a + b);
+const SLOT_POLL_MS = 50;
+const downloadSlots = new Set<{ takenAt: number }>();
+
+// Waiters poll instead of being woken by the lookup that finishes: the Workers runtime won't let one request resume a
+// promise another request is waiting on (it cancels the waiting request as hung). A request cancelled mid-lookup never
+// releases its slot, so a slot older than any lookup can take counts as free. Note: polling lets a newcomer take a
+// freed slot before an earlier waiter.
+async function takeDownloadSlot() {
+  for (;;) {
+    const now = Date.now();
+    for (const slot of downloadSlots) if (now - slot.takenAt > LONGEST_LOOKUP_MS) downloadSlots.delete(slot);
+    if (downloadSlots.size < MAX_CONCURRENT_DOWNLOAD_LOOKUPS) {
+      const slot = { takenAt: now };
+      downloadSlots.add(slot);
+      return slot;
+    }
+    await new Promise((resolve) => setTimeout(resolve, SLOT_POLL_MS));
+  }
+}
 
 async function npmDownloads(name: string): Promise<DownloadStats> {
-  if (downloadLookups < MAX_CONCURRENT_DOWNLOAD_LOOKUPS) downloadLookups++;
-  // A finishing lookup hands its slot straight to the next waiter, so newcomers can't jump the queue.
-  else await new Promise<void>((resolve) => waitingForDownloads.push(resolve));
+  const slot = await takeDownloadSlot();
   try {
     return parseDownloads(await fetchDownloads(`https://api.npmjs.org/downloads/range/last-year/${name}`));
   } finally {
-    const next = waitingForDownloads.shift();
-    if (next) next();
-    else downloadLookups--;
+    downloadSlots.delete(slot);
   }
 }
 

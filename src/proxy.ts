@@ -1,9 +1,11 @@
-import { jsonError } from "./api";
+import { jsonError, readBody } from "./api";
 import { checkPackages } from "./engine/check";
 import { USER_AGENT } from "./engine/fetch";
 import { NPM_REGISTRY, npmRecordUrl } from "./engine/registry";
 
 const AUDIT_PATH = "/-/npm/v1/security/advisories/bulk";
+// npm gzips the audit body: 9,654 bytes for a 1,175-package project, so this is room for about 100,000 packages.
+const AUDIT_MAX_BYTES = 1024 * 1024;
 // A record (<name>) or a tarball (<name>/-/<file>.tgz); the name may carry a scope.
 const PACKAGE = /^((?:@[^/]+\/)?[^/]+)(?:\/-\/([\w.-]+\.tgz))?$/;
 const UNSUPPORTED = "pkgMirage only handles installs; use https://registry.npmjs.org for anything else";
@@ -16,8 +18,10 @@ const RESPONSE_HEADERS = ["content-type", "etag", "last-modified"];
 // reaches pkgMirage's upstream requests.
 export async function handleNpm(request: Request, path: string, cache: KVNamespace): Promise<Response> {
   if (path === AUDIT_PATH && request.method === "POST") {
+    const body = await readBody(request, AUDIT_MAX_BYTES);
+    if (!body) return jsonError(413, "request body too large");
     const headers = pick(request.headers, ["content-type", "content-encoding"]);
-    return forward(`${NPM_REGISTRY}${AUDIT_PATH}`, { method: "POST", headers, body: request.body });
+    return forward(`${NPM_REGISTRY}${AUDIT_PATH}`, { method: "POST", headers, body });
   }
 
   let decoded: string;

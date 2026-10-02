@@ -4,5 +4,11 @@
   "main": "src/index.ts",
   "compatibility_date": "2026-08-15",
   "observability": { "enabled": true },
-  "kv_namespaces": [{ "binding": "CACHE" }]
+  "kv_namespaces": [{ "binding": "CACHE" }],
+  // Per caller, per Cloudflare location. A cold install peaked at 453 requests in 10 s; npm retries a 429 after
+  // 10 s, which lands in a fresh window. The periods are repeated in src/index.ts for Retry-After.
+  "ratelimits": [
+    { "name": "NPM_LIMIT", "namespace_id": "1001", "simple": { "limit": 1000, "period": 10 } },
+    { "name": "CHECK_LIMIT", "namespace_id": "1002", "simple": { "limit": 60, "period": 60 } }
+  ]
 }
