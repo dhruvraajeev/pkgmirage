@@ -4,7 +4,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 const URL = "http://localhost/api/stats";
 const stats = (path = "", headers: HeadersInit = {}) => exports.default.fetch(URL + path, { headers });
-const body = async (res: Response) => (await res.json()) as { today: string; days: Record<string, unknown>[]; watchlist: unknown };
+const body = async (res: Response) => (await res.json()) as { days: Record<string, unknown>[]; watchlist: unknown };
 
 // What the data center's cache holds for /api/stats, if anything.
 const stored = async () => (await caches.default.match(URL))?.headers.get("cache-control") ?? null;
@@ -44,7 +44,6 @@ describe("stats", () => {
     expect(res.status).toBe(200);
     expect(res.headers.get("content-type")).toBe("application/json");
     expect(await res.json()).toEqual({
-      today: "2026-10-02",
       days: LAST_WEEK.map(zeros),
       watchlist: { total: 0, confirmed: 0, unregistered: 0, registered: 0, cleared: 0 },
       generatedAt: "2026-10-02T12:00:00.000Z",
@@ -121,7 +120,7 @@ describe("stats", () => {
       vi.setSystemTime(new Date("2026-10-03T00:00:00.040Z"));
       return results;
     });
-    expect((await body(await stats())).today).toBe("2026-10-02");
+    expect((await body(await stats())).days[0]!.day).toBe("2026-10-02");
     expect(put).not.toHaveBeenCalled();
 
     vi.setSystemTime(new Date("2026-10-03T00:00:00Z"));
@@ -168,14 +167,12 @@ describe("stats", () => {
     expect(count.meta.rows_read).toBeLessThanOrEqual(1);
   });
 
-  it("stats have their own limit", async () => {
-    const limit = vi.spyOn(env.STATS_LIMIT, "limit").mockResolvedValue({ success: false });
-    const shared = vi.spyOn(env.CHECK_LIMIT, "limit");
+  it("stats share the api limit", async () => {
+    const limit = vi.spyOn(env.CHECK_LIMIT, "limit").mockResolvedValue({ success: false });
     const res = await stats("", { "cf-connecting-ip": "203.0.113.50" });
     expect(res.status).toBe(429);
     expect(res.headers.get("retry-after")).toBe("60");
     expect(await res.json()).toEqual({ error: "pkgMirage rate limit exceeded; try again in 60 seconds" });
     expect(limit).toHaveBeenCalledWith({ key: "203.0.113.50" });
-    expect(shared).not.toHaveBeenCalled();
   });
 });

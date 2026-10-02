@@ -9,7 +9,6 @@ import { handleStats } from "./stats";
 const NPM_WINDOW_SECONDS = 10;
 const CHECK_WINDOW_SECONDS = 60;
 const SCAN_WINDOW_SECONDS = 60;
-const STATS_WINDOW_SECONDS = 60;
 // Every response is JSON or a proxied npm file, never a page: nothing may sniff, frame or load from it.
 const SECURITY_HEADERS = {
   "x-content-type-options": "nosniff",
@@ -54,14 +53,8 @@ async function route(request: Request, env: Env): Promise<Response> {
     return request.method === "POST" ? handleScan(request, env) : jsonError(405, "method not allowed", { allow: "POST" });
   }
 
-  if (pathname === "/api/stats") {
-    if (await overLimit(env.STATS_LIMIT, request)) {
-      return jsonError(429, rateLimited(STATS_WINDOW_SECONDS), { "retry-after": `${STATS_WINDOW_SECONDS}` });
-    }
-    return request.method === "GET" ? handleStats(request, env) : jsonError(405, "method not allowed", { allow: "GET" });
-  }
-
-  // Each API call or MCP call can mean up to 50 lookups, so they share one, tighter budget.
+  // Each API call or MCP call can mean up to 50 lookups, so they share one, tighter budget. Stats are cached, so a page
+  // view's one stats call costs little of it.
   const isMcp = pathname === "/mcp";
   if ((isMcp || pathname.startsWith("/api/")) && (await overLimit(env.CHECK_LIMIT, request))) {
     const message = rateLimited(CHECK_WINDOW_SECONDS);
@@ -75,6 +68,9 @@ async function route(request: Request, env: Env): Promise<Response> {
     const res = await handleMcp(request);
     if (res.status === 405) res.headers.set("allow", "POST");
     return res;
+  }
+  if (pathname === "/api/stats") {
+    return request.method === "GET" ? handleStats(request, env) : jsonError(405, "method not allowed", { allow: "GET" });
   }
   if (pathname === "/api/check") {
     return request.method === "POST" ? handleCheck(request, env) : jsonError(405, "method not allowed", { allow: "POST" });

@@ -83,11 +83,9 @@ describe("protect", () => {
     expect(npm.slice(0, 1000).every(Boolean)).toBe(true);
     expect(npm[1000]).toBe(false);
 
-    for (const limiter of [env.CHECK_LIMIT, env.STATS_LIMIT]) {
-      const calls = await burstInOneWindow(limiter, 60, "198.51.100.1", 61);
-      expect(calls.slice(0, 60).every(Boolean)).toBe(true);
-      expect(calls[60]).toBe(false);
-    }
+    const checks = await burstInOneWindow(env.CHECK_LIMIT, 60, "198.51.100.1", 61);
+    expect(checks.slice(0, 60).every(Boolean)).toBe(true);
+    expect(checks[60]).toBe(false);
   }, 60_000);
 
   it("api and mcp share one limit, npm has its own", async () => {

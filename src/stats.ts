@@ -23,10 +23,8 @@ export async function handleStats(request: Request, env: Env): Promise<Response>
 
   const now = Date.now();
   const days = Array.from({ length: DAYS }, (_, i) => new Date(now - i * DAY_MS).toISOString().slice(0, 10));
-  let rows: Day[];
-  let watchlist: Record<string, number>;
-  try {
-    const [stats, watch] = (await env.DB.batch([
+  const read = await env.DB
+    .batch([
       env.DB.prepare("SELECT day, checks, blocks, cautions, invented FROM stats WHERE day >= ?").bind(days.at(-1)),
       // A count over every row: no index makes that cheaper.
       env.DB.prepare(
@@ -34,22 +32,18 @@ export async function handleStats(request: Request, env: Env): Promise<Response>
          COUNT(CASE WHEN status = 'registered' THEN 1 END) AS registered, COUNT(CASE WHEN status = 'cleared' THEN 1 END) AS cleared
          FROM watch`,
       ),
-    ])) as [D1Result<Day>, D1Result<Record<string, number>>];
-    rows = stats.results;
-    watchlist = watch.results[0]!;
-  } catch (error) {
-    console.error("stats read failed", error);
-    return jsonError(503, "stats unavailable");
-  }
+    ])
+    .catch((error) => console.error("stats read failed", error));
+  if (!read) return jsonError(503, "stats unavailable");
+  const [{ results: rows }, { results: [watchlist] }] = read as [D1Result<Day>, D1Result<Record<string, number>>];
 
   const byDay = new Map(rows.map((row) => [row.day, row]));
   // Never cached past the end of the day the answer describes, counted from after the read (the clock moves during
-  // I/O) and keeping a second for the cache write, so "today" is always today; near midnight, not cached at all.
+  // I/O) and keeping a second for the cache write, so the first day is always today; near midnight, not cached at all.
   const endOfDay = (Math.floor(now / DAY_MS) + 1) * DAY_MS;
   const maxAge = Math.min(MAX_AGE_SECONDS, Math.floor((endOfDay - Date.now()) / 1000) - 1);
   const res = Response.json(
     {
-      today: days[0],
       days: days.map((day) => byDay.get(day) ?? { day, checks: 0, blocks: 0, cautions: 0, invented: 0 }),
       watchlist,
       generatedAt: new Date(now).toISOString(),

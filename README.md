@@ -84,8 +84,7 @@ curl -s localhost:8787/api/stats
 Counts for the last 7 UTC days (today first, so far) and the watchlist, never names:
 
 ```json
-{ "today": "2026-10-02",
-  "days": [ { "day": "2026-10-02", "checks": 10, "blocks": 4, "cautions": 2, "invented": 3 }, ... ],
+{ "days": [ { "day": "2026-10-02", "checks": 10, "blocks": 4, "cautions": 2, "invented": 3 }, ... ],
   "watchlist": { "total": 3, "confirmed": 1, "unregistered": 3, "registered": 0, "cleared": 0 },
   "generatedAt": "2026-10-02T21:33:26.135Z" }
 ```
@@ -123,9 +122,8 @@ assistant gets the same verdicts as the API, with only pkgmirage's own wording: 
 | Route | Rate limit per caller | Request body |
 |---|---|---|
 | `/npm/*` | 1,000 requests per 10 seconds | `npm audit`: 1 MiB as sent |
-| `/api/check` and `/mcp` (shared) | 60 requests per minute | 64 KiB |
+| `/api/check`, `/api/stats` and `/mcp` (shared) | 60 requests per minute | 64 KiB (stats: GET) |
 | `/api/scan` | 5 scans per minute | 1 MiB |
-| `/api/stats` | 60 requests per minute | none (GET) |
 
 A cold `npm install` of next, react, react-dom, express, typescript, eslint and vitest peaked at 382 requests in
 10 seconds; a 1,174-package project at 453. Over a limit the answer is `429` with `Retry-After`; npm retries it on
