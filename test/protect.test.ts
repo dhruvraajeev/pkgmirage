@@ -38,6 +38,18 @@ async function burst(limiter: RateLimit, key: string, count: number) {
   return outcomes;
 }
 
+// A slow machine can take longer than any head start in a window, so a burst that straddled two windows is repeated
+// under a fresh key, from the start of a window: two tries at most for any burst shorter than the window.
+async function burstInOneWindow(limiter: RateLimit, periodSeconds: number, key: string, count: number) {
+  const ms = periodSeconds * 1000;
+  for (let attempt = 0; ; attempt++) {
+    const start = Math.floor(Date.now() / ms);
+    const outcomes = await burst(limiter, `${key}#${attempt}`, count);
+    if (Math.floor(Date.now() / ms) === start) return outcomes;
+    await new Promise((resolve) => setTimeout(resolve, ms - (Date.now() % ms) + 50));
+  }
+}
+
 // A body that never ends, counting how much of it was read (nothing is pulled until someone reads).
 function endless() {
   let chunks = 0;
@@ -67,16 +79,16 @@ const SECURITY_HEADERS = {
 
 describe("protect", () => {
   it("the configured limits allow a normal install and stop a flood", async () => {
-    await startOfWindow(10, 5_000);
-    const npm = await burst(env.NPM_LIMIT, "198.51.100.1", 1001);
+    const npm = await burstInOneWindow(env.NPM_LIMIT, 10, "198.51.100.1", 1001);
     expect(npm.slice(0, 1000).every(Boolean)).toBe(true);
     expect(npm[1000]).toBe(false);
 
-    await startOfWindow(60, 5_000);
-    const checks = await burst(env.CHECK_LIMIT, "198.51.100.1", 61);
-    expect(checks.slice(0, 60).every(Boolean)).toBe(true);
-    expect(checks[60]).toBe(false);
-  }, 30_000);
+    for (const limiter of [env.CHECK_LIMIT, env.STATS_LIMIT]) {
+      const calls = await burstInOneWindow(limiter, 60, "198.51.100.1", 61);
+      expect(calls.slice(0, 60).every(Boolean)).toBe(true);
+      expect(calls[60]).toBe(false);
+    }
+  }, 60_000);
 
   it("api and mcp share one limit, npm has its own", async () => {
     fakeFetch(npmPackage("react"));
@@ -284,6 +296,8 @@ describe("protect", () => {
       await send("/npm/fastjson-parse-xyz"),
       await mcp("tools/list"),
       await send("/mcp"),
+      await send("/api/stats"),
+      await send("/api/stats"),
     ];
     for (const res of responses) {
       for (const [name, value] of Object.entries(SECURITY_HEADERS)) expect(res.headers.get(name)).toBe(value);
@@ -308,6 +322,9 @@ describe("protect", () => {
       ["/api/scan", "GET", 405, "POST"],
       ["/api/scan", "OPTIONS", 405, "POST"],
       ["/api/scan", "HEAD", 405, "POST"],
+      ["/api/stats", "POST", 405, "GET"],
+      ["/api/stats", "OPTIONS", 405, "GET"],
+      ["/api/stats", "HEAD", 405, "GET"],
       ["/npm/react", "OPTIONS", 405, "GET"],
       ["/npm/react", "HEAD", 405, "GET"],
       ["/", "OPTIONS", 404, null],

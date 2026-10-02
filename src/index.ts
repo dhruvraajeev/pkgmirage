@@ -3,11 +3,13 @@ import { caller, recheck } from "./engine/watch";
 import { handleMcp } from "./mcp";
 import { handleNpm } from "./proxy";
 import { handleScan } from "./scan";
+import { handleStats } from "./stats";
 
 // The windows of the rate limits in wrangler.jsonc, for Retry-After.
 const NPM_WINDOW_SECONDS = 10;
 const CHECK_WINDOW_SECONDS = 60;
 const SCAN_WINDOW_SECONDS = 60;
+const STATS_WINDOW_SECONDS = 60;
 // Every response is JSON or a proxied npm file, never a page: nothing may sniff, frame or load from it.
 const SECURITY_HEADERS = {
   "x-content-type-options": "nosniff",
@@ -50,6 +52,13 @@ async function route(request: Request, env: Env): Promise<Response> {
       return jsonError(429, rateLimited(SCAN_WINDOW_SECONDS), { "retry-after": `${SCAN_WINDOW_SECONDS}` });
     }
     return request.method === "POST" ? handleScan(request, env) : jsonError(405, "method not allowed", { allow: "POST" });
+  }
+
+  if (pathname === "/api/stats") {
+    if (await overLimit(env.STATS_LIMIT, request)) {
+      return jsonError(429, rateLimited(STATS_WINDOW_SECONDS), { "retry-after": `${STATS_WINDOW_SECONDS}` });
+    }
+    return request.method === "GET" ? handleStats(request, env) : jsonError(405, "method not allowed", { allow: "GET" });
   }
 
   // Each API call or MCP call can mean up to 50 lookups, so they share one, tighter budget.
