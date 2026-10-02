@@ -58,6 +58,17 @@ export async function lookup(ecosystem: Ecosystem, name: string, now = Date.now(
   return "downloadsError" in downloads ? { ...check, ...downloads } : { ...check, weeklyDownloads: downloads.weeklyDownloads };
 }
 
+// Only whether a name exists and when it was created: the record alone, never the rate-limited downloads API.
+export async function exists(ecosystem: Ecosystem, name: string): Promise<RegistryCheck> {
+  if (ecosystem === "pypi") return lookup(ecosystem, name);
+  const full = await fetchJson(npmRecordUrl(name), { maxBytes: NPM_RECORD_MAX_BYTES });
+  // Only long-lived packages have records this big; it exists, its creation date is unknown.
+  if (full.status === "error" && full.reason === TOO_LARGE) {
+    return { status: "found", latestVersion: null, firstSeenAt: null, maintainers: 0, installScripts: [], hasRepo: false };
+  }
+  return toCheck(full, parseNpmRecord);
+}
+
 // The downloads API rate-limits, so lookups take turns (per isolate) and a 429 backs off before retrying.
 // Note: isolates don't coordinate; caching the stats is what keeps the volume down.
 const MAX_CONCURRENT_DOWNLOAD_LOOKUPS = 2;

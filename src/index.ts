@@ -1,5 +1,5 @@
 import { handleCheck, jsonError } from "./api";
-import { caller } from "./engine/watch";
+import { caller, recheck } from "./engine/watch";
 import { handleMcp } from "./mcp";
 import { handleNpm } from "./proxy";
 
@@ -25,6 +25,9 @@ export default {
     }
     for (const [name, value] of Object.entries(SECURITY_HEADERS)) res.headers.set(name, value);
     return res;
+  },
+  async scheduled(_controller, env) {
+    await recheck(env);
   },
 } satisfies ExportedHandler<Env>;
 

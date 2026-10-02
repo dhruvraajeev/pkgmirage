@@ -7,6 +7,8 @@
   "kv_namespaces": [{ "binding": "CACHE" }],
   // No database_id until the database is created on the production account; local dev and tests don't need one.
   "d1_databases": [{ "binding": "DB", "database_name": "pkgmirage" }],
+  // Nightly re-check of watched names, off the hour. Fires only once deployed; locally: wrangler dev --test-scheduled.
+  "triggers": { "crons": ["17 4 * * *"] },
   // Keys the hashes that count sightings once per caller per day; locally from .dev.vars.
   "secrets": { "required": ["SIGHTING_KEY"] },
   // Per caller, per Cloudflare location. A cold install peaked at 453 requests in 10 s; npm retries a 429 after

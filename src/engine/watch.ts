@@ -1,5 +1,7 @@
 import { waitUntil } from "cloudflare:workers";
+import { mapLimit } from "./check";
 import type { Ecosystem } from "./normalize";
+import { exists } from "./registry";
 import type { CheckResult } from "./score";
 
 export type Source = "api" | "mcp" | "npm";
@@ -16,6 +18,16 @@ export interface Watch {
 // A registration this young of a name callers saw invented is how a slopsquat starts; after that the package gets
 // its normal verdict.
 export const WATCH_BLOCK_DAYS = 30;
+
+// One nightly run: ~200 record requests and ~205 D1 statements, far under a cron run's limits (10,000 subrequests,
+// 1,000 D1 queries). Note: a list longer than this takes several nights to go round once.
+const RECHECK_BATCH = 200;
+const RECHECK_CONCURRENCY = 4;
+// An unconfirmed name nobody has asked about for this long can't cause a block; stop spending lookups on it.
+const RECHECK_UNCONFIRMED_DAYS = 90;
+// An unconfirmed name's first-caller hash is kept only this long after its last sighting.
+const FORGET_CALLER_DAYS = 30;
+const DAY_MS = 86_400_000;
 
 export const watchFor = (env: Env, request: Request | undefined, source: Source): Watch => ({
   db: env.DB,
@@ -137,4 +149,68 @@ async function signer(key: string) {
     const mac = await crypto.subtle.sign("HMAC", hmac, encoder.encode(parts.join("\n")));
     return [...new Uint8Array(mac)].map((b) => b.toString(16).padStart(2, "0")).join("");
   };
+}
+
+// Asks the registry whether watched names were registered since. Failures are logged; nothing here throws, and only a
+// definite answer changes a row, so an unverified name is simply first in line next run.
+export async function recheck(env: Env, now = Date.now()): Promise<void> {
+  const db = env.DB;
+  const started = Date.now();
+  try {
+    await db.batch([
+      db.prepare("DELETE FROM daily WHERE day < ?").bind(new Date(now).toISOString().slice(0, 10)),
+      db
+        .prepare("UPDATE watch SET first_caller = NULL WHERE confirmed_at IS NULL AND first_caller IS NOT NULL AND last_seen < ?")
+        .bind(now - FORGET_CALLER_DAYS * DAY_MS),
+    ]);
+  } catch (error) {
+    console.error("recheck cleanup failed", error);
+  }
+
+  let names: { ecosystem: Ecosystem; name: string }[];
+  try {
+    ({ results: names } = await db
+      .prepare(
+        `SELECT ecosystem, name FROM watch WHERE status = 'unregistered' AND (confirmed_at IS NOT NULL OR last_seen >= ?)
+         ORDER BY checked_at, first_seen LIMIT ?`,
+      )
+      .bind(now - RECHECK_UNCONFIRMED_DAYS * DAY_MS, RECHECK_BATCH)
+      .all<{ ecosystem: Ecosystem; name: string }>());
+  } catch (error) {
+    console.error("recheck read failed", error);
+    return;
+  }
+
+  const checks = await mapLimit(names, RECHECK_CONCURRENCY, (n) => exists(n.ecosystem, n.name));
+  const registered: typeof names = [];
+  const writes: D1PreparedStatement[] = [];
+  for (const [i, check] of checks.entries()) {
+    const { ecosystem, name } = names[i]!;
+    if (check.status === "error") {
+      console.error("recheck unverified", ecosystem, name, check.reason);
+    } else if (check.status === "found") {
+      registered.push(names[i]!);
+      const created = check.firstSeenAt === null ? null : Date.parse(check.firstSeenAt);
+      writes.push(
+        db
+          .prepare("UPDATE watch SET status = 'registered', registered_at = ?, checked_at = ? WHERE ecosystem = ? AND name = ? AND status = 'unregistered'")
+          .bind(created, now, ecosystem, name),
+      );
+    } else {
+      writes.push(db.prepare("UPDATE watch SET checked_at = ? WHERE ecosystem = ? AND name = ?").bind(now, ecosystem, name));
+    }
+  }
+  try {
+    if (writes.length) await db.batch(writes);
+  } catch (error) {
+    console.error("recheck write failed", error);
+    return;
+  }
+  // The cached "doesn't exist" would hide the block for up to 10 minutes.
+  await Promise.all(
+    registered.map(({ ecosystem, name }) =>
+      env.CACHE.delete(`res:${ecosystem}:${name}`).catch((error) => console.error("recheck cache delete failed", name, error)),
+    ),
+  );
+  console.log("recheck", { names: names.length, registered: registered.length, unverified: names.length - writes.length, ms: Date.now() - started });
 }

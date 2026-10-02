@@ -18,8 +18,8 @@ refreshes them). Results are cached in Workers KV.
 
 Names checked and found not to exist go on a watchlist in D1. A name counts once per caller per day, and needs
 callers on two different networks before it is trusted; if such a name is registered later, the new package is
-blocked for its first 30 days. Daily counts of distinct names checked, blocked, cautioned and invented are kept with
-it.
+blocked for its first 30 days. A nightly job asks the registry whether watched names have been registered since. Daily
+counts of distinct names checked, blocked, cautioned and invented are kept with it.
 
 ## Run locally
 
@@ -29,6 +29,8 @@ npx wrangler d1 migrations apply pkgmirage --local
 echo "SIGHTING_KEY=$(openssl rand -hex 32)" > .dev.vars
 npm run dev
 ```
+
+To run the nightly job by hand: `npx wrangler dev --test-scheduled`, then open `/__scheduled`.
 
 ```bash
 curl -s localhost:8787/api/check \
