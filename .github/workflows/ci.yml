@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  # New advisories appear without any push; re-run the audit weekly. Off the hour: GitHub
+  # delays (and under load drops) scheduled runs queued at the start of an hour.
+  schedule:
+    - cron: "23 6 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      # Wrangler sends usage metrics by default on a machine it hasn't seen before.
+      WRANGLER_SEND_METRICS: "false"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+          cache: npm
+      # Dependency install scripts don't run; nothing here needs them. The audit step below
+      # replaces npm's own install-time audit.
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Generated types are up to date
+        run: npx wrangler types --check
+      - run: npm run typecheck
+      - run: npm test
+      # Dev-only tooling never ships in the Worker bundle.
+      - name: Audit production dependencies
+        run: npm audit --omit=dev
