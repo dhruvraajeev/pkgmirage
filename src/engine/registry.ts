@@ -1,4 +1,5 @@
 import { fetchJson, TIMEOUT_MS, TOO_LARGE, type FetchResult } from "./fetch";
+import { isPopular } from "./lookalike";
 import type { Ecosystem } from "./normalize";
 
 export type RegistryCheck =
@@ -19,8 +20,9 @@ export type RegistryCheck =
 
 type Found = Extract<RegistryCheck, { status: "found" }>;
 
-// PyPI only offers the full project record (every release's files); the largest seen is botocore at 3.8 MB.
-const PYPI_MAX_BYTES = 10 * 1024 * 1024;
+// PyPI only offers the full project record (every release's files); the largest seen is pydantic-core at 12.1 MB
+// (2026-10-02), and it grows with every release.
+const PYPI_MAX_BYTES = 16 * 1024 * 1024;
 // Most npm records are tiny, but a few long-lived ones are huge (next 31 MB, vite 39 MB) and too big to parse
 // safely in 128 MB. Those get the small /latest manifest instead.
 const NPM_RECORD_MAX_BYTES = 4 * 1024 * 1024;
@@ -43,10 +45,15 @@ export async function lookup(ecosystem: Ecosystem, name: string, now = Date.now(
     return toCheck(await fetchJson(pypiRecordUrl(name), { maxBytes: PYPI_MAX_BYTES }), parsePypi);
   }
 
+  // Every bundled popular package has over a million weekly downloads (the 10,000th: 1.29 million, 2026-10-02), and
+  // npm never lets a package with 300+ a week be unpublished, so the name can't be re-registered either: its download
+  // count can't change the verdict. Skipping them spares the rate-limited downloads API (33 of the 52 lookups in a
+  // 660-package scan, and most of the records over 4 MB).
+  const countDownloads = !isPopular("npm", name);
   const recordUrl = npmRecordUrl(name);
   const full = await fetchJson(recordUrl, { maxBytes: NPM_RECORD_MAX_BYTES });
   if (full.status === "error" && full.reason === TOO_LARGE) {
-    const [latest, downloads] = await Promise.all([fetchJson(`${recordUrl}/latest`), npmDownloads(name)]);
+    const [latest, downloads] = await Promise.all([fetchJson(`${recordUrl}/latest`), countDownloads ? npmDownloads(name) : {}]);
     const check = toCheck(latest, (manifest) => parseManifest(manifest, null));
     return check.status === "found" ? { ...check, ...downloads } : check;
   }
@@ -54,7 +61,7 @@ export async function lookup(ecosystem: Ecosystem, name: string, now = Date.now(
   const check = toCheck(full, parseNpmRecord);
   if (check.status !== "found") return check;
   const ageDays = check.firstSeenAt === null ? 0 : (now - Date.parse(check.firstSeenAt)) / DAY_MS;
-  if (ageDays >= DOWNLOADS_MATTER_UNDER_DAYS) return check;
+  if (ageDays >= DOWNLOADS_MATTER_UNDER_DAYS || !countDownloads) return check;
   const downloads = await npmDownloads(name);
   return "downloadsError" in downloads ? { ...check, ...downloads } : { ...check, weeklyDownloads: downloads.weeklyDownloads };
 }

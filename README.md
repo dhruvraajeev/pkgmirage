@@ -44,12 +44,15 @@ Up to 50 names per request; `ecosystem` is `npm` or `pypi`.
 
 ```bash
 curl -s localhost:8787/api/scan --data-binary @package-lock.json
+curl -s localhost:8787/api/scan --data-binary @requirements.txt
 ```
 
-Send a `package-lock.json` (npm 7 or newer) or a `package.json` as it is. Every package in a lockfile is checked,
-including dependencies of dependencies; a `package.json` gives its direct dependencies (`dependencies`,
-`devDependencies`, `optionalDependencies`, `peerDependencies`). The report lists blocks first, then cautions, then safe
-packages, each with where it came from (`dependencies`, `devDependencies`, ... or `transitive`), plus counts for CI:
+Send a `package-lock.json` (npm 7 or newer), a `package.json` or a pip requirements file as it is. Every package in a
+lockfile is checked, including dependencies of dependencies; a `package.json` gives its direct dependencies
+(`dependencies`, `devDependencies`, `optionalDependencies`, `peerDependencies`); a requirements file gives every
+package it names (pinned files from `pip-compile`, `uv pip compile` or `pip freeze` list them all). The report lists
+blocks first, then cautions, then safe packages, plus counts for CI. npm packages say where they came from
+(`dependencies`, `devDependencies`, ... or `transitive`):
 
 ```json
 { "summary": { "checked": 267, "block": 0, "caution": 1, "safe": 266, "unverified": 0, "skipped": 0 },
@@ -57,11 +60,20 @@ packages, each with where it came from (`dependencies`, `devDependencies`, ... o
 ```
 
 Git, local, linked and tarball dependencies and packages from other registries are listed under `skipped` and never
-fetched. Up to 750 distinct packages per scan. Files are not stored, and scanned names don't go on the watchlist (a
-lockfile lists packages that were already installed). The project above (next, react, react-dom, express,
-typescript, eslint, vitest; 267 packages) took 16 s with an empty cache and 22 ms with a warm one, locally on
-2026-10-02. The registry's download-count API rate-limits, so a cold scan of a large project can come back with a
-few packages `unverified`; scanning again checks just those.
+fetched. In a requirements file, includes (`-r`, `-c`), editable installs, pip options, links, VCS sources and local
+paths are skipped by line number (`{ "line": 3, "reason": "include not followed" }`) and their contents are never
+repeated; every other name is checked against pypi.org. `pyproject.toml`, `Pipfile`, `Pipfile.lock`, `poetry.lock`
+and `uv.lock` aren't read: export a requirements file first (`uv export --format requirements.txt`,
+`poetry export -f requirements.txt`, `pipenv requirements`). Up to 750 distinct packages per scan; `skipped` lists the
+first 750 entries and `summary.skipped` counts them all. Files are not
+stored, and scanned names don't go on the watchlist (a lockfile lists packages that were already installed).
+
+Measured locally on 2026-10-02 with an empty cache: the npm project above (next, react, react-dom, express,
+typescript, eslint, vitest; 267 packages) took 5.7 s; a requirements file compiled from requests, django, fastapi,
+pandas, numpy and boto3 (26 packages) took 5.7 s, and one from apache-airflow, jupyterlab, transformers, boto3,
+pandas, scikit-learn, django, fastapi, requests and numpy (212 packages) 10.5 s. Warm, each took 10–22 ms. npm's
+download-count API rate-limits, so a cold scan of a large npm project can come back with a few packages
+`unverified`; scanning again checks just those.
 
 ## Guard npm installs
 

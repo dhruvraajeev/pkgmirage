@@ -291,6 +291,21 @@ describe("check", () => {
     expect(old).toMatchObject({ verdict: "safe", reasons: [] });
   });
 
+  it("popular packages never wait on the downloads api", async () => {
+    // Under a year old, and over 4 MB: both would normally need download history.
+    const routes = { ...npmPackage("vitest", { firstSeenDaysAgo: 100 }), ...npmPackage("vite") };
+    const padded = await (await routes[`${NPM}/vite`]!()).json<Record<string, unknown>>();
+    padded.readme = "x".repeat(5_000_000);
+    const spy = fakeFetch({ ...routes, [`${NPM}/vite`]: json(padded) });
+    const results = await checkPackages("npm", ["vitest", "vite"]);
+    expect(results.map((r) => [r.name, r.verdict, r.reasons])).toEqual([
+      ["vitest", "safe", []],
+      ["vite", "safe", []],
+    ]);
+    expect(results[1]!.checks.registry).toMatchObject({ status: "found", firstSeenAt: null });
+    expect(spy.mock.calls.map(([url]) => String(url)).filter((url) => url.startsWith(DOWNLOADS))).toEqual([]);
+  });
+
   it("a package with no download history is flagged by downloads, not age", async () => {
     const routes = npmPackage("silent-pkg", { firstSeenDaysAgo: 0, weeklyDownloads: 0 });
     const padded = await (await routes[`${NPM}/silent-pkg`]!()).json<Record<string, unknown>>();
@@ -344,19 +359,23 @@ describe("check", () => {
     ]);
   });
 
-  it("caps concurrent lookups at 10", async () => {
-    let inFlight = 0;
-    let peak = 0;
-    vi.spyOn(globalThis, "fetch").mockImplementation(async () => {
-      peak = Math.max(peak, ++inFlight);
-      await new Promise((resolve) => setTimeout(resolve, 5));
-      inFlight--;
-      return new Response(null, { status: 404 });
-    });
-    const names = Array.from({ length: 25 }, (_, i) => `pkg-${i}`);
-    const results = await checkPackages("pypi", names);
-    expect(results).toHaveLength(25);
-    expect(peak).toBe(10);
+  it("caps concurrent lookups at 10 for npm and 4 for pypi", async () => {
+    // PyPI records run to 12 MB, so fewer are parsed at once.
+    for (const [ecosystem, cap] of [["npm", 10], ["pypi", 4]] as const) {
+      let inFlight = 0;
+      let peak = 0;
+      vi.spyOn(globalThis, "fetch").mockImplementation(async () => {
+        peak = Math.max(peak, ++inFlight);
+        await new Promise((resolve) => setTimeout(resolve, 5));
+        inFlight--;
+        return new Response(null, { status: 404 });
+      });
+      const names = Array.from({ length: 25 }, (_, i) => `pkg-${i}`);
+      const results = await checkPackages(ecosystem, names);
+      expect(results).toHaveLength(25);
+      expect(peak).toBe(cap);
+      vi.restoreAllMocks();
+    }
   });
 
   it("download lookups run at most two at a time", async () => {
@@ -405,11 +424,11 @@ describe("check", () => {
   });
 
   it("large pypi records get the larger size cap", async () => {
-    // botocore's record is 3.8 MB, past the default 2 MB cap.
+    // pydantic-core's record is 12.1 MB, past the default 2 MB cap.
     const routes = pypiPackage("big-py");
     const url = "https://pypi.org/pypi/big-py/json";
     const doc = await (await routes[url]!()).json<{ info: Record<string, unknown> }>();
-    doc.info.description = "x".repeat(3_000_000);
+    doc.info.description = "x".repeat(13_000_000);
     fakeFetch({ [url]: json(doc) });
     const [result] = await checkPackages("pypi", ["big-py"]);
     expect(result!.verdict).toBe("safe");

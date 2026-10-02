@@ -6,7 +6,9 @@ import { lookup, mapLimit, type RegistryCheck } from "./registry";
 import { score, type CheckResult } from "./score";
 import { record, WATCH_BLOCK_DAYS, watchedNames, type Watch } from "./watch";
 
-const MAX_CONCURRENT_LOOKUPS = 10;
+// PyPI records run to 12 MB, and an isolate has 128 MB. Note: four at a time narrows the peak but doesn't bound it:
+// the ten largest records, four at a time, ran out of a 72 MB heap once and always fit in 80 MB (Node, same V8).
+const MAX_CONCURRENT_LOOKUPS: Record<Ecosystem, number> = { npm: 10, pypi: 4 };
 const DAY_MS = 86_400_000;
 
 export async function checkPackages(ecosystem: Ecosystem, names: string[], cache?: KVNamespace, watch?: Watch): Promise<CheckResult[]> {
@@ -16,7 +18,7 @@ export async function checkPackages(ecosystem: Ecosystem, names: string[], cache
   const misses = parsed.filter((p, i) => p.ok && !cached[i]).map((p) => p.name);
 
   const registry = new Map<string, RegistryCheck>(
-    await mapLimit(misses, MAX_CONCURRENT_LOOKUPS, async (name) => [name, await lookup(ecosystem, name)] as const),
+    await mapLimit(misses, MAX_CONCURRENT_LOOKUPS[ecosystem], async (name) => [name, await lookup(ecosystem, name)] as const),
   );
   const found = [...registry].flatMap(([name, check]) => (check.status === "found" ? [{ name, version: check.latestVersion }] : []));
   // Only a young package can be a fresh registration of a watched name, so older ones never touch the watchlist.

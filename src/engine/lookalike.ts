@@ -26,6 +26,8 @@ const PADDING_SUFFIX = /[-_.](?:py|python|node|js|lib)$/;
 // Built once per isolate; names are ordered by popularity, so the array index is the rank.
 const INDEX: Record<Ecosystem, PopularIndex> = { npm: buildIndex(npmPopular), pypi: buildIndex(pypiPopular) };
 
+export const isPopular = (ecosystem: Ecosystem, name: string) => INDEX[ecosystem].names.has(name);
+
 export function findLookalikes(ecosystem: Ecosystem, name: string): string[] {
   const index = INDEX[ecosystem];
   if (index.names.has(name)) return [];

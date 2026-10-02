@@ -25,7 +25,9 @@ describe("normalize", () => {
   });
 
   it("rejects invalid pypi names", () => {
-    for (const name of ["-leading", "trailing_", "has space", "@scope/name", "a/b"]) {
+    expect(normalizeName("pypi", "a".repeat(214))).toMatchObject({ ok: true });
+    // The same 214-character limit as npm: /api/check enforces it for both, and a scan must not send a longer name.
+    for (const name of ["-leading", "trailing_", "has space", "@scope/name", "a/b", "a".repeat(215)]) {
       expect(normalizeName("pypi", name), name).toMatchObject({
         ok: false,
         reason: expect.stringContaining("not a valid PyPI package name"),
