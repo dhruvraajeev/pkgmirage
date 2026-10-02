@@ -220,6 +220,14 @@ describe("watchlist", () => {
     expect(prepare.mock.calls.filter(([sql]) => sql.includes("FROM watch"))).toEqual([]);
   });
 
+  it("a malformed caller address still gets its verdict and counts as a caller", async () => {
+    fakeFetch({ [`${NPM}/ghost-pkg`]: status(404) });
+    const res = await api(["ghost-pkg"], "1:2:3:4:5:6:7:8:9::1");
+    expect(res.status).toBe(200);
+    await settled();
+    expect(await watchRow("ghost-pkg")).toMatchObject({ sightings: 1 });
+  });
+
   it("a block for registering a watched name is cached for ten minutes", async () => {
     await watched("squat-pkg");
     fakeFetch(npmPackage("squat-pkg", { firstSeenDaysAgo: 2 }));

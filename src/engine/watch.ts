@@ -35,7 +35,8 @@ export function caller(ip: string | null): string {
   const groups = head ? head.split(":") : [];
   if (tail !== undefined) {
     const rest = tail ? tail.split(":") : [];
-    groups.push(...Array<string>(8 - groups.length - rest.length).fill("0"), ...rest);
+    // Malformed input (too many groups) must still give a key, not throw.
+    groups.push(...Array<string>(Math.max(0, 8 - groups.length - rest.length)).fill("0"), ...rest);
   }
   return `${groups.slice(0, 4).map((g) => parseInt(g, 16).toString(16)).join(":")}::/64`;
 }
@@ -68,16 +69,24 @@ async function save({ db, key, caller, source }: Watch, results: CheckResult[], 
   const day = new Date(now).toISOString().slice(0, 10);
   const missing = results.filter((r) => r.checks.registry.status === "not_found");
   if (missing.length && !key) console.warn("SIGHTING_KEY is not set; sightings are not counted");
-  const sightings = key ? missing : [];
-  const sign = key ? await signer(key) : null;
-  const seenKeys = await Promise.all(sightings.map((r) => sign!(day, caller, r.ecosystem, r.name)));
+  const sign = key && missing.length ? await signer(key) : null;
+  // Per sighting: today's dedupe key, and the caller's per-name hash (no day in it) for confirmation.
+  const sightings = sign
+    ? await Promise.all(
+        missing.map(async (r) => ({
+          result: r,
+          seen: await sign(day, caller, r.ecosystem, r.name),
+          by: await sign(caller, r.ecosystem, r.name),
+        })),
+      )
+    : [];
 
   // One transaction, so parallel requests from one caller can't both count.
   const insert = db.prepare("INSERT OR IGNORE INTO daily (day, key) VALUES (?, ?)");
   const [, ...inserted] = await db.batch([
     db.prepare("DELETE FROM daily WHERE day < ?").bind(day),
     ...results.map((r) => insert.bind(day, `check:${r.ecosystem}:${r.name}`)),
-    ...seenKeys.map((k) => insert.bind(day, `seen:${k}`)),
+    ...sightings.map(({ seen }) => insert.bind(day, `seen:${seen}`)),
   ]);
   const isNew = (i: number) => inserted[i]!.meta.changes > 0;
   const counted = results.filter((_, i) => isNew(i));
@@ -104,7 +113,7 @@ async function save({ db, key, caller, source }: Watch, results: CheckResult[], 
   }
   // The first caller's hash (no day in it, so the same caller on another day matches) is kept only until a different
   // caller sees the name; then it is erased and the name counts as confirmed.
-  for (const r of sighted) {
+  for (const { result: r, by } of sighted) {
     writes.push(
       db
         .prepare(
@@ -114,7 +123,7 @@ async function save({ db, key, caller, source }: Watch, results: CheckResult[], 
            confirmed_at = COALESCE(confirmed_at, CASE WHEN first_caller IS excluded.first_caller THEN NULL ELSE excluded.last_seen END),
            first_caller = CASE WHEN first_caller = excluded.first_caller THEN first_caller END`,
         )
-        .bind(r.ecosystem, r.name, now, source, await sign!(caller, r.ecosystem, r.name)),
+        .bind(r.ecosystem, r.name, now, source, by),
     );
   }
   if (writes.length) await db.batch(writes);
