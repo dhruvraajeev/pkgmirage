@@ -11,6 +11,7 @@
     "types": "wrangler types"
   },
   "dependencies": {
+    "@modelcontextprotocol/server": "^2.2.0",
     "zod": "^4.6.5"
   },
   "devDependencies": {

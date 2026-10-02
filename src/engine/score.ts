@@ -29,6 +29,8 @@ const RISK = {
 
 const DAY_MS = 86_400_000;
 const MAX_LISTED_ADVISORIES = 3;
+// Advisory IDs come from OSV and end up in an AI's context through the MCP tools, so only ID-shaped ones are repeated.
+const ADVISORY_ID = /^[A-Z]+(?:-[A-Za-z0-9.]+)+$/;
 const REGISTRY_NAMES: Record<Ecosystem, string> = { npm: "npm", pypi: "PyPI" };
 
 export function score(ecosystem: Ecosystem, name: string, checks: Checks, now = Date.now()): CheckResult {
@@ -54,7 +56,7 @@ export function score(ecosystem: Ecosystem, name: string, checks: Checks, now = 
 
   const advisories = osv.status === "ok" ? osv.advisories : [];
   const malware = advisories.find((id) => id.startsWith("MAL-"));
-  if (malware) return result("block", [`known malicious package (${malware})`]);
+  if (malware) return result("block", [`known malicious package (${shownId(malware)})`]);
   // npm swaps removed malware for a "0.0.1-security" placeholder so the name can't be reused.
   if (ecosystem === "npm" && registry.latestVersion?.endsWith("-security")) {
     return result("block", ["taken down by npm for security reasons"]);
@@ -92,6 +94,10 @@ export function score(ecosystem: Ecosystem, name: string, checks: Checks, now = 
 }
 
 function vulnerabilityReason(ids: string[]): string {
-  const listed = ids.slice(0, MAX_LISTED_ADVISORIES).join(", ") + (ids.length > MAX_LISTED_ADVISORIES ? ", ..." : "");
+  const listed = ids.slice(0, MAX_LISTED_ADVISORIES).map(shownId).join(", ") + (ids.length > MAX_LISTED_ADVISORIES ? ", ..." : "");
   return `${ids.length} known ${ids.length === 1 ? "vulnerability" : "vulnerabilities"} in the latest version (${listed})`;
+}
+
+function shownId(id: string): string {
+  return id.length <= 64 && ADVISORY_ID.test(id) ? id : "unrecognized id";
 }

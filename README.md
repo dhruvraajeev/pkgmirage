@@ -43,6 +43,16 @@ package installs, and npm prints the reasons as an `npm notice` line (hidden by 
 off. Only installs and `npm audit` go through: publish, login and search are refused, and npm credentials are never
 forwarded, so private packages won't install through it.
 
+## Connect an AI assistant (MCP)
+
+```bash
+claude mcp add --transport http pkgmirage http://localhost:8787/mcp
+```
+
+`/mcp` is a stateless MCP endpoint with two tools: `check_package` (one name) and `check_packages` (up to 50). The
+assistant gets the same verdicts as the API, with only pkgmirage's own wording: nothing written by package authors
+(descriptions, READMEs) is passed on, and rejected names have unusual characters shown as `\uXXXX` codes.
+
 ## Test
 
 ```bash
