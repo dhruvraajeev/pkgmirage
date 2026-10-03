@@ -97,25 +97,18 @@ names a minute. The answer is cached for up to 5 minutes, never past midnight UT
 
 ## Guard npm installs
 
-```bash
-npm config set registry http://localhost:8787/npm/
-```
-
-Every package npm asks for, including dependencies and downloads listed in a lockfile, is checked first. A blocked
-package fails the install with its reasons and, for copycat names, the package you probably meant. A `caution`
-package installs, and npm prints the reasons as an `npm notice` line (hidden by `--loglevel=warn` or `--silent`). `npm config delete registry` turns it
-off. Only installs and `npm audit` go through: publish, login and search are refused, and npm credentials are never
-forwarded, so private packages won't install through it.
+pkgmirage can stand in for the npm registry. Every package npm downloads, including dependencies and downloads listed
+in a lockfile, is checked first: a blocked package fails the install with its reasons and, for copycat names, the
+package you probably meant; a `caution` package installs and npm prints the reasons. It only handles installs and
+never forwards npm credentials. Turning it on and off, per project or for one command, what works through it, and
+using it in CI: [docs/setup.md](docs/setup.md).
 
 ## Connect an AI assistant (MCP)
 
-```bash
-claude mcp add --transport http pkgmirage http://localhost:8787/mcp
-```
-
 `/mcp` is a stateless MCP endpoint with two tools: `check_package` (one name) and `check_packages` (up to 50). The
 assistant gets the same verdicts as the API, with only pkgmirage's own wording: nothing written by package authors
-(descriptions, READMEs) is passed on, and rejected names have unusual characters shown as `\uXXXX` codes.
+(descriptions, READMEs) is passed on, and rejected names have unusual characters shown as `\uXXXX` codes. Adding it to
+Claude Code or Cursor: [docs/setup.md](docs/setup.md#connect-an-ai-assistant-mcp).
 
 ## Limits
 
