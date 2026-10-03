@@ -54,7 +54,8 @@ describe("cache", () => {
     vi.restoreAllMocks();
     fakeFetch({ ...pypiPackage("requests"), [OSV_URL]: status(503) });
     await checkPackages("pypi", ["requests"], env.CACHE);
-    expect((await env.CACHE.list()).keys).toEqual([]);
+    // young-pkg's archive was read, and that count is kept; its verdict isn't.
+    expect((await env.CACHE.list({ prefix: "res:" })).keys).toEqual([]);
   });
 
   it("a broken cache never fails a check", async () => {

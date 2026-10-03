@@ -110,7 +110,7 @@ function card(verdict) {
 function checksList({ checks }) {
   const list = el("dl");
   const add = (term, value) => list.append(el("dt", term), el("dd", value));
-  const { registry, osv, lookalike, seenInvented } = checks;
+  const { registry, osv, lookalike, code, seenInvented } = checks;
   if (registry.status === "found") {
     add("Registry", "found");
     add("First seen", registry.firstSeenAt ? new Date(registry.firstSeenAt).toLocaleDateString() : "unknown");
@@ -126,13 +126,18 @@ function checksList({ checks }) {
   } else {
     add("Registry", `not looked up (${registry.reason})`);
   }
-  const malware = {
-    ok: () => (osv.advisories.length ? osv.advisories.join(", ") : "none known"),
-    error: () => `couldn't check (${osv.reason})`,
-    skipped: () => "not checked",
-  };
-  add("Malware and vulnerabilities", malware[osv.status]());
+  const malware =
+    osv.status === "ok" ? (osv.advisories.length ? osv.advisories.join(", ") : "none known")
+    : osv.status === "error" ? `couldn't check (${osv.reason})`
+    : "not checked";
+  add("Malware and vulnerabilities", malware);
   add("Close to popular packages", lookalike.length ? lookalike.join(", ") : "none");
+  add(
+    "Code",
+    code.status === "read" ? `read ${code.filesRead} of ${code.files} files${code.partial ? ", some only in part" : ""}`
+    : code.status === "error" ? `couldn't check (${code.reason})`
+    : "not opened",
+  );
   if (seenInvented) add("Seen as an invented name", new Date(seenInvented).toLocaleDateString());
   return list;
 }

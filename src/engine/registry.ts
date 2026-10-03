@@ -12,13 +12,20 @@ export type RegistryCheck =
       hasRepo: boolean;
       weeklyDownloads?: number;
       downloadsError?: string;
+      // What the code check needs from the latest npm version; check.ts takes it off before the verdict is built.
+      archive?: Archive;
     }
   | { status: "not_found" }
   | { status: "error"; reason: string }
   // The name itself was rejected, so no lookup was made.
   | { status: "skipped"; reason: string };
 
-type Found = Extract<RegistryCheck, { status: "found" }>;
+export type Found = Extract<RegistryCheck, { status: "found" }>;
+export interface Archive {
+  url: string;
+  main?: string;
+  installCommands: string[];
+}
 
 // PyPI only offers the full project record (every release's files); the largest seen is pydantic-core at 12.1 MB
 // (2026-10-02), and it grows with every release.
@@ -159,13 +166,18 @@ function parseNpmRecord(doc: Record<string, unknown>): RegistryCheck {
 function parseManifest(manifest: Record<string, unknown>, firstSeenAt: string | null): RegistryCheck {
   if (typeof manifest.version !== "string") return { status: "not_found" };
   const scripts = record(manifest.scripts);
+  const installScripts = NPM_INSTALL_HOOKS.filter((hook) => typeof scripts[hook] === "string");
+  const url = string(record(manifest.dist).tarball);
   return {
     status: "found",
     latestVersion: manifest.version,
     firstSeenAt,
     maintainers: Array.isArray(manifest.maintainers) ? manifest.maintainers.length : 0,
-    installScripts: NPM_INSTALL_HOOKS.filter((hook) => typeof scripts[hook] === "string"),
+    installScripts,
     hasRepo: repoUrl(manifest.repository) !== undefined,
+    ...(url === undefined
+      ? {}
+      : { archive: { url, main: string(manifest.main), installCommands: installScripts.map((hook) => scripts[hook] as string) } }),
   };
 }
 

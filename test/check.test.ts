@@ -31,6 +31,7 @@ describe("check", () => {
         },
         osv: { status: "ok", advisories: [] },
         lookalike: [],
+        code: { status: "skipped" },
       },
       checkedAt: expect.any(String),
     });

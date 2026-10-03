@@ -1,3 +1,4 @@
+import type { CodeCheck } from "./code";
 import type { Ecosystem } from "./normalize";
 import type { OsvCheck } from "./osv";
 import type { RegistryCheck } from "./registry";
@@ -8,6 +9,7 @@ export interface Checks {
   registry: RegistryCheck;
   osv: OsvCheck;
   lookalike: string[];
+  code: CodeCheck;
   // When callers first saw this name not exist, if it is watched and registered since.
   seenInvented?: string;
 }
@@ -24,7 +26,7 @@ export interface CheckResult {
 
 // Starting points, not tuned yet: loose enough that established small packages pass, tight enough to
 // catch a freshly registered squat. Revisit once there is accuracy data.
-const RISK = {
+export const RISK = {
   newPackageDays: 30,
   minWeeklyDownloads: 100,
 };
@@ -36,7 +38,7 @@ const ADVISORY_ID = /^[A-Z]+(?:-[A-Za-z0-9.]+)+$/;
 const REGISTRY_NAMES: Record<Ecosystem, string> = { npm: "npm", pypi: "PyPI" };
 
 export function score(ecosystem: Ecosystem, name: string, checks: Checks, now = Date.now()): CheckResult {
-  const { registry, osv, lookalike } = checks;
+  const { registry, osv, lookalike, code } = checks;
   const result = (verdict: Verdict, reasons: string[]): CheckResult => ({
     name,
     ecosystem,
@@ -78,6 +80,7 @@ export function score(ecosystem: Ecosystem, name: string, checks: Checks, now = 
     strong.push(`only ${registry.weeklyDownloads} downloads last week`);
   }
   if (osv.status === "error") strong.push(`unverified: malware check unavailable (${osv.reason})`);
+  if (code.status === "error") strong.push(`unverified: code check unavailable (${code.reason})`);
   if (advisories.length) strong.push(vulnerabilityReason(advisories));
   // Plenty of established packages have one maintainer or no repo link (@types/node lists one maintainer),
   // so these only add context when something else already looks off.

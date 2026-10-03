@@ -55,6 +55,11 @@ export const osv =
 
 interface NpmOptions {
   version?: string;
+  main?: string;
+  // Where the manifest says the archive is; null for a manifest without one.
+  tarball?: string | null;
+  // The latest version's archive; a package.json and an index.js unless a test gives its own.
+  archive?: Route;
   firstSeenDaysAgo?: number;
   maintainers?: number;
   scripts?: Record<string, string>;
@@ -81,6 +86,8 @@ export function npmPackage(name: string, opts: NpmOptions = {}): Record<string, 
     name,
     version: opts.version ?? "1.0.0",
     scripts: opts.scripts ?? { test: "node test" },
+    ...(opts.main === undefined ? {} : { main: opts.main }),
+    ...(opts.tarball === null ? {} : { dist: { tarball: opts.tarball ?? tarballUrl(name, opts.version ?? "1.0.0") } }),
     maintainers: Array.from({ length: opts.maintainers ?? 2 }, (_, i) => ({ name: `maintainer${i}` })),
     ...(opts.repo === false ? {} : { repository: { type: "git", url: `git+https://github.com/example/${name}.git` } }),
   };
@@ -95,6 +102,8 @@ export function npmPackage(name: string, opts: NpmOptions = {}): Record<string, 
   return {
     [path]: json(record),
     [`${path}/latest`]: json(manifest),
+    [tarballUrl(name, manifest.version)]:
+      opts.archive ?? (async () => new Response(await tgz([{ path: "package/package.json", body: "{}" }, { path: "package/index.js", body: "" }]))),
     [`https://api.npmjs.org/downloads/range/last-year/${name}`]: json({
       package: name,
       downloads: downloadHistory(firstSeenDaysAgo, opts.weeklyDownloads ?? 1_000_000),
@@ -171,4 +180,70 @@ export async function rpcAnswer(res: Response) {
   const text = await res.text();
   const body = text.startsWith("{") ? text : text.split("\n").find((line) => line.startsWith("data: "))!.slice(6);
   return JSON.parse(body) as { result?: Record<string, unknown>; error?: { code: number; message: string }; id?: unknown };
+}
+
+export const tarballUrl = (name: string, version: string) => `https://registry.npmjs.org/${name}/-/${name.replace(/^@[^/]+\//, "")}-${version}.tgz`;
+
+export interface TarEntry {
+  path: string;
+  body?: string | Uint8Array;
+  // "0" file (default), "1" hard link, "2" symlink, "5" folder, "x" pax, "L" GNU long name.
+  type?: string;
+  // Raw header fields, to build broken headers.
+  size?: string;
+  prefix?: string;
+  checksum?: string;
+}
+
+// A tar archive as npm publishes one (ustar headers, 512-byte blocks, two zero blocks at the end).
+export function tar(entries: TarEntry[], { end = true } = {}): Uint8Array {
+  const blocks: Uint8Array[] = [];
+  for (const entry of entries) {
+    const body = typeof entry.body === "string" ? new TextEncoder().encode(entry.body) : (entry.body ?? new Uint8Array(0));
+    blocks.push(tarHeader(entry, body.length), body, new Uint8Array((512 - (body.length % 512)) % 512));
+  }
+  if (end) blocks.push(new Uint8Array(1024));
+  return concat(blocks);
+}
+
+export function tarHeader(entry: TarEntry, length: number): Uint8Array {
+  const header = new Uint8Array(512);
+  const put = (at: number, text: string) => header.set(new TextEncoder().encode(text), at);
+  put(0, entry.path);
+  put(100, "0000644\0");
+  put(108, "0000000\0");
+  put(116, "0000000\0");
+  put(124, entry.size ?? `${length.toString(8).padStart(11, "0")}\0`);
+  put(136, "00000000000\0");
+  put(156, entry.type ?? "0");
+  put(257, "ustar\0" + "00");
+  if (entry.prefix) put(345, entry.prefix);
+  put(148, "        ");
+  const sum = header.reduce((a, b) => a + b, 0);
+  put(148, entry.checksum ?? `${sum.toString(8).padStart(6, "0")}\0 `);
+  return header;
+}
+
+export async function gzip(bytes: Uint8Array): Promise<Uint8Array> {
+  return new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(new CompressionStream("gzip"))).arrayBuffer());
+}
+
+export const tgz = (entries: TarEntry[], opts?: { end?: boolean }) => gzip(tar(entries, opts));
+
+// A pax record: "<length> path=<value>\n", where the length counts itself.
+export function paxRecord(key: string, value: string): string {
+  const rest = ` ${key}=${value}\n`;
+  let length = rest.length + 1;
+  while (String(length).length + rest.length !== length) length++;
+  return length + rest;
+}
+
+export function concat(parts: Uint8Array[]): Uint8Array {
+  const out = new Uint8Array(parts.reduce((n, p) => n + p.length, 0));
+  let at = 0;
+  for (const part of parts) {
+    out.set(part, at);
+    at += part.length;
+  }
+  return out;
 }

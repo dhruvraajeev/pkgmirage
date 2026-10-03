@@ -227,7 +227,14 @@ describe("watchlist", () => {
     fakeFetch(Object.assign({}, ...names.map((name) => npmPackage(name, { firstSeenDaysAgo: 2 }))));
     const prepare = vi.spyOn(env.DB, "prepare");
     const results = await checkPackages("npm", names, env.CACHE, watchFor(env, undefined, "api"));
-    expect(results[110]).toMatchObject({ verdict: "block", reasons: [expect.stringMatching(/^registered after/), "first seen 2 days ago"] });
+    expect(results[110]).toMatchObject({
+      verdict: "block",
+      reasons: [
+        expect.stringMatching(/^registered after/),
+        "first seen 2 days ago",
+        "unverified: code check unavailable (too many packages in one request)",
+      ],
+    });
     expect(results.filter((r) => r.verdict === "block")).toHaveLength(1);
     // D1 allows 100 bound parameters per query.
     const reads = prepare.mock.calls.map(([sql]) => sql).filter((sql) => sql.includes("FROM watch"));

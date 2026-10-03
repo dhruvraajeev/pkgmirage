@@ -1,7 +1,7 @@
 import { env } from "cloudflare:test";
 import { exports } from "cloudflare:workers";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { fakeFetch, npmPackage, OSV_URL, osv, status } from "./fakes";
+import { fakeFetch, npmPackage, OSV_URL, osv, status, tgz } from "./fakes";
 
 afterEach(async () => {
   vi.restoreAllMocks();
@@ -140,13 +140,12 @@ describe("guard", () => {
   });
 
   it("warns on tarballs of caution packages", async () => {
-    fakeFetch({
-      ...myTool,
-      [`${NPM}/my-tool/-/my-tool-1.0.0.tgz`]: tarball("tool-bytes"),
-    });
+    // The code check opens the same archive, so it has to be a real one.
+    const archive = await tgz([{ path: "package/package.json", body: "{}" }, { path: "package/setup.js", body: "" }]);
+    fakeFetch({ ...myTool, [`${NPM}/my-tool/-/my-tool-1.0.0.tgz`]: () => new Response(archive) });
     const res = await guard("/my-tool/-/my-tool-1.0.0.tgz");
     expect(res.status).toBe(200);
-    expect(await res.text()).toBe("tool-bytes");
+    expect(new Uint8Array(await res.arrayBuffer())).toEqual(archive);
     expect(res.headers.get("npm-notice")).toBe(MY_TOOL_NOTICE);
     expect(res.headers.get("cache-control")).toBe("no-store");
   });

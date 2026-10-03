@@ -14,7 +14,9 @@ A failed check is never reported as `safe`.
 
 Checks use the npm and PyPI registries, [OSV](https://osv.dev) for malware and vulnerabilities, and lists of
 the 10,000 most-downloaded packages on each registry for copycat detection (`node scripts/popular.mjs`
-refreshes them). Results are cached in Workers KV.
+refreshes them). npm packages with install scripts, and unpopular ones that already look risky, are also opened: the
+latest version's archive is read as bytes (never run) within size and file-count caps, and one that can't be read is
+`unverified`. Results are cached in Workers KV.
 
 Names checked and found not to exist go on a watchlist in D1. A name counts once per caller per day, and needs
 callers on two different networks before it is trusted; if such a name is registered later, the new package is

@@ -49,7 +49,7 @@ npm install is-number --registry=https://registry.npmjs.org/
 | `caution` | installs, and npm prints the reasons: `npm notice pkgMirage caution for core-js: runs install scripts (postinstall); only one maintainer` (`--loglevel=warn` or `--silent` hide it) |
 | `block` | the install stops with `npm error code E403` and the reasons: `pkgMirage blocked lodahs: known malicious package (MAL-2025-25502). Did you mean: lodash?` |
 
-A check that couldn't be completed (registry, malware or download lookup failing) is a `caution` with an
+A check that couldn't be completed (a registry, malware, download or package-archive lookup failing) is a `caution` with an
 `unverified:` reason, never `safe`. If pkgmirage itself can't be reached, npm retries for about a minute and then
 fails (`ECONNREFUSED`, or `ECONNRESET` at once if it goes away mid-install); nothing is installed and it doesn't
 fall back to npm on its own.
