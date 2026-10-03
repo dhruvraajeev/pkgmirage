@@ -30,7 +30,7 @@ echo "SIGHTING_KEY=$(openssl rand -hex 32)" > .dev.vars
 npm run dev
 ```
 
-To run the nightly job by hand: `npx wrangler dev --test-scheduled`, then open `/__scheduled`.
+Then open `localhost:8787` to check a package in the browser. To run the nightly job by hand: `npx wrangler dev --test-scheduled`, then open `/__scheduled`.
 
 ```bash
 curl -s localhost:8787/api/check \

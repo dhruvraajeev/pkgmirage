@@ -1,0 +1,5 @@
+# The page loads only its own files and talks only to its own /api/check; data is never turned into markup.
+/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; require-trusted-types-for 'script'; trusted-types 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer

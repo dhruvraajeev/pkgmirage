@@ -1,0 +1,21 @@
+/* Functional only: the visual design comes later. System colors keep light and dark schemes readable. */
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.5; }
+body { max-width: 40rem; margin: 0 auto; padding: 1rem; background: Canvas; color: CanvasText; overflow-wrap: anywhere; }
+fieldset { border: 0; padding: 0; margin: 0 0 1rem; }
+legend { font-weight: 600; }
+fieldset label { margin-right: 1rem; }
+form > label { display: block; font-weight: 600; }
+.row { display: flex; gap: 0.5rem; }
+input, button { font: inherit; padding: 0.4rem 0.6rem; }
+#name { flex: 1; min-width: 0; }
+:focus-visible { outline: 3px solid Highlight; outline-offset: 2px; }
+.error { font-weight: 600; border-left: 0.4rem solid #c62828; padding-left: 0.6rem; }
+.card { border: 1px solid GrayText; border-left-width: 0.5rem; padding: 0 1rem; }
+.card.safe { border-left-color: #2e7d32; }
+.card.caution { border-left-color: #ef8f00; }
+.card.block { border-left-color: #c62828; }
+.verdict { font-weight: 700; }
+.suggestions button { margin: 0.25rem 0; }
+dl { display: grid; grid-template-columns: auto 1fr; gap: 0.25rem 1rem; }
+dd { margin: 0; }
+.checked-at { color: GrayText; }

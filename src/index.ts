@@ -9,7 +9,8 @@ import { handleStats } from "./stats";
 const NPM_WINDOW_SECONDS = 10;
 const CHECK_WINDOW_SECONDS = 60;
 const SCAN_WINDOW_SECONDS = 60;
-// Every response is JSON or a proxied npm file, never a page: nothing may sniff, frame or load from it.
+// Every Worker response is JSON or a proxied npm file, never a page: nothing may sniff, frame or load from it. The
+// website's files are served before the Worker runs and get their headers from public/_headers.
 const SECURITY_HEADERS = {
   "x-content-type-options": "nosniff",
   "content-security-policy": "default-src 'none'; frame-ancestors 'none'",

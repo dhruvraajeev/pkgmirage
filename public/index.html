@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>pkgMirage: check a package before you install it</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>pkgMirage</h1>
+    <p>Check a package name before you install it: does it exist, is it known malware, is it a copycat of a popular package?</p>
+  </header>
+  <main>
+    <form id="check">
+      <fieldset>
+        <legend>Registry</legend>
+        <label><input type="radio" name="ecosystem" value="npm" checked> npm</label>
+        <label><input type="radio" name="ecosystem" value="pypi"> PyPI</label>
+      </fieldset>
+      <label for="name">Package name</label>
+      <div class="row">
+        <input id="name" name="name" required autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button type="submit">Check</button>
+      </div>
+    </form>
+    <noscript><p>This page needs JavaScript. The same check works without it: <code>POST /api/check</code>.</p></noscript>
+    <p id="status" role="status"></p>
+    <section id="result" aria-label="Result"></section>
+  </main>
+</body>
+</html>

@@ -3,6 +3,9 @@
   "name": "pkgmirage",
   "main": "src/index.ts",
   "compatibility_date": "2026-08-15",
+  // The website: files are served before the Worker runs, so the Worker only sees paths that aren't files. Only the
+  // tests use the binding, to read the files the way the platform serves them.
+  "assets": { "directory": "./public", "binding": "ASSETS" },
   "observability": { "enabled": true },
   "kv_namespaces": [{ "binding": "CACHE" }],
   // No database_id until the database is created on the production account; local dev and tests don't need one.
