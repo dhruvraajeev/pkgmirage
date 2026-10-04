@@ -104,11 +104,13 @@ export function npmPackage(name: string, opts: NpmOptions = {}): Record<string, 
     },
   };
   const path = `https://registry.npmjs.org/${name.replace("/", "%2F")}`;
+  // The default archive holds an empty copy of each file the install scripts run, as a real package would.
+  const ran = Object.values(manifest.scripts).flatMap((command) => [...command.matchAll(/\bnode (\S+\.js)\b/g)].map((m) => ({ path: `package/${m[1]}`, body: "" })));
   return {
     [path]: json(record),
     [`${path}/latest`]: json(manifest),
     [tarballUrl(name, manifest.version)]:
-      opts.archive ?? (async () => new Response(await tgz([{ path: "package/package.json", body: "{}" }, { path: "package/index.js", body: "" }]))),
+      opts.archive ?? (async () => new Response(await tgz([{ path: "package/package.json", body: "{}" }, { path: "package/index.js", body: "" }, ...ran]))),
     [`https://api.npmjs.org/downloads/range/last-year/${name}`]: json({
       package: name,
       downloads: downloadHistory(firstSeenDaysAgo, opts.weeklyDownloads ?? 1_000_000),

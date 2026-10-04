@@ -12,14 +12,18 @@ verdict with plain-English reasons and, for copycat names, the package you proba
 
 A failed check is never reported as `safe`.
 
-Checks use the npm and PyPI registries, [OSV](https://osv.dev) for malware and vulnerabilities, and lists of
-the 10,000 most-downloaded packages on each registry for copycat detection (`node scripts/popular.mjs`
-refreshes them). npm packages with install scripts, and unpopular ones that already look risky, are also opened: the
-latest version's archive is read as bytes (never run) within size and file-count caps, and one that can't be read is
-`unverified`. The files its install scripts run are checked for shell commands, reads of SSH keys, npm tokens, cloud
-credentials or the whole environment, sends to raw IP addresses, chat webhooks or paste sites, code built from strings
-and obfuscation; the rest of its code only for those sends. Reasons are pkgmirage's own words, never text from the
-package. Results are cached in Workers KV.
+Checks use the npm and PyPI registries, [OSV](https://osv.dev) for malware and vulnerabilities, and lists of the
+10,000 most-downloaded packages on each registry for copycat detection (`node scripts/popular.mjs` refreshes them).
+npm packages with install scripts, and unpopular ones that already look risky, are also opened: the latest version's
+archive is read as bytes (never run) within size and file-count caps, and one that can't be read is `unverified`.
+Install scripts are taken from the registry (what `npm install` runs) and from the archive's own `package.json` (what
+an install from a lockfile runs), and a difference between the two is a reason in itself. The files they run (`node`,
+`sh` and `./` files, scripts started with `npm run`, `binding.gyp` and its commands, and local modules those load, at
+least three levels deep) count as install-time code; one that can't be read makes the package `unverified`.
+Install-time code is checked for shell commands, reads of SSH keys, npm tokens, cloud credentials or the whole
+environment, sends to raw IP addresses, chat webhooks or paste sites, code built from strings and obfuscation; the
+rest of its code only for sends to raw IP addresses and chat webhooks. Reasons are pkgmirage's own words, never text
+from the package. Results are cached in Workers KV.
 
 Names checked and found not to exist go on a watchlist in D1. A name counts once per caller per day, and needs
 callers on two different networks before it is trusted; if such a name is registered later, the new package is

@@ -96,6 +96,8 @@ export function score(ecosystem: Ecosystem, name: string, checks: Checks, now = 
   if (registry.installScripts.length) strong.push(`runs install scripts (${registry.installScripts.join(", ")})`);
   // A package that suddenly gains an install script is the shape of a hijacked release.
   if (registry.installScriptAdded) strong.push("install script added in the latest version");
+  // `npm install` runs the scripts the registry lists, but an install from a lockfile runs the archive's own.
+  if (code.status === "read" && code.undeclaredScripts) strong.push("install scripts in its archive differ from the registry's");
   const findings = code.status === "read" ? code.findings : [];
   const codeReasons = (["install", "package"] as const).flatMap((where) => findingReason(where, findings));
   strong.push(...codeReasons);
@@ -105,6 +107,7 @@ export function score(ecosystem: Ecosystem, name: string, checks: Checks, now = 
   }
   if (osv.status === "error") strong.push(`unverified: malware check unavailable (${osv.reason})`);
   if (code.status === "error") strong.push(`unverified: code check unavailable (${code.reason})`);
+  if (code.status === "read" && code.unreadScriptFiles) strong.push("unverified: couldn't read every file its install scripts run");
   if (advisories.length) strong.push(vulnerabilityReason(advisories));
   // Plenty of established packages have one maintainer or no repo link (@types/node lists one maintainer),
   // so these only add context when something else already looks off.

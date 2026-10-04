@@ -42,6 +42,26 @@ describe("mcp", () => {
     }
   });
 
+  it("tells the assistant what each verdict covers and what to do with it", async () => {
+    const { result } = await rpc("tools/list", {}, "modern");
+    const [one, many] = result!.tools as { name: string; description: string }[];
+    const phrases = [
+      // What is checked, including the code.
+      "registry", "malware", "popular package names", "reads their code", "never runs it",
+      // What to do with each verdict.
+      "safe: install as usual", "Tell the user the reasons and let them decide before installing",
+      "block: don't install it", "Offer the suggested names instead",
+      // Every caution sign and every block cause, in the reasons' own terms.
+      "brand new", "very few downloads", "install scripts or one added in the latest version", "known vulnerabilities",
+      "a name close to a popular package", "something its code does", "running shell commands at install", "a check couldn't be completed",
+      "doesn't exist", "known malware or was taken down", "copies a popular package's name",
+      "look-alike or invisible characters", "registered after being seen as an invented name",
+      "runs commands or reads secrets and sends data out",
+    ];
+    for (const phrase of phrases) expect(one!.description, phrase).toContain(phrase);
+    expect(many!.description).toBe("Same as check_package for 1-50 packages in one call (e.g. a project's dependencies), before installing them.");
+  });
+
   it("refuses GET", async () => {
     const res = await exports.default.fetch("http://localhost/mcp", { headers: { accept: "text/event-stream" } });
     expect(res.status).toBe(405);

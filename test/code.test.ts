@@ -138,7 +138,7 @@ describe("code", () => {
       }),
     );
     // package.json, a-c whole and d in part up to the budget, then both install files and main; e and the README not.
-    expect(code).toEqual({ status: "read", files: 10, filesRead: 8, bytesRead: 4 * MIB + 30, partial: true, missingScriptFiles: 0, findings: [] });
+    expect(code).toEqual({ status: "read", files: 10, filesRead: 8, bytesRead: 4 * MIB + 30, partial: true, unreadScriptFiles: 0, undeclaredScripts: 0, findings: [] });
   });
 
   it("counts a file an install script runs that isn't in the archive as missing", async () => {
@@ -146,16 +146,148 @@ describe("code", () => {
       "fresh-pkg",
       fresh("fresh-pkg", await tgz([PACKAGE_JSON]), { scripts: { postinstall: "node scripts/setup.js && node-gyp rebuild" } }),
     );
-    expect(code).toMatchObject({ status: "read", missingScriptFiles: 1 });
-    expect(result.reasons.some((r) => r.startsWith("unverified"))).toBe(false);
+    expect(code).toMatchObject({ status: "read", unreadScriptFiles: 1 });
+    // What runs at install wasn't all read, so the package can't be called checked.
+    expect(result.reasons).toContain("unverified: couldn't read every file its install scripts run");
     vi.restoreAllMocks();
 
-    // Not a file node runs: another program's name ending in "node", and node reading its script from stdin.
-    for (const postinstall of ["xnode setup.js", "node - setup.js"]) {
+    // Not a file node runs: another program's name ending in "node", a native module's file name, and node reading its
+    // script from stdin.
+    for (const postinstall of ["xnode setup.js", "my-node setup.js", "fetch --artifact build/re2.node --host-var MIRROR", "node - setup.js"]) {
       const { code } = await codeOf("fresh-pkg", fresh("fresh-pkg", await tgz([PACKAGE_JSON]), { scripts: { postinstall } }));
-      expect(code, postinstall).toMatchObject({ status: "read", missingScriptFiles: 0 });
+      expect(code, postinstall).toMatchObject({ status: "read", unreadScriptFiles: 0, undeclaredScripts: 0 });
       vi.restoreAllMocks();
     }
+  });
+
+  it("reads the archive's own install scripts too, and says when they differ from the registry's", async () => {
+    // The registry lists nothing at install; the archive's package.json, which npm runs, has a postinstall.
+    const packed = JSON.stringify({ scripts: { postinstall: "node hidden.js" } });
+    const archive = await tgz([{ path: "package/package.json", body: packed }, { path: "package/hidden.js", body: `${SHELL}\n${RAW_IP}` }]);
+    const { result, code } = await codeOf("fresh-pkg", fresh("fresh-pkg", archive, { scripts: { test: "x" } }));
+    expect(code).toMatchObject({ status: "read", undeclaredScripts: 1, unreadScriptFiles: 0 });
+    expect(result.verdict).toBe("block");
+    expect(result.reasons).toContain("install scripts in its archive differ from the registry's");
+    vi.restoreAllMocks();
+
+    // The registry adds `node-gyp rebuild` for a binding.gyp; an archive without the script is not undeclared.
+    const gyp = await tgz([PACKAGE_JSON, { path: "package/binding.gyp", body: "{}" }]);
+    const { code: native } = await codeOf("fresh-pkg", fresh("fresh-pkg", gyp, { scripts: { install: "node-gyp rebuild" } }));
+    expect(native).toMatchObject({ status: "read", undeclaredScripts: 0, unreadScriptFiles: 0, findings: [] });
+  });
+
+  it("follows what install-time code loads: local modules, shell files, npm run and binding.gyp", async () => {
+    const run = async (scripts: Record<string, string>, entries: TarEntry[]) => {
+      const { result, code } = await codeOf("fresh-pkg", fresh("fresh-pkg", await tgz([PACKAGE_JSON, ...entries]), { scripts }));
+      vi.restoreAllMocks();
+      return { result, code: code as Extract<CodeCheck, { status: "read" }> };
+    };
+    // The secret read and the send split across files, the second loaded with a path relative to the first.
+    const split = await run({ postinstall: "node scripts/install.js" }, [
+      { path: "package/lib/send.js", body: RAW_IP },
+      { path: "package/scripts/install.js", body: `require("../lib/collect"); import x from "./util.mjs"; import("./later.js");` },
+      { path: "package/lib/collect.js", body: `${NPMRC}\nrequire("./send")` },
+      { path: "package/scripts/util.mjs", body: "" },
+      { path: "package/scripts/later.js", body: "" },
+    ]);
+    expect(split.result.verdict).toBe("block");
+    expect(split.code.findings).toEqual([
+      { id: "npmrc", where: "install" },
+      { id: "raw-ip", where: "install" },
+    ]);
+    expect(split.code.filesRead).toBe(6);
+    // Read as install-time code only when loaded: later.js would be read anyway, as package code, if it came first.
+    expect(split.code.findings.every((f) => f.where === "install")).toBe(true);
+
+    // Bare module names come from node_modules, and a path never climbs out of the package.
+    const contained = await run({ postinstall: "node scripts/install.js" }, [
+      { path: "package/scripts/install.js", body: `require("helper"); require("../../outside");` },
+      { path: "package/scripts/helper.js", body: NPMRC },
+      { path: "package/outside.js", body: NPMRC },
+    ]);
+    expect(contained.code.findings).toEqual([]);
+
+    // A loaded module is install-time code, so it is read whole or not at all.
+    const big = await run({ postinstall: "node install.js" }, [
+      // Before the file that loads it, so it is only known to be install-time code on a later pass.
+      { path: "package/bundle.js", body: new Uint8Array(MIB + 1) },
+      { path: "package/install.js", body: `require("./bundle")` },
+    ]);
+    expect(big.code).toEqual(unverified("install-time file too large"));
+
+    // A shell file runs shell commands, and the files it runs are followed too; `npm run` brings its pre script.
+    const shell = await run({ preinstall: "npm run --silent setup", presetup: "/bin/sh scripts/pre.sh", setup: "sh scripts/setup.sh" }, [
+      { path: "package/scripts/setup.sh", body: "node ./bin/fetch.js\n" },
+      { path: "package/scripts/pre.sh", body: "" },
+      { path: "package/bin/fetch.js", body: PASTE },
+    ]);
+    expect(shell.code).toMatchObject({ unreadScriptFiles: 0, filesRead: 4 });
+    expect(shell.code.findings).toEqual([
+      { id: "shell", where: "install" },
+      { id: "paste", where: "install" },
+    ]);
+    expect(shell.result.verdict).toBe("block");
+    // A script named like an object's own property is only a script if the package has one.
+    const odd = await run({ postinstall: "npm run constructor && npm run toString" }, []);
+    expect(odd.code).toMatchObject({ status: "read", unreadScriptFiles: 0 });
+
+    // A file run directly is shell unless its shebang names node.
+    const direct = await run({ postinstall: "./configure && ./bin/setup" }, [
+      { path: "package/configure", body: "#!/usr/bin/env bash\necho ok" },
+      { path: "package/bin/setup", body: `#!/usr/bin/env node\nrequire("../lib/token")` },
+      { path: "package/lib/token.js", body: NPMRC },
+    ]);
+    // configure is shell; bin/setup is node, so the module it loads is followed.
+    expect(direct.code).toMatchObject({
+      unreadScriptFiles: 0,
+      findings: [
+        { id: "shell", where: "install" },
+        { id: "npmrc", where: "install" },
+      ],
+    });
+
+    // binding.gyp is read whole, and node scripts its commands run are followed.
+    const gyp = await run({ install: "node-gyp rebuild" }, [
+      { path: "package/binding.gyp", body: `{ "targets": [{ "sources": ["<!@(node tools/list.js)"] }] }` },
+      { path: "package/tools/list.js", body: WEBHOOK },
+    ]);
+    expect(gyp.code.findings).toEqual([{ id: "webhook", where: "install" }]);
+
+    // Other packages' files and names built at run time can't be read here, so they don't count as unread.
+    const elsewhere = await run({ postinstall: `node node_modules/esbuild/install.js && node $INIT_CWD/x.js && node -e "require('esbuild/install')"` }, []);
+    expect(elsewhere.code.unreadScriptFiles).toBe(0);
+
+    // node by its full path, inside a subshell.
+    const path = await run({ postinstall: "(/usr/local/bin/node setup.js)" }, [{ path: "package/setup.js", body: NPMRC }]);
+    expect(path.code.findings).toEqual([{ id: "npmrc", where: "install" }]);
+
+    // A "." argument is a folder, not the shell's source command.
+    const dot = await run({ install: "node ./build.cjs -P . -D src/lib" }, [{ path: "package/build.cjs", body: "" }]);
+    expect(dot.code.unreadScriptFiles).toBe(0);
+  });
+
+  it("follows a module the byte budget skipped, and counts it once", async () => {
+    // package.json and a.js spend the 4 MiB budget before lib/x.js comes up, so only a later pass reads it, as
+    // install-time code.
+    const archive = await tgz([
+      PACKAGE_JSON,
+      { path: "package/a.js", body: new Uint8Array(4 * MIB) },
+      { path: "package/lib/x.js", body: NPMRC },
+      { path: "package/install.js", body: `require("./lib/x")` },
+    ]);
+    const { code } = await codeOf("fresh-pkg", fresh("fresh-pkg", archive, { scripts: { postinstall: "node install.js" } }));
+    const installJs = `require("./lib/x")`.length;
+    expect(code).toMatchObject({ status: "read", filesRead: 4, bytesRead: 4 * MIB + installJs + NPMRC.length, findings: [{ id: "npmrc", where: "install" }] });
+  });
+
+  it("follows loaded modules three levels deep and no further", async () => {
+    // Each file comes before the one that loads it, so every level takes a pass of its own.
+    // f3, three levels down, reads npm tokens; f4 runs shell commands, one level too deep to count as install-time.
+    const extra = [``, ``, ``, NPMRC, SHELL, ``];
+    const chain = Array.from({ length: 6 }, (_, i) => ({ path: `package/f${i}.js`, body: `require("./f${i + 1}")\n${extra[i]}` })).reverse();
+    const { code } = await codeOf("fresh-pkg", fresh("fresh-pkg", await tgz([PACKAGE_JSON, ...chain]), { scripts: { postinstall: "node f0.js" } }));
+    // f0 in the first pass, f1 to f3 in the next three; f4 and f5 are library code, and not a reason to doubt the read.
+    expect(code).toMatchObject({ status: "read", unreadScriptFiles: 0, findings: [{ id: "npmrc", where: "install" }] });
   });
 
   it("never reads links or paths outside the package, and finds files under any top folder", async () => {
@@ -169,7 +301,7 @@ describe("code", () => {
       { path: "pkg/e.js", body: "x" },
     ]);
     const { code } = await codeOf("fresh-pkg", fresh("fresh-pkg", archive, { scripts }));
-    expect(code).toEqual({ status: "read", files: 4, filesRead: 2, bytesRead: 3, partial: false, missingScriptFiles: 4, findings: [] });
+    expect(code).toEqual({ status: "read", files: 4, filesRead: 2, bytesRead: 3, partial: false, unreadScriptFiles: 4, undeclaredScripts: 0, findings: [] });
   });
 
   it("honours pax paths, gnu long names and the ustar prefix", async () => {
@@ -184,7 +316,7 @@ describe("code", () => {
       { path: "c.js", prefix: "package/prefixed", body: "c" },
     ]);
     const { code } = await codeOf("fresh-pkg", fresh("fresh-pkg", archive, { scripts }));
-    expect(code).toMatchObject({ status: "read", files: 4, missingScriptFiles: 0 });
+    expect(code).toMatchObject({ status: "read", files: 4, unreadScriptFiles: 0, undeclaredScripts: 0 });
   });
 
   it("refuses malformed archives as unverified", async () => {
@@ -282,20 +414,22 @@ describe("code", () => {
     expect(findingsOf(inline!)).toEqual([{ id: "shell", where: "install" }]);
   });
 
-  it("checks package code for outbound sends only", async () => {
+  it("checks package code for sends to raw IP addresses and chat webhooks only", async () => {
     const everything = [SHELL, NPMRC, `eval(x`, `send(JSON.stringify(process.env)`, ";".repeat(20_000)].join("\n");
     const [result, inBoth] = await checkAll([
       {
         main: `${everything}\n${WEBHOOK}`,
         other: `${everything}\n${RAW_IP}\n${PASTE}`,
-        packageJson: JSON.stringify({ name: "x", scripts: { postinstall: `node -e "require('child_process')"` }, url: "http://203.0.113.9/" }),
+        // package.json is read for its scripts only; the rest of it is never checked.
+        packageJson: JSON.stringify({ name: "x", url: "http://203.0.113.9/", description: "uses child_process and ~/.npmrc" }),
       },
       { install: PASTE, main: RAW_IP },
     ]);
+    // A paste-site address in package code is a mention more often than a send (a link in a comment, the public-suffix
+    // list), so only install-time code is checked for it.
     expect(findingsOf(result!)).toEqual([
       { id: "raw-ip", where: "package" },
       { id: "webhook", where: "package" },
-      { id: "paste", where: "package" },
     ]);
     expect(result!.verdict).toBe("caution");
     // Install-time findings come first.
@@ -373,7 +507,7 @@ describe("code", () => {
   it("a code block ranks below malware and a registered watched name, and above a look-alike name", () => {
     const read = (findings: Finding[]): CodeCheck => ({
       status: "read",
-      ...{ files: 1, filesRead: 1, bytesRead: 1, partial: false, missingScriptFiles: 0 },
+      ...{ files: 1, filesRead: 1, bytesRead: 1, partial: false, unreadScriptFiles: 0, undeclaredScripts: 0 },
       findings,
     });
     const checks = (extra: Partial<Checks> = {}): Checks => ({
@@ -418,7 +552,7 @@ describe("code", () => {
       ],
       ["install script reads cloud credentials and sends data to a paste site"],
       ["install script reads all environment variables"],
-      ["package code sends data to a raw IP address, a chat webhook and a paste site"],
+      ["package code sends data to a raw IP address and a chat webhook"],
       ["install script is obfuscated", "package code sends data to a chat webhook"],
       ["install script runs shell commands and reads npm tokens"],
     ]);
@@ -427,7 +561,8 @@ describe("code", () => {
   it("patterns run in time linear in the text", async () => {
     // Near-misses of every pattern, repeated over a 1 MiB line: a backtracking pattern takes seconds to minutes here.
     const near = ["JSON.stringify( ", "Object.keys( process.env ", "eval ", "new Function ", "http://203.0.113.", "https://1", ".ssh.",
-      "discord.com/api/", "hooks.slack.com", "runInContext ", "id_", "require('", "node -", "node --x "];
+      "discord.com/api/", "hooks.slack.com", "runInContext ", "id_", "require('", "node -", "node --x ", "npm run -x ", "import '.",
+      "from \"./", "<!(", "sh -", "./"];
     const line = (part: string) => part.repeat(Math.ceil(MIB / part.length)).slice(0, MIB);
     for (const part of near) {
       const started = Date.now();
@@ -569,11 +704,11 @@ describe("code", () => {
   it("reads each version once: a cached read is reused and a new version is read again", async () => {
     const archive = await tgz([PACKAGE_JSON]);
     // A read cached before findings existed holds none, so it is never used.
-    const old = { status: "read", files: 1, filesRead: 1, bytesRead: 2, partial: false, missingScriptFiles: 0 };
+    const old = { status: "read", files: 1, filesRead: 1, bytesRead: 2, partial: false, unreadScriptFiles: 0, undeclaredScripts: 0 };
     await env.CACHE.put("code:v1:npm:fresh-pkg@1.0.0", JSON.stringify(old));
     const first = await codeOf("fresh-pkg", fresh("fresh-pkg", archive), env.CACHE);
     expect(archiveCalls(first.spy)).toHaveLength(1);
-    expect((await env.CACHE.getWithMetadata("code:v2:npm:fresh-pkg@1.0.0")).value).not.toBeNull();
+    expect((await env.CACHE.getWithMetadata("code:v3:npm:fresh-pkg@1.0.0")).value).not.toBeNull();
     vi.restoreAllMocks();
 
     // The verdict expired (it is kept an hour); the version's read is still there.
@@ -591,7 +726,7 @@ describe("code", () => {
     // A failed read is never kept, and neither is the verdict that reports it.
     await env.CACHE.delete("res:npm:fresh-pkg");
     await codeOf("fresh-pkg", fresh("fresh-pkg", () => new Response(null, { status: 503 }), { version: "2.0.0" }), env.CACHE);
-    expect(await env.CACHE.get("code:v2:npm:fresh-pkg@2.0.0")).toBeNull();
+    expect(await env.CACHE.get("code:v3:npm:fresh-pkg@2.0.0")).toBeNull();
     expect(await env.CACHE.get("res:npm:fresh-pkg")).toBeNull();
   });
 

@@ -26,7 +26,8 @@ export type Found = Extract<RegistryCheck, { status: "found" }>;
 export interface Archive {
   url: string;
   main?: string;
-  installCommands: string[];
+  // Every script the registry lists, so `npm run` from an install script can be followed.
+  scripts: Record<string, string>;
 }
 
 // PyPI only offers the full project record (every release's files); the largest seen is pydantic-core at 12.1 MB
@@ -39,7 +40,7 @@ const NPM_RECORD_MAX_BYTES = 4 * 1024 * 1024;
 // where they change the verdict: packages young enough that low usage is a warning sign.
 const DOWNLOADS_MATTER_UNDER_DAYS = 365;
 const DAY_MS = 86_400_000;
-const NPM_INSTALL_HOOKS = ["preinstall", "install", "postinstall"];
+export const NPM_INSTALL_HOOKS = ["preinstall", "install", "postinstall"];
 const STABLE_VERSION = /^(\d+)\.(\d+)\.(\d+)$/;
 const REPO_URL = /^https?:\/\/(?:www\.)?(?:github\.com|gitlab\.com|bitbucket\.org|codeberg\.org|git\.sr\.ht)\//i;
 
@@ -204,7 +205,7 @@ function parseManifest(manifest: Record<string, unknown>, firstSeenAt: string | 
     hasRepo: repoUrl(manifest.repository) !== undefined,
     ...(url === undefined
       ? {}
-      : { archive: { url, main: string(manifest.main), installCommands: installScripts.map((hook) => scripts[hook] as string) } }),
+      : { archive: { url, main: string(manifest.main), scripts: strings(scripts) } }),
   };
 }
 
@@ -241,6 +242,10 @@ function record(value: unknown): Record<string, unknown> {
 
 function string(value: unknown): string | undefined {
   return typeof value === "string" ? value : undefined;
+}
+
+export function strings(value: unknown): Record<string, string> {
+  return Object.fromEntries(Object.entries(record(value)).filter((entry): entry is [string, string] => typeof entry[1] === "string"));
 }
 
 export function chunks<T>(items: T[], size: number): T[][] {

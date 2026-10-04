@@ -37,10 +37,19 @@ const handler = createMcpHandler(
       {
         title: "Check a package",
         description:
-          "Check a package before you suggest it or run an install. Returns safe; caution (it exists but looks risky, " +
-          "or couldn't be fully checked; tell the user the reasons before installing); or block (it doesn't exist, " +
-          "is known malware, or copies a popular package's name; don't install it, offer the suggested names " +
-          "instead). Check every package you haven't verified, especially ones you're not sure exist.",
+          "Check an npm or PyPI package before you suggest it, add it to a dependency file or install it. pkgMirage " +
+          "checks the registry, a malware database and the most popular package names, and opens risky npm packages " +
+          "and reads their code (it never runs it). " +
+          "safe: install as usual. " +
+          "caution: it exists but looks risky (brand new, very few downloads, install scripts or one added in the " +
+          "latest version, known vulnerabilities, a name close to a popular package, or something its code does, " +
+          "such as running shell commands at install), or a check couldn't be completed. Tell the user the reasons " +
+          "and let them decide before installing. " +
+          "block: don't install it. It doesn't exist (likely invented), is known malware or was taken down, copies a " +
+          "popular package's name, has look-alike or invisible characters, was registered after being seen as an " +
+          "invented name, or its install script runs commands or reads secrets and sends data out. Offer the " +
+          "suggested names instead, if there are any. " +
+          "Check every package you haven't verified, especially ones you're not sure exist.",
         inputSchema: z.object({ ecosystem: ecosystemInput, name: nameInput }),
         outputSchema: output,
         annotations,
@@ -51,7 +60,7 @@ const handler = createMcpHandler(
       "check_packages",
       {
         title: "Check several packages",
-        description: "Same as check_package for 1-50 packages in one call, e.g. a list of dependencies, before installing them.",
+        description: "Same as check_package for 1-50 packages in one call (e.g. a project's dependencies), before installing them.",
         inputSchema: z.object({ ecosystem: ecosystemInput, names: namesInput }),
         outputSchema: output,
         annotations,

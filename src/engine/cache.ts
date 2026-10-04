@@ -11,7 +11,7 @@ const HOUR = 60 * MINUTE;
 
 const key = (ecosystem: Ecosystem, name: string) => `res:${ecosystem}:${name}`;
 // A published version's archive never changes; the version in the key changes when the rules reading it do.
-const codeKey = (name: string, version: string) => `code:v2:npm:${name}@${version}`;
+const codeKey = (name: string, version: string) => `code:v3:npm:${name}@${version}`;
 const CODE_SECONDS = 30 * 24 * HOUR;
 
 // The cached verdicts among `names`. The cache only saves work; if KV misbehaves the check still runs.

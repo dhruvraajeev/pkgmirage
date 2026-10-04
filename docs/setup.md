@@ -4,6 +4,32 @@ pkgmirage isn't deployed yet: `https://pkgmirage.example` below stands for its a
 everything against your own copy, start it as in the README's [Run locally](../README.md#run-locally) and use
 `http://localhost:8787` instead.
 
+## Connect an AI assistant (MCP)
+
+Connect pkgmirage to your coding assistant once. Its tools ask the assistant to check each package before suggesting
+or installing it, and tell it what to do with each verdict: `safe`, install as usual; `caution`, tell you the reasons
+and let you decide; `block`, don't install it and offer the suggested names instead. The answer carries only
+pkgmirage's own wording (what the tools return: [README](../README.md#connect-an-ai-assistant-mcp)).
+
+Claude Code:
+
+```bash
+claude mcp add --transport http pkgmirage https://pkgmirage.example/mcp
+```
+
+Add `--scope project` to write it to the project's `.mcp.json` for the whole team (Claude Code asks each person to
+approve it the next time they run `claude` there), or `--scope user` for all your projects.
+
+Cursor: add this to `.cursor/mcp.json` in a project, or `~/.cursor/mcp.json` for all projects:
+
+```json
+{
+  "mcpServers": {
+    "pkgmirage": { "url": "https://pkgmirage.example/mcp" }
+  }
+}
+```
+
 ## Guard npm installs
 
 Turn the guard on for every project on this machine:
@@ -55,7 +81,8 @@ fails (`ECONNREFUSED`, or `ECONNRESET` at once if it goes away mid-install); not
 fall back to npm on its own.
 
 Every package npm downloads is checked, including dependencies of dependencies and installs from a lockfile. Only the
-latest version of each package is looked up in the malware database, even when a lockfile pins an older one.
+latest version of each package is looked up in the malware database and has its code read, even when a lockfile pins
+an older one.
 
 ### What the guard doesn't do
 
@@ -98,27 +125,3 @@ Use `@requirements.txt` for a Python project. A refused scan fails the job too, 
 a file too large, or the rate limit; see the README). To install through the guard in CI instead, run
 `npm ci --prefer-online --registry=https://pkgmirage.example/npm/` (`--prefer-online` so a cached `~/.npm` can't skip
 the check).
-
-## Connect an AI assistant (MCP)
-
-Once connected, assistants can check packages before suggesting or installing them (what the tools return:
-[README](../README.md#connect-an-ai-assistant-mcp)).
-
-Claude Code:
-
-```bash
-claude mcp add --transport http pkgmirage https://pkgmirage.example/mcp
-```
-
-Add `--scope project` to write it to the project's `.mcp.json` for the whole team (Claude Code asks each person to
-approve it the next time they run `claude` there), or `--scope user` for all your projects.
-
-Cursor: add this to `.cursor/mcp.json` in a project, or `~/.cursor/mcp.json` for all projects:
-
-```json
-{
-  "mcpServers": {
-    "pkgmirage": { "url": "https://pkgmirage.example/mcp" }
-  }
-}
-```
