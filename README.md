@@ -7,8 +7,8 @@ verdict with plain-English reasons and, for copycat names, the package you proba
 | Verdict | Meaning |
 |---|---|
 | `safe` | exists, established, no risk signals |
-| `caution` | exists but looks risky (brand new, install scripts, very few downloads, known vulnerabilities in the latest version, a name close to a popular package), or a check failed and it couldn't be verified |
-| `block` | doesn't exist (likely hallucinated), known malware, taken down by npm, a new or unused copycat of a popular package, a name with invisible or look-alike characters, or a name callers saw invented that was registered in the last 30 days |
+| `caution` | exists but looks risky (brand new, install scripts, very few downloads, known vulnerabilities in the latest version, a name close to a popular package, an install script added in the latest version, something its code does), or a check failed and it couldn't be verified |
+| `block` | doesn't exist (likely hallucinated), known malware, taken down by npm, a new or unused copycat of a popular package, a name with invisible or look-alike characters, a name callers saw invented that was registered in the last 30 days, or an npm install script that runs shell commands or reads secrets and also sends data out |
 
 A failed check is never reported as `safe`.
 
@@ -16,7 +16,10 @@ Checks use the npm and PyPI registries, [OSV](https://osv.dev) for malware and v
 the 10,000 most-downloaded packages on each registry for copycat detection (`node scripts/popular.mjs`
 refreshes them). npm packages with install scripts, and unpopular ones that already look risky, are also opened: the
 latest version's archive is read as bytes (never run) within size and file-count caps, and one that can't be read is
-`unverified`. Results are cached in Workers KV.
+`unverified`. The files its install scripts run are checked for shell commands, reads of SSH keys, npm tokens, cloud
+credentials or the whole environment, sends to raw IP addresses, chat webhooks or paste sites, code built from strings
+and obfuscation; the rest of its code only for those sends. Reasons are pkgmirage's own words, never text from the
+package. Results are cached in Workers KV.
 
 Names checked and found not to exist go on a watchlist in D1. A name counts once per caller per day, and needs
 callers on two different networks before it is trusted; if such a name is registered later, the new package is

@@ -9,6 +9,8 @@ export type RegistryCheck =
       firstSeenAt: string | null;
       maintainers: number;
       installScripts: string[];
+      // The latest npm version has an install script and the stable version before it had none.
+      installScriptAdded?: true;
       hasRepo: boolean;
       weeklyDownloads?: number;
       downloadsError?: string;
@@ -38,6 +40,7 @@ const NPM_RECORD_MAX_BYTES = 4 * 1024 * 1024;
 const DOWNLOADS_MATTER_UNDER_DAYS = 365;
 const DAY_MS = 86_400_000;
 const NPM_INSTALL_HOOKS = ["preinstall", "install", "postinstall"];
+const STABLE_VERSION = /^(\d+)\.(\d+)\.(\d+)$/;
 const REPO_URL = /^https?:\/\/(?:www\.)?(?:github\.com|gitlab\.com|bitbucket\.org|codeberg\.org|git\.sr\.ht)\//i;
 
 type DownloadStats = { weeklyDownloads: number; firstSeenAt: string | null } | { downloadsError: string };
@@ -157,16 +160,40 @@ function toCheck(result: FetchResult, parse: (doc: Record<string, unknown>) => R
 
 function parseNpmRecord(doc: Record<string, unknown>): RegistryCheck {
   const latest = string(record(doc["dist-tags"]).latest);
-  const version = latest === undefined ? undefined : record(doc.versions)[latest];
+  const versions = record(doc.versions);
+  const version = latest === undefined ? undefined : versions[latest];
   // A fully unpublished package keeps a stub record with no versions; it can't be installed.
   if (version === undefined) return { status: "not_found" };
-  return parseManifest(record(version), string(record(doc.time).created) ?? null);
+  const check = parseManifest(record(version), string(record(doc.time).created) ?? null);
+  if (check.status !== "found" || !check.installScripts.length) return check;
+  const previous = previousStable(latest!, Object.keys(versions));
+  const added = previous !== undefined && !installHooks(record(record(versions[previous]).scripts)).length;
+  return added ? { ...check, installScriptAdded: true } : check;
 }
+
+// The highest stable version below `latest`, compared by number: prereleases and backports published after it would
+// otherwise pass for "the one before" (6 false hits of 94 real packages with install scripts, 2026-10-03).
+function previousStable(latest: string, versions: string[]): string | undefined {
+  const parts = (version: string) => STABLE_VERSION.exec(version)?.slice(1).map(Number);
+  const below = (a: number[], b: number[]) => {
+    const i = a.findIndex((n, j) => n !== b[j]);
+    return i >= 0 && a[i]! < b[i]!;
+  };
+  const top = parts(latest);
+  let best: [string, number[]] | undefined;
+  for (const version of versions) {
+    const at = parts(version);
+    if (top && at && below(at, top) && (!best || below(best[1], at))) best = [version, at];
+  }
+  return best?.[0];
+}
+
+const installHooks = (scripts: Record<string, unknown>) => NPM_INSTALL_HOOKS.filter((hook) => typeof scripts[hook] === "string");
 
 function parseManifest(manifest: Record<string, unknown>, firstSeenAt: string | null): RegistryCheck {
   if (typeof manifest.version !== "string") return { status: "not_found" };
   const scripts = record(manifest.scripts);
-  const installScripts = NPM_INSTALL_HOOKS.filter((hook) => typeof scripts[hook] === "string");
+  const installScripts = installHooks(scripts);
   const url = string(record(manifest.dist).tarball);
   return {
     status: "found",

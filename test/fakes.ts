@@ -63,6 +63,8 @@ interface NpmOptions {
   firstSeenDaysAgo?: number;
   maintainers?: number;
   scripts?: Record<string, string>;
+  // Other versions in the record, with their scripts.
+  earlier?: Record<string, Record<string, string>>;
   repo?: boolean;
   weeklyDownloads?: number;
 }
@@ -96,7 +98,10 @@ export function npmPackage(name: string, opts: NpmOptions = {}): Record<string, 
     "dist-tags": { latest: manifest.version },
     time: { created: daysAgo(firstSeenDaysAgo) },
     maintainers: manifest.maintainers,
-    versions: { [manifest.version]: manifest },
+    versions: {
+      ...Object.fromEntries(Object.entries(opts.earlier ?? {}).map(([version, scripts]) => [version, { ...manifest, version, scripts }])),
+      [manifest.version]: manifest,
+    },
   };
   const path = `https://registry.npmjs.org/${name.replace("/", "%2F")}`;
   return {

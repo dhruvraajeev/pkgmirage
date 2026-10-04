@@ -46,7 +46,7 @@ npm install is-number --registry=https://registry.npmjs.org/
 | Verdict | During `npm install` |
 |---|---|
 | `safe` | installs as usual |
-| `caution` | installs, and npm prints the reasons: `npm notice pkgMirage caution for core-js: runs install scripts (postinstall); only one maintainer` (`--loglevel=warn` or `--silent` hide it) |
+| `caution` | installs, and npm prints the reasons: `npm notice pkgMirage caution for esbuild: runs install scripts (postinstall); install script runs shell commands; only one maintainer` (`--loglevel=warn` or `--silent` hide it) |
 | `block` | the install stops with `npm error code E403` and the reasons: `pkgMirage blocked lodahs: known malicious package (MAL-2025-25502). Did you mean: lodash?` |
 
 A check that couldn't be completed (a registry, malware, download or package-archive lookup failing) is a `caution` with an

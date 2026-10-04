@@ -117,7 +117,8 @@ function checksList({ checks }) {
     if (registry.weeklyDownloads !== undefined) add("Downloads last week", registry.weeklyDownloads.toLocaleString());
     if (registry.downloadsError) add("Downloads last week", `unavailable (${registry.downloadsError})`);
     add("Maintainers", String(registry.maintainers));
-    add("Install scripts", registry.installScripts.length ? registry.installScripts.join(", ") : "none");
+    const added = registry.installScriptAdded ? " (added in the latest version)" : "";
+    add("Install scripts", registry.installScripts.length ? registry.installScripts.join(", ") + added : "none");
     add("Source repository", registry.hasRepo ? "linked" : "not linked");
   } else if (registry.status === "not_found") {
     add("Registry", "doesn't exist");
@@ -134,10 +135,13 @@ function checksList({ checks }) {
   add("Close to popular packages", lookalike.length ? lookalike.join(", ") : "none");
   add(
     "Code",
-    code.status === "read" ? `read ${code.filesRead} of ${code.files} files${code.partial ? ", some only in part" : ""}`
+    code.status === "read" ? `read ${code.filesRead} of ${code.files} files${code.partial ? ", some only in part" : ""}; ${findings(code)}`
     : code.status === "error" ? `couldn't check (${code.reason})`
     : "not opened",
   );
   if (seenInvented) add("Seen as an invented name", new Date(seenInvented).toLocaleDateString());
   return list;
 }
+
+// The findings themselves are in the reasons, in pkgMirage's own words.
+const findings = (code) => (code.findings.length ? "findings in the reasons above" : "no findings");

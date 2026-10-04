@@ -201,6 +201,46 @@ describe("check", () => {
     ]);
   });
 
+  it("an install script added since the previous stable version is a reason", async () => {
+    const check = async (earlier: Record<string, Record<string, string>>, opts: Parameters<typeof npmPackage>[1] = {}) => {
+      fakeFetch(npmPackage("esbuild", { version: "2.0.0", scripts: { postinstall: "node install.js" }, earlier, ...opts }));
+      const [result] = await checkPackages("npm", ["esbuild"]);
+      vi.restoreAllMocks();
+      return result!;
+    };
+    const added = async (earlier: Record<string, Record<string, string>>, opts?: Parameters<typeof npmPackage>[1]) => {
+      const result = await check(earlier, opts);
+      const flagged = result.reasons.includes("install script added in the latest version");
+      expect(flagged).toBe(result.checks.registry.status === "found" && result.checks.registry.installScriptAdded === true);
+      return flagged;
+    };
+    const run = { postinstall: "node old.js" };
+
+    const result = await check({ "1.9.0": {} });
+    expect(result.reasons).toEqual(["runs install scripts (postinstall)", "install script added in the latest version"]);
+    expect(result.checks.registry).toMatchObject({ installScriptAdded: true });
+    // Any install hook before counts, whatever it was called.
+    expect(await added({ "1.9.0": run })).toBe(false);
+    expect(await added({ "1.9.0": { install: "node-gyp rebuild" } })).toBe(false);
+    // The highest earlier stable version, compared by number, is the one compared.
+    expect(await added({ "1.8.0": {}, "1.9.0": run })).toBe(false);
+    expect(await added({ "1.9.0": run, "1.10.0": {} })).toBe(true);
+    expect(await added({ "1.9.0": run, "10.0.0": {}, "2.0.0-beta.1": {} })).toBe(false);
+    expect(await added({ "1.9.9": run, "2.0.1": {}, "1.10.0": {} })).toBe(true);
+    // Nothing to compare with: no earlier stable version, or a prerelease latest.
+    expect(await added({ "2.0.0-beta.1": {} })).toBe(false);
+    expect(await added({ "1.0.0": {} }, { version: "2.0.0-rc.1" })).toBe(false);
+    expect(await added({ "1.0.0": {} }, { scripts: { test: "node test" } })).toBe(false);
+
+    // A record over 4 MB isn't read, so there is no history to compare with.
+    const routes = npmPackage("esbuild", { version: "2.0.0", scripts: { postinstall: "node install.js" }, earlier: { "1.9.0": {} } });
+    const padded = await (await routes[`${NPM}/esbuild`]!()).json<Record<string, unknown>>();
+    padded.readme = "x".repeat(5_000_000);
+    fakeFetch({ ...routes, [`${NPM}/esbuild`]: json(padded) });
+    const [oversized] = await checkPackages("npm", ["esbuild"]);
+    expect(oversized!.reasons).toEqual(["runs install scripts (postinstall)"]);
+  });
+
   it("low downloads and a missing repo link are cautions", async () => {
     fakeFetch(npmPackage("quiet-pkg", { firstSeenDaysAgo: 100, weeklyDownloads: 12, repo: false }));
     const [result] = await checkPackages("npm", ["quiet-pkg"]);
