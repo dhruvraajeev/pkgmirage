@@ -147,6 +147,7 @@ Outcomes: caution 560, unverified 110, block 2.
 - Malicious: 100 per advisory ID year 2022–2026 (every one where a year has fewer), plus those published in the 30 days before sampling (npm at most 200, PyPI 100); one sample per package name. OSV data: ossf/malicious-packages and others, Apache-2.0 / CC-BY 4.0 per source.
 - Invented: the universal-hallucination list of "The Range Shrinks, the Threat Remains" (Churilov, 2026; arXiv 2605.17062), tag v0.2-preprint, CC BY 4.0. Its own caveats: some names were registered later, and PyPI already refuses many of them.
 - Legitimate: 500 of the top 10,000 and 1,000 of ranks 10,001–100,000 by downloads, per ecosystem (ecosyste.ms, CC BY-SA 4.0).
+- License terms of the sample files: [README](../README.md#data-sources-and-licenses).
 
 ## Limits of this measurement
 

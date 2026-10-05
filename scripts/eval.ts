@@ -388,6 +388,7 @@ ${Object.entries(meta)
 - Malicious: ${PER_YEAR} per advisory ID year ${MALWARE_YEARS[0]}–${MALWARE_YEARS.at(-1)} (every one where a year has fewer), plus those published in the ${RECENT_DAYS} days before sampling (npm at most ${RECENT_CAP.npm}, PyPI ${RECENT_CAP.pypi}); one sample per package name. OSV data: ossf/malicious-packages and others, Apache-2.0 / CC-BY 4.0 per source.
 - Invented: the universal-hallucination list of "The Range Shrinks, the Threat Remains" (Churilov, 2026; arXiv 2605.17062), tag v0.2-preprint, CC BY 4.0. Its own caveats: some names were registered later, and PyPI already refuses many of them.
 - Legitimate: ${TOP.n} of the top ${TOP.below.toLocaleString("en")} and ${MID.n.toLocaleString("en")} of ranks ${(MID.from + 1).toLocaleString("en")}–${MID.below.toLocaleString("en")} by downloads, per ecosystem (ecosyste.ms, CC BY-SA 4.0).
+- License terms of the sample files: [README](../README.md#data-sources-and-licenses).
 
 ## Limits of this measurement
 
