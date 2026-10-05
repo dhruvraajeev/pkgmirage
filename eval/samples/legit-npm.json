@@ -1,0 +1,6010 @@
+{
+ "source": "ecosyste.ms https://packages.ecosyste.ms/api/v1/registries/npmjs.org/package_names?sort=downloads (data CC BY-SA 4.0)",
+ "fetchedAt": "2026-10-04T23:19:44.060Z",
+ "groups": {
+  "top": [
+   {
+    "name": "@astrojs/compiler-binding",
+    "rank": 6772
+   },
+   {
+    "name": "err-code",
+    "rank": 1928
+   },
+   {
+    "name": "react-native-drawer-layout",
+    "rank": 5315
+   },
+   {
+    "name": "simple-swizzle",
+    "rank": 1658
+   },
+   {
+    "name": "require-in-the-middle",
+    "rank": 882
+   },
+   {
+    "name": "is-number-like",
+    "rank": 7610
+   },
+   {
+    "name": "fastify",
+    "rank": 2826
+   },
+   {
+    "name": "pug-code-gen",
+    "rank": 5468
+   },
+   {
+    "name": "bun-types",
+    "rank": 2574
+   },
+   {
+    "name": "@upstash/ratelimit",
+    "rank": 6837
+   },
+   {
+    "name": "state-toggle",
+    "rank": 7968
+   },
+   {
+    "name": "@internationalized/number",
+    "rank": 3058
+   },
+   {
+    "name": "@fast-csv/format",
+    "rank": 2369
+   },
+   {
+    "name": "at-least-node",
+    "rank": 1996
+   },
+   {
+    "name": "@emmetio/html-matcher",
+    "rank": 6312
+   },
+   {
+    "name": "eslint-plugin-react-web-api",
+    "rank": 7393
+   },
+   {
+    "name": "@turf/helpers",
+    "rank": 2947
+   },
+   {
+    "name": "vscode-json-languageservice",
+    "rank": 4846
+   },
+   {
+    "name": "rc-notification",
+    "rank": 6918
+   },
+   {
+    "name": "@types/async-retry",
+    "rank": 6706
+   },
+   {
+    "name": "@appium/schema",
+    "rank": 5571
+   },
+   {
+    "name": "acorn-jsx-walk",
+    "rank": 6095
+   },
+   {
+    "name": "wasm-feature-detect",
+    "rank": 5663
+   },
+   {
+    "name": "path-dirname",
+    "rank": 4073
+   },
+   {
+    "name": "@smithy/credential-provider-imds",
+    "rank": 661
+   },
+   {
+    "name": "@emnapi/wasi-threads",
+    "rank": 663
+   },
+   {
+    "name": "@tloncorp/tlon-skill",
+    "rank": 8769
+   },
+   {
+    "name": "@cloudflare/workers-types",
+    "rank": 3226
+   },
+   {
+    "name": "@apm-js-collab/code-transformer-bundler-plugins",
+    "rank": 4261
+   },
+   {
+    "name": "pg-cursor",
+    "rank": 6361
+   },
+   {
+    "name": "@jimp/plugin-blur",
+    "rank": 6063
+   },
+   {
+    "name": "assertion-error",
+    "rank": 492
+   },
+   {
+    "name": "stubs",
+    "rank": 2324
+   },
+   {
+    "name": "@nx/react",
+    "rank": 8037
+   },
+   {
+    "name": "@types/pg",
+    "rank": 1082
+   },
+   {
+    "name": "@walletconnect/jsonrpc-http-connection",
+    "rank": 9572
+   },
+   {
+    "name": "property-expr",
+    "rank": 3228
+   },
+   {
+    "name": "@babel/plugin-transform-unicode-regex",
+    "rank": 1127
+   },
+   {
+    "name": "nuxt",
+    "rank": 7193
+   },
+   {
+    "name": "@smithy/eventstream-serde-config-resolver",
+    "rank": 2001
+   },
+   {
+    "name": "merge-options",
+    "rank": 3933
+   },
+   {
+    "name": "gulp",
+    "rank": 7281
+   },
+   {
+    "name": "object.entries",
+    "rank": 911
+   },
+   {
+    "name": "@types/jest-axe",
+    "rank": 7648
+   },
+   {
+    "name": "marky",
+    "rank": 2512
+   },
+   {
+    "name": "@react-aria/grid",
+    "rank": 8127
+   },
+   {
+    "name": "react-async-script",
+    "rank": 9226
+   },
+   {
+    "name": "smob",
+    "rank": 3600
+   },
+   {
+    "name": "@jsonjoy.com/buffers",
+    "rank": 1906
+   },
+   {
+    "name": "linkifyjs",
+    "rank": 2302
+   },
+   {
+    "name": "@larksuiteoapi/node-sdk",
+    "rank": 8049
+   },
+   {
+    "name": "react-side-effect",
+    "rank": 5629
+   },
+   {
+    "name": "subscriptions-transport-ws",
+    "rank": 7034
+   },
+   {
+    "name": "@types/lodash",
+    "rank": 1301
+   },
+   {
+    "name": "@storybook/core-events",
+    "rank": 4792
+   },
+   {
+    "name": "react-grab",
+    "rank": 9221
+   },
+   {
+    "name": "@lydell/node-pty",
+    "rank": 5897
+   },
+   {
+    "name": "vinext",
+    "rank": 8379
+   },
+   {
+    "name": "react-hook-form",
+    "rank": 883
+   },
+   {
+    "name": "mjml-image",
+    "rank": 7773
+   },
+   {
+    "name": "pem",
+    "rank": 9504
+   },
+   {
+    "name": "@aws-sdk/credential-provider-cognito-identity",
+    "rank": 2745
+   },
+   {
+    "name": "jsx-ast-utils",
+    "rank": 811
+   },
+   {
+    "name": "console.table",
+    "rank": 6828
+   },
+   {
+    "name": "@octokit/core",
+    "rank": 1487
+   },
+   {
+    "name": "@esbuild/linux-riscv64",
+    "rank": 3507
+   },
+   {
+    "name": "ttl-set",
+    "rank": 7593
+   },
+   {
+    "name": "await-to-js",
+    "rank": 6627
+   },
+   {
+    "name": "type-fest",
+    "rank": 21
+   },
+   {
+    "name": "sandbox-cli-detector",
+    "rank": 6692
+   },
+   {
+    "name": "@cspell/dict-latex",
+    "rank": 8164
+   },
+   {
+    "name": "@tanstack/devtools-ui",
+    "rank": 7441
+   },
+   {
+    "name": "mquery",
+    "rank": 4397
+   },
+   {
+    "name": "jwa",
+    "rank": 662
+   },
+   {
+    "name": "search-insights",
+    "rank": 6625
+   },
+   {
+    "name": "lodash.ismatch",
+    "rank": 5172
+   },
+   {
+    "name": "@mantine/hooks",
+    "rank": 6322
+   },
+   {
+    "name": "@vitest/snapshot",
+    "rank": 466
+   },
+   {
+    "name": "@storybook/react-native-theming",
+    "rank": 9460
+   },
+   {
+    "name": "tmp",
+    "rank": 594
+   },
+   {
+    "name": "@types/picomatch",
+    "rank": 5555
+   },
+   {
+    "name": "jest-watcher",
+    "rank": 1206
+   },
+   {
+    "name": "@firebase/auth",
+    "rank": 3256
+   },
+   {
+    "name": "is2",
+    "rank": 4849
+   },
+   {
+    "name": "oas-linter",
+    "rank": 5602
+   },
+   {
+    "name": "smol-toml",
+    "rank": 1506
+   },
+   {
+    "name": "scmp",
+    "rank": 4787
+   },
+   {
+    "name": "mjml-spacer",
+    "rank": 7918
+   },
+   {
+    "name": "strip-final-newline",
+    "rank": 325
+   },
+   {
+    "name": "@parcel/codeframe",
+    "rank": 7702
+   },
+   {
+    "name": "@scalar/oas-utils",
+    "rank": 9294
+   },
+   {
+    "name": "@better-auth/telemetry",
+    "rank": 4150
+   },
+   {
+    "name": "@turf/line-offset",
+    "rank": 9062
+   },
+   {
+    "name": "@rollup/plugin-babel",
+    "rank": 3162
+   },
+   {
+    "name": "array-ify",
+    "rank": 2954
+   },
+   {
+    "name": "with",
+    "rank": 5599
+   },
+   {
+    "name": "comment-parser",
+    "rank": 3212
+   },
+   {
+    "name": "commondir",
+    "rank": 1254
+   },
+   {
+    "name": "@csstools/postcss-light-dark-function",
+    "rank": 6065
+   },
+   {
+    "name": "bmp-ts",
+    "rank": 7950
+   },
+   {
+    "name": "fromentries",
+    "rank": 3795
+   },
+   {
+    "name": "assert-never",
+    "rank": 5421
+   },
+   {
+    "name": "@types/slice-ansi",
+    "rank": 5727
+   },
+   {
+    "name": "@temporalio/worker",
+    "rank": 6260
+   },
+   {
+    "name": "@azure/logger",
+    "rank": 2580
+   },
+   {
+    "name": "os-filter-obj",
+    "rank": 9271
+   },
+   {
+    "name": "lodash.upperfirst",
+    "rank": 4329
+   },
+   {
+    "name": "@hapi/somever",
+    "rank": 9298
+   },
+   {
+    "name": "@hey-api/spec-types",
+    "rank": 5835
+   },
+   {
+    "name": "copy-concurrently",
+    "rank": 5581
+   },
+   {
+    "name": "@solana/rpc-subscriptions-api",
+    "rank": 6650
+   },
+   {
+    "name": "fuse.js",
+    "rank": 2966
+   },
+   {
+    "name": "yamux-js",
+    "rank": 8104
+   },
+   {
+    "name": "sanitize-filename",
+    "rank": 3994
+   },
+   {
+    "name": "release-zalgo",
+    "rank": 4049
+   },
+   {
+    "name": "caniuse-lite",
+    "rank": 115
+   },
+   {
+    "name": "@xtuc/ieee754",
+    "rank": 1201
+   },
+   {
+    "name": "micromark-extension-gfm-footnote",
+    "rank": 1332
+   },
+   {
+    "name": "@commitlint/config-conventional",
+    "rank": 3472
+   },
+   {
+    "name": "sql.js",
+    "rank": 6789
+   },
+   {
+    "name": "@emnapi/core",
+    "rank": 625
+   },
+   {
+    "name": "java-properties",
+    "rank": 6005
+   },
+   {
+    "name": "@csstools/color-helpers",
+    "rank": 794
+   },
+   {
+    "name": "@svgr/core",
+    "rank": 2335
+   },
+   {
+    "name": "input-otp",
+    "rank": 1629
+   },
+   {
+    "name": "@vercel/hydrogen",
+    "rank": 5353
+   },
+   {
+    "name": "@angular-eslint/eslint-plugin-template",
+    "rank": 5798
+   },
+   {
+    "name": "vue-template-compiler",
+    "rank": 6783
+   },
+   {
+    "name": "@emotion/hash",
+    "rank": 1703
+   },
+   {
+    "name": "ansi-escapes",
+    "rank": 302
+   },
+   {
+    "name": "cjson",
+    "rank": 6732
+   },
+   {
+    "name": "tree-changes",
+    "rank": 9264
+   },
+   {
+    "name": "mdn-data",
+    "rank": 318
+   },
+   {
+    "name": "read-package-tree",
+    "rank": 8485
+   },
+   {
+    "name": "@types/react-redux",
+    "rank": 5129
+   },
+   {
+    "name": "eslint-plugin-turbo",
+    "rank": 6463
+   },
+   {
+    "name": "path-is-absolute",
+    "rank": 461
+   },
+   {
+    "name": "@orpc/standard-server-fetch",
+    "rank": 9193
+   },
+   {
+    "name": "is-generator-fn",
+    "rank": 1329
+   },
+   {
+    "name": "@webpack-cli/serve",
+    "rank": 3720
+   },
+   {
+    "name": "@homebridge/ciao",
+    "rank": 5779
+   },
+   {
+    "name": "cssdb",
+    "rank": 4187
+   },
+   {
+    "name": "@changesets/write",
+    "rank": 5477
+   },
+   {
+    "name": "@types/prop-types",
+    "rank": 1224
+   },
+   {
+    "name": "@cspell/cspell-performance-monitor",
+    "rank": 9981
+   },
+   {
+    "name": "koa-router",
+    "rank": 9205
+   },
+   {
+    "name": "@csstools/postcss-content-alt-text",
+    "rank": 6197
+   },
+   {
+    "name": "@lovable.dev/vite-plugin-hmr-gate",
+    "rank": 3752
+   },
+   {
+    "name": "parseley",
+    "rank": 2719
+   },
+   {
+    "name": "ink",
+    "rank": 4064
+   },
+   {
+    "name": "quill-delta",
+    "rank": 3777
+   },
+   {
+    "name": "@radix-ui/react-use-controllable-state",
+    "rank": 465
+   },
+   {
+    "name": "find-my-way-ts",
+    "rank": 4890
+   },
+   {
+    "name": "@aws-sdk/credential-provider-web-identity",
+    "rank": 493
+   },
+   {
+    "name": "crossws",
+    "rank": 1748
+   },
+   {
+    "name": "@oxc-parser/binding-linux-x64-gnu",
+    "rank": 1430
+   },
+   {
+    "name": "@vercel/speed-insights",
+    "rank": 5686
+   },
+   {
+    "name": "@commitlint/parse",
+    "rank": 3281
+   },
+   {
+    "name": "@fastify/otel",
+    "rank": 5022
+   },
+   {
+    "name": "@cspell/dict-sql",
+    "rank": 8186
+   },
+   {
+    "name": "@vscode/vsce",
+    "rank": 8838
+   },
+   {
+    "name": "@vercel/cervel",
+    "rank": 5598
+   },
+   {
+    "name": "babel-helper-hoist-variables",
+    "rank": 8557
+   },
+   {
+    "name": "@protobufjs/utf8",
+    "rank": 828
+   },
+   {
+    "name": "meshline",
+    "rank": 5801
+   },
+   {
+    "name": "simple-git",
+    "rank": 3078
+   },
+   {
+    "name": "deprecated-react-native-prop-types",
+    "rank": 9091
+   },
+   {
+    "name": "bail",
+    "rank": 1009
+   },
+   {
+    "name": "remark-cjk-friendly-gfm-strikethrough",
+    "rank": 6785
+   },
+   {
+    "name": "should-format",
+    "rank": 5130
+   },
+   {
+    "name": "@graphql-tools/merge",
+    "rank": 2565
+   },
+   {
+    "name": "stacktrace-parser",
+    "rank": 2374
+   },
+   {
+    "name": "recursive-readdir",
+    "rank": 4556
+   },
+   {
+    "name": "bser",
+    "rank": 1268
+   },
+   {
+    "name": "eventsource-parser",
+    "rank": 679
+   },
+   {
+    "name": "postcss-normalize-whitespace",
+    "rank": 2305
+   },
+   {
+    "name": "@types/mdurl",
+    "rank": 2451
+   },
+   {
+    "name": "markdownlint",
+    "rank": 5960
+   },
+   {
+    "name": "lenis",
+    "rank": 8889
+   },
+   {
+    "name": "regexp-tree",
+    "rank": 2697
+   },
+   {
+    "name": "whatwg-fetch",
+    "rank": 1895
+   },
+   {
+    "name": "to-object-path",
+    "rank": 3576
+   },
+   {
+    "name": "pg-copy-streams",
+    "rank": 9658
+   },
+   {
+    "name": "next-intl",
+    "rank": 4441
+   },
+   {
+    "name": "@babel/plugin-transform-react-jsx-development",
+    "rank": 1802
+   },
+   {
+    "name": "redis",
+    "rank": 3081
+   },
+   {
+    "name": "@jest/transform",
+    "rank": 841
+   },
+   {
+    "name": "@figspec/components",
+    "rank": 7852
+   },
+   {
+    "name": "@standard-community/standard-openapi",
+    "rank": 9619
+   },
+   {
+    "name": "secure-json-parse",
+    "rank": 1450
+   },
+   {
+    "name": "@grpc/grpc-js",
+    "rank": 932
+   },
+   {
+    "name": "@pulumi/aws",
+    "rank": 6768
+   },
+   {
+    "name": "@babel/helper-explode-assignable-expression",
+    "rank": 5244
+   },
+   {
+    "name": "@lexical/react",
+    "rank": 4781
+   },
+   {
+    "name": "@mastra/schema-compat",
+    "rank": 7838
+   },
+   {
+    "name": "@oslojs/binary",
+    "rank": 6827
+   },
+   {
+    "name": "@humanwhocodes/config-array",
+    "rank": 1512
+   },
+   {
+    "name": "@types/mdast",
+    "rank": 1013
+   },
+   {
+    "name": "@electron-forge/template-base",
+    "rank": 8997
+   },
+   {
+    "name": "pkg-up",
+    "rank": 2706
+   },
+   {
+    "name": "@types/yoga-layout",
+    "rank": 9673
+   },
+   {
+    "name": "@opentelemetry/instrumentation-undici",
+    "rank": 2110
+   },
+   {
+    "name": "@microsoft/eslint-plugin-sdl",
+    "rank": 8195
+   },
+   {
+    "name": "eslint-plugin-unicorn",
+    "rank": 4029
+   },
+   {
+    "name": "@types/dom-speech-recognition",
+    "rank": 8407
+   },
+   {
+    "name": "react-helmet-async",
+    "rank": 5257
+   },
+   {
+    "name": "jsonata",
+    "rank": 7765
+   },
+   {
+    "name": "swagger-ui-dist",
+    "rank": 2910
+   },
+   {
+    "name": "etag",
+    "rank": 366
+   },
+   {
+    "name": "@csstools/postcss-oklab-function",
+    "rank": 4228
+   },
+   {
+    "name": "string-env-interpolation",
+    "rank": 4265
+   },
+   {
+    "name": "pg-connection-string",
+    "rank": 863
+   },
+   {
+    "name": "rollup-plugin-dts",
+    "rank": 6938
+   },
+   {
+    "name": "date-fns-tz",
+    "rank": 3230
+   },
+   {
+    "name": "focus-lock",
+    "rank": 5519
+   },
+   {
+    "name": "node-pre-gyp",
+    "rank": 9246
+   },
+   {
+    "name": "@jimp/core",
+    "rank": 5046
+   },
+   {
+    "name": "has-symbols",
+    "rank": 118
+   },
+   {
+    "name": "next-themes",
+    "rank": 2064
+   },
+   {
+    "name": "hast-util-from-dom",
+    "rank": 4002
+   },
+   {
+    "name": "@sapphire/snowflake",
+    "rank": 8044
+   },
+   {
+    "name": "side-channel-list",
+    "rank": 202
+   },
+   {
+    "name": "@react-aria/breadcrumbs",
+    "rank": 7326
+   },
+   {
+    "name": "@babel/plugin-transform-duplicate-named-capturing-groups-regex",
+    "rank": 1680
+   },
+   {
+    "name": "@storybook/addon-toolbars",
+    "rank": 5013
+   },
+   {
+    "name": "@svgr/plugin-svgo",
+    "rank": 2864
+   },
+   {
+    "name": "@storybook/instrumenter",
+    "rank": 4786
+   },
+   {
+    "name": "hard-rejection",
+    "rank": 2959
+   },
+   {
+    "name": "undertaker-registry",
+    "rank": 8043
+   },
+   {
+    "name": "rollup",
+    "rank": 319
+   },
+   {
+    "name": "typedoc-plugin-markdown",
+    "rank": 6404
+   },
+   {
+    "name": "@motionone/types",
+    "rank": 7646
+   },
+   {
+    "name": "parse5-sax-parser",
+    "rank": 4768
+   },
+   {
+    "name": "@algolia/logger-console",
+    "rank": 7514
+   },
+   {
+    "name": "@capsizecss/unpack",
+    "rank": 4922
+   },
+   {
+    "name": "microdiff",
+    "rank": 8139
+   },
+   {
+    "name": "pump",
+    "rank": 495
+   },
+   {
+    "name": "cropperjs",
+    "rank": 8107
+   },
+   {
+    "name": "rc-rate",
+    "rank": 7510
+   },
+   {
+    "name": "@lezer/php",
+    "rank": 6126
+   },
+   {
+    "name": "timeout-signal",
+    "rank": 5406
+   },
+   {
+    "name": "micromark-util-events-to-acorn",
+    "rank": 3041
+   },
+   {
+    "name": "wkx",
+    "rank": 6349
+   },
+   {
+    "name": "cdk-assets",
+    "rank": 9365
+   },
+   {
+    "name": "zod-from-json-schema",
+    "rank": 6301
+   },
+   {
+    "name": "@babel/plugin-syntax-import-attributes",
+    "rank": 845
+   },
+   {
+    "name": "@types/geojson-vt",
+    "rank": 6473
+   },
+   {
+    "name": "@storybook/channels",
+    "rank": 5744
+   },
+   {
+    "name": "react-easy-router",
+    "rank": 3775
+   },
+   {
+    "name": "react-router-config",
+    "rank": 9318
+   },
+   {
+    "name": "@swc/core-linux-x64-gnu",
+    "rank": 1507
+   },
+   {
+    "name": "@babel/plugin-transform-modules-umd",
+    "rank": 1361
+   },
+   {
+    "name": "@opentelemetry/resource-detector-azure",
+    "rank": 3623
+   },
+   {
+    "name": "universal-cookie",
+    "rank": 6691
+   },
+   {
+    "name": "meriyah",
+    "rank": 3348
+   },
+   {
+    "name": "find-package-json",
+    "rank": 7334
+   },
+   {
+    "name": "@popperjs/core",
+    "rank": 1938
+   },
+   {
+    "name": "@storybook/addon-vitest",
+    "rank": 4744
+   },
+   {
+    "name": "code-block-writer",
+    "rank": 2035
+   },
+   {
+    "name": "@jimp/js-gif",
+    "rank": 7552
+   },
+   {
+    "name": "@orpc/server",
+    "rank": 9127
+   },
+   {
+    "name": "@ungap/structured-clone",
+    "rank": 559
+   },
+   {
+    "name": "babel-loader",
+    "rank": 1866
+   },
+   {
+    "name": "linkify-it",
+    "rank": 1599
+   },
+   {
+    "name": "flatbuffers",
+    "rank": 3374
+   },
+   {
+    "name": "promise.allsettled",
+    "rank": 7051
+   },
+   {
+    "name": "madge",
+    "rank": 6253
+   },
+   {
+    "name": "mcp-remote",
+    "rank": 9573
+   },
+   {
+    "name": "@turf/mask",
+    "rank": 8816
+   },
+   {
+    "name": "@turf/tesselate",
+    "rank": 8066
+   },
+   {
+    "name": "@babel/plugin-transform-computed-properties",
+    "rank": 1316
+   },
+   {
+    "name": "@ast-grep/napi-linux-x64-musl",
+    "rank": 8907
+   },
+   {
+    "name": "@types/d3-geo",
+    "rank": 1791
+   },
+   {
+    "name": "@types/topojson-specification",
+    "rank": 8596
+   },
+   {
+    "name": "istanbul-lib-report",
+    "rank": 620
+   },
+   {
+    "name": "@oven/bun-linux-x64-musl",
+    "rank": 7263
+   },
+   {
+    "name": "@types/mysql",
+    "rank": 2534
+   },
+   {
+    "name": "@google-cloud/functions-framework",
+    "rank": 7001
+   },
+   {
+    "name": "cyclist",
+    "rank": 5090
+   },
+   {
+    "name": "mjml-group",
+    "rank": 7408
+   },
+   {
+    "name": "@types/d3-force",
+    "rank": 2274
+   },
+   {
+    "name": "logkitty",
+    "rank": 6289
+   },
+   {
+    "name": "@uppy/store-default",
+    "rank": 9627
+   },
+   {
+    "name": "create-hmac",
+    "rank": 3289
+   },
+   {
+    "name": "@aws-sdk/lib-storage",
+    "rank": 3222
+   },
+   {
+    "name": "@secretlint/formatter",
+    "rank": 9126
+   },
+   {
+    "name": "react-native-screens",
+    "rank": 3909
+   },
+   {
+    "name": "run-con",
+    "rank": 9072
+   },
+   {
+    "name": "ts-jest",
+    "rank": 1891
+   },
+   {
+    "name": "create-hash",
+    "rank": 2825
+   },
+   {
+    "name": "lightningcss-linux-arm-gnueabihf",
+    "rank": 5714
+   },
+   {
+    "name": "@microsoft/teams.common",
+    "rank": 7384
+   },
+   {
+    "name": "skmeans",
+    "rank": 9139
+   },
+   {
+    "name": "fp-ts",
+    "rank": 5228
+   },
+   {
+    "name": "@graphql-yoga/subscription",
+    "rank": 7361
+   },
+   {
+    "name": "prosemirror-trailing-node",
+    "rank": 4328
+   },
+   {
+    "name": "@storybook/icons",
+    "rank": 2105
+   },
+   {
+    "name": "@modelcontextprotocol/node",
+    "rank": 7694
+   },
+   {
+    "name": "workbox-streams",
+    "rank": 3551
+   },
+   {
+    "name": "otplib",
+    "rank": 5889
+   },
+   {
+    "name": "@reown/appkit",
+    "rank": 8042
+   },
+   {
+    "name": "mime-db",
+    "rank": 68
+   },
+   {
+    "name": "rc-slider",
+    "rank": 5886
+   },
+   {
+    "name": "@sentry-internal/feedback",
+    "rank": 2232
+   },
+   {
+    "name": "react-native",
+    "rank": 2929
+   },
+   {
+    "name": "@nicolo-ribaudo/eslint-scope-5-internals",
+    "rank": 3896
+   },
+   {
+    "name": "@webassemblyjs/helper-fsm",
+    "rank": 6019
+   },
+   {
+    "name": "jest-serializer-html",
+    "rank": 7296
+   },
+   {
+    "name": "encode-utf8",
+    "rank": 6586
+   },
+   {
+    "name": "@pnpm/graceful-fs",
+    "rank": 8182
+   },
+   {
+    "name": "@turf/polygon-smooth",
+    "rank": 9911
+   },
+   {
+    "name": "sucrase",
+    "rank": 1295
+   },
+   {
+    "name": "@walletconnect/jsonrpc-types",
+    "rank": 9756
+   },
+   {
+    "name": "lodash.some",
+    "rank": 9859
+   },
+   {
+    "name": "react-resizable-panels",
+    "rank": 1534
+   },
+   {
+    "name": "ssh2",
+    "rank": 2984
+   },
+   {
+    "name": "mochawesome",
+    "rank": 9055
+   },
+   {
+    "name": "@pnpm/lockfile-types",
+    "rank": 9215
+   },
+   {
+    "name": "@vueuse/integrations",
+    "rank": 5626
+   },
+   {
+    "name": "@unrs/resolver-binding-darwin-x64",
+    "rank": 5745
+   },
+   {
+    "name": "@module-federation/runtime-tools",
+    "rank": 3445
+   },
+   {
+    "name": "@rollup/rollup-freebsd-x64",
+    "rank": 5497
+   },
+   {
+    "name": "fumadocs-mdx",
+    "rank": 8338
+   },
+   {
+    "name": "@zag-js/collection",
+    "rank": 9869
+   },
+   {
+    "name": "@electron-forge/template-webpack",
+    "rank": 8950
+   },
+   {
+    "name": "fresh",
+    "rank": 263
+   },
+   {
+    "name": "retry-as-promised",
+    "rank": 6269
+   },
+   {
+    "name": "html-url-attributes",
+    "rank": 1597
+   },
+   {
+    "name": "xml-parser-xo",
+    "rank": 9049
+   },
+   {
+    "name": "@rc-component/motion",
+    "rank": 9536
+   },
+   {
+    "name": "@react-dnd/asap",
+    "rank": 5169
+   },
+   {
+    "name": "gulp-cli",
+    "rank": 7855
+   },
+   {
+    "name": "@docusaurus/cssnano-preset",
+    "rank": 8570
+   },
+   {
+    "name": "@radix-ui/react-form",
+    "rank": 2766
+   },
+   {
+    "name": "@cspell/dict-csharp",
+    "rank": 7938
+   },
+   {
+    "name": "any-base",
+    "rank": 5322
+   },
+   {
+    "name": "@ethersproject/basex",
+    "rank": 9093
+   },
+   {
+    "name": "lodash.capitalize",
+    "rank": 5906
+   },
+   {
+    "name": "lower-case-first",
+    "rank": 3585
+   },
+   {
+    "name": "date-fns-jalali",
+    "rank": 3688
+   },
+   {
+    "name": "fast-printf",
+    "rank": 8728
+   },
+   {
+    "name": "@ckeditor/ckeditor5-core",
+    "rank": 9251
+   },
+   {
+    "name": "stream-combiner2",
+    "rank": 5153
+   },
+   {
+    "name": "gradle-to-js",
+    "rank": 8075
+   },
+   {
+    "name": "@fastify/static",
+    "rank": 4698
+   },
+   {
+    "name": "@s2-dev/streamstore",
+    "rank": 9814
+   },
+   {
+    "name": "vite-dev-rpc",
+    "rank": 6852
+   },
+   {
+    "name": "@walletconnect/logger",
+    "rank": 6726
+   },
+   {
+    "name": "progress",
+    "rank": 1087
+   },
+   {
+    "name": "quill",
+    "rank": 4054
+   },
+   {
+    "name": "available-typed-arrays",
+    "rank": 449
+   },
+   {
+    "name": "fast-decode-uri-component",
+    "rank": 2772
+   },
+   {
+    "name": "jiti",
+    "rank": 209
+   },
+   {
+    "name": "@react-types/searchfield",
+    "rank": 8203
+   },
+   {
+    "name": "lead",
+    "rank": 6343
+   },
+   {
+    "name": "@opentelemetry/semantic-conventions",
+    "rank": 389
+   },
+   {
+    "name": "fbemitter",
+    "rank": 7256
+   },
+   {
+    "name": "babel-plugin-transform-async-to-generator",
+    "rank": 9098
+   },
+   {
+    "name": "@react-aria/separator",
+    "rank": 7942
+   },
+   {
+    "name": "@nx/docker",
+    "rank": 9267
+   },
+   {
+    "name": "@oxc-parser/binding-win32-arm64-msvc",
+    "rank": 7974
+   },
+   {
+    "name": "postcss-merge-rules",
+    "rank": 2498
+   },
+   {
+    "name": "basic-ftp",
+    "rank": 1803
+   },
+   {
+    "name": "netmask",
+    "rank": 1764
+   },
+   {
+    "name": "memoize",
+    "rank": 8123
+   },
+   {
+    "name": "mjml-body",
+    "rank": 7924
+   },
+   {
+    "name": "@babel/plugin-transform-class-static-block",
+    "rank": 1284
+   },
+   {
+    "name": "@opentelemetry/instrumentation-lru-memoizer",
+    "rank": 2160
+   },
+   {
+    "name": "@react-types/shared",
+    "rank": 2757
+   },
+   {
+    "name": "jscodeshift",
+    "rank": 4277
+   },
+   {
+    "name": "serialize-error-cjs",
+    "rank": 8980
+   },
+   {
+    "name": "@tanstack/table-core",
+    "rank": 1965
+   },
+   {
+    "name": "@react-native/babel-plugin-codegen",
+    "rank": 2817
+   },
+   {
+    "name": "emittery",
+    "rank": 1155
+   },
+   {
+    "name": "create-react-class",
+    "rank": 7116
+   },
+   {
+    "name": "multibase",
+    "rank": 7825
+   },
+   {
+    "name": "@emotion/babel-plugin",
+    "rank": 2092
+   },
+   {
+    "name": "@ethereumjs/rlp",
+    "rank": 6387
+   },
+   {
+    "name": "debounce-promise",
+    "rank": 8576
+   },
+   {
+    "name": "latest-version",
+    "rank": 3114
+   },
+   {
+    "name": "xss",
+    "rank": 4688
+   },
+   {
+    "name": "rtl-detect",
+    "rank": 7266
+   },
+   {
+    "name": "@mdn/browser-compat-data",
+    "rank": 6930
+   },
+   {
+    "name": "@nivo/core",
+    "rank": 8597
+   },
+   {
+    "name": "grammy",
+    "rank": 4690
+   },
+   {
+    "name": "query-string",
+    "rank": 2078
+   },
+   {
+    "name": "@types/classnames",
+    "rank": 8761
+   },
+   {
+    "name": "@types/dom-webcodecs",
+    "rank": 6158
+   },
+   {
+    "name": "contains-path",
+    "rank": 9452
+   },
+   {
+    "name": "gensync",
+    "rank": 231
+   },
+   {
+    "name": "@clerk/react",
+    "rank": 6688
+   },
+   {
+    "name": "os-tmpdir",
+    "rank": 2162
+   },
+   {
+    "name": "encodeurl",
+    "rank": 226
+   },
+   {
+    "name": "@angular-devkit/build-webpack",
+    "rank": 5607
+   },
+   {
+    "name": "@samverschueren/stream-to-observable",
+    "rank": 7076
+   },
+   {
+    "name": "@graphql-tools/graphql-file-loader",
+    "rank": 3539
+   },
+   {
+    "name": "math-random",
+    "rank": 6866
+   },
+   {
+    "name": "minipass-collect",
+    "rank": 1698
+   },
+   {
+    "name": "natural-orderby",
+    "rank": 4280
+   },
+   {
+    "name": "@formatjs/intl-listformat",
+    "rank": 7265
+   },
+   {
+    "name": "css-color-keywords",
+    "rank": 3316
+   },
+   {
+    "name": "@loaders.gl/loader-utils",
+    "rank": 8213
+   },
+   {
+    "name": "traverse-chain",
+    "rank": 8843
+   },
+   {
+    "name": "@opentelemetry/instrumentation-bunyan",
+    "rank": 3265
+   },
+   {
+    "name": "@openai/agents-core",
+    "rank": 7475
+   },
+   {
+    "name": "html-minifier-terser",
+    "rank": 2178
+   },
+   {
+    "name": "rollup-plugin-inject",
+    "rank": 8860
+   },
+   {
+    "name": "@types/tunnel",
+    "rank": 9655
+   },
+   {
+    "name": "supertest",
+    "rank": 2655
+   },
+   {
+    "name": "ext-list",
+    "rank": 4323
+   },
+   {
+    "name": "@mediabunny/aac-encoder",
+    "rank": 9538
+   },
+   {
+    "name": "@react-types/overlays",
+    "rank": 6354
+   },
+   {
+    "name": "update-notifier-cjs",
+    "rank": 7063
+   },
+   {
+    "name": "bottleneck",
+    "rank": 3042
+   },
+   {
+    "name": "@jsep-plugin/regex",
+    "rank": 3565
+   },
+   {
+    "name": "@radix-ui/react-tabs",
+    "rank": 862
+   },
+   {
+    "name": "@koromix/koffi-linux-x64",
+    "rank": 6430
+   },
+   {
+    "name": "@shopify/react-native-skia",
+    "rank": 9185
+   },
+   {
+    "name": "lodash.camelcase",
+    "rank": 1220
+   },
+   {
+    "name": "thirty-two",
+    "rank": 8428
+   },
+   {
+    "name": "@sigstore/protobuf-specs",
+    "rank": 3144
+   },
+   {
+    "name": "@malept/cross-spawn-promise",
+    "rank": 9718
+   },
+   {
+    "name": "@ag-ui/encoder",
+    "rank": 9441
+   },
+   {
+    "name": "@azure/core-auth",
+    "rank": 2237
+   },
+   {
+    "name": "graceful-readlink",
+    "rank": 7118
+   },
+   {
+    "name": "@intlify/shared",
+    "rank": 5195
+   },
+   {
+    "name": "pug-lexer",
+    "rank": 5429
+   },
+   {
+    "name": "@protobufjs/pool",
+    "rank": 995
+   },
+   {
+    "name": "ripemd160",
+    "rank": 2657
+   },
+   {
+    "name": "mssql",
+    "rank": 5988
+   },
+   {
+    "name": "@aws-sdk/client-route-53",
+    "rank": 7826
+   },
+   {
+    "name": "@rollup/rollup-openharmony-arm64",
+    "rank": 5996
+   },
+   {
+    "name": "@jest/test-result",
+    "rank": 919
+   },
+   {
+    "name": "@aws-amplify/core",
+    "rank": 7935
+   },
+   {
+    "name": "@graphql-codegen/typescript-react-apollo",
+    "rank": 9444
+   },
+   {
+    "name": "@img/sharp-libvips-linux-riscv64",
+    "rank": 7515
+   },
+   {
+    "name": "are-we-there-yet",
+    "rank": 2096
+   },
+   {
+    "name": "@radix-ui/react-radio-group",
+    "rank": 1307
+   },
+   {
+    "name": "properties-file",
+    "rank": 9680
+   },
+   {
+    "name": "@stylexjs/babel-plugin",
+    "rank": 9209
+   },
+   {
+    "name": "@smithy/util-defaults-mode-node",
+    "rank": 1515
+   },
+   {
+    "name": "@gorhom/portal",
+    "rank": 6741
+   },
+   {
+    "name": "@types/webxr",
+    "rank": 3209
+   },
+   {
+    "name": "lodash.clonedeepwith",
+    "rank": 8771
+   },
+   {
+    "name": "@rushstack/problem-matcher",
+    "rank": 5484
+   },
+   {
+    "name": "livekit-server-sdk",
+    "rank": 7908
+   },
+   {
+    "name": "lowdb",
+    "rank": 8137
+   },
+   {
+    "name": "ansi-red",
+    "rank": 9007
+   },
+   {
+    "name": "@gulpjs/to-absolute-glob",
+    "rank": 9693
+   },
+   {
+    "name": "pug",
+    "rank": 5469
+   },
+   {
+    "name": "@emmetio/css-abbreviation",
+    "rank": 6231
+   },
+   {
+    "name": "stacktracey",
+    "rank": 6090
+   },
+   {
+    "name": "postcss-nesting",
+    "rank": 3475
+   },
+   {
+    "name": "focus-trap",
+    "rank": 4147
+   },
+   {
+    "name": "@reown/appkit-polyfills",
+    "rank": 8714
+   },
+   {
+    "name": "types-registry",
+    "rank": 4770
+   },
+   {
+    "name": "@ai-sdk/google",
+    "rank": 3768
+   },
+   {
+    "name": "@types/urijs",
+    "rank": 5127
+   },
+   {
+    "name": "virtua",
+    "rank": 9882
+   },
+   {
+    "name": "@scalar/openapi-upgrader",
+    "rank": 5956
+   },
+   {
+    "name": "afinn-165-financialmarketnews",
+    "rank": 9334
+   },
+   {
+    "name": "punycode",
+    "rank": 84
+   },
+   {
+    "name": "tsc-alias",
+    "rank": 5701
+   },
+   {
+    "name": "unbzip2-stream",
+    "rank": 2868
+   },
+   {
+    "name": "maxmind",
+    "rank": 7213
+   },
+   {
+    "name": "@eslint-react/ast",
+    "rank": 6875
+   },
+   {
+    "name": "lop",
+    "rank": 4915
+   },
+   {
+    "name": "builtin-status-codes",
+    "rank": 3150
+   },
+   {
+    "name": "yuku-ast",
+    "rank": 5221
+   },
+   {
+    "name": "@aws-sdk/client-sts",
+    "rank": 2213
+   },
+   {
+    "name": "@eslint-community/eslint-plugin-eslint-comments",
+    "rank": 7236
+   },
+   {
+    "name": "currently-unhandled",
+    "rank": 5089
+   },
+   {
+    "name": "solid-js",
+    "rank": 4693
+   },
+   {
+    "name": "sqlite-vec",
+    "rank": 7961
+   },
+   {
+    "name": "finalhandler",
+    "rank": 200
+   },
+   {
+    "name": "check-error",
+    "rank": 948
+   },
+   {
+    "name": "@babel/eslint-parser",
+    "rank": 3411
+   },
+   {
+    "name": "is-word-character",
+    "rank": 8595
+   },
+   {
+    "name": "function-timeout",
+    "rank": 3811
+   },
+   {
+    "name": "@codemirror/lang-liquid",
+    "rank": 6357
+   },
+   {
+    "name": "asynckit",
+    "rank": 342
+   },
+   {
+    "name": "@secretlint/node",
+    "rank": 9057
+   },
+   {
+    "name": "react-overlays",
+    "rank": 7574
+   },
+   {
+    "name": "@parcel/watcher",
+    "rank": 1418
+   },
+   {
+    "name": "@vanilla-extract/dynamic",
+    "rank": 9653
+   },
+   {
+    "name": "dash-ast",
+    "rank": 8789
+   },
+   {
+    "name": "@module-federation/runtime",
+    "rank": 3180
+   },
+   {
+    "name": "@puppeteer/browsers",
+    "rank": 2008
+   },
+   {
+    "name": "@typescript/vfs",
+    "rank": 5494
+   },
+   {
+    "name": "@tiptap/y-tiptap",
+    "rank": 7937
+   },
+   {
+    "name": "@angular-eslint/bundled-angular-compiler",
+    "rank": 5692
+   },
+   {
+    "name": "shiki",
+    "rank": 1981
+   },
+   {
+    "name": "media-engine",
+    "rank": 4462
+   },
+   {
+    "name": "encoding",
+    "rank": 1969
+   },
+   {
+    "name": "longest",
+    "rank": 5564
+   },
+   {
+    "name": "@googleapis/sheets",
+    "rank": 9255
+   },
+   {
+    "name": "react-cookie",
+    "rank": 9963
+   },
+   {
+    "name": "@types/babel__template",
+    "rank": 473
+   },
+   {
+    "name": "@aws-amplify/auth",
+    "rank": 7522
+   },
+   {
+    "name": "@csstools/postcss-stepped-value-functions",
+    "rank": 4595
+   }
+  ],
+  "mid": [
+   {
+    "name": "@udecode/plate-ast-serializer",
+    "rank": 70943
+   },
+   {
+    "name": "wdio-html-nice-reporter",
+    "rank": 27340
+   },
+   {
+    "name": "@types/react-sortable-tree",
+    "rank": 57825
+   },
+   {
+    "name": "nice-grpc-client-middleware-deadline",
+    "rank": 24895
+   },
+   {
+    "name": "hashlru",
+    "rank": 17905
+   },
+   {
+    "name": "mico-spinner",
+    "rank": 78475
+   },
+   {
+    "name": "@visual-json/react",
+    "rank": 35395
+   },
+   {
+    "name": "@lifi/sdk-provider-ethereum",
+    "rank": 59184
+   },
+   {
+    "name": "rn-fetch-blob",
+    "rank": 33115
+   },
+   {
+    "name": "pinia-orm",
+    "rank": 71507
+   },
+   {
+    "name": "enzyme-adapter-react-17-updated",
+    "rank": 81695
+   },
+   {
+    "name": "deferential",
+    "rank": 37454
+   },
+   {
+    "name": "@stdlib/constants-int16-max",
+    "rank": 31247
+   },
+   {
+    "name": "@fastify/oauth2",
+    "rank": 27880
+   },
+   {
+    "name": "@autoform/core",
+    "rank": 66760
+   },
+   {
+    "name": "@heliofi/deposit-react",
+    "rank": 76502
+   },
+   {
+    "name": "@wormhole-foundation/sdk-base",
+    "rank": 36433
+   },
+   {
+    "name": "@subsquid/util-internal-commander",
+    "rank": 53536
+   },
+   {
+    "name": "ethcall",
+    "rank": 72209
+   },
+   {
+    "name": "reactjs-signal",
+    "rank": 70301
+   },
+   {
+    "name": "close-clay-pleasure",
+    "rank": 60067
+   },
+   {
+    "name": "@parcel/fs-write-stream-atomic",
+    "rank": 64784
+   },
+   {
+    "name": "password-hash-and-salt",
+    "rank": 60885
+   },
+   {
+    "name": "@matter-server/custom-clusters",
+    "rank": 46542
+   },
+   {
+    "name": "3d-force-graph",
+    "rank": 15768
+   },
+   {
+    "name": "@logtail/core",
+    "rank": 15778
+   },
+   {
+    "name": "findandreplacedomtext",
+    "rank": 88892
+   },
+   {
+    "name": "@bbob/html",
+    "rank": 38883
+   },
+   {
+    "name": "yup-locale-ja",
+    "rank": 48215
+   },
+   {
+    "name": "nuxt-tiptap-editor",
+    "rank": 67157
+   },
+   {
+    "name": "@jinn-network/trust-core",
+    "rank": 64470
+   },
+   {
+    "name": "@contract-case/case-plugin-dsl-types",
+    "rank": 14184
+   },
+   {
+    "name": "react-native-jazzicon",
+    "rank": 30710
+   },
+   {
+    "name": "@vendure/create",
+    "rank": 82279
+   },
+   {
+    "name": "@unimodules/core",
+    "rank": 19490
+   },
+   {
+    "name": "passive-events-support",
+    "rank": 96134
+   },
+   {
+    "name": "multi-fork",
+    "rank": 38851
+   },
+   {
+    "name": "@progress/kendo-file-saver",
+    "rank": 19872
+   },
+   {
+    "name": "image-encode",
+    "rank": 74650
+   },
+   {
+    "name": "@php-wasm/xdebug-bridge",
+    "rank": 27758
+   },
+   {
+    "name": "notevil",
+    "rank": 45200
+   },
+   {
+    "name": "@hypequery/datasets",
+    "rank": 75439
+   },
+   {
+    "name": "@tanstack/charts",
+    "rank": 17892
+   },
+   {
+    "name": "@flighthq/dialog",
+    "rank": 78745
+   },
+   {
+    "name": "@fusioncharts/maps",
+    "rank": 32341
+   },
+   {
+    "name": "self-update",
+    "rank": 83070
+   },
+   {
+    "name": "@abaplint/transpiler",
+    "rank": 93000
+   },
+   {
+    "name": "@xterm/addon-unicode-graphemes",
+    "rank": 42155
+   },
+   {
+    "name": "@alpinejs/focus",
+    "rank": 26838
+   },
+   {
+    "name": "vitest-dom",
+    "rank": 30410
+   },
+   {
+    "name": "react-microsoft-login",
+    "rank": 82354
+   },
+   {
+    "name": "@backstage/plugin-search-backend-module-elasticsearch",
+    "rank": 60482
+   },
+   {
+    "name": "croppr",
+    "rank": 73178
+   },
+   {
+    "name": "req-all",
+    "rank": 21331
+   },
+   {
+    "name": "@styled-icons/entypo",
+    "rank": 52896
+   },
+   {
+    "name": "evm-wallet.js",
+    "rank": 92948
+   },
+   {
+    "name": "webpack-delete-sourcemaps-plugin",
+    "rank": 62880
+   },
+   {
+    "name": "jsonlint-cli",
+    "rank": 85328
+   },
+   {
+    "name": "@yeoman/types",
+    "rank": 17522
+   },
+   {
+    "name": "modern-errors",
+    "rank": 79842
+   },
+   {
+    "name": "@exodus/ethersproject-solidity",
+    "rank": 95511
+   },
+   {
+    "name": "@atlaskit/tag-group",
+    "rank": 34345
+   },
+   {
+    "name": "babel-plugin-syntax-do-expressions",
+    "rank": 16834
+   },
+   {
+    "name": "superagent-load-balancer",
+    "rank": 71291
+   },
+   {
+    "name": "@sdjkals/adapter-theme-kernel",
+    "rank": 22943
+   },
+   {
+    "name": "@rozenite/ui",
+    "rank": 41220
+   },
+   {
+    "name": "@qvac/diagnostics",
+    "rank": 78200
+   },
+   {
+    "name": "@cubos/kube-templates",
+    "rank": 69456
+   },
+   {
+    "name": "pcf-scripts",
+    "rank": 59892
+   },
+   {
+    "name": "@strudel/core",
+    "rank": 70043
+   },
+   {
+    "name": "@circle-fin/app-kit",
+    "rank": 83363
+   },
+   {
+    "name": "promise-debounce",
+    "rank": 76822
+   },
+   {
+    "name": "@theia/preferences",
+    "rank": 49245
+   },
+   {
+    "name": "@atlaskit/theme",
+    "rank": 15403
+   },
+   {
+    "name": "@enact/ui",
+    "rank": 69423
+   },
+   {
+    "name": "svg-jest",
+    "rank": 56249
+   },
+   {
+    "name": "@shackra/exchange-api",
+    "rank": 66671
+   },
+   {
+    "name": "@panzoom/panzoom",
+    "rank": 13600
+   },
+   {
+    "name": "@bitgo/abstract-cosmos",
+    "rank": 95102
+   },
+   {
+    "name": "@deepseek-ai/dsh-web-search-deepseek",
+    "rank": 14738
+   },
+   {
+    "name": "rollup-plugin-corejs",
+    "rank": 59708
+   },
+   {
+    "name": "bath-es5",
+    "rank": 20277
+   },
+   {
+    "name": "@codingame/monaco-vscode-language-pack-ja",
+    "rank": 38853
+   },
+   {
+    "name": "@types/lodash.some",
+    "rank": 53289
+   },
+   {
+    "name": "@boundaryml/baml-darwin-arm64",
+    "rank": 60115
+   },
+   {
+    "name": "@solana/wallet-adapter-trezor",
+    "rank": 22972
+   },
+   {
+    "name": "@kubernetes-models/argo-cd",
+    "rank": 52718
+   },
+   {
+    "name": "@socket.io/redis-streams-emitter",
+    "rank": 81109
+   },
+   {
+    "name": "defuddle",
+    "rank": 12232
+   },
+   {
+    "name": "@types/proper-url-join",
+    "rank": 79144
+   },
+   {
+    "name": "@financial-times/o-icons",
+    "rank": 93593
+   },
+   {
+    "name": "react-slot-counter",
+    "rank": 46918
+   },
+   {
+    "name": "@tutti-os/workbench-surface",
+    "rank": 91479
+   },
+   {
+    "name": "babel-plugin-component",
+    "rank": 37938
+   },
+   {
+    "name": "@elysiajs/stream",
+    "rank": 36045
+   },
+   {
+    "name": "@stdlib/stats-base-dists-binomial-pmf",
+    "rank": 60052
+   },
+   {
+    "name": "tsparticles-updater-size",
+    "rank": 38375
+   },
+   {
+    "name": "generaltranslation",
+    "rank": 20600
+   },
+   {
+    "name": "@aws-cdk/aws-pipes-targets-alpha",
+    "rank": 64270
+   },
+   {
+    "name": "winterspec",
+    "rank": 81378
+   },
+   {
+    "name": "openai-zod-to-json-schema",
+    "rank": 43649
+   },
+   {
+    "name": "@voyantjs/ui",
+    "rank": 58406
+   },
+   {
+    "name": "@visulima/colorize",
+    "rank": 61182
+   },
+   {
+    "name": "react-flame-graph",
+    "rank": 66023
+   },
+   {
+    "name": "@timsuchanek/sleep-promise",
+    "rank": 32596
+   },
+   {
+    "name": "@elliemae/ds-classnames",
+    "rank": 93370
+   },
+   {
+    "name": "@usewaypoint/email-builder",
+    "rank": 48469
+   },
+   {
+    "name": "@types/eth-sig-util",
+    "rank": 93613
+   },
+   {
+    "name": "@types/clamp-js",
+    "rank": 62151
+   },
+   {
+    "name": "dts-buddy",
+    "rank": 59834
+   },
+   {
+    "name": "@sprucelabs/heartwood-view-controllers",
+    "rank": 69543
+   },
+   {
+    "name": "@anttiviljami/dtsgenerator",
+    "rank": 36063
+   },
+   {
+    "name": "can-view-import",
+    "rank": 82759
+   },
+   {
+    "name": "@github/copilot-win32-arm64",
+    "rank": 45396
+   },
+   {
+    "name": "@types/htmlbars-inline-precompile",
+    "rank": 45891
+   },
+   {
+    "name": "image-palette",
+    "rank": 45880
+   },
+   {
+    "name": "@astrojs/solid-js",
+    "rank": 19979
+   },
+   {
+    "name": "jest-puppeteer",
+    "rank": 21159
+   },
+   {
+    "name": "@morpho-org/morpho-sdk",
+    "rank": 40620
+   },
+   {
+    "name": "@teambit/dev-files",
+    "rank": 70784
+   },
+   {
+    "name": "@linaria/react",
+    "rank": 14714
+   },
+   {
+    "name": "@cap-js/change-tracking",
+    "rank": 63650
+   },
+   {
+    "name": "@thi.ng/arrays",
+    "rank": 16233
+   },
+   {
+    "name": "fumadb",
+    "rank": 30246
+   },
+   {
+    "name": "@ua-parser-js/pro-business",
+    "rank": 23818
+   },
+   {
+    "name": "ric-shim",
+    "rank": 57699
+   },
+   {
+    "name": "it-concat",
+    "rank": 61750
+   },
+   {
+    "name": "loki-mode",
+    "rank": 70712
+   },
+   {
+    "name": "@tamagui/input",
+    "rank": 24463
+   },
+   {
+    "name": "@gilbarbara/deep-equal",
+    "rank": 11696
+   },
+   {
+    "name": "@myinterview/widget-react",
+    "rank": 70237
+   },
+   {
+    "name": "@tutti-os/workspace-file-preview",
+    "rank": 93296
+   },
+   {
+    "name": "shasum",
+    "rank": 11820
+   },
+   {
+    "name": "lodash.isnative",
+    "rank": 86200
+   },
+   {
+    "name": "@graphql-markdown/printer-legacy",
+    "rank": 55625
+   },
+   {
+    "name": "@salesforce/pwa-kit-runtime",
+    "rank": 67778
+   },
+   {
+    "name": "@svgr/rollup",
+    "rank": 13097
+   },
+   {
+    "name": "can-types",
+    "rank": 92642
+   },
+   {
+    "name": "@visx/mock-data",
+    "rank": 20986
+   },
+   {
+    "name": "supertest-with-proxy",
+    "rank": 42763
+   },
+   {
+    "name": "@nuxt/vite-server-nightly",
+    "rank": 61525
+   },
+   {
+    "name": "@react-native-community/image-editor",
+    "rank": 47010
+   },
+   {
+    "name": "@coldtea/pr-lens-renderer",
+    "rank": 58771
+   },
+   {
+    "name": "ghost-testrpc",
+    "rank": 19990
+   },
+   {
+    "name": "angular-bootstrap-datetimepicker",
+    "rank": 99824
+   },
+   {
+    "name": "fleau",
+    "rank": 92745
+   },
+   {
+    "name": "@types/changelog-filename-regex",
+    "rank": 65322
+   },
+   {
+    "name": "@pedroslopez/moduleraid",
+    "rank": 43021
+   },
+   {
+    "name": "@google-cloud/video-intelligence",
+    "rank": 33591
+   },
+   {
+    "name": "react-lazy-cache",
+    "rank": 45855
+   },
+   {
+    "name": "node-zopfli-es",
+    "rank": 43233
+   },
+   {
+    "name": "@nuxtjs/color-mode",
+    "rank": 13008
+   },
+   {
+    "name": "gltf-pipeline",
+    "rank": 53378
+   },
+   {
+    "name": "blocking-proxy",
+    "rank": 13254
+   },
+   {
+    "name": "universal-base64",
+    "rank": 24695
+   },
+   {
+    "name": "@stablelib/poly1305",
+    "rank": 21789
+   },
+   {
+    "name": "discover-compare-boy-careful",
+    "rank": 60626
+   },
+   {
+    "name": "njre",
+    "rank": 38668
+   },
+   {
+    "name": "@atlaskit/in-product-testing",
+    "rank": 54559
+   },
+   {
+    "name": "@mysten/prettier-plugin-move",
+    "rank": 83432
+   },
+   {
+    "name": "markdown-it-color",
+    "rank": 89382
+   },
+   {
+    "name": "payengine",
+    "rank": 59799
+   },
+   {
+    "name": "@sveltejs/site-kit",
+    "rank": 86818
+   },
+   {
+    "name": "@vaadin/component-base",
+    "rank": 16232
+   },
+   {
+    "name": "@gluestack/ui-next-adapter",
+    "rank": 61648
+   },
+   {
+    "name": "@grafana/scenes-react",
+    "rank": 36769
+   },
+   {
+    "name": "gender-detection-from-name",
+    "rank": 91694
+   },
+   {
+    "name": "@chakra-ui/react-use-focus-on-pointer-down",
+    "rank": 17857
+   },
+   {
+    "name": "@env-spec/parser",
+    "rank": 70624
+   },
+   {
+    "name": "@vue-js-cron/core",
+    "rank": 55496
+   },
+   {
+    "name": "quais",
+    "rank": 32048
+   },
+   {
+    "name": "@arizeai/openinference-instrumentation-langchain",
+    "rank": 30303
+   },
+   {
+    "name": "dgeni",
+    "rank": 50238
+   },
+   {
+    "name": "ember-modifier",
+    "rank": 20182
+   },
+   {
+    "name": "@deepseek-ai/dsh-session-query-sqlite",
+    "rank": 14787
+   },
+   {
+    "name": "@grafana/plugin-e2e",
+    "rank": 29641
+   },
+   {
+    "name": "@fimbul/bifrost",
+    "rank": 30970
+   },
+   {
+    "name": "@devvie/bottom-sheet",
+    "rank": 63053
+   },
+   {
+    "name": "@workday/canvas-kit-popup-stack",
+    "rank": 89839
+   },
+   {
+    "name": "radio-symbol",
+    "rank": 33204
+   },
+   {
+    "name": "clean-css-promise",
+    "rank": 25866
+   },
+   {
+    "name": "@ht-sdks/events-sdk-js-core",
+    "rank": 41230
+   },
+   {
+    "name": "@umbraco-ui/uui-box",
+    "rank": 96866
+   },
+   {
+    "name": "@bitgo-beta/sdk-coin-eth",
+    "rank": 49139
+   },
+   {
+    "name": "@glimmer/env",
+    "rank": 24984
+   },
+   {
+    "name": "@slate-yjs/react",
+    "rank": 36680
+   },
+   {
+    "name": "@oxc-transform/binding-linux-arm64-musl",
+    "rank": 16179
+   },
+   {
+    "name": "@kb-labs/plugin-execution-factory",
+    "rank": 80336
+   },
+   {
+    "name": "postcss-utilities",
+    "rank": 96504
+   },
+   {
+    "name": "@particle-network/crypto",
+    "rank": 21732
+   },
+   {
+    "name": "ember-cli",
+    "rank": 16983
+   },
+   {
+    "name": "leaflet-contextmenu",
+    "rank": 70407
+   },
+   {
+    "name": "@atlaskit/editor-plugin-hyperlink",
+    "rank": 56447
+   },
+   {
+    "name": "@rspress/plugin-llms",
+    "rank": 52200
+   },
+   {
+    "name": "eslint-config-async",
+    "rank": 80196
+   },
+   {
+    "name": "@spectrum-css/tokens",
+    "rank": 70929
+   },
+   {
+    "name": "braintree-web-drop-in",
+    "rank": 22251
+   },
+   {
+    "name": "tw-to-css",
+    "rank": 17668
+   },
+   {
+    "name": "@sprucelabs/spruce-view-plugin",
+    "rank": 90809
+   },
+   {
+    "name": "@activepieces/piece-microsoft-excel-365",
+    "rank": 33169
+   },
+   {
+    "name": "postcss-font-weights",
+    "rank": 96996
+   },
+   {
+    "name": "node-interval-tree",
+    "rank": 27694
+   },
+   {
+    "name": "color-contrast-finder",
+    "rank": 83454
+   },
+   {
+    "name": "complex-esm",
+    "rank": 45269
+   },
+   {
+    "name": "@lovart-open/flags",
+    "rank": 85393
+   },
+   {
+    "name": "@pnpm/exe.freebsd-x64",
+    "rank": 56519
+   },
+   {
+    "name": "@jsep-plugin/spread",
+    "rank": 79503
+   },
+   {
+    "name": "native-watchdog",
+    "rank": 34988
+   },
+   {
+    "name": "@rsdoctor/core",
+    "rank": 11649
+   },
+   {
+    "name": "@todesktop/client-core",
+    "rank": 47059
+   },
+   {
+    "name": "redlock-temp-fix",
+    "rank": 47397
+   },
+   {
+    "name": "@nx/key",
+    "rank": 16184
+   },
+   {
+    "name": "wake_on_lan",
+    "rank": 71903
+   },
+   {
+    "name": "@leafygreen-ui/leafygreen-provider",
+    "rank": 37891
+   },
+   {
+    "name": "@pixi/graphics-smooth",
+    "rank": 58880
+   },
+   {
+    "name": "plotly.js-gl2d-dist-min",
+    "rank": 93074
+   },
+   {
+    "name": "dog-leon",
+    "rank": 54538
+   },
+   {
+    "name": "timezone-groups",
+    "rank": 20450
+   },
+   {
+    "name": "webapi-parser",
+    "rank": 27158
+   },
+   {
+    "name": "@aws-sdk/client-codeguruprofiler",
+    "rank": 44940
+   },
+   {
+    "name": "react-toggle-switch",
+    "rank": 82037
+   },
+   {
+    "name": "@types/prompt",
+    "rank": 27557
+   },
+   {
+    "name": "@adobe-mcid/visitor-js-server",
+    "rank": 75440
+   },
+   {
+    "name": "@types/imurmurhash",
+    "rank": 23601
+   },
+   {
+    "name": "rsbuild-plugin-mkcert",
+    "rank": 54198
+   },
+   {
+    "name": "@graphql-hive/gateway",
+    "rank": 34456
+   },
+   {
+    "name": "@keyv/mongo",
+    "rank": 52108
+   },
+   {
+    "name": "tabletojson",
+    "rank": 35319
+   },
+   {
+    "name": "@tabnas/railroad",
+    "rank": 82018
+   },
+   {
+    "name": "mktemp",
+    "rank": 11051
+   },
+   {
+    "name": "videojs-overlay",
+    "rank": 66954
+   },
+   {
+    "name": "@kilocode/cli-linux-x64-baseline-musl",
+    "rank": 78362
+   },
+   {
+    "name": "@types/favico.js",
+    "rank": 51912
+   },
+   {
+    "name": "@simplysf/simply-data-core",
+    "rank": 77147
+   },
+   {
+    "name": "react-tagcloud",
+    "rank": 53322
+   },
+   {
+    "name": "@visactor/vgrammar-wordcloud",
+    "rank": 82890
+   },
+   {
+    "name": "@yuku-parser/binding-linux-x64-musl",
+    "rank": 12613
+   },
+   {
+    "name": "firestore-bigquery-changelog",
+    "rank": 82587
+   },
+   {
+    "name": "@intlify/vue-i18n-core",
+    "rank": 77097
+   },
+   {
+    "name": "approvejs",
+    "rank": 64374
+   },
+   {
+    "name": "substyle-jss",
+    "rank": 57742
+   },
+   {
+    "name": "@central-icons-react-native/round-outlined-radius-3-stroke-2",
+    "rank": 35990
+   },
+   {
+    "name": "@griffel/eslint-plugin",
+    "rank": 66412
+   },
+   {
+    "name": "vanta-serverless-plugin",
+    "rank": 94156
+   },
+   {
+    "name": "ui5-middleware-servestatic",
+    "rank": 65963
+   },
+   {
+    "name": "@stdlib/math-base-special-ceil",
+    "rank": 15762
+   },
+   {
+    "name": "@mattrglobal/bbs-signatures",
+    "rank": 67543
+   },
+   {
+    "name": "@comunica/actor-dereference-fallback",
+    "rank": 60828
+   },
+   {
+    "name": "tsparticles-move-parallax",
+    "rank": 42706
+   },
+   {
+    "name": "mira-cli-ts",
+    "rank": 93719
+   },
+   {
+    "name": "@stablelib/aead",
+    "rank": 21813
+   },
+   {
+    "name": "remix-i18next",
+    "rank": 20462
+   },
+   {
+    "name": "jest-editor-support",
+    "rank": 41280
+   },
+   {
+    "name": "haste-resolver-webpack-plugin",
+    "rank": 69528
+   },
+   {
+    "name": "@actions/expressions",
+    "rank": 38741
+   },
+   {
+    "name": "@storyblok/field-plugin",
+    "rank": 75438
+   },
+   {
+    "name": "octokit-plugin-create-pull-request",
+    "rank": 25744
+   },
+   {
+    "name": "crypto-token",
+    "rank": 51584
+   },
+   {
+    "name": "@stdlib/constants-float64-sqrt-two",
+    "rank": 26625
+   },
+   {
+    "name": "@toolbox-sdk/server-win32-x64",
+    "rank": 77439
+   },
+   {
+    "name": "@stream-markdown/math",
+    "rank": 91950
+   },
+   {
+    "name": "world-calendars",
+    "rank": 13001
+   },
+   {
+    "name": "@team-plain/webhooks",
+    "rank": 25041
+   },
+   {
+    "name": "@medusajs/cache-redis",
+    "rank": 22571
+   },
+   {
+    "name": "@quartz-community/description",
+    "rank": 38929
+   },
+   {
+    "name": "@lmzhen/dsh-evolution-state-storage",
+    "rank": 72813
+   },
+   {
+    "name": "@renegades/react-native-tickle",
+    "rank": 65452
+   },
+   {
+    "name": "@replit/connect",
+    "rank": 96054
+   },
+   {
+    "name": "xpath-range",
+    "rank": 89079
+   },
+   {
+    "name": "@pikku/kysely",
+    "rank": 82160
+   },
+   {
+    "name": "@xterm/addon-ligatures",
+    "rank": 19916
+   },
+   {
+    "name": "@metamask-previews/eth-block-tracker",
+    "rank": 89917
+   },
+   {
+    "name": "ngx-spinner",
+    "rank": 24278
+   },
+   {
+    "name": "@rslint/linux-x64",
+    "rank": 87048
+   },
+   {
+    "name": "@storybook/addon-webpack5-compiler-babel",
+    "rank": 13463
+   },
+   {
+    "name": "@flowgram.ai/variable-core",
+    "rank": 74746
+   },
+   {
+    "name": "@tscircuit/checks",
+    "rank": 31111
+   },
+   {
+    "name": "@xn-intenton-z2a/agentic-lib",
+    "rank": 72320
+   },
+   {
+    "name": "typograf",
+    "rank": 54686
+   },
+   {
+    "name": "@types/react-dual-listbox",
+    "rank": 76076
+   },
+   {
+    "name": "@terrazzo/plugin-css",
+    "rank": 28679
+   },
+   {
+    "name": "@thaunknown/thirty-two",
+    "rank": 65740
+   },
+   {
+    "name": "@plone/components",
+    "rank": 96555
+   },
+   {
+    "name": "angular-ui-sortable",
+    "rank": 38032
+   },
+   {
+    "name": "@typedorm/core",
+    "rank": 37409
+   },
+   {
+    "name": "@comet/site-react",
+    "rank": 91926
+   },
+   {
+    "name": "typedoc-twilio-theme",
+    "rank": 43746
+   },
+   {
+    "name": "@types/lsofi",
+    "rank": 91423
+   },
+   {
+    "name": "@testing-library/testcafe",
+    "rank": 25094
+   },
+   {
+    "name": "replace-buffer",
+    "rank": 33710
+   },
+   {
+    "name": "@testdriverai/runner",
+    "rank": 60401
+   },
+   {
+    "name": "smpte-timecode",
+    "rank": 75828
+   },
+   {
+    "name": "@keep-network/keep-core",
+    "rank": 92036
+   },
+   {
+    "name": "rays-glass",
+    "rank": 55891
+   },
+   {
+    "name": "ajv-pack",
+    "rank": 75604
+   },
+   {
+    "name": "@pinax/graph-networks-registry",
+    "rank": 47564
+   },
+   {
+    "name": "@yuku-parser/binding-darwin-x64",
+    "rank": 27012
+   },
+   {
+    "name": "@siemens/maps-ng",
+    "rank": 78674
+   },
+   {
+    "name": "@vvago/vale",
+    "rank": 40367
+   },
+   {
+    "name": "@astrolib/analytics",
+    "rank": 61985
+   },
+   {
+    "name": "@sapui5/sap.ovp",
+    "rank": 81891
+   },
+   {
+    "name": "textlint-rule-preset-japanese",
+    "rank": 68798
+   },
+   {
+    "name": "@agentuity/drizzle",
+    "rank": 61948
+   },
+   {
+    "name": "@react-native-aria/checkbox",
+    "rank": 28142
+   },
+   {
+    "name": "@universal-deploy/node",
+    "rank": 34582
+   },
+   {
+    "name": "@udecode/plate-serializer-md",
+    "rank": 43524
+   },
+   {
+    "name": "@epam/ai-dial-chat-shared",
+    "rank": 63165
+   },
+   {
+    "name": "@defra/cdp-auditing",
+    "rank": 74979
+   },
+   {
+    "name": "@remix-run/session-middleware",
+    "rank": 68404
+   },
+   {
+    "name": "@fluidframework/garbage-collector",
+    "rank": 83167
+   },
+   {
+    "name": "@teambit/clear-cache",
+    "rank": 99174
+   },
+   {
+    "name": "@aws-cdk/aws-iam",
+    "rank": 19413
+   },
+   {
+    "name": "@browserless.io/mcp",
+    "rank": 97736
+   },
+   {
+    "name": "esm-potrace-wasm",
+    "rank": 98691
+   },
+   {
+    "name": "update-ts-references",
+    "rank": 21603
+   },
+   {
+    "name": "@codemirror/matchbrackets",
+    "rank": 35023
+   },
+   {
+    "name": "@doist/todoist-mcp",
+    "rank": 91245
+   },
+   {
+    "name": "gatsby-plugin-svgr-svgo",
+    "rank": 92729
+   },
+   {
+    "name": "@depot/cli-win32-ia32",
+    "rank": 59476
+   },
+   {
+    "name": "rescript-schema",
+    "rank": 60583
+   },
+   {
+    "name": "@microsoft/tui-test",
+    "rank": 39264
+   },
+   {
+    "name": "path-object",
+    "rank": 58272
+   },
+   {
+    "name": "httpcloak",
+    "rank": 84597
+   },
+   {
+    "name": "@webiny/i18n-react",
+    "rank": 98779
+   },
+   {
+    "name": "@parmanasystems/contracts",
+    "rank": 90264
+   },
+   {
+    "name": "dom-element-descriptors",
+    "rank": 24604
+   },
+   {
+    "name": "twilio-sdk-type-validator",
+    "rank": 65412
+   },
+   {
+    "name": "@callstack/reassure-measure",
+    "rank": 22097
+   },
+   {
+    "name": "remotedev-utils",
+    "rank": 91176
+   },
+   {
+    "name": "@foblex/drag-toolkit",
+    "rank": 95688
+   },
+   {
+    "name": "@comunica/actor-bindings-aggregator-factory-wildcard-count",
+    "rank": 55198
+   },
+   {
+    "name": "react-query-rewind",
+    "rank": 80104
+   },
+   {
+    "name": "ideavo-code-linux-x64-baseline",
+    "rank": 86731
+   },
+   {
+    "name": "@survicate/survicate-web-package",
+    "rank": 32893
+   },
+   {
+    "name": "postgrejs",
+    "rank": 80867
+   },
+   {
+    "name": "@pnpm/exe.linux-ppc64",
+    "rank": 56592
+   },
+   {
+    "name": "@kb-labs/studio-plugin-tools",
+    "rank": 91580
+   },
+   {
+    "name": "@comunica/bus-rdf-resolve-hypermedia-links-queue",
+    "rank": 62010
+   },
+   {
+    "name": "@wix/auto_sdk_members_members-about",
+    "rank": 40462
+   },
+   {
+    "name": "safe-require",
+    "rank": 41420
+   },
+   {
+    "name": "redux-micro-frontend",
+    "rank": 88192
+   },
+   {
+    "name": "@types/ui-select",
+    "rank": 93042
+   },
+   {
+    "name": "amplify-frontend-javascript",
+    "rank": 55002
+   },
+   {
+    "name": "@nativescript/ios",
+    "rank": 82120
+   },
+   {
+    "name": "react-hot-keys",
+    "rank": 50769
+   },
+   {
+    "name": "@intentic/desktop-automation",
+    "rank": 98270
+   },
+   {
+    "name": "@nuxtjs/auth",
+    "rank": 70764
+   },
+   {
+    "name": "color-fns",
+    "rank": 69584
+   },
+   {
+    "name": "is-git-ref-name-valid",
+    "rank": 17207
+   },
+   {
+    "name": "@restatedev/restate-sdk-tunnel",
+    "rank": 44765
+   },
+   {
+    "name": "sass-embedded-linux-musl-arm64",
+    "rank": 11266
+   },
+   {
+    "name": "@substrate/dev",
+    "rank": 32837
+   },
+   {
+    "name": "deslop-js",
+    "rank": 10482
+   },
+   {
+    "name": "recoil-toolkit",
+    "rank": 83292
+   },
+   {
+    "name": "leche",
+    "rank": 66004
+   },
+   {
+    "name": "@resvg/resvg-js-linux-x64-musl",
+    "rank": 10664
+   },
+   {
+    "name": "@remix-run/spa",
+    "rank": 74484
+   },
+   {
+    "name": "vite-plugin-legacy-swc",
+    "rank": 91605
+   },
+   {
+    "name": "get-gulp-args",
+    "rank": 80860
+   },
+   {
+    "name": "@langchain/nomic",
+    "rank": 93178
+   },
+   {
+    "name": "workspace-dependency-graph",
+    "rank": 81153
+   },
+   {
+    "name": "@argos-ci/storybook",
+    "rank": 30228
+   },
+   {
+    "name": "@medusajs/notification-sendgrid",
+    "rank": 23759
+   },
+   {
+    "name": "@chat-adapter/linear",
+    "rank": 23392
+   },
+   {
+    "name": "dropify",
+    "rank": 82539
+   },
+   {
+    "name": "@vue-email/cli",
+    "rank": 80685
+   },
+   {
+    "name": "base58-js",
+    "rank": 18902
+   },
+   {
+    "name": "@aws-sdk/client-verifiedpermissions",
+    "rank": 27050
+   },
+   {
+    "name": "ton-assembly",
+    "rank": 32598
+   },
+   {
+    "name": "@bufbuild/re2",
+    "rank": 46730
+   },
+   {
+    "name": "@metamask-previews/chomp-api-service",
+    "rank": 90505
+   },
+   {
+    "name": "@jupyterlab/coreutils",
+    "rank": 25200
+   },
+   {
+    "name": "command-code",
+    "rank": 33133
+   },
+   {
+    "name": "htmx.org",
+    "rank": 17654
+   },
+   {
+    "name": "@danxbot/ui",
+    "rank": 73145
+   },
+   {
+    "name": "pjs",
+    "rank": 79738
+   },
+   {
+    "name": "combined-stream2",
+    "rank": 26349
+   },
+   {
+    "name": "@wterm/ghostty",
+    "rank": 66347
+   },
+   {
+    "name": "@volar-plugins/vetur",
+    "rank": 86729
+   },
+   {
+    "name": "@opencode/server",
+    "rank": 35849
+   },
+   {
+    "name": "storybook-addon-tags",
+    "rank": 50508
+   },
+   {
+    "name": "@types/react-data-grid",
+    "rank": 74523
+   },
+   {
+    "name": "rivets",
+    "rank": 71390
+   },
+   {
+    "name": "@stdlib/assert-is-prototype-of",
+    "rank": 86917
+   },
+   {
+    "name": "@avh4/elm-format-linux-x64",
+    "rank": 50509
+   },
+   {
+    "name": "vdirs",
+    "rank": 26156
+   },
+   {
+    "name": "@objectstack/lint",
+    "rank": 88445
+   },
+   {
+    "name": "@frosted-ui/colors",
+    "rank": 64184
+   },
+   {
+    "name": "simple-uploader.js",
+    "rank": 94890
+   },
+   {
+    "name": "@iconify-json/uim",
+    "rank": 66469
+   },
+   {
+    "name": "@netlify/esbuild-linux-s390x",
+    "rank": 69108
+   },
+   {
+    "name": "@kestra-io/libs",
+    "rank": 26905
+   },
+   {
+    "name": "ethjs-contract",
+    "rank": 33445
+   },
+   {
+    "name": "@types/react-geocode",
+    "rank": 59025
+   },
+   {
+    "name": "@offirgolan/nise",
+    "rank": 72716
+   },
+   {
+    "name": "angular-drag-and-drop-lists",
+    "rank": 39725
+   },
+   {
+    "name": "@rivetkit/engine-runner-protocol",
+    "rank": 70758
+   },
+   {
+    "name": "@sanity/document-internationalization",
+    "rank": 22536
+   },
+   {
+    "name": "file-fetch",
+    "rank": 46622
+   },
+   {
+    "name": "vue-i18n-routing",
+    "rank": 74473
+   },
+   {
+    "name": "@google-cloud/spanner-api",
+    "rank": 37612
+   },
+   {
+    "name": "@flighthq/input",
+    "rank": 83319
+   },
+   {
+    "name": "hazelcast-client",
+    "rank": 89191
+   },
+   {
+    "name": "multiaddr-to-uri",
+    "rank": 37121
+   },
+   {
+    "name": "stream-transcoder",
+    "rank": 76418
+   },
+   {
+    "name": "local-time",
+    "rank": 26956
+   },
+   {
+    "name": "protoclass",
+    "rank": 89347
+   },
+   {
+    "name": "pushy",
+    "rank": 96777
+   },
+   {
+    "name": "tsm",
+    "rank": 31388
+   },
+   {
+    "name": "@types/custom-functions-runtime",
+    "rank": 46965
+   },
+   {
+    "name": "@superblocksteam/cli",
+    "rank": 95684
+   },
+   {
+    "name": "@atomico/use-copy",
+    "rank": 65928
+   },
+   {
+    "name": "@ntohq/buefy-next",
+    "rank": 72551
+   },
+   {
+    "name": "@mongodb-js/socksv5",
+    "rank": 34973
+   },
+   {
+    "name": "@aws-sdk/client-connect-contact-lens",
+    "rank": 39857
+   },
+   {
+    "name": "victory-native",
+    "rank": 14584
+   },
+   {
+    "name": "@thi.ng/dcons",
+    "rank": 66622
+   },
+   {
+    "name": "alt-utils",
+    "rank": 92373
+   },
+   {
+    "name": "rollup-plugin-node-externals",
+    "rank": 17908
+   },
+   {
+    "name": "opencode-scheduler",
+    "rank": 85293
+   },
+   {
+    "name": "hamming-distance",
+    "rank": 35883
+   },
+   {
+    "name": "micromark-heading-id",
+    "rank": 97357
+   },
+   {
+    "name": "kukuu",
+    "rank": 94767
+   },
+   {
+    "name": "@types/redis-mock",
+    "rank": 27382
+   },
+   {
+    "name": "okay-error",
+    "rank": 73036
+   },
+   {
+    "name": "light-soon-his-lost",
+    "rank": 55046
+   },
+   {
+    "name": "bare-node-runtime",
+    "rank": 57225
+   },
+   {
+    "name": "serverless-prune-plugin",
+    "rank": 15734
+   },
+   {
+    "name": "@asyncapi/optimizer",
+    "rank": 31282
+   },
+   {
+    "name": "@donedeal0/superdiff",
+    "rank": 62446
+   },
+   {
+    "name": "@tweedegolf/storage-abstraction",
+    "rank": 79650
+   },
+   {
+    "name": "@appcues/react-native",
+    "rank": 62517
+   },
+   {
+    "name": "sver",
+    "rank": 14989
+   },
+   {
+    "name": "marty",
+    "rank": 80664
+   },
+   {
+    "name": "@ankhorage/infra",
+    "rank": 94786
+   },
+   {
+    "name": "snabbdom-selector",
+    "rank": 76725
+   },
+   {
+    "name": "@sdjkals/assets-dist-jim0",
+    "rank": 25979
+   },
+   {
+    "name": "allotment",
+    "rank": 18584
+   },
+   {
+    "name": "react-native-month",
+    "rank": 97001
+   },
+   {
+    "name": "jquery-chained",
+    "rank": 92588
+   },
+   {
+    "name": "@cypress/listr-verbose-renderer",
+    "rank": 20510
+   },
+   {
+    "name": "agentxchain",
+    "rank": 69464
+   },
+   {
+    "name": "@ast-grep/lang-go",
+    "rank": 36366
+   },
+   {
+    "name": "starlight-theme-black",
+    "rank": 88476
+   },
+   {
+    "name": "koa-lusca",
+    "rank": 57674
+   },
+   {
+    "name": "@types/express-requests-logger",
+    "rank": 80385
+   },
+   {
+    "name": "babel-plugin-import-remove-resource-query",
+    "rank": 82532
+   },
+   {
+    "name": "@mulmoclaude/core",
+    "rank": 90688
+   },
+   {
+    "name": "@ellentorg/debitis-vel-repellat",
+    "rank": 97117
+   },
+   {
+    "name": "rox-browser",
+    "rank": 57513
+   },
+   {
+    "name": "chunkify-stream",
+    "rank": 64654
+   },
+   {
+    "name": "applicationinsights-js",
+    "rank": 63324
+   },
+   {
+    "name": "@prisma/client-generator-js",
+    "rank": 38800
+   },
+   {
+    "name": "@types/espree",
+    "rank": 45095
+   },
+   {
+    "name": "@prisma-next/sql-builder",
+    "rank": 87932
+   },
+   {
+    "name": "@lemonadejs/switch",
+    "rank": 50927
+   },
+   {
+    "name": "@aws-cdk/aws-stepfunctions",
+    "rank": 41529
+   },
+   {
+    "name": "@scaleway/sdk-domain",
+    "rank": 54272
+   },
+   {
+    "name": "@ensnode/ponder-subgraph",
+    "rank": 98883
+   },
+   {
+    "name": "@paid-ai/paid-node",
+    "rank": 62042
+   },
+   {
+    "name": "ts-transformer-testing-library",
+    "rank": 93743
+   },
+   {
+    "name": "connect-static-file",
+    "rank": 51644
+   },
+   {
+    "name": "@scalar/java-fmt",
+    "rank": 59642
+   },
+   {
+    "name": "@mynaui/icons-react",
+    "rank": 33038
+   },
+   {
+    "name": "@pnpm/reviewing.dependencies-hierarchy",
+    "rank": 73825
+   },
+   {
+    "name": "@microsoft/omnichannel-chat-sdk",
+    "rank": 70651
+   },
+   {
+    "name": "@typespec/emitter-framework",
+    "rank": 52239
+   },
+   {
+    "name": "@picocss/pico",
+    "rank": 35656
+   },
+   {
+    "name": "@virtual-list/vue",
+    "rank": 55106
+   },
+   {
+    "name": "jsonapi-serializer",
+    "rank": 26849
+   },
+   {
+    "name": "@antv/g-pattern",
+    "rank": 74032
+   },
+   {
+    "name": "each-series-async",
+    "rank": 53856
+   },
+   {
+    "name": "@payrails/web-cse",
+    "rank": 50129
+   },
+   {
+    "name": "nginx-config-formatter",
+    "rank": 80832
+   },
+   {
+    "name": "@web3icons/react",
+    "rank": 31444
+   },
+   {
+    "name": "ical.js",
+    "rank": 14915
+   },
+   {
+    "name": "vue-toast-notification",
+    "rank": 38061
+   },
+   {
+    "name": "@nomicfoundation/hardhat-ledger",
+    "rank": 86789
+   },
+   {
+    "name": "@aws-lite/sns",
+    "rank": 41809
+   },
+   {
+    "name": "@openclaw-china/shared",
+    "rank": 65742
+   },
+   {
+    "name": "wcag-element-contrast",
+    "rank": 92955
+   },
+   {
+    "name": "get-ssl-certificate",
+    "rank": 91130
+   },
+   {
+    "name": "@types/parse5-html-rewriting-stream",
+    "rank": 77176
+   },
+   {
+    "name": "@stdlib/math-base-special-expm1",
+    "rank": 19273
+   },
+   {
+    "name": "angular-base64",
+    "rank": 96728
+   },
+   {
+    "name": "@settlemint/sdk-thegraph",
+    "rank": 88599
+   },
+   {
+    "name": "later",
+    "rank": 35829
+   },
+   {
+    "name": "aptos",
+    "rank": 24795
+   },
+   {
+    "name": "@types/react-email-editor",
+    "rank": 57594
+   },
+   {
+    "name": "litellm",
+    "rank": 80582
+   },
+   {
+    "name": "expo-squircle-view",
+    "rank": 59451
+   },
+   {
+    "name": "@malloydata/malloy-filter",
+    "rank": 24513
+   },
+   {
+    "name": "@loaders.gl/polyfills",
+    "rank": 47858
+   },
+   {
+    "name": "@angular/http",
+    "rank": 24384
+   },
+   {
+    "name": "tinybase",
+    "rank": 58228
+   },
+   {
+    "name": "@driimus/nx-plugin-openapi",
+    "rank": 92978
+   },
+   {
+    "name": "@things-factory/font-base",
+    "rank": 99646
+   },
+   {
+    "name": "util-ex",
+    "rank": 50012
+   },
+   {
+    "name": "@awesome-cordova-plugins/geolocation",
+    "rank": 76654
+   },
+   {
+    "name": "vue2-teleport",
+    "rank": 49078
+   },
+   {
+    "name": "@lostgradient/bun-plugin-svelte",
+    "rank": 97783
+   },
+   {
+    "name": "turf-tag",
+    "rank": 55243
+   },
+   {
+    "name": "@types/spectrum",
+    "rank": 95337
+   },
+   {
+    "name": "genkit",
+    "rank": 18964
+   },
+   {
+    "name": "@ultraq/function-utils",
+    "rank": 93090
+   },
+   {
+    "name": "trpc-swagger",
+    "rank": 84439
+   },
+   {
+    "name": "jquery-jpostal-ja",
+    "rank": 98077
+   },
+   {
+    "name": "@stdlib/ndarray-base-dtype-enum2str",
+    "rank": 63214
+   },
+   {
+    "name": "material-icon-theme",
+    "rank": 11827
+   },
+   {
+    "name": "slate-schema-violations",
+    "rank": 81564
+   },
+   {
+    "name": "polyfills-loader",
+    "rank": 58246
+   },
+   {
+    "name": "passport-cookie",
+    "rank": 47238
+   },
+   {
+    "name": "@codingame/monaco-vscode-615ce609-8555-545a-a549-47bd9f80e9f8-common",
+    "rank": 92717
+   },
+   {
+    "name": "@remotion/canvas-capture",
+    "rank": 15962
+   },
+   {
+    "name": "@adobe/generator-app-excshell",
+    "rank": 65874
+   },
+   {
+    "name": "@vscode/native-watchdog",
+    "rank": 33489
+   },
+   {
+    "name": "@utrecht/data-list-css",
+    "rank": 74994
+   },
+   {
+    "name": "@types/babel-plugin-macros",
+    "rank": 25108
+   },
+   {
+    "name": "@tidio/tidio-chat-connection-manager",
+    "rank": 88426
+   },
+   {
+    "name": "@ckeditor/jsdoc-plugins",
+    "rank": 90271
+   },
+   {
+    "name": "@oroinc/autobahnjs",
+    "rank": 90473
+   },
+   {
+    "name": "metaparser",
+    "rank": 81639
+   },
+   {
+    "name": "@betterer/regexp",
+    "rank": 63643
+   },
+   {
+    "name": "sha-1",
+    "rank": 33508
+   },
+   {
+    "name": "ts-unused-exports",
+    "rank": 18073
+   },
+   {
+    "name": "@kameleoon/react-sdk",
+    "rank": 92653
+   },
+   {
+    "name": "@rstest/core",
+    "rank": 22417
+   },
+   {
+    "name": "react-native-modal-datetime-picker",
+    "rank": 11394
+   },
+   {
+    "name": "@redtea/format-axios-error",
+    "rank": 64608
+   },
+   {
+    "name": "@svar-ui/filter-store",
+    "rank": 27157
+   },
+   {
+    "name": "mutation-observer-inner-html-shim",
+    "rank": 49658
+   },
+   {
+    "name": "@gjsify/webassembly",
+    "rank": 80546
+   },
+   {
+    "name": "@things-factory/sfa",
+    "rank": 92157
+   },
+   {
+    "name": "@trpc-playground/types",
+    "rank": 57473
+   },
+   {
+    "name": "bisheng-plugin-antd",
+    "rank": 92145
+   },
+   {
+    "name": "@aws-amplify/graphql-api-construct",
+    "rank": 22768
+   },
+   {
+    "name": "@dfinity/ledger-icp",
+    "rank": 51395
+   },
+   {
+    "name": "@medusajs/auth-oidc",
+    "rank": 34269
+   },
+   {
+    "name": "@v-c/select",
+    "rank": 99976
+   },
+   {
+    "name": "array.prototype.toreversed",
+    "rank": 11177
+   },
+   {
+    "name": "@uniformdev/files",
+    "rank": 53462
+   },
+   {
+    "name": "@packtory/cli",
+    "rank": 94677
+   },
+   {
+    "name": "@promster/metrics",
+    "rank": 30597
+   },
+   {
+    "name": "@novu/node",
+    "rank": 37630
+   },
+   {
+    "name": "winston-cloudrun",
+    "rank": 99726
+   },
+   {
+    "name": "chonky-icon-fontawesome",
+    "rank": 58948
+   },
+   {
+    "name": "@theoplayer/react-ui",
+    "rank": 67554
+   },
+   {
+    "name": "adaptivecards",
+    "rank": 10908
+   },
+   {
+    "name": "@httpcloak/linux-x64",
+    "rank": 92083
+   },
+   {
+    "name": "@stdlib/math-base-napi-unary",
+    "rank": 11035
+   },
+   {
+    "name": "lit-siwe",
+    "rank": 99927
+   },
+   {
+    "name": "@balena/lf-to-abstract-sql",
+    "rank": 89306
+   },
+   {
+    "name": "xorma",
+    "rank": 58509
+   },
+   {
+    "name": "@volter/threejs-runtime",
+    "rank": 87768
+   },
+   {
+    "name": "liferay-npm-bundler-plugin-inject-imports-dependencies",
+    "rank": 69501
+   },
+   {
+    "name": "@segment/fmt",
+    "rank": 54698
+   },
+   {
+    "name": "rgb-to-hsl",
+    "rank": 58314
+   },
+   {
+    "name": "@pdfme/converter",
+    "rank": 29112
+   },
+   {
+    "name": "kalidokit",
+    "rank": 99969
+   },
+   {
+    "name": "@matrixai/logger",
+    "rank": 91904
+   },
+   {
+    "name": "material-ui",
+    "rank": 31204
+   },
+   {
+    "name": "@uirouter/rx",
+    "rank": 44134
+   },
+   {
+    "name": "react-isolated-scroll",
+    "rank": 77269
+   },
+   {
+    "name": "@perses-dev/explore",
+    "rank": 55454
+   },
+   {
+    "name": "node-red-contrib-trexmes-oee-calculator",
+    "rank": 90789
+   },
+   {
+    "name": "@bernardmcmanus/eslint-config-js",
+    "rank": 67996
+   },
+   {
+    "name": "@quasar/fastclick",
+    "rank": 53685
+   },
+   {
+    "name": "@blueprintjs/table",
+    "rank": 40103
+   },
+   {
+    "name": "@paperclipai/teams-catalog",
+    "rank": 59213
+   },
+   {
+    "name": "@capgo/capacitor-passkey",
+    "rank": 46987
+   },
+   {
+    "name": "pptxviewjs",
+    "rank": 60513
+   },
+   {
+    "name": "@tryghost/database-info",
+    "rank": 46865
+   },
+   {
+    "name": "@react-icons/all-files",
+    "rank": 21669
+   },
+   {
+    "name": "@seed-design/react-attachment-display",
+    "rank": 63840
+   },
+   {
+    "name": "yenv",
+    "rank": 97028
+   },
+   {
+    "name": "@node-rs/bcrypt-linux-x64-musl",
+    "rank": 20835
+   },
+   {
+    "name": "oc-template-jade-compiler",
+    "rank": 56180
+   },
+   {
+    "name": "@rhinestone/deposit-modal",
+    "rank": 95953
+   },
+   {
+    "name": "license-checker",
+    "rank": 10722
+   },
+   {
+    "name": "uuid-v4-validator",
+    "rank": 48251
+   },
+   {
+    "name": "react-native-emoji-popup",
+    "rank": 78795
+   },
+   {
+    "name": "@stdlib/string-base-code-point-at",
+    "rank": 78396
+   },
+   {
+    "name": "vue3-avatar",
+    "rank": 73909
+   },
+   {
+    "name": "bufferjs",
+    "rank": 39315
+   },
+   {
+    "name": "oci-computecloudatcustomer",
+    "rank": 26183
+   },
+   {
+    "name": "cluster",
+    "rank": 32927
+   },
+   {
+    "name": "@types/abstract-leveldown",
+    "rank": 29664
+   },
+   {
+    "name": "osx-release",
+    "rank": 15440
+   },
+   {
+    "name": "@nlpjs/lang-ar",
+    "rank": 59157
+   },
+   {
+    "name": "jss-preset-default",
+    "rank": 16133
+   },
+   {
+    "name": "@clayui/provider",
+    "rank": 85869
+   },
+   {
+    "name": "zzfx",
+    "rank": 86651
+   },
+   {
+    "name": "@x402/fetch",
+    "rank": 24958
+   },
+   {
+    "name": "@fakerjs/boolean",
+    "rank": 92152
+   },
+   {
+    "name": "configent",
+    "rank": 41432
+   },
+   {
+    "name": "@types/event-kit",
+    "rank": 78312
+   },
+   {
+    "name": "@aws-sdk/client-rum",
+    "rank": 40515
+   },
+   {
+    "name": "@types/istanbul",
+    "rank": 41704
+   },
+   {
+    "name": "lint-to-the-future-ember-template",
+    "rank": 52007
+   },
+   {
+    "name": "rafor",
+    "rank": 56901
+   },
+   {
+    "name": "pprof",
+    "rank": 16636
+   },
+   {
+    "name": "@google-pay/button-angular",
+    "rank": 66711
+   },
+   {
+    "name": "docsify-sidebar-collapse",
+    "rank": 90299
+   },
+   {
+    "name": "expo-share-intent",
+    "rank": 24153
+   },
+   {
+    "name": "@logto/connector-xiaomi",
+    "rank": 95576
+   },
+   {
+    "name": "broccoli-babel-transpiler",
+    "rank": 12290
+   },
+   {
+    "name": "@textlint-rule/textlint-rule-no-unmatched-pair",
+    "rank": 28165
+   },
+   {
+    "name": "@syncfusion/ej2-calendars",
+    "rank": 18399
+   },
+   {
+    "name": "@lokalise/healthcheck-utils",
+    "rank": 78653
+   },
+   {
+    "name": "@budibase/worker",
+    "rank": 80715
+   },
+   {
+    "name": "@react-native-aria/radio",
+    "rank": 26953
+   },
+   {
+    "name": "@mastra/engine",
+    "rank": 95446
+   },
+   {
+    "name": "flourite",
+    "rank": 88300
+   },
+   {
+    "name": "@humanlayer/cli-darwin-x64",
+    "rank": 86975
+   },
+   {
+    "name": "@hocuspocus/provider-react",
+    "rank": 69067
+   },
+   {
+    "name": "@huggingface/inference",
+    "rank": 15368
+   },
+   {
+    "name": "dts-packer",
+    "rank": 79285
+   },
+   {
+    "name": "@cosmjs/encoding",
+    "rank": 14246
+   },
+   {
+    "name": "genkitx-openai",
+    "rank": 53593
+   },
+   {
+    "name": "segmentize",
+    "rank": 90269
+   },
+   {
+    "name": "porto",
+    "rank": 20748
+   },
+   {
+    "name": "@types/concat-map",
+    "rank": 63644
+   },
+   {
+    "name": "storyblok-generate-ts",
+    "rank": 44035
+   },
+   {
+    "name": "@instructure/ui-link",
+    "rank": 70893
+   },
+   {
+    "name": "@httptoolkit/socks-proxy-agent",
+    "rank": 60506
+   },
+   {
+    "name": "node-find-files",
+    "rank": 94239
+   },
+   {
+    "name": "proxy-target",
+    "rank": 38191
+   },
+   {
+    "name": "deep-override",
+    "rank": 27212
+   },
+   {
+    "name": "@wterm/dom",
+    "rank": 34970
+   },
+   {
+    "name": "jsii-rosetta",
+    "rank": 14208
+   },
+   {
+    "name": "@liustack/modsearch",
+    "rank": 64738
+   },
+   {
+    "name": "@apps-in-toss/user-scripts",
+    "rank": 67890
+   },
+   {
+    "name": "@atlaskit/datetime-picker",
+    "rank": 28592
+   },
+   {
+    "name": "@types/clear",
+    "rank": 36959
+   },
+   {
+    "name": "@vltpkg/cache-unzip",
+    "rank": 31148
+   },
+   {
+    "name": "@levminer/speakeasy",
+    "rank": 60014
+   },
+   {
+    "name": "@oxc-angular-testing/jest",
+    "rank": 35274
+   },
+   {
+    "name": "@remirror/react-ui",
+    "rank": 79707
+   },
+   {
+    "name": "tslint-react",
+    "rank": 22831
+   },
+   {
+    "name": "react-time-input",
+    "rank": 86560
+   },
+   {
+    "name": "tyranid",
+    "rank": 60688
+   },
+   {
+    "name": "@zenstackhq/server",
+    "rank": 35988
+   },
+   {
+    "name": "@capacitor-community/speech-recognition",
+    "rank": 56077
+   },
+   {
+    "name": "@snyk/github-codeowners",
+    "rank": 14463
+   },
+   {
+    "name": "@docupace/pipeline",
+    "rank": 80344
+   },
+   {
+    "name": "athena-view",
+    "rank": 83967
+   },
+   {
+    "name": "@fakerjs/age",
+    "rank": 87370
+   },
+   {
+    "name": "markerclustererplus",
+    "rank": 95515
+   },
+   {
+    "name": "@uipath/cli",
+    "rank": 50925
+   },
+   {
+    "name": "@types/subtitle",
+    "rank": 96139
+   },
+   {
+    "name": "@playfast/reform-db-pglite",
+    "rank": 80740
+   },
+   {
+    "name": "@napi-rs/wasm-tools-darwin-x64",
+    "rank": 57601
+   },
+   {
+    "name": "@mastra/libsql",
+    "rank": 16811
+   },
+   {
+    "name": "kanel-kysely",
+    "rank": 41347
+   },
+   {
+    "name": "vue-inbrowser-prismjs-highlighter",
+    "rank": 68482
+   },
+   {
+    "name": "@pact-foundation/pact-cli-windows-arm64",
+    "rank": 67847
+   },
+   {
+    "name": "@activepieces/piece-zendesk",
+    "rank": 69225
+   },
+   {
+    "name": "express-list-endpoints",
+    "rank": 24386
+   },
+   {
+    "name": "typeface-montserrat",
+    "rank": 55613
+   },
+   {
+    "name": "@gjsify/http2-native",
+    "rank": 80665
+   },
+   {
+    "name": "@digitalbazaar/eddsa-rdfc-2022-cryptosuite",
+    "rank": 77240
+   },
+   {
+    "name": "@sinch/verification",
+    "rank": 60317
+   },
+   {
+    "name": "react-native-easy-content-loader",
+    "rank": 95921
+   },
+   {
+    "name": "@targetprocess/tokiny",
+    "rank": 91453
+   },
+   {
+    "name": "@jupyterlab/inspector-extension",
+    "rank": 51845
+   },
+   {
+    "name": "@wix/headless-multilingual",
+    "rank": 65731
+   },
+   {
+    "name": "@responsive-image/core",
+    "rank": 82094
+   },
+   {
+    "name": "@fuel-ts/errors",
+    "rank": 50530
+   },
+   {
+    "name": "ts-registry-express",
+    "rank": 95856
+   },
+   {
+    "name": "apollojs",
+    "rank": 63704
+   },
+   {
+    "name": "testcafe",
+    "rank": 21298
+   },
+   {
+    "name": "@fnando/sparkline",
+    "rank": 78142
+   },
+   {
+    "name": "nuxt-delay-hydration",
+    "rank": 58490
+   },
+   {
+    "name": "@types/isurl",
+    "rank": 89298
+   },
+   {
+    "name": "@lunora/platform-cloudflare",
+    "rank": 96151
+   },
+   {
+    "name": "solid-floating-ui",
+    "rank": 20926
+   },
+   {
+    "name": "mongoose-keywords",
+    "rank": 98962
+   },
+   {
+    "name": "chs",
+    "rank": 68410
+   },
+   {
+    "name": "ember-cli-deploy-gzip",
+    "rank": 51433
+   },
+   {
+    "name": "@types/yarnpkg__lockfile",
+    "rank": 26011
+   },
+   {
+    "name": "gulp-append-prepend",
+    "rank": 62132
+   },
+   {
+    "name": "react-notification",
+    "rank": 94037
+   },
+   {
+    "name": "link-types",
+    "rank": 56769
+   },
+   {
+    "name": "@pylonsync/sync",
+    "rank": 97521
+   },
+   {
+    "name": "augment-vir",
+    "rank": 76603
+   },
+   {
+    "name": "transitions-kit",
+    "rank": 85084
+   },
+   {
+    "name": "module-root-sync",
+    "rank": 30601
+   },
+   {
+    "name": "node-request-interceptor",
+    "rank": 12947
+   },
+   {
+    "name": "next-remove-imports",
+    "rank": 45220
+   },
+   {
+    "name": "jeet",
+    "rank": 89139
+   },
+   {
+    "name": "@stdlib/array-base-assert-is-real-floating-point-data-type",
+    "rank": 92809
+   },
+   {
+    "name": "@slynova/flydrive",
+    "rank": 68122
+   },
+   {
+    "name": "only-shallow",
+    "rank": 34637
+   },
+   {
+    "name": "parent-require",
+    "rank": 13115
+   },
+   {
+    "name": "@instructure/ui-tree-browser",
+    "rank": 73204
+   },
+   {
+    "name": "@rdil/parallel-prettier",
+    "rank": 51198
+   },
+   {
+    "name": "stream-counter",
+    "rank": 18543
+   },
+   {
+    "name": "icon-ios",
+    "rank": 64437
+   },
+   {
+    "name": "ember-gesture-modifiers",
+    "rank": 57940
+   },
+   {
+    "name": "@azure/openai",
+    "rank": 16425
+   },
+   {
+    "name": "@amritk/helpers",
+    "rank": 75361
+   },
+   {
+    "name": "@types/hjson",
+    "rank": 27113
+   },
+   {
+    "name": "@stdlib/array-base-assert-is-booleanarray",
+    "rank": 73710
+   },
+   {
+    "name": "oc",
+    "rank": 58844
+   },
+   {
+    "name": "bsert",
+    "rank": 46954
+   },
+   {
+    "name": "@atlaskit/afm-i18n-platform-media-media-ui",
+    "rank": 57644
+   },
+   {
+    "name": "@buildkite/emojis",
+    "rank": 70808
+   },
+   {
+    "name": "@nocobase/logger",
+    "rank": 72747
+   },
+   {
+    "name": "@alwaysmeticulous/remote-replay-launcher",
+    "rank": 28380
+   },
+   {
+    "name": "@typescript/native-preview-win32-arm64",
+    "rank": 17129
+   },
+   {
+    "name": "@stigg/cache-redis-store",
+    "rank": 46837
+   },
+   {
+    "name": "@medusajs/eslint-plugin",
+    "rank": 38901
+   },
+   {
+    "name": "@hpcc-js/common",
+    "rank": 94188
+   },
+   {
+    "name": "speccy",
+    "rank": 70489
+   },
+   {
+    "name": "@gravity-ui/markdown-editor",
+    "rank": 65144
+   },
+   {
+    "name": "@datadog/serverless-compat",
+    "rank": 69634
+   },
+   {
+    "name": "@solid-primitives/i18n",
+    "rank": 19188
+   },
+   {
+    "name": "@json2csv/node",
+    "rank": 19111
+   },
+   {
+    "name": "node-routeros",
+    "rank": 91891
+   },
+   {
+    "name": "adaptive-bezier-curve",
+    "rank": 34565
+   },
+   {
+    "name": "flame-gradient",
+    "rank": 37247
+   },
+   {
+    "name": "eslint-formatter-lint-diff-line-formatter",
+    "rank": 95186
+   },
+   {
+    "name": "@kie/mock-github",
+    "rank": 33412
+   },
+   {
+    "name": "@graphiql/toolkit",
+    "rank": 10039
+   },
+   {
+    "name": "express-ws",
+    "rank": 17329
+   },
+   {
+    "name": "react-scrubber",
+    "rank": 92105
+   },
+   {
+    "name": "@solana/spl-type-length-value",
+    "rank": 34144
+   },
+   {
+    "name": "express-http-problem-details",
+    "rank": 75716
+   },
+   {
+    "name": "@mapbox/shp-write",
+    "rank": 38176
+   },
+   {
+    "name": "@stoplight/json-schema-viewer",
+    "rank": 27261
+   },
+   {
+    "name": "@buoy-gg/license",
+    "rank": 84031
+   },
+   {
+    "name": "@superdoc-dev/sdk-linux-x64",
+    "rank": 45092
+   },
+   {
+    "name": "@allurereport/git",
+    "rank": 22410
+   },
+   {
+    "name": "corner-smoothing",
+    "rank": 54971
+   },
+   {
+    "name": "@lokalise/xlsx",
+    "rank": 57130
+   },
+   {
+    "name": "@types/eslint-plugin-prettier",
+    "rank": 28355
+   },
+   {
+    "name": "basscss-typography",
+    "rank": 62591
+   },
+   {
+    "name": "@use-voltra/ios-server",
+    "rank": 68675
+   },
+   {
+    "name": "@vaadin/polymer-legacy-adapter",
+    "rank": 45421
+   },
+   {
+    "name": "@haven_ai/signer",
+    "rank": 84248
+   },
+   {
+    "name": "chacha",
+    "rank": 63682
+   },
+   {
+    "name": "@sanity/incompatible-plugin",
+    "rank": 18259
+   },
+   {
+    "name": "@globalpayments/eslint-plugin-vega-eslint",
+    "rank": 98778
+   },
+   {
+    "name": "@stigg/api-client-js",
+    "rank": 28149
+   },
+   {
+    "name": "onfido-sdk-ui",
+    "rank": 24126
+   },
+   {
+    "name": "teamshare-bridge",
+    "rank": 83926
+   },
+   {
+    "name": "threejs-slice-geometry",
+    "rank": 69267
+   },
+   {
+    "name": "@codingame/monaco-vscode-docker-default-extension",
+    "rank": 85840
+   },
+   {
+    "name": "@salesforce/dev-scripts",
+    "rank": 42174
+   },
+   {
+    "name": "vue-svgicon",
+    "rank": 54280
+   },
+   {
+    "name": "htmljs-parser",
+    "rank": 50857
+   },
+   {
+    "name": "@tamagui/use-window-dimensions",
+    "rank": 20242
+   },
+   {
+    "name": "fast-average-color",
+    "rank": 19141
+   },
+   {
+    "name": "@react-spectrum/avatar",
+    "rank": 51818
+   },
+   {
+    "name": "@metamask-previews/composable-controller",
+    "rank": 86142
+   },
+   {
+    "name": "@as-integrations/next",
+    "rank": 32616
+   },
+   {
+    "name": "@types/photoshop",
+    "rank": 62599
+   },
+   {
+    "name": "tree-crawl",
+    "rank": 57102
+   },
+   {
+    "name": "bundlesocial",
+    "rank": 79347
+   },
+   {
+    "name": "@airtop/sdk",
+    "rank": 42012
+   },
+   {
+    "name": "jest-sorted",
+    "rank": 47084
+   },
+   {
+    "name": "lg-video.js",
+    "rank": 96324
+   },
+   {
+    "name": "@wangeditor-next/editor-for-vue",
+    "rank": 62945
+   },
+   {
+    "name": "inline-manifest-webpack-plugin",
+    "rank": 44341
+   },
+   {
+    "name": "@mariozechner/clipboard-darwin-arm64",
+    "rank": 20581
+   },
+   {
+    "name": "@rushstack/heft-sass-plugin",
+    "rank": 37992
+   },
+   {
+    "name": "devextreme-schematics",
+    "rank": 26863
+   },
+   {
+    "name": "@textlint/get-config-base-dir",
+    "rank": 38580
+   },
+   {
+    "name": "tsparticles-shape-line",
+    "rank": 42108
+   },
+   {
+    "name": "@reown/appkit-adapter-tron",
+    "rank": 88352
+   },
+   {
+    "name": "@run-cloud/sdk",
+    "rank": 48486
+   },
+   {
+    "name": "@strapi/plugin-i18n",
+    "rank": 40310
+   },
+   {
+    "name": "cypress-keycloak-commands",
+    "rank": 67697
+   },
+   {
+    "name": "@types/cloneable-readable",
+    "rank": 34911
+   },
+   {
+    "name": "ember-require-module",
+    "rank": 70239
+   },
+   {
+    "name": "@dimforge/rapier2d-compat",
+    "rank": 38578
+   },
+   {
+    "name": "@loaders.gl/obj",
+    "rank": 70176
+   },
+   {
+    "name": "autosize",
+    "rank": 12861
+   },
+   {
+    "name": "strong-globalize",
+    "rank": 21161
+   },
+   {
+    "name": "@lemonadejs/rating",
+    "rank": 97710
+   },
+   {
+    "name": "@stylable/uni-driver",
+    "rank": 44153
+   },
+   {
+    "name": "aurelia-hot-module-reload",
+    "rank": 58758
+   },
+   {
+    "name": "@pixi/accessibility",
+    "rank": 18049
+   },
+   {
+    "name": "code-chunk",
+    "rank": 61658
+   },
+   {
+    "name": "@aws-sdk/client-appconfigdata",
+    "rank": 17354
+   },
+   {
+    "name": "load-js",
+    "rank": 90158
+   },
+   {
+    "name": "@ckeditor/ckeditor5-paragraph",
+    "rank": 11664
+   },
+   {
+    "name": "mol_wire_lib",
+    "rank": 90009
+   },
+   {
+    "name": "lodash.endswith",
+    "rank": 24412
+   },
+   {
+    "name": "react-double-scrollbar",
+    "rank": 21640
+   },
+   {
+    "name": "sirv-cli",
+    "rank": 22607
+   },
+   {
+    "name": "ember-qrcode-shim",
+    "rank": 68262
+   },
+   {
+    "name": "nodesecurity-npm-utils",
+    "rank": 44301
+   },
+   {
+    "name": "@scrypted/nvr",
+    "rank": 70691
+   },
+   {
+    "name": "fastify-swagger",
+    "rank": 34544
+   },
+   {
+    "name": "@types/multicast-dns",
+    "rank": 24782
+   },
+   {
+    "name": "@vite-pwa/assets-generator",
+    "rank": 17881
+   },
+   {
+    "name": "@adonisjs/lucid",
+    "rank": 22758
+   },
+   {
+    "name": "geojson-geometries-lookup",
+    "rank": 60148
+   },
+   {
+    "name": "exif2css",
+    "rank": 59660
+   },
+   {
+    "name": "@framtidtechas/admin-ui",
+    "rank": 89131
+   },
+   {
+    "name": "reactjs-social-embed",
+    "rank": 99482
+   },
+   {
+    "name": "@aws-sdk/client-chatbot",
+    "rank": 86202
+   },
+   {
+    "name": "@yoopta/code",
+    "rank": 83156
+   },
+   {
+    "name": "storybook-dark-mode",
+    "rank": 12999
+   },
+   {
+    "name": "strftime",
+    "rank": 18913
+   },
+   {
+    "name": "@alwaysmeticulous/replay-debugger-ui",
+    "rank": 28716
+   },
+   {
+    "name": "@testing-library/svelte-core",
+    "rank": 10775
+   },
+   {
+    "name": "haraka-config",
+    "rank": 41021
+   },
+   {
+    "name": "@hyperlane-xyz/registry",
+    "rank": 58474
+   },
+   {
+    "name": "phone-regex",
+    "rank": 98338
+   },
+   {
+    "name": "passport-google-oidc",
+    "rank": 75371
+   },
+   {
+    "name": "@veryfront/ext-redis",
+    "rank": 61889
+   },
+   {
+    "name": "@carbon/charts-angular",
+    "rank": 91489
+   },
+   {
+    "name": "@dom-expressions/babel-plugin-jsx",
+    "rank": 41615
+   },
+   {
+    "name": "@riophae/vue-treeselect",
+    "rank": 44141
+   },
+   {
+    "name": "@alltomatos/opencode-linux-arm64",
+    "rank": 78392
+   },
+   {
+    "name": "react-email-editor",
+    "rank": 18056
+   },
+   {
+    "name": "@tanstack/db",
+    "rank": 10070
+   },
+   {
+    "name": "sort-by-value",
+    "rank": 75997
+   },
+   {
+    "name": "tiny-merge-patch",
+    "rank": 34680
+   },
+   {
+    "name": "@creditkarma/thrift-client",
+    "rank": 80620
+   },
+   {
+    "name": "mobx-bonsai-yjs",
+    "rank": 45358
+   },
+   {
+    "name": "@chat-adapter/x",
+    "rank": 58170
+   },
+   {
+    "name": "s3-streaming-upload",
+    "rank": 58203
+   },
+   {
+    "name": "@lerna/link",
+    "rank": 12195
+   },
+   {
+    "name": "rollup-plugin-mv",
+    "rank": 93047
+   },
+   {
+    "name": "@aws-sdk/client-cost-and-usage-report-service",
+    "rank": 35774
+   },
+   {
+    "name": "@azure/arm-mysql",
+    "rank": 24711
+   },
+   {
+    "name": "@scaleway/sdk-serverless-sqldb",
+    "rank": 57184
+   },
+   {
+    "name": "jest-in-case",
+    "rank": 41209
+   },
+   {
+    "name": "@milkdown/preset-gfm",
+    "rank": 16656
+   },
+   {
+    "name": "@phosphor-icons/vue",
+    "rank": 28482
+   },
+   {
+    "name": "@types/escpos",
+    "rank": 90089
+   },
+   {
+    "name": "mdx-loader",
+    "rank": 88539
+   },
+   {
+    "name": "@metamask/foundryup",
+    "rank": 35114
+   },
+   {
+    "name": "@anthropic-ai/claude-code-linux-x64-musl",
+    "rank": 13036
+   },
+   {
+    "name": "pushover-notifications",
+    "rank": 75790
+   },
+   {
+    "name": "@sap-ux/environment-check",
+    "rank": 27377
+   },
+   {
+    "name": "@mapbox/mbtiles",
+    "rank": 54181
+   },
+   {
+    "name": "fumadocs-openapi",
+    "rank": 16264
+   },
+   {
+    "name": "@types/country-telephone-data",
+    "rank": 34351
+   },
+   {
+    "name": "pulsar-client",
+    "rank": 37003
+   },
+   {
+    "name": "@types/react-loader-spinner",
+    "rank": 66869
+   },
+   {
+    "name": "@slickgrid-universal/common",
+    "rank": 52963
+   },
+   {
+    "name": "@sanity-typed/types",
+    "rank": 74366
+   },
+   {
+    "name": "@spectrum-css/dialog",
+    "rank": 39883
+   },
+   {
+    "name": "safe-promise-defer",
+    "rank": 40885
+   },
+   {
+    "name": "@tanstack/ai-react",
+    "rank": 22103
+   },
+   {
+    "name": "json2php",
+    "rank": 17429
+   },
+   {
+    "name": "@selfcommunity/react-templates",
+    "rank": 98483
+   },
+   {
+    "name": "@remix-run/route-config",
+    "rank": 20606
+   },
+   {
+    "name": "@semcore/ui",
+    "rank": 72580
+   },
+   {
+    "name": "strapi-database",
+    "rank": 62922
+   },
+   {
+    "name": "hfmath",
+    "rank": 77975
+   },
+   {
+    "name": "@appthreat/atom-jar",
+    "rank": 67341
+   },
+   {
+    "name": "@deepseek-ai/dsh-client-ui-reference",
+    "rank": 16131
+   },
+   {
+    "name": "highlight-es",
+    "rank": 14623
+   },
+   {
+    "name": "@databricks/zerobus-ingest-sdk-darwin-arm64",
+    "rank": 71531
+   },
+   {
+    "name": "@fontsource-variable/chivo-mono",
+    "rank": 84617
+   },
+   {
+    "name": "sst-linux-arm64",
+    "rank": 25478
+   },
+   {
+    "name": "@react-native-community/progress-bar-android",
+    "rank": 55653
+   },
+   {
+    "name": "@types/pouchdb-adapter-fruitdown",
+    "rank": 30288
+   },
+   {
+    "name": "@orama/plugin-parsedoc",
+    "rank": 69151
+   },
+   {
+    "name": "prettier-eslint-cli",
+    "rank": 20603
+   },
+   {
+    "name": "@bugsnag/plugin-expo-device",
+    "rank": 45963
+   },
+   {
+    "name": "env",
+    "rank": 52573
+   },
+   {
+    "name": "@vscode/os-proxy-resolver-linux-x64-gnu",
+    "rank": 49028
+   },
+   {
+    "name": "pristinejs",
+    "rank": 77882
+   },
+   {
+    "name": "rmc-trigger",
+    "rank": 41167
+   },
+   {
+    "name": "@atlaskit/pragmatic-drag-and-drop-react-beautiful-dnd-autoscroll",
+    "rank": 28195
+   },
+   {
+    "name": "@vonage/reports",
+    "rank": 58559
+   },
+   {
+    "name": "vite-plugin-fonts",
+    "rank": 66629
+   },
+   {
+    "name": "beepbeep",
+    "rank": 90741
+   },
+   {
+    "name": "@argent/x-guardian",
+    "rank": 84291
+   },
+   {
+    "name": "web3-providers",
+    "rank": 76097
+   },
+   {
+    "name": "react-fela",
+    "rank": 31717
+   },
+   {
+    "name": "@stylexswc/rs-compiler-linux-x64-musl",
+    "rank": 29404
+   },
+   {
+    "name": "react-progressbar",
+    "rank": 82272
+   },
+   {
+    "name": "cordova-plugin-x-socialsharing",
+    "rank": 55996
+   },
+   {
+    "name": "@types/multistream",
+    "rank": 23088
+   },
+   {
+    "name": "@types/npm-which",
+    "rank": 81295
+   },
+   {
+    "name": "it-glob",
+    "rank": 24756
+   },
+   {
+    "name": "oci-osmanagement",
+    "rank": 91859
+   },
+   {
+    "name": "@jumpn/utils-graphql",
+    "rank": 45754
+   },
+   {
+    "name": "misans",
+    "rank": 63378
+   },
+   {
+    "name": "@sap-cloud-sdk/util",
+    "rank": 19245
+   },
+   {
+    "name": "uilint",
+    "rank": 92946
+   },
+   {
+    "name": "@comunica/actor-function-factory-term-xsd-to-duration",
+    "rank": 49514
+   },
+   {
+    "name": "eslint-plugin-no-unsafe-regex",
+    "rank": 87476
+   },
+   {
+    "name": "bodec",
+    "rank": 10130
+   },
+   {
+    "name": "@lokalise/text-measure",
+    "rank": 87930
+   },
+   {
+    "name": "@univerjs/sheets-table-ui",
+    "rank": 18949
+   },
+   {
+    "name": "ngx-diff",
+    "rank": 46935
+   },
+   {
+    "name": "@aws-sdk/client-greengrassv2",
+    "rank": 38031
+   },
+   {
+    "name": "@workos/skills",
+    "rank": 66106
+   },
+   {
+    "name": "@magic-sdk/admin",
+    "rank": 45570
+   },
+   {
+    "name": "@agent-assistant/connectivity",
+    "rank": 61994
+   },
+   {
+    "name": "@zondax/ledger-substrate",
+    "rank": 51541
+   },
+   {
+    "name": "parse-markdown-table",
+    "rank": 88578
+   },
+   {
+    "name": "buster-core",
+    "rank": 77623
+   },
+   {
+    "name": "use-descendants",
+    "rank": 44468
+   },
+   {
+    "name": "@textea/json-viewer",
+    "rank": 23179
+   },
+   {
+    "name": "eslint-release",
+    "rank": 54983
+   },
+   {
+    "name": "ngx-tippy-wrapper",
+    "rank": 55918
+   },
+   {
+    "name": "@tsparticles/interaction-external-grab",
+    "rank": 18565
+   },
+   {
+    "name": "@commercetools-frontend/cypress",
+    "rank": 93196
+   },
+   {
+    "name": "@gofynd/fp-signature",
+    "rank": 97352
+   },
+   {
+    "name": "@confect/core",
+    "rank": 69090
+   },
+   {
+    "name": "@fontsource/noto-nastaliq-urdu",
+    "rank": 96704
+   },
+   {
+    "name": "regl-scatterplot",
+    "rank": 70636
+   },
+   {
+    "name": "@types/signal-exit",
+    "rank": 41836
+   },
+   {
+    "name": "haversine-distance",
+    "rank": 26743
+   },
+   {
+    "name": "@cap-js/hana",
+    "rank": 30576
+   },
+   {
+    "name": "shout-arrange-onto",
+    "rank": 56147
+   },
+   {
+    "name": "@bamboocss/config",
+    "rank": 78275
+   },
+   {
+    "name": "@fluid-tailwind/tailwind-merge",
+    "rank": 55481
+   },
+   {
+    "name": "@appchy/jarvis",
+    "rank": 78412
+   },
+   {
+    "name": "shapefile",
+    "rank": 13203
+   },
+   {
+    "name": "@talkjs/expo",
+    "rank": 69964
+   },
+   {
+    "name": "@trapezedev/project",
+    "rank": 12284
+   },
+   {
+    "name": "nuxt-llms",
+    "rank": 90967
+   },
+   {
+    "name": "@zenstackhq/trpc",
+    "rank": 74862
+   },
+   {
+    "name": "@onekeyfe/react-native-scroll-guard",
+    "rank": 80232
+   },
+   {
+    "name": "@deepseek-ai/dsh-client-ui-tool",
+    "rank": 14733
+   },
+   {
+    "name": "@types/capitalize",
+    "rank": 31731
+   },
+   {
+    "name": "@ceramicnetwork/stream-model",
+    "rank": 99977
+   },
+   {
+    "name": "@launchpad-ui/dropdown",
+    "rank": 67434
+   },
+   {
+    "name": "@wix/auto_sdk_stores_products-v-3",
+    "rank": 60207
+   },
+   {
+    "name": "react-material-icon-svg",
+    "rank": 85183
+   },
+   {
+    "name": "customerio-node",
+    "rank": 14616
+   },
+   {
+    "name": "zod-fast-check",
+    "rank": 20069
+   },
+   {
+    "name": "apg-conv-api",
+    "rank": 52361
+   },
+   {
+    "name": "vue-cookie-next",
+    "rank": 71342
+   },
+   {
+    "name": "@builder.io/sdk-react",
+    "rank": 43329
+   },
+   {
+    "name": "@types/strip-ansi",
+    "rank": 25690
+   },
+   {
+    "name": "react-useportal",
+    "rank": 40276
+   },
+   {
+    "name": "oci-fleetsoftwareupdate",
+    "rank": 25450
+   },
+   {
+    "name": "@brillout/picocolors",
+    "rank": 26555
+   },
+   {
+    "name": "gatsby-plugin-purgecss",
+    "rank": 68314
+   },
+   {
+    "name": "pff",
+    "rank": 71044
+   },
+   {
+    "name": "bingo",
+    "rank": 62295
+   },
+   {
+    "name": "@gitbutler/design-core",
+    "rank": 77318
+   },
+   {
+    "name": "codejar",
+    "rank": 40900
+   },
+   {
+    "name": "find-workspaces",
+    "rank": 15527
+   },
+   {
+    "name": "pca-js",
+    "rank": 82323
+   },
+   {
+    "name": "@storybook/babel-plugin-require-context-hook",
+    "rank": 34143
+   },
+   {
+    "name": "linefix",
+    "rank": 54117
+   },
+   {
+    "name": "grunt-lib-contrib",
+    "rank": 33199
+   },
+   {
+    "name": "@amplitude/segment-session-replay-plugin",
+    "rank": 62992
+   },
+   {
+    "name": "@metamask/snaps-sdk",
+    "rank": 29348
+   },
+   {
+    "name": "oci-dblm",
+    "rank": 25538
+   },
+   {
+    "name": "cronometro",
+    "rank": 72384
+   },
+   {
+    "name": "universal-path",
+    "rank": 86534
+   },
+   {
+    "name": "ng-morph",
+    "rank": 24844
+   },
+   {
+    "name": "@es-exec/plugins-shared",
+    "rank": 65504
+   },
+   {
+    "name": "@netlify/content-engine",
+    "rank": 33849
+   },
+   {
+    "name": "appcenter",
+    "rank": 64944
+   },
+   {
+    "name": "@seed-design/react-field",
+    "rank": 54376
+   },
+   {
+    "name": "@volar/transforms",
+    "rank": 52761
+   },
+   {
+    "name": "@relayfile/adapter-linear",
+    "rank": 64412
+   },
+   {
+    "name": "@tscircuit/schematic-corpus",
+    "rank": 64426
+   },
+   {
+    "name": "@wdio/tauri-service",
+    "rank": 39314
+   },
+   {
+    "name": "@types/test-exclude",
+    "rank": 52132
+   },
+   {
+    "name": "v-hotkey",
+    "rank": 72874
+   },
+   {
+    "name": "@digdir/designsystemet-web",
+    "rank": 59947
+   },
+   {
+    "name": "@vscode/spdlog",
+    "rank": 25821
+   },
+   {
+    "name": "@wailsio/runtime",
+    "rank": 44098
+   },
+   {
+    "name": "locize",
+    "rank": 53925
+   },
+   {
+    "name": "hardhat-deploy-ethers",
+    "rank": 52529
+   },
+   {
+    "name": "@volar/vscode",
+    "rank": 78678
+   },
+   {
+    "name": "querystring-browser-stub",
+    "rank": 94023
+   },
+   {
+    "name": "@neondatabase/auth-ui",
+    "rank": 27215
+   },
+   {
+    "name": "@types/xmlbuilder",
+    "rank": 63873
+   },
+   {
+    "name": "@atlaskit/afm-i18n-platform-team-central-give-kudos",
+    "rank": 55657
+   },
+   {
+    "name": "@lynx-js/preact-devtools",
+    "rank": 86125
+   },
+   {
+    "name": "@medusajs/medusa-cli",
+    "rank": 52475
+   },
+   {
+    "name": "@agent-assistant/core",
+    "rank": 94916
+   },
+   {
+    "name": "node-opcua-schemas",
+    "rank": 26699
+   },
+   {
+    "name": "@loydjs/schema",
+    "rank": 17814
+   },
+   {
+    "name": "@lwc/state-test-utils",
+    "rank": 31385
+   },
+   {
+    "name": "@beehiiv/sdk",
+    "rank": 52759
+   },
+   {
+    "name": "vue-screen-utils",
+    "rank": 19842
+   },
+   {
+    "name": "@roots/bud-extensions",
+    "rank": 73139
+   },
+   {
+    "name": "@flighthq/share",
+    "rank": 81003
+   },
+   {
+    "name": "preferred-node-version",
+    "rank": 54000
+   },
+   {
+    "name": "@dotenv-run/webpack",
+    "rank": 46707
+   },
+   {
+    "name": "@gusto/embedded-api",
+    "rank": 31755
+   },
+   {
+    "name": "fela-plugin-fallback-value",
+    "rank": 27970
+   },
+   {
+    "name": "@activecollab/components",
+    "rank": 83133
+   },
+   {
+    "name": "@leafygreen-ui/confirmation-modal",
+    "rank": 38623
+   },
+   {
+    "name": "r-json",
+    "rank": 15191
+   },
+   {
+    "name": "commonjs-require-definition",
+    "rank": 75131
+   },
+   {
+    "name": "warm-health",
+    "rank": 56755
+   },
+   {
+    "name": "@oven/bun-linux-aarch64-musl",
+    "rank": 23246
+   },
+   {
+    "name": "oo-ascii-tree",
+    "rank": 13822
+   },
+   {
+    "name": "@mittwald/flow-design-tokens",
+    "rank": 70236
+   },
+   {
+    "name": "@screeb/sdk-browser",
+    "rank": 61700
+   },
+   {
+    "name": "@maka/maka-cli",
+    "rank": 52953
+   },
+   {
+    "name": "jss-expand",
+    "rank": 34385
+   }
+  ]
+ }
+}

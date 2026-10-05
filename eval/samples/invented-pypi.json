@@ -1,0 +1,371 @@
+{
+ "source": "https://raw.githubusercontent.com/churik5/slopsquatting-replication-2026/v0.2-preprint/disclosure/pypi_universal_hallucinations.csv",
+ "fetchedAt": "2026-10-04T23:29:36.708Z",
+ "groups": {
+  "all": [
+   {
+    "name": "aws-cdk"
+   },
+   {
+    "name": "objc"
+   },
+   {
+    "name": "opentelemetry"
+   },
+   {
+    "name": "rest-framework"
+   },
+   {
+    "name": "tencentcloud"
+   },
+   {
+    "name": "mpl-toolkits"
+   },
+   {
+    "name": "opengl"
+   },
+   {
+    "name": "openstack"
+   },
+   {
+    "name": "git"
+   },
+   {
+    "name": "android"
+   },
+   {
+    "name": "ruamel"
+   },
+   {
+    "name": "openssl"
+   },
+   {
+    "name": "pyobjctools"
+   },
+   {
+    "name": "dbus"
+   },
+   {
+    "name": "solcx"
+   },
+   {
+    "name": "win32com"
+   },
+   {
+    "name": "avfoundation"
+   },
+   {
+    "name": "speech-recognition"
+   },
+   {
+    "name": "antlr4"
+   },
+   {
+    "name": "win32con"
+   },
+   {
+    "name": "rospy"
+   },
+   {
+    "name": "win32api"
+   },
+   {
+    "name": "sphinxcontrib"
+   },
+   {
+    "name": "rpi"
+   },
+   {
+    "name": "applitools"
+   },
+   {
+    "name": "urllib2"
+   },
+   {
+    "name": "corefoundation"
+   },
+   {
+    "name": "paho"
+   },
+   {
+    "name": "cairo"
+   },
+   {
+    "name": "opensearchpy"
+   },
+   {
+    "name": "geventwebsocket"
+   },
+   {
+    "name": "debug-toolbar"
+   },
+   {
+    "name": "allure"
+   },
+   {
+    "name": "appium"
+   },
+   {
+    "name": "markdown-it"
+   },
+   {
+    "name": "hcl2"
+   },
+   {
+    "name": "skfuzzy"
+   },
+   {
+    "name": "busio"
+   },
+   {
+    "name": "openslide"
+   },
+   {
+    "name": "braket"
+   },
+   {
+    "name": "vlc"
+   },
+   {
+    "name": "smb"
+   },
+   {
+    "name": "kiota-abstractions"
+   },
+   {
+    "name": "smart-selects"
+   },
+   {
+    "name": "roslib"
+   },
+   {
+    "name": "rosbag"
+   },
+   {
+    "name": "repoze"
+   },
+   {
+    "name": "openlineage"
+   },
+   {
+    "name": "oneagent"
+   },
+   {
+    "name": "lusid"
+   },
+   {
+    "name": "hive-metastore"
+   },
+   {
+    "name": "gremlin-python"
+   },
+   {
+    "name": "winrm"
+   },
+   {
+    "name": "vcr"
+   },
+   {
+    "name": "sklearnex"
+   },
+   {
+    "name": "odf"
+   },
+   {
+    "name": "novaclient"
+   },
+   {
+    "name": "datadog-checks"
+   },
+   {
+    "name": "cinderclient"
+   },
+   {
+    "name": "arvados"
+   },
+   {
+    "name": "rest-framework-jwt"
+   },
+   {
+    "name": "pycrfsuite"
+   },
+   {
+    "name": "metalkit"
+   },
+   {
+    "name": "jupyter-lab"
+   },
+   {
+    "name": "gdb"
+   },
+   {
+    "name": "digitalio"
+   },
+   {
+    "name": "allauth"
+   },
+   {
+    "name": "usernotifications"
+   },
+   {
+    "name": "svg"
+   },
+   {
+    "name": "smbclient"
+   },
+   {
+    "name": "shapefile"
+   },
+   {
+    "name": "libvirt"
+   },
+   {
+    "name": "corebluetooth"
+   },
+   {
+    "name": "tensorflow-serving"
+   },
+   {
+    "name": "swagger-schema-validator"
+   },
+   {
+    "name": "skia"
+   },
+   {
+    "name": "mlinterpret"
+   },
+   {
+    "name": "libcloud"
+   },
+   {
+    "name": "kiota-http"
+   },
+   {
+    "name": "dkim"
+   },
+   {
+    "name": "debian"
+   },
+   {
+    "name": "colcon"
+   },
+   {
+    "name": "browsermobproxy"
+   },
+   {
+    "name": "zapv2"
+   },
+   {
+    "name": "xmltidy"
+   },
+   {
+    "name": "win32process"
+   },
+   {
+    "name": "webvtt"
+   },
+   {
+    "name": "weaviate"
+   },
+   {
+    "name": "usr"
+   },
+   {
+    "name": "user"
+   },
+   {
+    "name": "tidylib"
+   },
+   {
+    "name": "tcology"
+   },
+   {
+    "name": "systemrdl"
+   },
+   {
+    "name": "subrip"
+   },
+   {
+    "name": "stdnum"
+   },
+   {
+    "name": "sqlqueryengine"
+   },
+   {
+    "name": "skmultilearn"
+   },
+   {
+    "name": "simics-6-api"
+   },
+   {
+    "name": "simdjson"
+   },
+   {
+    "name": "samtranslator"
+   },
+   {
+    "name": "rapidjson"
+   },
+   {
+    "name": "pyximport"
+   },
+   {
+    "name": "pybullet-data"
+   },
+   {
+    "name": "nuscenes"
+   },
+   {
+    "name": "naturallanguage"
+   },
+   {
+    "name": "nacos"
+   },
+   {
+    "name": "mainpack"
+   },
+   {
+    "name": "luco"
+   },
+   {
+    "name": "linebot"
+   },
+   {
+    "name": "limat"
+   },
+   {
+    "name": "hamcrest"
+   },
+   {
+    "name": "flask-idempotency"
+   },
+   {
+    "name": "engineio"
+   },
+   {
+    "name": "cudnn"
+   },
+   {
+    "name": "collada"
+   },
+   {
+    "name": "awsglue"
+   },
+   {
+    "name": "aws-retry"
+   },
+   {
+    "name": "aspose"
+   },
+   {
+    "name": "aliyunsdkrds"
+   },
+   {
+    "name": "adobe"
+   },
+   {
+    "name": "addresses"
+   }
+  ]
+ }
+}

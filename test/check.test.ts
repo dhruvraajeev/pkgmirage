@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { checkPackages } from "../src/engine/check";
-import { daysAgo, fakeFetch, json, npmPackage, OSV_URL, osv, pypiPackage, status } from "./fakes";
+import { daysAgo, fakeFetch, json, npmPackage, OSV_URL, osv, pypiPackage, status, tgz } from "./fakes";
 
 afterEach(() => {
   vi.restoreAllMocks();
@@ -150,9 +150,41 @@ describe("check", () => {
   });
 
   it("an established look-alike is only a caution", async () => {
-    fakeFetch(pypiPackage("reqeusts"));
+    // Weak signals alone add nothing, as for any established package.
+    fakeFetch(pypiPackage("reqeusts", { owners: 1, repo: false }));
     const [result] = await checkPackages("pypi", ["reqeusts"]);
     expect(result).toMatchObject({ verdict: "caution", reasons: ['name is close to popular package "requests"'] });
+  });
+
+  it("install scripts alone don't make an established look-alike a block", async () => {
+    // A source-only release counts as install scripts on PyPI.
+    fakeFetch(pypiPackage("reqeusts", { sdistOnly: true, owners: 1 }));
+    const [pypi] = await checkPackages("pypi", ["reqeusts"]);
+    expect(pypi).toMatchObject({
+      verdict: "caution",
+      reasons: ['name is close to popular package "requests"', "runs install scripts (source-only release)", "only one maintainer"],
+    });
+
+    // Native builds run shell commands at install; that alone isn't a squat's sign either.
+    vi.restoreAllMocks();
+    const build = { path: "package/install.js", body: 'require("child_process").execSync("make")' };
+    fakeFetch(
+      npmPackage("expres", {
+        scripts: { postinstall: "node install.js" },
+        archive: async () => new Response(await tgz([{ path: "package/package.json", body: "{}" }, build])),
+      }),
+    );
+    const [npm] = await checkPackages("npm", ["expres"]);
+    expect(npm).toMatchObject({
+      verdict: "caution",
+      reasons: ['name is close to popular package "express"', "runs install scripts (postinstall)", "install script runs shell commands"],
+    });
+
+    // An install script that just appeared still is.
+    vi.restoreAllMocks();
+    fakeFetch(npmPackage("expres", { version: "1.1.0", scripts: { postinstall: "node install.js" }, earlier: { "1.0.0": { test: "node test" } } }));
+    const [added] = await checkPackages("npm", ["expres"]);
+    expect(added).toMatchObject({ verdict: "block", reasons: ['looks like popular package "express"', "runs install scripts (postinstall)", "install script added in the latest version"] });
   });
 
   it("a missing package is blocked as likely hallucinated", async () => {

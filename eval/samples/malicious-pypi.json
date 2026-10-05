@@ -1,0 +1,4435 @@
+{
+ "source": "OSV https://osv-vulnerabilities.storage.googleapis.com/PyPI/ (MAL- advisories, not withdrawn)",
+ "fetchedAt": "2026-10-04T23:29:36.311Z",
+ "groups": {
+  "2022": [
+   {
+    "name": "browserdiv",
+    "id": "MAL-2022-7422",
+    "published": "2022-08-30T19:52:37Z",
+    "versions": "all"
+   },
+   {
+    "name": "pymocks",
+    "id": "MAL-2022-7426",
+    "published": "2022-08-30T19:37:30Z",
+    "versions": "all"
+   },
+   {
+    "name": "test-async",
+    "id": "MAL-2022-7428",
+    "published": "2022-08-30T19:37:57Z",
+    "versions": "all"
+   },
+   {
+    "name": "requuests",
+    "id": "MAL-2022-7440",
+    "published": "2022-05-31T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "requessts",
+    "id": "MAL-2022-7438",
+    "published": "2022-05-31T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "reequests",
+    "id": "MAL-2022-7434",
+    "published": "2022-05-31T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "reqquests",
+    "id": "MAL-2022-7435",
+    "published": "2022-05-31T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "pyproto2",
+    "id": "MAL-2022-7427",
+    "published": "2022-08-30T19:37:47Z",
+    "versions": "all"
+   },
+   {
+    "name": "equests",
+    "id": "MAL-2022-7433",
+    "published": "2022-05-31T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "ascii2text",
+    "id": "MAL-2022-7421",
+    "published": "2022-08-30T19:36:58Z",
+    "versions": "all"
+   },
+   {
+    "name": "rrequests",
+    "id": "MAL-2022-7442",
+    "published": "2022-05-31T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "pyg-utils",
+    "id": "MAL-2022-7425",
+    "published": "2022-08-30T19:37:15Z",
+    "versions": "all"
+   },
+   {
+    "name": "requestts",
+    "id": "MAL-2022-7439",
+    "published": "2022-05-31T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "requeests",
+    "id": "MAL-2022-7436",
+    "published": "2022-05-31T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "free-net-vpn2",
+    "id": "MAL-2022-7424",
+    "published": "2022-08-30T19:38:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "requess",
+    "id": "MAL-2022-7437",
+    "published": "2022-05-31T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "reuests",
+    "id": "MAL-2022-7441",
+    "published": "2022-05-31T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "zlibsrc",
+    "id": "MAL-2022-7430",
+    "published": "2022-08-30T19:50:42Z",
+    "versions": "all"
+   },
+   {
+    "name": "free-net-vpn",
+    "id": "MAL-2022-7423",
+    "published": "2022-08-30T19:38:08Z",
+    "versions": "all"
+   },
+   {
+    "name": "winrpcexploit",
+    "id": "MAL-2022-7429",
+    "published": "2022-08-30T19:52:47Z",
+    "versions": "all"
+   }
+  ],
+  "2023": [
+   {
+    "name": "tprere",
+    "id": "MAL-2023-7573",
+    "published": "2023-02-25T23:06:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "libgamevisa",
+    "id": "MAL-2023-3998",
+    "published": "2023-02-25T17:12:06Z",
+    "versions": "all"
+   },
+   {
+    "name": "selfintstudyhttp",
+    "id": "MAL-2023-6235",
+    "published": "2023-02-25T23:42:16Z",
+    "versions": "all"
+   },
+   {
+    "name": "httprequesting",
+    "id": "MAL-2023-1367",
+    "published": "2023-05-10T12:49:52Z",
+    "versions": [
+     "3.0.1"
+    ]
+   },
+   {
+    "name": "controlpong",
+    "id": "MAL-2023-2586",
+    "published": "2023-02-25T16:24:10Z",
+    "versions": "all"
+   },
+   {
+    "name": "cpukill",
+    "id": "MAL-2023-2609",
+    "published": "2023-02-25T16:09:07Z",
+    "versions": "all"
+   },
+   {
+    "name": "python-bniance",
+    "id": "MAL-2023-2122",
+    "published": "2023-02-10T20:36:06Z",
+    "versions": "all"
+   },
+   {
+    "name": "py-paypalinfopip",
+    "id": "MAL-2023-5395",
+    "published": "2023-03-08T17:51:20Z",
+    "versions": "all"
+   },
+   {
+    "name": "esqinfovirtualgame",
+    "id": "MAL-2023-2990",
+    "published": "2023-02-27T15:21:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "gamecraft",
+    "id": "MAL-2023-3582",
+    "published": "2023-02-24T16:45:06Z",
+    "versions": "all"
+   },
+   {
+    "name": "infourl",
+    "id": "MAL-2023-3806",
+    "published": "2023-02-24T16:45:17Z",
+    "versions": "all"
+   },
+   {
+    "name": "py-verosintreplace",
+    "id": "MAL-2023-5738",
+    "published": "2023-02-25T23:39:03Z",
+    "versions": "all"
+   },
+   {
+    "name": "pllow",
+    "id": "MAL-2023-1948",
+    "published": "2023-02-11T11:30:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "libcraftguipost",
+    "id": "MAL-2023-3938",
+    "published": "2023-02-25T23:30:16Z",
+    "versions": "all"
+   },
+   {
+    "name": "pywgrand",
+    "id": "MAL-2023-5808",
+    "published": "2023-02-24T00:00:08Z",
+    "versions": "all"
+   },
+   {
+    "name": "ktcalendar",
+    "id": "MAL-2023-1890",
+    "published": "2023-02-11T19:30:09Z",
+    "versions": "all"
+   },
+   {
+    "name": "urlvm",
+    "id": "MAL-2023-7804",
+    "published": "2023-02-23T19:00:02Z",
+    "versions": "all"
+   },
+   {
+    "name": "visatool",
+    "id": "MAL-2023-7863",
+    "published": "2023-02-24T23:30:09Z",
+    "versions": "all"
+   },
+   {
+    "name": "gtipython",
+    "id": "MAL-2023-1875",
+    "published": "2023-02-11T12:33:07Z",
+    "versions": "all"
+   },
+   {
+    "name": "libgetencode",
+    "id": "MAL-2023-4002",
+    "published": "2023-02-25T16:45:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "ultracandy",
+    "id": "MAL-2023-7746",
+    "published": "2023-02-23T23:48:09Z",
+    "versions": "all"
+   },
+   {
+    "name": "tensorfflow",
+    "id": "MAL-2023-2299",
+    "published": "2023-02-10T17:39:02Z",
+    "versions": "all"
+   },
+   {
+    "name": "libvm",
+    "id": "MAL-2023-4653",
+    "published": "2023-02-24T00:00:02Z",
+    "versions": "all"
+   },
+   {
+    "name": "matploltib",
+    "id": "MAL-2023-1900",
+    "published": "2023-02-10T14:00:01Z",
+    "versions": "all"
+   },
+   {
+    "name": "libadcvpip",
+    "id": "MAL-2023-3859",
+    "published": "2023-02-25T23:36:03Z",
+    "versions": "all"
+   },
+   {
+    "name": "grandkill",
+    "id": "MAL-2023-3651",
+    "published": "2023-02-25T16:00:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "py-httpintelrandom",
+    "id": "MAL-2023-5178",
+    "published": "2023-02-25T23:36:22Z",
+    "versions": "all"
+   },
+   {
+    "name": "virtualram",
+    "id": "MAL-2023-7832",
+    "published": "2023-02-24T16:39:10Z",
+    "versions": "all"
+   },
+   {
+    "name": "gameultra",
+    "id": "MAL-2023-3602",
+    "published": "2023-02-24T16:51:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "crafthttp",
+    "id": "MAL-2023-2640",
+    "published": "2023-02-23T23:33:12Z",
+    "versions": "all"
+   },
+   {
+    "name": "peptool",
+    "id": "MAL-2023-4843",
+    "published": "2023-02-24T16:42:16Z",
+    "versions": "all"
+   },
+   {
+    "name": "py-ccmcstudy",
+    "id": "MAL-2023-5019",
+    "published": "2023-02-26T20:15:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "py-vmvm",
+    "id": "MAL-2023-5792",
+    "published": "2023-02-25T16:57:12Z",
+    "versions": "all"
+   },
+   {
+    "name": "selfrandompostinfo",
+    "id": "MAL-2023-6577",
+    "published": "2023-02-26T20:18:17Z",
+    "versions": "all"
+   },
+   {
+    "name": "esqsplithttposint",
+    "id": "MAL-2023-3394",
+    "published": "2023-02-25T23:42:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "adtool",
+    "id": "MAL-2023-2504",
+    "published": "2023-02-23T23:57:07Z",
+    "versions": "all"
+   },
+   {
+    "name": "libpeppipintel",
+    "id": "MAL-2023-4298",
+    "published": "2023-02-27T15:30:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "librandcraft",
+    "id": "MAL-2023-4439",
+    "published": "2023-02-25T23:00:16Z",
+    "versions": "all"
+   },
+   {
+    "name": "controlmc",
+    "id": "MAL-2023-2583",
+    "published": "2023-02-24T16:39:09Z",
+    "versions": "all"
+   },
+   {
+    "name": "tphackedgetvisa",
+    "id": "MAL-2023-7095",
+    "published": "2023-02-25T22:57:20Z",
+    "versions": "all"
+   },
+   {
+    "name": "multicolored",
+    "id": "MAL-2023-8765",
+    "published": "2023-12-25T23:25:45Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "piptool",
+    "id": "MAL-2023-4881",
+    "published": "2023-02-23T23:33:10Z",
+    "versions": "all"
+   },
+   {
+    "name": "pyultra",
+    "id": "MAL-2023-5800",
+    "published": "2023-02-23T23:33:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "selfpongreplaceed",
+    "id": "MAL-2023-6463",
+    "published": "2023-02-25T22:57:08Z",
+    "versions": "all"
+   },
+   {
+    "name": "selfmaskpaypalpip",
+    "id": "MAL-2023-6309",
+    "published": "2023-02-27T15:21:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "librandomcrafthydra",
+    "id": "MAL-2023-4452",
+    "published": "2023-02-26T20:21:20Z",
+    "versions": "all"
+   },
+   {
+    "name": "tppipvm",
+    "id": "MAL-2023-7373",
+    "published": "2023-02-25T16:48:08Z",
+    "versions": "all"
+   },
+   {
+    "name": "libpywreproof",
+    "id": "MAL-2023-4425",
+    "published": "2023-02-27T15:36:15Z",
+    "versions": "all"
+   },
+   {
+    "name": "py-httpencode",
+    "id": "MAL-2023-5175",
+    "published": "2023-02-25T16:57:06Z",
+    "versions": "all"
+   },
+   {
+    "name": "selfcraftint",
+    "id": "MAL-2023-6003",
+    "published": "2023-02-25T17:00:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "craftultra",
+    "id": "MAL-2023-2657",
+    "published": "2023-02-24T16:39:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "progrsesbar2",
+    "id": "MAL-2023-1989",
+    "published": "2023-02-11T12:21:01Z",
+    "versions": "all"
+   },
+   {
+    "name": "selfmineguipyw",
+    "id": "MAL-2023-6335",
+    "published": "2023-02-25T23:12:03Z",
+    "versions": "all"
+   },
+   {
+    "name": "cctool",
+    "id": "MAL-2023-2564",
+    "published": "2023-02-24T16:45:08Z",
+    "versions": "all"
+   },
+   {
+    "name": "py-killkillvirtual",
+    "id": "MAL-2023-5260",
+    "published": "2023-02-27T02:42:08Z",
+    "versions": "all"
+   },
+   {
+    "name": "esqhackedrandomcc",
+    "id": "MAL-2023-2946",
+    "published": "2023-02-26T20:18:18Z",
+    "versions": "all"
+   },
+   {
+    "name": "reqests-toolbelt",
+    "id": "MAL-2023-2148",
+    "published": "2023-02-11T11:57:10Z",
+    "versions": "all"
+   },
+   {
+    "name": "esqintelcandyload",
+    "id": "MAL-2023-2993",
+    "published": "2023-02-26T20:21:16Z",
+    "versions": "all"
+   },
+   {
+    "name": "barcodegeneratorqr",
+    "id": "MAL-2023-1354",
+    "published": "2023-07-12T18:16:21Z",
+    "versions": [
+     "1.0.3"
+    ]
+   },
+   {
+    "name": "tpverguipost",
+    "id": "MAL-2023-7696",
+    "published": "2023-02-27T02:48:21Z",
+    "versions": "all"
+   },
+   {
+    "name": "tpponglib",
+    "id": "MAL-2023-7378",
+    "published": "2023-02-25T16:51:10Z",
+    "versions": "all"
+   },
+   {
+    "name": "libhydrapongstudy",
+    "id": "MAL-2023-4086",
+    "published": "2023-02-25T23:03:20Z",
+    "versions": "all"
+   },
+   {
+    "name": "esqnvidiapaypalmask",
+    "id": "MAL-2023-3137",
+    "published": "2023-02-27T15:45:12Z",
+    "versions": "all"
+   },
+   {
+    "name": "tpcpuedosint",
+    "id": "MAL-2023-6960",
+    "published": "2023-02-26T20:15:18Z",
+    "versions": "all"
+   },
+   {
+    "name": "selfgetlgtbrand",
+    "id": "MAL-2023-6094",
+    "published": "2023-02-27T02:48:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "selfpongpytool",
+    "id": "MAL-2023-6462",
+    "published": "2023-02-25T23:00:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "py-splitvercraft",
+    "id": "MAL-2023-5627",
+    "published": "2023-02-26T20:15:16Z",
+    "versions": "all"
+   },
+   {
+    "name": "loadvirtual",
+    "id": "MAL-2023-4697",
+    "published": "2023-02-24T17:00:10Z",
+    "versions": "all"
+   },
+   {
+    "name": "libintkill",
+    "id": "MAL-2023-4128",
+    "published": "2023-02-25T16:42:12Z",
+    "versions": "all"
+   },
+   {
+    "name": "candygrand",
+    "id": "MAL-2023-2517",
+    "published": "2023-02-23T19:00:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "esqrepep",
+    "id": "MAL-2023-3365",
+    "published": "2023-02-25T22:54:15Z",
+    "versions": "all"
+   },
+   {
+    "name": "pingvisa",
+    "id": "MAL-2023-4854",
+    "published": "2023-02-25T16:30:10Z",
+    "versions": "all"
+   },
+   {
+    "name": "beutifulsoup4",
+    "id": "MAL-2023-1648",
+    "published": "2023-02-10T12:45:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "postmine",
+    "id": "MAL-2023-4914",
+    "published": "2023-02-24T16:57:16Z",
+    "versions": "all"
+   },
+   {
+    "name": "replaceintel",
+    "id": "MAL-2023-5918",
+    "published": "2023-02-25T16:27:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "keras-beautifulsoup",
+    "id": "MAL-2023-1374",
+    "published": "2023-05-20T13:56:07Z",
+    "versions": [
+     "2.9.2"
+    ]
+   },
+   {
+    "name": "esqintelinfo",
+    "id": "MAL-2023-2995",
+    "published": "2023-02-25T23:06:16Z",
+    "versions": "all"
+   },
+   {
+    "name": "esqreinfore",
+    "id": "MAL-2023-3362",
+    "published": "2023-02-27T15:21:17Z",
+    "versions": "all"
+   },
+   {
+    "name": "grandcandy",
+    "id": "MAL-2023-3637",
+    "published": "2023-02-24T16:42:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "libpostping",
+    "id": "MAL-2023-4356",
+    "published": "2023-02-25T23:03:17Z",
+    "versions": "all"
+   },
+   {
+    "name": "tpmineguipong",
+    "id": "MAL-2023-7276",
+    "published": "2023-02-27T02:45:17Z",
+    "versions": "all"
+   },
+   {
+    "name": "guipip",
+    "id": "MAL-2023-3692",
+    "published": "2023-02-24T16:54:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "py-pullreplaceinfo",
+    "id": "MAL-2023-5508",
+    "published": "2023-02-25T23:39:08Z",
+    "versions": "all"
+   },
+   {
+    "name": "tpcvmcpy",
+    "id": "MAL-2023-6989",
+    "published": "2023-02-27T02:39:08Z",
+    "versions": "all"
+   },
+   {
+    "name": "libosintstringcandy",
+    "id": "MAL-2023-4276",
+    "published": "2023-02-25T23:09:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "libcandyedpong",
+    "id": "MAL-2023-3875",
+    "published": "2023-02-26T20:12:08Z",
+    "versions": "all"
+   },
+   {
+    "name": "simplejso",
+    "id": "MAL-2023-2258",
+    "published": "2023-02-11T11:45:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "encodeload",
+    "id": "MAL-2023-2711",
+    "published": "2023-02-25T16:12:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "selflibencodetool",
+    "id": "MAL-2023-6271",
+    "published": "2023-02-26T20:24:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "libhttppip",
+    "id": "MAL-2023-4076",
+    "published": "2023-02-25T23:18:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "libstrreplacecpu",
+    "id": "MAL-2023-4529",
+    "published": "2023-02-27T02:48:07Z",
+    "versions": "all"
+   },
+   {
+    "name": "tppingstring",
+    "id": "MAL-2023-7354",
+    "published": "2023-02-25T16:42:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "hackednvidia",
+    "id": "MAL-2023-3714",
+    "published": "2023-02-25T16:06:03Z",
+    "versions": "all"
+   },
+   {
+    "name": "py-proofrandreplace",
+    "id": "MAL-2023-5492",
+    "published": "2023-02-27T02:48:22Z",
+    "versions": "all"
+   },
+   {
+    "name": "vypper",
+    "id": "MAL-2023-2356",
+    "published": "2023-02-09T19:00:12Z",
+    "versions": "all"
+   },
+   {
+    "name": "esqpaypallgtbint",
+    "id": "MAL-2023-3168",
+    "published": "2023-02-27T02:48:22Z",
+    "versions": "all"
+   },
+   {
+    "name": "esqreplacemaskcraft",
+    "id": "MAL-2023-3371",
+    "published": "2023-02-25T22:54:16Z",
+    "versions": "all"
+   },
+   {
+    "name": "py-nvidiacandy",
+    "id": "MAL-2023-5358",
+    "published": "2023-02-25T23:00:12Z",
+    "versions": "all"
+   },
+   {
+    "name": "tpcandygrandpost",
+    "id": "MAL-2023-6922",
+    "published": "2023-02-27T02:45:15Z",
+    "versions": "all"
+   },
+   {
+    "name": "hydraget",
+    "id": "MAL-2023-3755",
+    "published": "2023-02-24T23:03:06Z",
+    "versions": "all"
+   }
+  ],
+  "2024": [
+   {
+    "name": "s4transfer",
+    "id": "MAL-2024-11699",
+    "published": "2024-07-26T16:53:30Z",
+    "versions": [
+     "0.3"
+    ]
+   },
+   {
+    "name": "mdkjrkjelz",
+    "id": "MAL-2024-5356",
+    "published": "2024-06-25T13:37:11Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "wweb3",
+    "id": "MAL-2024-10218",
+    "published": "2024-06-28T20:16:20Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "cryztalnitro",
+    "id": "MAL-2024-5007",
+    "published": "2024-06-25T13:34:20Z",
+    "versions": [
+     "1.0"
+    ]
+   },
+   {
+    "name": "sc-oauth2",
+    "id": "MAL-2024-5964",
+    "published": "2024-06-25T13:42:12Z",
+    "versions": [
+     "99.0"
+    ]
+   },
+   {
+    "name": "erc20-scanner",
+    "id": "MAL-2024-5112",
+    "published": "2024-06-25T13:35:11Z",
+    "versions": [
+     "1.0.1",
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "setupynts",
+    "id": "MAL-2024-5995",
+    "published": "2024-06-25T13:42:28Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "shiwers",
+    "id": "MAL-2024-6007",
+    "published": "2024-06-25T13:42:33Z",
+    "versions": [
+     "1.0"
+    ]
+   },
+   {
+    "name": "instaread",
+    "id": "MAL-2024-12292",
+    "published": "2024-10-06T11:51:02Z",
+    "versions": [
+     "0.1.3",
+     "0.1.2",
+     "0.1.1",
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "wweb",
+    "id": "MAL-2024-10217",
+    "published": "2024-06-28T20:16:20Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "eth-account-api",
+    "id": "MAL-2024-9973",
+    "published": "2024-10-16T14:40:19Z",
+    "versions": [
+     "0.0.1",
+     "0.0.2",
+     "0.0.3",
+     "0.0.4",
+     "0.1.0",
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "openseea",
+    "id": "MAL-2024-10082",
+    "published": "2024-06-28T20:16:20Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "setupint3",
+    "id": "MAL-2024-5992",
+    "published": "2024-06-25T13:42:26Z",
+    "versions": [
+     "0.0.2"
+    ]
+   },
+   {
+    "name": "otci-openthread",
+    "id": "MAL-2024-11652",
+    "published": "2024-12-09T06:50:44Z",
+    "versions": [
+     "9.9.9"
+    ]
+   },
+   {
+    "name": "pyhoul",
+    "id": "MAL-2024-5720",
+    "published": "2024-06-25T13:40:08Z",
+    "versions": [
+     "1.0.2"
+    ]
+   },
+   {
+    "name": "syssqlite2toolsv2",
+    "id": "MAL-2024-6082",
+    "published": "2024-06-25T13:43:09Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "aicreatorpack",
+    "id": "MAL-2024-4747",
+    "published": "2024-06-25T13:32:14Z",
+    "versions": [
+     "0.0.4",
+     "0.0.1",
+     "0.0.3"
+    ]
+   },
+   {
+    "name": "uniswap-math",
+    "id": "MAL-2024-6175",
+    "published": "2024-06-25T13:43:53Z",
+    "versions": [
+     "0.4.2"
+    ]
+   },
+   {
+    "name": "spotify2youtubemusic",
+    "id": "MAL-2024-6034",
+    "published": "2024-06-25T13:42:47Z",
+    "versions": [
+     "0.1.1",
+     "0.1.2",
+     "0.1.3",
+     "0.1"
+    ]
+   },
+   {
+    "name": "ef334343rf3feefefefefeffeefeffe",
+    "id": "MAL-2024-5108",
+    "published": "2024-06-25T13:35:09Z",
+    "versions": [
+     "1.0"
+    ]
+   },
+   {
+    "name": "pythoncolorv4",
+    "id": "MAL-2024-5799",
+    "published": "2024-06-25T13:40:53Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "fake-usreagant",
+    "id": "MAL-2024-12270",
+    "published": "2024-10-08T10:29:47Z",
+    "versions": [
+     "0.0.3"
+    ]
+   },
+   {
+    "name": "panda-lib",
+    "id": "MAL-2024-5451",
+    "published": "2024-06-25T13:37:56Z",
+    "versions": [
+     "2.3.6"
+    ]
+   },
+   {
+    "name": "colorfidget",
+    "id": "MAL-2024-4961",
+    "published": "2024-06-25T13:33:58Z",
+    "versions": [
+     "1.0"
+    ]
+   },
+   {
+    "name": "macaqua",
+    "id": "MAL-2024-10417",
+    "published": "2024-11-06T08:21:43Z",
+    "versions": [
+     "99.7"
+    ]
+   },
+   {
+    "name": "artifact-lab-3-package-b9485a2f",
+    "id": "MAL-2024-12202",
+    "published": "2024-08-10T23:05:21Z",
+    "versions": [
+     "1.0"
+    ]
+   },
+   {
+    "name": "tensxxfxxk",
+    "id": "MAL-2024-6102",
+    "published": "2024-06-25T13:43:18Z",
+    "versions": [
+     "2.12"
+    ]
+   },
+   {
+    "name": "requesks",
+    "id": "MAL-2024-5880",
+    "published": "2024-06-25T13:41:33Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "rhermann-sds",
+    "id": "MAL-2024-5945",
+    "published": "2024-06-25T13:42:03Z",
+    "versions": [
+     "99.0"
+    ]
+   },
+   {
+    "name": "binol",
+    "id": "MAL-2024-4802",
+    "published": "2024-06-25T13:32:41Z",
+    "versions": [
+     "1.0"
+    ]
+   },
+   {
+    "name": "pycryptoe",
+    "id": "MAL-2024-5686",
+    "published": "2024-06-25T13:39:50Z",
+    "versions": [
+     "1.1.0",
+     "1.2.0",
+     "0.8.0"
+    ]
+   },
+   {
+    "name": "saywhu",
+    "id": "MAL-2024-9002",
+    "published": "2024-09-27T16:11:05Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "rozenitro",
+    "id": "MAL-2024-5957",
+    "published": "2024-06-25T13:42:09Z",
+    "versions": [
+     "1.0"
+    ]
+   },
+   {
+    "name": "timeextral-advanced",
+    "id": "MAL-2024-6149",
+    "published": "2024-06-25T13:43:41Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "cittronn",
+    "id": "MAL-2024-12236",
+    "published": "2024-07-26T16:53:30Z",
+    "versions": [
+     "3"
+    ]
+   },
+   {
+    "name": "bytedps",
+    "id": "MAL-2024-10410",
+    "published": "2024-11-06T08:10:59Z",
+    "versions": [
+     "99.7"
+    ]
+   },
+   {
+    "name": "colorbytes",
+    "id": "MAL-2024-9962",
+    "published": "2024-09-08T17:47:46Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "bootcampsystem",
+    "id": "MAL-2024-4830",
+    "published": "2024-06-25T13:32:55Z",
+    "versions": [
+     "0.1"
+    ]
+   },
+   {
+    "name": "tarsire",
+    "id": "MAL-2024-10464",
+    "published": "2024-11-06T18:46:10Z",
+    "versions": [
+     "912.6"
+    ]
+   },
+   {
+    "name": "sys-ej",
+    "id": "MAL-2024-6062",
+    "published": "2024-06-25T13:43:00Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "semurgdb",
+    "id": "MAL-2024-5986",
+    "published": "2024-06-25T13:42:23Z",
+    "versions": [
+     "0.1"
+    ]
+   },
+   {
+    "name": "py-cpord",
+    "id": "MAL-2024-5624",
+    "published": "2024-06-25T13:39:19Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "coloramae",
+    "id": "MAL-2024-4921",
+    "published": "2024-06-25T13:33:38Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "sentinelonesdk",
+    "id": "MAL-2024-5989",
+    "published": "2024-06-25T13:42:25Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "dtb-bytehouse",
+    "id": "MAL-2024-10415",
+    "published": "2024-11-06T08:17:46Z",
+    "versions": [
+     "99.7"
+    ]
+   },
+   {
+    "name": "capmonstercloudclouidclient",
+    "id": "MAL-2024-4867",
+    "published": "2024-06-25T13:33:13Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "newpipv3",
+    "id": "MAL-2024-10877",
+    "published": "2024-11-22T09:48:50Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "tarseir",
+    "id": "MAL-2024-10462",
+    "published": "2024-11-06T18:46:10Z",
+    "versions": [
+     "912.6"
+    ]
+   },
+   {
+    "name": "feature-preserve-portrait-editing",
+    "id": "MAL-2024-10822",
+    "published": "2024-11-06T18:46:10Z",
+    "versions": [
+     "99.6"
+    ]
+   },
+   {
+    "name": "dftester-pip",
+    "id": "MAL-2024-11575",
+    "published": "2024-11-27T17:03:25Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "latencyget",
+    "id": "MAL-2024-5306",
+    "published": "2024-06-25T13:36:47Z",
+    "versions": [
+     "0.1"
+    ]
+   },
+   {
+    "name": "ilfkdygupbscneu",
+    "id": "MAL-2024-5256",
+    "published": "2024-06-25T13:36:22Z",
+    "versions": [
+     "0.0.0"
+    ]
+   },
+   {
+    "name": "artifact-lab-3-package-f9dafccc",
+    "id": "MAL-2024-11528",
+    "published": "2024-08-10T23:05:21Z",
+    "versions": [
+     "0.2.5",
+     "0.3.0",
+     "0.2.0"
+    ]
+   },
+   {
+    "name": "web4-py",
+    "id": "MAL-2024-10211",
+    "published": "2024-06-28T20:16:20Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "mayalbl",
+    "id": "MAL-2024-5354",
+    "published": "2024-06-25T13:37:10Z",
+    "versions": [
+     "5",
+     "4"
+    ]
+   },
+   {
+    "name": "cloud-credentials",
+    "id": "MAL-2024-4899",
+    "published": "2024-06-25T13:33:28Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "botnetv2",
+    "id": "MAL-2024-11539",
+    "published": "2024-09-24T11:12:05Z",
+    "versions": [
+     "0.1"
+    ]
+   },
+   {
+    "name": "py-coed",
+    "id": "MAL-2024-5593",
+    "published": "2024-06-25T13:39:04Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "colorsgradient",
+    "id": "MAL-2024-4980",
+    "published": "2024-06-25T13:34:07Z",
+    "versions": [
+     "11",
+     "12",
+     "14",
+     "10",
+     "13",
+     "15",
+     "5"
+    ]
+   },
+   {
+    "name": "yt-yson-bindings",
+    "id": "MAL-2024-12371",
+    "published": "2024-07-26T16:53:30Z",
+    "versions": [
+     "66.0.4"
+    ]
+   },
+   {
+    "name": "ansishade",
+    "id": "MAL-2024-12190",
+    "published": "2024-11-13T06:46:16Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "cryostar",
+    "id": "MAL-2024-10447",
+    "published": "2024-11-06T18:46:10Z",
+    "versions": [
+     "912.6"
+    ]
+   },
+   {
+    "name": "detectren",
+    "id": "MAL-2024-11572",
+    "published": "2024-11-06T18:46:10Z",
+    "versions": [
+     "94.6"
+    ]
+   },
+   {
+    "name": "pipcolouringv1",
+    "id": "MAL-2024-5504",
+    "published": "2024-06-25T13:38:22Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "oenwsea",
+    "id": "MAL-2024-10054",
+    "published": "2024-06-28T20:16:20Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "colorfade",
+    "id": "MAL-2024-4959",
+    "published": "2024-06-25T13:33:57Z",
+    "versions": [
+     "0.0.0"
+    ]
+   },
+   {
+    "name": "etheereium",
+    "id": "MAL-2024-9974",
+    "published": "2024-06-28T20:16:20Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "pydislib",
+    "id": "MAL-2024-5702",
+    "published": "2024-06-25T13:39:58Z",
+    "versions": [
+     "0.7"
+    ]
+   },
+   {
+    "name": "myshellcode",
+    "id": "MAL-2024-5391",
+    "published": "2024-06-25T13:37:27Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "pyobfuse",
+    "id": "MAL-2024-5751",
+    "published": "2024-06-25T13:40:27Z",
+    "versions": [
+     "2.0.0",
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "amazonpxnau",
+    "id": "MAL-2024-4764",
+    "published": "2024-06-25T13:32:22Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "importlib-metadate",
+    "id": "MAL-2024-1624",
+    "published": "2024-06-17T12:41:40Z",
+    "versions": [
+     "99.9",
+     "99.99"
+    ]
+   },
+   {
+    "name": "pydevd-inject",
+    "id": "MAL-2024-12331",
+    "published": "2024-07-26T16:53:30Z",
+    "versions": [
+     "66.0.4"
+    ]
+   },
+   {
+    "name": "cstlsy",
+    "id": "MAL-2024-5008",
+    "published": "2024-06-25T13:34:21Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "lobomarinopython",
+    "id": "MAL-2024-12300",
+    "published": "2024-08-23T22:55:41Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "iufgbewroibgfowiebc",
+    "id": "MAL-2024-9306",
+    "published": "2024-10-16T19:48:20Z",
+    "versions": [
+     "0.0.2",
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "j5gnpfweguiwerbngpiutbgn0iutb0pfwfef",
+    "id": "MAL-2024-11618",
+    "published": "2024-10-16T21:12:32Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "libbmet",
+    "id": "MAL-2024-10641",
+    "published": "2024-11-06T18:46:10Z",
+    "versions": [
+     "94.6"
+    ]
+   },
+   {
+    "name": "artifact-lab-3-package-e7ffd2ef",
+    "id": "MAL-2024-12205",
+    "published": "2024-08-10T23:05:21Z",
+    "versions": [
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "javier-vidal",
+    "id": "MAL-2024-10036",
+    "published": "2024-10-16T14:42:43Z",
+    "versions": [
+     "0.3.1",
+     "0.3.2",
+     "1.0.1",
+     "1.0.2"
+    ]
+   },
+   {
+    "name": "pyfores",
+    "id": "MAL-2024-5717",
+    "published": "2024-06-25T13:40:06Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "requyests",
+    "id": "MAL-2024-5934",
+    "published": "2024-06-25T13:41:58Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "requestlib",
+    "id": "MAL-2024-5893",
+    "published": "2024-06-25T13:41:39Z",
+    "versions": [
+     "1.0.2",
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "redis-di-processor",
+    "id": "MAL-2024-10152",
+    "published": "2024-08-23T21:20:09Z",
+    "versions": [
+     "0.1.8"
+    ]
+   },
+   {
+    "name": "vsc-accountpage-clients",
+    "id": "MAL-2024-11747",
+    "published": "2024-07-26T16:53:30Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "pyheul",
+    "id": "MAL-2024-5719",
+    "published": "2024-06-25T13:40:07Z",
+    "versions": [
+     "1.0.1",
+     "1.0.2"
+    ]
+   },
+   {
+    "name": "colorate-raimbow",
+    "id": "MAL-2024-4944",
+    "published": "2024-06-25T13:33:50Z",
+    "versions": [
+     "0.1"
+    ]
+   },
+   {
+    "name": "py-coqrd",
+    "id": "MAL-2024-5600",
+    "published": "2024-06-25T13:39:07Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "juphelp",
+    "id": "MAL-2024-12293",
+    "published": "2024-08-10T16:25:59Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "pingdomv3",
+    "id": "MAL-2024-5479",
+    "published": "2024-06-25T13:38:09Z",
+    "versions": [
+     "1.1.0",
+     "0.1",
+     "0.1.1",
+     "0.0.3",
+     "0.0.6",
+     "1.0.0",
+     "0.0.4",
+     "0.0.2"
+    ]
+   },
+   {
+    "name": "upgrade-requestt",
+    "id": "MAL-2024-6182",
+    "published": "2024-06-25T13:43:56Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "guypy",
+    "id": "MAL-2024-5190",
+    "published": "2024-06-25T13:35:49Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "manyhttp",
+    "id": "MAL-2024-5349",
+    "published": "2024-06-25T13:37:07Z",
+    "versions": [
+     "2.33.15",
+     "2.33.16",
+     "2.33.14",
+     "2.33.17",
+     "2.33.18"
+    ]
+   },
+   {
+    "name": "py-corrd",
+    "id": "MAL-2024-5615",
+    "published": "2024-06-25T13:39:14Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "szn-zbozi-ab-testing-fulltext",
+    "id": "MAL-2024-12358",
+    "published": "2024-07-26T16:53:30Z",
+    "versions": [
+     "0.0.3"
+    ]
+   },
+   {
+    "name": "py-cotd",
+    "id": "MAL-2024-5620",
+    "published": "2024-06-25T13:39:17Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "lanm-neo",
+    "id": "MAL-2024-10729",
+    "published": "2024-11-06T18:46:10Z",
+    "versions": [
+     "95.6"
+    ]
+   },
+   {
+    "name": "setupyntq",
+    "id": "MAL-2024-5994",
+    "published": "2024-06-25T13:42:27Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "packagemernoda",
+    "id": "MAL-2024-5446",
+    "published": "2024-06-25T13:37:53Z",
+    "versions": [
+     "0.5.0",
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "voto3",
+    "id": "MAL-2024-11746",
+    "published": "2024-07-26T16:53:30Z",
+    "versions": [
+     "0.1",
+     "0.2",
+     "0.3",
+     "0.7.0",
+     "0.9.0",
+     "0.2.0",
+     "0.3.0"
+    ]
+   }
+  ],
+  "2025": [
+   {
+    "name": "byted-df",
+    "id": "MAL-2025-905",
+    "published": "2024-11-29T13:03:21Z",
+    "versions": [
+     "99.1.1"
+    ]
+   },
+   {
+    "name": "py-sys-utils",
+    "id": "MAL-2025-47794",
+    "published": "2025-08-23T17:37:17Z",
+    "versions": [
+     "3.0.1",
+     "3.2.4"
+    ]
+   },
+   {
+    "name": "tablixs",
+    "id": "MAL-2025-193013",
+    "published": "2026-02-11T10:04:22Z",
+    "versions": [
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "my-fun-tools",
+    "id": "MAL-2025-6552",
+    "published": "2025-06-09T11:26:07Z",
+    "versions": [
+     "0.1.1",
+     "0.1.2"
+    ]
+   },
+   {
+    "name": "dccs-bot",
+    "id": "MAL-2025-41657",
+    "published": "2025-08-28T07:10:56Z",
+    "versions": [
+     "0.1"
+    ]
+   },
+   {
+    "name": "aiogram-msgeffect",
+    "id": "MAL-2025-191674",
+    "published": "2025-11-22T16:25:53Z",
+    "versions": [
+     "1.2.1",
+     "1.1.4"
+    ]
+   },
+   {
+    "name": "tronhexpy",
+    "id": "MAL-2025-48904",
+    "published": "2025-09-24T20:37:57Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "gramapi",
+    "id": "MAL-2025-6513",
+    "published": "2025-07-11T22:51:02Z",
+    "versions": [
+     "1.0.0",
+     "1.0.2",
+     "1.0.3"
+    ]
+   },
+   {
+    "name": "deepseek-fake",
+    "id": "MAL-2025-4214",
+    "published": "2024-07-26T16:53:30Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "utilitypyfunc",
+    "id": "MAL-2025-999",
+    "published": "2024-12-17T19:42:36Z",
+    "versions": [
+     "0.1.0",
+     "0.3.0",
+     "0.4.0",
+     "0.5.0"
+    ]
+   },
+   {
+    "name": "bh-usa-automate-req-ase",
+    "id": "MAL-2025-191691",
+    "published": "2025-08-02T18:40:10Z",
+    "versions": [
+     "0.0.3"
+    ]
+   },
+   {
+    "name": "rubyreq",
+    "id": "MAL-2025-41757",
+    "published": "2025-08-28T07:11:51Z",
+    "versions": [
+     "2",
+     "3",
+     "6",
+     "7"
+    ]
+   },
+   {
+    "name": "hancsv",
+    "id": "MAL-2025-191748",
+    "published": "2025-06-29T16:56:08Z",
+    "versions": [
+     "1.2"
+    ]
+   },
+   {
+    "name": "msgspec-python313-pre",
+    "id": "MAL-2025-2977",
+    "published": "2025-03-28T13:05:52Z",
+    "versions": [
+     "0.0.0.1"
+    ]
+   },
+   {
+    "name": "anothertestproject",
+    "id": "MAL-2025-191681",
+    "published": "2025-10-08T12:45:34Z",
+    "versions": [
+     "0.1.7",
+     "0.1.6",
+     "0.1.5",
+     "0.1.4",
+     "0.1.3",
+     "0.1.2",
+     "0.1.1",
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "testpackageroietest3",
+    "id": "MAL-2025-41776",
+    "published": "2025-07-28T21:17:11Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "certifiy",
+    "id": "MAL-2025-41635",
+    "published": "2025-08-28T07:10:45Z",
+    "versions": [
+     "2022.12.7"
+    ]
+   },
+   {
+    "name": "malimalo",
+    "id": "MAL-2025-6541",
+    "published": "2025-07-04T11:41:06Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "python-amazon-doc-utils",
+    "id": "MAL-2025-47796",
+    "published": "2025-08-20T16:30:57Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "requestpacket",
+    "id": "MAL-2025-5128",
+    "published": "2025-06-18T10:15:19Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "flask-tdg-cyberx",
+    "id": "MAL-2025-191732",
+    "published": "2025-08-17T19:39:48Z",
+    "versions": [
+     "3.300.40",
+     "3.300.39",
+     "3.100.2",
+     "1.0.1",
+     "3.300.41"
+    ]
+   },
+   {
+    "name": "huzzleuo130",
+    "id": "MAL-2025-191638",
+    "published": "2025-10-19T17:02:52Z",
+    "versions": [
+     "0.1"
+    ]
+   },
+   {
+    "name": "pythondm32",
+    "id": "MAL-2025-191846",
+    "published": "2025-06-21T09:33:32Z",
+    "versions": [
+     "1.1.0"
+    ]
+   },
+   {
+    "name": "maliciouspkg",
+    "id": "MAL-2025-1979",
+    "published": "2025-03-03T13:44:59Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "ctosec-appsec-wb-xray-adapter",
+    "id": "MAL-2025-192393",
+    "published": "2025-12-09T18:38:25Z",
+    "versions": [
+     "0.1.1",
+     "0.2.0"
+    ]
+   },
+   {
+    "name": "pylint-redis",
+    "id": "MAL-2025-958",
+    "published": "2025-02-03T17:07:41Z",
+    "versions": [
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "jython-file",
+    "id": "MAL-2025-191771",
+    "published": "2025-07-07T09:14:37Z",
+    "versions": [
+     "0.999999999",
+     "0.9999999999",
+     "1.99999999999"
+    ]
+   },
+   {
+    "name": "common-test",
+    "id": "MAL-2025-6481",
+    "published": "2025-07-31T19:14:41Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "more-colors",
+    "id": "MAL-2025-41702",
+    "published": "2025-08-28T07:11:22Z",
+    "versions": [
+     "0.1"
+    ]
+   },
+   {
+    "name": "musl-dev",
+    "id": "MAL-2025-191650",
+    "published": "2025-10-16T09:20:43Z",
+    "versions": [
+     "1.0.0",
+     "0.0.0"
+    ]
+   },
+   {
+    "name": "supersafecalc",
+    "id": "MAL-2025-191881",
+    "published": "2025-07-28T18:58:47Z",
+    "versions": [
+     "2.0.0",
+     "2.0.1",
+     "3.0.1"
+    ]
+   },
+   {
+    "name": "tronapipy",
+    "id": "MAL-2025-6606",
+    "published": "2025-04-28T16:54:05Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "fireeye-main",
+    "id": "MAL-2025-192893",
+    "published": "2025-12-23T08:38:27Z",
+    "versions": [
+     "2.0.0",
+     "2.6"
+    ]
+   },
+   {
+    "name": "smart-scheduler",
+    "id": "MAL-2025-191661",
+    "published": "2025-10-22T17:09:55Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1",
+     "0.1.2",
+     "0.1.3",
+     "0.1.4"
+    ]
+   },
+   {
+    "name": "web3author",
+    "id": "MAL-2025-4269",
+    "published": "2025-04-27T08:06:41Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "newdontinstallthistest",
+    "id": "MAL-2025-41709",
+    "published": "2025-08-28T07:11:25Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "pokemon-app-sdk",
+    "id": "MAL-2025-191815",
+    "published": "2025-09-13T21:48:37Z",
+    "versions": [
+     "1.9.12",
+     "0.17.0"
+    ]
+   },
+   {
+    "name": "aiogrem",
+    "id": "MAL-2025-193007",
+    "published": "2025-12-31T14:49:05Z",
+    "versions": [
+     "0.2"
+    ]
+   },
+   {
+    "name": "httpsyncer",
+    "id": "MAL-2025-41686",
+    "published": "2025-08-06T14:30:46Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "w722-poc",
+    "id": "MAL-2025-1003",
+    "published": "2024-07-26T16:53:30Z",
+    "versions": [
+     "0.1"
+    ]
+   },
+   {
+    "name": "electrum-bch",
+    "id": "MAL-2025-47762",
+    "published": "2025-08-23T11:16:26Z",
+    "versions": [
+     "0.3.6",
+     "0.3.7",
+     "0.3.8",
+     "0.3.9",
+     "0.3.5"
+    ]
+   },
+   {
+    "name": "hashidf",
+    "id": "MAL-2025-6520",
+    "published": "2025-06-22T19:14:41Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1",
+     "0.1.2"
+    ]
+   },
+   {
+    "name": "kimportsetup",
+    "id": "MAL-2025-47779",
+    "published": "2025-08-24T08:29:02Z",
+    "versions": [
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "my-test-packagexx",
+    "id": "MAL-2025-48894",
+    "published": "2025-10-23T19:16:46Z",
+    "versions": [
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "flyadmin",
+    "id": "MAL-2025-41677",
+    "published": "2025-08-28T07:11:05Z",
+    "versions": [
+     "2.0.6"
+    ]
+   },
+   {
+    "name": "tronlib",
+    "id": "MAL-2025-4245",
+    "published": "2025-04-28T16:54:05Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "bbllaacckkwwoollff6ad8f753",
+    "id": "MAL-2025-3434",
+    "published": "2025-03-24T08:08:10Z",
+    "versions": [
+     "0.1"
+    ]
+   },
+   {
+    "name": "fonafx",
+    "id": "MAL-2025-191733",
+    "published": "2025-07-04T09:57:46Z",
+    "versions": [
+     "0.2",
+     "0.1",
+     "0.3"
+    ]
+   },
+   {
+    "name": "ga3fario",
+    "id": "MAL-2025-191627",
+    "published": "2025-10-19T16:33:22Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "qtpv",
+    "id": "MAL-2025-191849",
+    "published": "2025-04-25T16:08:50Z",
+    "versions": [
+     "0.1.0",
+     "0.2.0",
+     "0.3.0",
+     "0.4.0"
+    ]
+   },
+   {
+    "name": "reqest-2022",
+    "id": "MAL-2025-41737",
+    "published": "2025-08-28T07:11:43Z",
+    "versions": [
+     "3.22.6"
+    ]
+   },
+   {
+    "name": "apilogicserver",
+    "id": "MAL-2025-3929",
+    "published": "2025-05-17T03:44:30Z",
+    "versions": [
+     "14.5.0"
+    ]
+   },
+   {
+    "name": "myfuntools",
+    "id": "MAL-2025-6553",
+    "published": "2025-07-31T19:15:50Z",
+    "versions": [
+     "0.1.1",
+     "0.1.2",
+     "0.1.3",
+     "0.1.3.1",
+     "0.1.3.2",
+     "0.1.3.3",
+     "0.1.3.4",
+     "0.1.3.5",
+     "0.1.3.6",
+     "0.1.3.7",
+     "0.1.3.8",
+     "0.1.3.9",
+     "0.1.4",
+     "0.1.5",
+     "0.1.6",
+     "0.1.6.1",
+     "0.1.7",
+     "0.1.8",
+     "0.1.8.1",
+     "0.1.8.2",
+     "0.1.8.3",
+     "0.1.9",
+     "0.1.9.1",
+     "0.1.9.2",
+     "0.1.9.3",
+     "0.1.9.4",
+     "0.1.9.5",
+     "0.1.9.6",
+     "0.1.9.7",
+     "0.1.9.8",
+     "0.1.9.9",
+     "0.2.0",
+     "0.2.1",
+     "0.2.2",
+     "0.2.3",
+     "0.2.3.1",
+     "0.2.3.2",
+     "0.2.3.3",
+     "0.2.3.4",
+     "0.2.3.5",
+     "0.2.3.6",
+     "0.2.3.7",
+     "0.2.3.8",
+     "0.2.3.9",
+     "0.2.4",
+     "0.2.5",
+     "0.2.6",
+     "0.2.7",
+     "0.2.8",
+     "0.2.9",
+     "0.3.0",
+     "0.3.1",
+     "0.3.2",
+     "0.3.3",
+     "0.3.4",
+     "0.3.5",
+     "0.3.6",
+     "0.3.7",
+     "0.3.8",
+     "0.3.9",
+     "0.4.0",
+     "0.4.1",
+     "0.4.2",
+     "0.4.3",
+     "0.4.4",
+     "0.4.6",
+     "0.4.7",
+     "0.4.8",
+     "0.4.9",
+     "0.5.0",
+     "0.5.1",
+     "0.5.3",
+     "0.5.4",
+     "0.5.5",
+     "0.5.6",
+     "0.5.7",
+     "0.5.8",
+     "0.5.9",
+     "0.6.0",
+     "0.6.1",
+     "0.6.2",
+     "0.6.3",
+     "0.6.4",
+     "0.6.5",
+     "0.6.6",
+     "0.6.7"
+    ]
+   },
+   {
+    "name": "mzip",
+    "id": "MAL-2025-191799",
+    "published": "2025-11-22T17:01:17Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "doughnuts",
+    "id": "MAL-2025-41665",
+    "published": "2025-08-28T07:11:00Z",
+    "versions": [
+     "3.5.1",
+     "3.6.0",
+     "3.7.0",
+     "3.8.0",
+     "3.8.2",
+     "4.0.0",
+     "4.0.3",
+     "4.3.0",
+     "4.11.0",
+     "4.11.2"
+    ]
+   },
+   {
+    "name": "exorigsim",
+    "id": "MAL-2025-6501",
+    "published": "2025-07-31T19:14:58Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "libmelee",
+    "id": "MAL-2025-2971",
+    "published": "2025-03-28T13:05:48Z",
+    "versions": [
+     "0.0.0.1"
+    ]
+   },
+   {
+    "name": "django-storage",
+    "id": "MAL-2025-2956",
+    "published": "2025-03-28T13:05:34Z",
+    "versions": [
+     "0.0.0.1"
+    ]
+   },
+   {
+    "name": "hexadecpy",
+    "id": "MAL-2025-191754",
+    "published": "2025-11-15T17:51:47Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "browser-history-analytics",
+    "id": "MAL-2025-191695",
+    "published": "2025-06-15T20:28:41Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1",
+     "0.1.2",
+     "0.1.3",
+     "0.1.4",
+     "0.1.5"
+    ]
+   },
+   {
+    "name": "loquru",
+    "id": "MAL-2025-191784",
+    "published": "2025-08-01T13:47:41Z",
+    "versions": [
+     "0.7.3"
+    ]
+   },
+   {
+    "name": "unizip",
+    "id": "MAL-2025-192689",
+    "published": "2025-12-22T14:02:40Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "this-is-vvvv",
+    "id": "MAL-2025-41779",
+    "published": "2025-08-28T07:12:05Z",
+    "versions": [
+     "0.1"
+    ]
+   },
+   {
+    "name": "pyrtp",
+    "id": "MAL-2025-191837",
+    "published": "2025-11-24T23:32:59Z",
+    "versions": [
+     "1.6.3"
+    ]
+   },
+   {
+    "name": "atlasctf-21-prod-22",
+    "id": "MAL-2025-5097",
+    "published": "2024-07-26T16:53:30Z",
+    "versions": [
+     "9999.0.8"
+    ]
+   },
+   {
+    "name": "saintone",
+    "id": "MAL-2025-191862",
+    "published": "2025-10-15T20:25:13Z",
+    "versions": [
+     "3.0.0",
+     "2.0.0",
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "tronapihelper",
+    "id": "MAL-2025-191911",
+    "published": "2025-08-10T14:59:50Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "tronpyapi",
+    "id": "MAL-2025-6610",
+    "published": "2025-07-11T17:02:54Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "xcepthttp",
+    "id": "MAL-2025-3483",
+    "published": "2025-03-17T21:47:06Z",
+    "versions": [
+     "0.0.2"
+    ]
+   },
+   {
+    "name": "blackspammerbd-v1",
+    "id": "MAL-2025-2596",
+    "published": "2025-03-19T14:42:00Z",
+    "versions": [
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "worldhello",
+    "id": "MAL-2025-5174",
+    "published": "2025-06-17T16:36:03Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "hekamhelp",
+    "id": "MAL-2025-191750",
+    "published": "2025-07-19T21:57:44Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "atlasctf-21-prod-08",
+    "id": "MAL-2025-6445",
+    "published": "2025-06-07T14:05:45Z",
+    "versions": [
+     "99.99.99",
+     "99.99.99.1"
+    ]
+   },
+   {
+    "name": "globrex",
+    "id": "MAL-2025-6511",
+    "published": "2024-07-26T16:53:30Z",
+    "versions": [
+     "3.1.2"
+    ]
+   },
+   {
+    "name": "browser-history-analysis",
+    "id": "MAL-2025-6469",
+    "published": "2025-06-15T20:28:41Z",
+    "versions": [
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "youtube-new",
+    "id": "MAL-2025-41801",
+    "published": "2025-08-28T07:12:17Z",
+    "versions": [
+     "2.2.1"
+    ]
+   },
+   {
+    "name": "rando0192490",
+    "id": "MAL-2025-191655",
+    "published": "2025-10-19T16:48:34Z",
+    "versions": [
+     "0.2.9",
+     "0.1.9"
+    ]
+   },
+   {
+    "name": "opshub",
+    "id": "MAL-2025-948",
+    "published": "2024-12-26T12:24:34Z",
+    "versions": [
+     "0.1"
+    ]
+   },
+   {
+    "name": "justanything",
+    "id": "MAL-2025-6531",
+    "published": "2025-06-13T14:03:05Z",
+    "versions": [
+     "0.1.3",
+     "0.1.0",
+     "0.1.1",
+     "0.1.2"
+    ]
+   },
+   {
+    "name": "merpe",
+    "id": "MAL-2025-4226",
+    "published": "2024-07-26T16:53:30Z",
+    "versions": [
+     "3.2.1",
+     "3.3.1"
+    ]
+   },
+   {
+    "name": "execjs",
+    "id": "MAL-2025-2962",
+    "published": "2025-03-28T13:05:38Z",
+    "versions": [
+     "0.0.0.1"
+    ]
+   },
+   {
+    "name": "vfsrcetest",
+    "id": "MAL-2025-4257",
+    "published": "2024-07-26T16:53:30Z",
+    "versions": [
+     "1.1"
+    ]
+   },
+   {
+    "name": "rwimodeling",
+    "id": "MAL-2025-6580",
+    "published": "2024-07-26T16:53:30Z",
+    "versions": [
+     "10.0.2",
+     "10.0.1"
+    ]
+   },
+   {
+    "name": "aiogram-sever-patch",
+    "id": "MAL-2025-192931",
+    "published": "2025-12-25T14:18:44Z",
+    "versions": [
+     "3.3.8",
+     "3.3.7",
+     "3.3.9",
+     "3.5.0",
+     "3.6.0"
+    ]
+   },
+   {
+    "name": "atlasctf-21-prod-29",
+    "id": "MAL-2025-6459",
+    "published": "2025-06-07T14:05:45Z",
+    "versions": [
+     "0.1",
+     "99.99.99",
+     "99.99.99.1",
+     "9.9"
+    ]
+   },
+   {
+    "name": "astronomios",
+    "id": "MAL-2025-1964",
+    "published": "2025-02-08T20:07:23Z",
+    "versions": [
+     "0.6"
+    ]
+   },
+   {
+    "name": "pypiion",
+    "id": "MAL-2025-6571",
+    "published": "2025-07-04T09:57:46Z",
+    "versions": [
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "atlasctf-21-prod-06",
+    "id": "MAL-2025-6443",
+    "published": "2025-06-07T14:05:45Z",
+    "versions": [
+     "99.99.99",
+     "99.99.99.1"
+    ]
+   },
+   {
+    "name": "suyo",
+    "id": "MAL-2025-48898",
+    "published": "2025-09-19T13:22:03Z",
+    "versions": [
+     "1.0.0",
+     "1.1.0",
+     "1.1.1",
+     "1.2.0",
+     "1.3.0",
+     "1.3.2",
+     "1.3.3",
+     "1.3.4",
+     "1.3.5",
+     "1.3.6",
+     "1.4",
+     "1.4.1",
+     "1.4.2"
+    ]
+   },
+   {
+    "name": "blackspammerbd-remot1",
+    "id": "MAL-2025-2591",
+    "published": "2025-03-19T14:42:00Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "hackmiami",
+    "id": "MAL-2025-5117",
+    "published": "2024-08-23T22:55:41Z",
+    "versions": [
+     "69.69.69"
+    ]
+   },
+   {
+    "name": "d1snakegame",
+    "id": "MAL-2025-191712",
+    "published": "2025-10-03T16:11:50Z",
+    "versions": [
+     "0.1.3",
+     "0.1.2",
+     "0.1.1",
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "pam98wyfupa98w",
+    "id": "MAL-2025-191810",
+    "published": "2025-11-14T17:24:18Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "mlc-ai-nightly-rocm62",
+    "id": "MAL-2025-1982",
+    "published": "2025-01-21T18:27:56Z",
+    "versions": [
+     "9.9.9"
+    ]
+   },
+   {
+    "name": "dev-server-python",
+    "id": "MAL-2025-191717",
+    "published": "2025-11-27T07:09:15Z",
+    "versions": [
+     "99.9.9"
+    ]
+   },
+   {
+    "name": "vielcord",
+    "id": "MAL-2025-47510",
+    "published": "2025-09-22T02:12:23Z",
+    "versions": [
+     "0.0.7.5"
+    ]
+   },
+   {
+    "name": "bugscanx",
+    "id": "MAL-2025-904",
+    "published": "2025-02-03T17:07:09Z",
+    "versions": [
+     "1.0.1",
+     "1.0.2",
+     "1.0.3",
+     "1.0.4",
+     "1.0.5",
+     "1.0.6",
+     "1.0.7",
+     "1.0.8",
+     "1.0.9",
+     "1.2.0",
+     "1.2.1",
+     "1.2.2"
+    ]
+   },
+   {
+    "name": "permsupping",
+    "id": "MAL-2025-41717",
+    "published": "2025-08-09T13:00:15Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "atlassian-exp",
+    "id": "MAL-2025-191475",
+    "published": "2025-11-26T05:10:43Z",
+    "versions": [
+     "99.0.0"
+    ]
+   },
+   {
+    "name": "yolov8mini",
+    "id": "MAL-2025-3484",
+    "published": "2025-03-23T21:03:35Z",
+    "versions": [
+     "0.1",
+     "0.1.1",
+     "1.1.1",
+     "1.2.1",
+     "1.3.1",
+     "1.4.1",
+     "2.0.1",
+     "2.1.1",
+     "2.2.1",
+     "2.3.1"
+    ]
+   }
+  ],
+  "2026": [
+   {
+    "name": "paysafe-kyc",
+    "id": "MAL-2026-6927",
+    "published": "2026-07-07T15:22:13Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "currentclock",
+    "id": "MAL-2026-3206",
+    "published": "2026-04-30T21:48:42Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "iwantsafecheckit",
+    "id": "MAL-2026-2290",
+    "published": "2026-03-29T13:31:21Z",
+    "versions": [
+     "2.0.0"
+    ]
+   },
+   {
+    "name": "bip39-py",
+    "id": "MAL-2026-12080",
+    "published": "2026-08-05T05:00:57Z",
+    "versions": [
+     "1.0.6"
+    ]
+   },
+   {
+    "name": "requests-auth-toolkit",
+    "id": "MAL-2026-847",
+    "published": "2026-02-10T22:45:40Z",
+    "versions": [
+     "2.1.0"
+    ]
+   },
+   {
+    "name": "makenotion-ppetest",
+    "id": "MAL-2026-1406",
+    "published": "2026-03-13T08:13:53Z",
+    "versions": [
+     "0.0.0",
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "requests-core-plugin",
+    "id": "MAL-2026-843",
+    "published": "2026-02-10T19:14:49Z",
+    "versions": [
+     "2.31.5",
+     "2.31.6",
+     "2.31.7",
+     "2.31.8",
+     "2.31.9",
+     "2.31.12",
+     "2.31.13",
+     "2.31.14",
+     "2.31.15"
+    ]
+   },
+   {
+    "name": "icloud-recovery",
+    "id": "MAL-2026-467",
+    "published": "2026-01-22T17:20:06Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1",
+     "0.1.2",
+     "0.1.5",
+     "0.1.6",
+     "0.2.0"
+    ]
+   },
+   {
+    "name": "pipinpeace-reverse",
+    "id": "MAL-2026-2029",
+    "published": "2026-03-22T16:50:18Z",
+    "versions": [
+     "0.0.0"
+    ]
+   },
+   {
+    "name": "currenttimerlib",
+    "id": "MAL-2026-3229",
+    "published": "2026-05-02T03:51:33Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "pyptllm",
+    "id": "MAL-2026-5821",
+    "published": "2026-06-15T17:32:39Z",
+    "versions": [
+     "0.2"
+    ]
+   },
+   {
+    "name": "rasterkit-demo",
+    "id": "MAL-2026-10975",
+    "published": "2026-07-21T05:46:23Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "financial-crimes-general-utils",
+    "id": "MAL-2026-2107",
+    "published": "2026-03-23T13:56:01Z",
+    "versions": [
+     "3.9.12"
+    ]
+   },
+   {
+    "name": "fluent-panel-metrics",
+    "id": "MAL-2026-6182",
+    "published": "2026-06-19T00:53:01Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "apkeep",
+    "id": "MAL-2026-3431",
+    "published": "2026-05-11T19:23:16Z",
+    "versions": [
+     "0.1.0",
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "greeter-pro-test",
+    "id": "MAL-2026-766",
+    "published": "2026-02-05T16:40:51Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "fastapis-requests",
+    "id": "MAL-2026-1262",
+    "published": "2026-03-06T11:34:31Z",
+    "versions": [
+     "2.32.5"
+    ]
+   },
+   {
+    "name": "git-config-sync",
+    "id": "MAL-2026-4273",
+    "published": "2026-05-24T01:45:48Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "timesmcplib",
+    "id": "MAL-2026-3240",
+    "published": "2026-05-03T03:09:30Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "pckg-sv",
+    "id": "MAL-2026-2627",
+    "published": "2026-04-14T05:35:20Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "flask-hookserver",
+    "id": "MAL-2026-505",
+    "published": "2026-01-25T11:13:11Z",
+    "versions": [
+     "999.0.0",
+     "999.0.1"
+    ]
+   },
+   {
+    "name": "mrbios",
+    "id": "MAL-2026-5282",
+    "published": "2026-06-06T06:13:57Z",
+    "versions": [
+     "0.1.1",
+     "0.1.2"
+    ]
+   },
+   {
+    "name": "pathlib-v2-utility",
+    "id": "MAL-2026-697",
+    "published": "2026-02-03T09:17:38Z",
+    "versions": [
+     "1.0.4",
+     "1.0.5"
+    ]
+   },
+   {
+    "name": "somepentest-test-package",
+    "id": "MAL-2026-2242",
+    "published": "2026-03-26T20:06:44Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "dcchbot",
+    "id": "MAL-2026-3689",
+    "published": "2026-05-12T07:42:11Z",
+    "versions": [
+     "1.9.4",
+     "1.9.1",
+     "1.8.3",
+     "1.9",
+     "1.8.1"
+    ]
+   },
+   {
+    "name": "twrap-toolkit",
+    "id": "MAL-2026-5841",
+    "published": "2026-06-15T21:52:02Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "trongridmy",
+    "id": "MAL-2026-10930",
+    "published": "2026-07-20T20:44:54Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "randomchoicemas",
+    "id": "MAL-2026-3324",
+    "published": "2026-05-04T10:29:41Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "discord-ban",
+    "id": "MAL-2026-5091",
+    "published": "2026-05-30T17:06:03Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1",
+     "1.0.2"
+    ]
+   },
+   {
+    "name": "python-files-mod",
+    "id": "MAL-2026-851",
+    "published": "2026-02-11T10:40:53Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "snapshot-date",
+    "id": "MAL-2026-610",
+    "published": "2026-01-30T19:09:41Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1",
+     "1.0.2",
+     "1.0.3"
+    ]
+   },
+   {
+    "name": "ml-shared",
+    "id": "MAL-2026-11202",
+    "published": "2026-07-30T21:43:14Z",
+    "versions": [
+     "6.3.0",
+     "8.8.0"
+    ]
+   },
+   {
+    "name": "gunicorm",
+    "id": "MAL-2026-6383",
+    "published": "2026-06-24T06:41:41Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "aristanetworks",
+    "id": "MAL-2026-2173",
+    "published": "2026-03-25T05:04:39Z",
+    "versions": [
+     "99.0.0"
+    ]
+   },
+   {
+    "name": "sher-server-tool",
+    "id": "MAL-2026-2840",
+    "published": "2026-04-17T10:48:02Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "neverinstallme",
+    "id": "MAL-2026-2686",
+    "published": "2026-04-15T13:10:53Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1",
+     "0.1.3",
+     "0.1.4",
+     "0.1.5",
+     "0.1.6",
+     "0.1.7"
+    ]
+   },
+   {
+    "name": "pyphetools",
+    "id": "MAL-2026-5324",
+    "published": "2026-06-06T06:13:57Z",
+    "versions": [
+     "0.9.120"
+    ]
+   },
+   {
+    "name": "target-iceberg",
+    "id": "MAL-2026-2152",
+    "published": "2026-03-24T22:20:29Z",
+    "versions": [
+     "99.0.0"
+    ]
+   },
+   {
+    "name": "comp-colors",
+    "id": "MAL-2026-10986",
+    "published": "2026-07-21T20:44:12Z",
+    "versions": [
+     "0.1.5"
+    ]
+   },
+   {
+    "name": "lightmock",
+    "id": "MAL-2026-2233",
+    "published": "2026-03-26T08:27:10Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "django-bkvision",
+    "id": "MAL-2026-6593",
+    "published": "2026-06-29T09:41:45Z",
+    "versions": [
+     "1.2.0"
+    ]
+   },
+   {
+    "name": "marshmellows",
+    "id": "MAL-2026-905",
+    "published": "2026-02-15T09:25:56Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "telegramdatas",
+    "id": "MAL-2026-1498",
+    "published": "2026-03-17T16:16:37Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "pychatz",
+    "id": "MAL-2026-2291",
+    "published": "2026-03-29T13:50:56Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "clip-logger",
+    "id": "MAL-2026-5293",
+    "published": "2026-06-07T10:34:10Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1",
+     "1.0.2",
+     "1.0.3",
+     "1.0.4",
+     "1.1.0",
+     "1.1.1",
+     "1.1.2"
+    ]
+   },
+   {
+    "name": "ml-nps-shared",
+    "id": "MAL-2026-11201",
+    "published": "2026-07-30T21:49:38Z",
+    "versions": [
+     "6.0.3",
+     "8.2.3"
+    ]
+   },
+   {
+    "name": "tabullates",
+    "id": "MAL-2026-562",
+    "published": "2026-01-28T07:42:32Z",
+    "versions": [
+     "1.0.1",
+     "1.0.2",
+     "1.0.3",
+     "1.0.4"
+    ]
+   },
+   {
+    "name": "rogiant-install",
+    "id": "MAL-2026-4835",
+    "published": "2026-05-27T23:53:05Z",
+    "versions": [
+     "2.5.0"
+    ]
+   },
+   {
+    "name": "m-at-star-tools",
+    "id": "MAL-2026-4812",
+    "published": "2026-05-26T10:43:03Z",
+    "versions": [
+     "1.0.4",
+     "1.0.0",
+     "1.0.3"
+    ]
+   },
+   {
+    "name": "alphalend-abi",
+    "id": "MAL-2026-13472",
+    "published": "2026-08-06T16:13:58Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1",
+     "1.1.0"
+    ]
+   },
+   {
+    "name": "quicktestybesty",
+    "id": "MAL-2026-3045",
+    "published": "2026-04-26T01:09:46Z",
+    "versions": [
+     "2.3.0"
+    ]
+   },
+   {
+    "name": "just4testlm",
+    "id": "MAL-2026-2519",
+    "published": "2026-04-09T07:28:17Z",
+    "versions": [
+     "0.1.0",
+     "0.2.0",
+     "0.3.0",
+     "0.4.0",
+     "0.5.0",
+     "0.6.0",
+     "0.7.0",
+     "0.8.0",
+     "0.9.0",
+     "0.9.1",
+     "0.9.2",
+     "0.9.3"
+    ]
+   },
+   {
+    "name": "cubaflixdownload",
+    "id": "MAL-2026-900",
+    "published": "2026-02-14T12:34:41Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1",
+     "2.0.0",
+     "3.0.0",
+     "4.0.0",
+     "5.0.0",
+     "6.0.0"
+    ]
+   },
+   {
+    "name": "qdatainstaller",
+    "id": "MAL-2026-27",
+    "published": "2026-01-03T00:50:32Z",
+    "versions": [
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "zzzzthisisitwantsafecheckitzzzz",
+    "id": "MAL-2026-2309",
+    "published": "2026-03-31T03:35:47Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "pyext6cc8cd",
+    "id": "MAL-2026-6488",
+    "published": "2026-06-25T22:45:45Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "tensorflow-opt",
+    "id": "MAL-2026-983",
+    "published": "2026-02-22T16:53:45Z",
+    "versions": [
+     "0.6",
+     "0.7",
+     "0.8",
+     "0.9",
+     "0.10",
+     "0.11",
+     "0.12",
+     "0.13",
+     "0.14",
+     "0.15",
+     "0.16",
+     "0.17",
+     "0.18",
+     "0.19",
+     "0.20",
+     "0.21",
+     "0.22",
+     "0.23",
+     "0.24",
+     "0.25",
+     "0.26",
+     "0.27",
+     "0.28",
+     "0.29",
+     "0.30",
+     "0.40"
+    ]
+   },
+   {
+    "name": "qyrm-pipinject4",
+    "id": "MAL-2026-2016",
+    "published": "2026-03-21T15:46:26Z",
+    "versions": [
+     "1.0"
+    ]
+   },
+   {
+    "name": "interwebz",
+    "id": "MAL-2026-2283",
+    "published": "2026-03-29T10:06:44Z",
+    "versions": [
+     "99.1.0"
+    ]
+   },
+   {
+    "name": "xyq-drama-skill",
+    "id": "MAL-2026-10681",
+    "published": "2026-07-15T14:29:25Z",
+    "versions": [
+     "0.1.0",
+     "0.2.0",
+     "0.3.0"
+    ]
+   },
+   {
+    "name": "infogram-bot",
+    "id": "MAL-2026-14131",
+    "published": "2026-08-18T19:46:24Z",
+    "versions": [
+     "1.0.0",
+     "1.2.0",
+     "1.2.1",
+     "1.3.0",
+     "1.4.0",
+     "1.5.0",
+     "1.6.0",
+     "1.6.1",
+     "1.7.0",
+     "1.8.0",
+     "1.9.0"
+    ]
+   },
+   {
+    "name": "claude-lite",
+    "id": "MAL-2026-2269",
+    "published": "2026-03-27T16:45:20Z",
+    "versions": [
+     "2.33.0"
+    ]
+   },
+   {
+    "name": "amazon-boto",
+    "id": "MAL-2026-3148",
+    "published": "2026-04-29T08:58:04Z",
+    "versions": [
+     "1.42.41",
+     "1.42.42"
+    ]
+   },
+   {
+    "name": "xayoub-xctxteam",
+    "id": "MAL-2026-13426",
+    "published": "2026-08-06T13:38:08Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1",
+     "0.1.2"
+    ]
+   },
+   {
+    "name": "pyutils-helper",
+    "id": "MAL-2026-1281",
+    "published": "2026-03-08T14:13:30Z",
+    "versions": [
+     "1.2.3",
+     "1.2.4"
+    ]
+   },
+   {
+    "name": "pubsub2inbox",
+    "id": "MAL-2026-1993",
+    "published": "2026-03-20T10:34:45Z",
+    "versions": [
+     "9.9.9"
+    ]
+   },
+   {
+    "name": "ctf-pipline-test",
+    "id": "MAL-2026-817",
+    "published": "2026-02-09T15:35:47Z",
+    "versions": [
+     "1.0.0",
+     "2.0.0"
+    ]
+   },
+   {
+    "name": "walmart-genai-trace",
+    "id": "MAL-2026-11420",
+    "published": "2026-07-31T14:26:47Z",
+    "versions": [
+     "99.0.0"
+    ]
+   },
+   {
+    "name": "procoder",
+    "id": "MAL-2026-2835",
+    "published": "2026-04-17T07:55:42Z",
+    "versions": [
+     "0.0.2"
+    ]
+   },
+   {
+    "name": "mypypipkg",
+    "id": "MAL-2026-3105",
+    "published": "2026-04-27T21:21:43Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "turbod",
+    "id": "MAL-2026-6979",
+    "published": "2026-07-08T13:32:30Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1",
+     "1.0.2",
+     "1.0.3",
+     "1.0.4",
+     "1.0.5",
+     "1.0.6",
+     "1.0.7"
+    ]
+   },
+   {
+    "name": "tronpath",
+    "id": "MAL-2026-3742",
+    "published": "2026-05-14T18:45:50Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "auto-backup-wsl",
+    "id": "MAL-2026-926",
+    "published": "2026-01-05T23:50:24Z",
+    "versions": [
+     "1.0.0",
+     "1.0.2",
+     "1.0.3",
+     "1.0.4",
+     "1.0.5",
+     "1.0.6",
+     "1.0.8",
+     "1.0.9"
+    ]
+   },
+   {
+    "name": "dmclc",
+    "id": "MAL-2026-2106",
+    "published": "2026-03-23T14:05:43Z",
+    "versions": [
+     "2.1.0",
+     "2.1.1",
+     "2.1.2",
+     "2.1.3",
+     "2.1.5",
+     "2.1.6",
+     "2.1.7",
+     "2.1.9",
+     "2.1.10"
+    ]
+   },
+   {
+    "name": "flask-header-guard",
+    "id": "MAL-2026-15566",
+    "published": "2026-08-29T11:29:06Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "nanoinstaller",
+    "id": "MAL-2026-351",
+    "published": "2026-01-19T07:16:02Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "defi-kit",
+    "id": "MAL-2026-10926",
+    "published": "2026-07-20T17:49:55Z",
+    "versions": [
+     "2.1.1"
+    ]
+   },
+   {
+    "name": "tronpak",
+    "id": "MAL-2026-6983",
+    "published": "2026-07-08T15:09:31Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "nhmpy",
+    "id": "MAL-2026-5302",
+    "published": "2026-06-08T07:49:44Z",
+    "versions": [
+     "2.4.6",
+     "2.4.7"
+    ]
+   },
+   {
+    "name": "boto4",
+    "id": "MAL-2026-14349",
+    "published": "2026-08-21T08:19:49Z",
+    "versions": [
+     "1.0.0",
+     "1.0.2"
+    ]
+   },
+   {
+    "name": "http-notifier-test",
+    "id": "MAL-2026-814",
+    "published": "2026-02-09T09:29:06Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "lnatainstaller",
+    "id": "MAL-2026-128",
+    "published": "2026-01-07T19:46:19Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "code-transfering-4",
+    "id": "MAL-2026-446",
+    "published": "2026-01-21T20:20:41Z",
+    "versions": [
+     "0.1"
+    ]
+   },
+   {
+    "name": "platforms",
+    "id": "MAL-2026-901",
+    "published": "2026-02-14T12:29:36Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1",
+     "2.0.0",
+     "3.0.0",
+     "4.0.0",
+     "5.0.0",
+     "6.0.0"
+    ]
+   },
+   {
+    "name": "neutrl-contracts",
+    "id": "MAL-2026-13709",
+    "published": "2026-08-10T19:49:11Z",
+    "versions": [
+     "2.0.0",
+     "2.0.1",
+     "2.0.2"
+    ]
+   },
+   {
+    "name": "skydeo",
+    "id": "MAL-2026-815",
+    "published": "2026-02-09T09:12:05Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "disksweep",
+    "id": "MAL-2026-6081",
+    "published": "2026-06-17T21:34:55Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "officepyai",
+    "id": "MAL-2026-2311",
+    "published": "2026-03-31T09:26:34Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "tablescene",
+    "id": "MAL-2026-738",
+    "published": "2026-02-04T10:24:43Z",
+    "versions": [
+     "1.0.3",
+     "1.0.4"
+    ]
+   },
+   {
+    "name": "tobihook",
+    "id": "MAL-2026-5995",
+    "published": "2026-06-17T04:22:21Z",
+    "versions": [
+     "1.0.4"
+    ]
+   },
+   {
+    "name": "langchain-core-mcp",
+    "id": "MAL-2026-5318",
+    "published": "2026-06-06T06:13:57Z",
+    "versions": [
+     "1.4.2",
+     "1.4.3"
+    ]
+   },
+   {
+    "name": "hy-api-utilities",
+    "id": "MAL-2026-2185",
+    "published": "2026-03-25T06:54:07Z",
+    "versions": [
+     "0.2.10"
+    ]
+   },
+   {
+    "name": "instal",
+    "id": "MAL-2026-4195",
+    "published": "2026-05-20T19:15:56Z",
+    "versions": [
+     "1.3.5"
+    ]
+   },
+   {
+    "name": "polyclawd",
+    "id": "MAL-2026-927",
+    "published": "2026-02-16T23:40:13Z",
+    "versions": [
+     "1.1.0"
+    ]
+   },
+   {
+    "name": "request-cache-py",
+    "id": "MAL-2026-6245",
+    "published": "2026-06-20T18:47:50Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1",
+     "1.0.2",
+     "1.0.3",
+     "1.0.4",
+     "1.0.5",
+     "1.0.6",
+     "1.0.7",
+     "1.0.8",
+     "1.0.9",
+     "1.1.0"
+    ]
+   },
+   {
+    "name": "solana-api",
+    "id": "MAL-2026-2272",
+    "published": "2026-03-27T16:44:41Z",
+    "versions": [
+     "2.33.0"
+    ]
+   },
+   {
+    "name": "clipcord",
+    "id": "MAL-2026-253",
+    "published": "2026-01-14T14:22:06Z",
+    "versions": [
+     "1.7.0",
+     "1.7.1",
+     "1.7.2"
+    ]
+   },
+   {
+    "name": "psbt-utils",
+    "id": "MAL-2026-11520",
+    "published": "2026-08-04T10:03:35Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "pygremlinbox-malware-code-obfuscation",
+    "id": "MAL-2026-7460",
+    "published": "2026-07-07T11:49:56Z",
+    "versions": [
+     "2.0.0"
+    ]
+   },
+   {
+    "name": "ant-mcp-proxy-for-test",
+    "id": "MAL-2026-2669",
+    "published": "2026-04-14T21:19:11Z",
+    "versions": [
+     "0.10.0"
+    ]
+   }
+  ],
+  "recent": [
+   {
+    "name": "rak-lab-yoav-orca-zrktd2cp5hjmo4x7",
+    "id": "MAL-2026-16241",
+    "published": "2026-09-16T18:26:49Z",
+    "versions": [
+     "9.9.9"
+    ]
+   },
+   {
+    "name": "friendly-greeting-tools",
+    "id": "MAL-2026-17416",
+    "published": "2026-09-30T14:38:06Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1",
+     "0.2",
+     "0.3",
+     "0.3.1",
+     "0.3.2",
+     "0.3.3",
+     "0.3.4",
+     "0.3.5",
+     "0.3.6",
+     "0.3.7"
+    ]
+   },
+   {
+    "name": "starlette-healthchecks",
+    "id": "MAL-2026-16356",
+    "published": "2026-09-21T16:50:02Z",
+    "versions": [
+     "1.3.1",
+     "1.3.2"
+    ]
+   },
+   {
+    "name": "beautifytext",
+    "id": "MAL-2026-17417",
+    "published": "2026-09-30T11:47:45Z",
+    "versions": [
+     "1.0.3",
+     "1.0.4",
+     "1.0.7"
+    ]
+   },
+   {
+    "name": "voxel-tts",
+    "id": "MAL-2026-17461",
+    "published": "2026-10-03T04:38:14Z",
+    "versions": [
+     "0.5.0",
+     "0.5.1"
+    ]
+   },
+   {
+    "name": "openaii",
+    "id": "MAL-2026-16135",
+    "published": "2026-09-11T20:59:18Z",
+    "versions": [
+     "1.55.3"
+    ]
+   },
+   {
+    "name": "claudedashbord",
+    "id": "MAL-2026-17195",
+    "published": "2026-09-27T08:57:31Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1",
+     "0.1.2",
+     "0.1.3"
+    ]
+   },
+   {
+    "name": "requests-triwes",
+    "id": "MAL-2026-16275",
+    "published": "2026-09-17T23:07:16Z",
+    "versions": [
+     "2.34.2"
+    ]
+   },
+   {
+    "name": "voxcpmkit",
+    "id": "MAL-2026-17466",
+    "published": "2026-10-03T12:24:50Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "faiss-cpu-avx512",
+    "id": "MAL-2026-16203",
+    "published": "2026-09-14T00:00:00Z",
+    "versions": [
+     "1.9.0",
+     "1.9.1",
+     "1.9.2",
+     "1.9.3",
+     "1.9.4",
+     "1.9.5",
+     "1.9.6",
+     "1.9.7"
+    ]
+   },
+   {
+    "name": "aitextkit-py",
+    "id": "MAL-2026-16130",
+    "published": "2026-09-11T15:22:35Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "tego-managed-agents-test",
+    "id": "MAL-2026-17183",
+    "published": "2026-09-25T10:39:11Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "metrics-sdk",
+    "id": "MAL-2026-17194",
+    "published": "2026-09-27T07:08:11Z",
+    "versions": [
+     "999.0.0",
+     "1000.0.0",
+     "1001.0.0"
+    ]
+   },
+   {
+    "name": "donutpromotion",
+    "id": "MAL-2026-17196",
+    "published": "2026-09-27T08:55:47Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "praetorian-mind-rce-test-2026",
+    "id": "MAL-2026-16240",
+    "published": "2026-09-16T17:30:57Z",
+    "versions": [
+     "0.0.1",
+     "0.0.2",
+     "0.0.3"
+    ]
+   },
+   {
+    "name": "ollamaa",
+    "id": "MAL-2026-16134",
+    "published": "2026-09-11T20:59:50Z",
+    "versions": [
+     "0.4.2"
+    ]
+   },
+   {
+    "name": "my-private-pkg",
+    "id": "MAL-2026-17180",
+    "published": "2026-09-25T00:08:08Z",
+    "versions": [
+     "99.1.1",
+     "0.1.1",
+     "99.11.2"
+    ]
+   },
+   {
+    "name": "voxcpmeval",
+    "id": "MAL-2026-17465",
+    "published": "2026-10-03T13:18:34Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "platform-telemetry-client",
+    "id": "MAL-2026-16141",
+    "published": "2026-09-11T23:41:31Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "python-fork",
+    "id": "MAL-2026-16142",
+    "published": "2026-09-12T09:15:57Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "marketing-mcp",
+    "id": "MAL-2026-16250",
+    "published": "2026-09-17T12:43:45Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "licloud",
+    "id": "MAL-2026-16219",
+    "published": "2026-09-16T06:54:28Z",
+    "versions": [
+     "0.2.7a0",
+     "0.2.8"
+    ]
+   },
+   {
+    "name": "anthropic-sdk",
+    "id": "MAL-2026-17472",
+    "published": "2026-10-04T19:09:32Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "urc",
+    "id": "MAL-2026-16298",
+    "published": "2026-09-19T05:59:49Z",
+    "versions": [
+     "99.99.99"
+    ]
+   },
+   {
+    "name": "dedh-devops-automation",
+    "id": "MAL-2026-17455",
+    "published": "2026-10-02T14:10:14Z",
+    "versions": [
+     "0.0.1",
+     "5.0.0",
+     "5.6.0",
+     "5.6.1",
+     "5.6.999",
+     "5.8.0",
+     "5.8.1",
+     "5.9.0"
+    ]
+   },
+   {
+    "name": "voxcpmui3",
+    "id": "MAL-2026-17464",
+    "published": "2026-10-03T10:46:57Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "databricks-webapp-navigation-homepage",
+    "id": "MAL-2026-16080",
+    "published": "2026-09-09T06:56:28Z",
+    "versions": [
+     "999.0.0"
+    ]
+   },
+   {
+    "name": "pullgetsage",
+    "id": "MAL-2026-16366",
+    "published": "2026-09-21T19:43:02Z",
+    "versions": [
+     "0.1.2",
+     "0.1.0",
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "requests-asetwe",
+    "id": "MAL-2026-16269",
+    "published": "2026-09-17T22:07:36Z",
+    "versions": [
+     "2.34.2"
+    ]
+   },
+   {
+    "name": "caoxiltts",
+    "id": "MAL-2026-17471",
+    "published": "2026-10-03T19:41:50Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "cleanup-string",
+    "id": "MAL-2026-17325",
+    "published": "2026-09-30T04:37:46Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "requests-cache-utils",
+    "id": "MAL-2026-17191",
+    "published": "2026-09-26T22:49:02Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "crypto-trader-py",
+    "id": "MAL-2026-16406",
+    "published": "2026-09-22T18:40:26Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "pylever",
+    "id": "MAL-2026-16122",
+    "published": "2026-09-10T06:17:45Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1",
+     "1.0.2",
+     "1.0.3",
+     "1.0.4",
+     "1.0.5",
+     "1.0.6",
+     "1.0.7",
+     "1.0.8",
+     "1.0.9",
+     "1.0.10",
+     "1.0.11",
+     "1.0.12"
+    ]
+   },
+   {
+    "name": "prosocks",
+    "id": "MAL-2026-17167",
+    "published": "2026-09-24T20:27:37Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1",
+     "1.0.2",
+     "1.0.3",
+     "1.0.4",
+     "1.0.5",
+     "1.0.6",
+     "1.0.7",
+     "1.0.8",
+     "1.0.9",
+     "1.0.13",
+     "1.0.14",
+     "1.0.15",
+     "1.0.16",
+     "1.0.17",
+     "1.0.18",
+     "1.0.19",
+     "1.0.20",
+     "1.0.21",
+     "1.0.22",
+     "1.0.23",
+     "1.0.25",
+     "1.0.26",
+     "1.0.27",
+     "1.0.32",
+     "1.0.28",
+     "1.0.29",
+     "1.0.30"
+    ]
+   },
+   {
+    "name": "trongridew",
+    "id": "MAL-2026-15936",
+    "published": "2026-09-05T20:26:18Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "requests-auroras",
+    "id": "MAL-2026-16274",
+    "published": "2026-09-17T23:53:35Z",
+    "versions": [
+     "2.34.2"
+    ]
+   },
+   {
+    "name": "auclean",
+    "id": "MAL-2026-16410",
+    "published": "2026-09-22T20:59:00Z",
+    "versions": [
+     "0.4.2",
+     "0.4.3",
+     "0.4.4"
+    ]
+   },
+   {
+    "name": "pymem-win",
+    "id": "MAL-2026-16128",
+    "published": "2026-09-11T14:47:19Z",
+    "versions": [
+     "1.14.0",
+     "1.14.1",
+     "1.14.4",
+     "1.14.5",
+     "1.14.6"
+    ]
+   },
+   {
+    "name": "rrs",
+    "id": "MAL-2026-16346",
+    "published": "2026-09-21T03:46:09Z",
+    "versions": [
+     "0.4.105",
+     "0.3.100",
+     "0.4.106",
+     "0.4.103",
+     "0.4.102",
+     "0.4.104",
+     "0.3.5",
+     "0.1.0",
+     "0.1.3",
+     "0.1.4",
+     "0.1.5",
+     "0.1.7",
+     "0.1.8",
+     "0.2.0",
+     "0.2.1",
+     "0.2.2",
+     "0.3.101",
+     "0.4.107",
+     "0.4.108",
+     "0.4.109"
+    ]
+   },
+   {
+    "name": "trongappy",
+    "id": "MAL-2026-16242",
+    "published": "2026-09-16T19:09:57Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "eth-account-web3",
+    "id": "MAL-2026-16127",
+    "published": "2026-09-11T14:15:34Z",
+    "versions": [
+     "0.14.0"
+    ]
+   },
+   {
+    "name": "cloushaar-poc-exfil-91827",
+    "id": "MAL-2026-16377",
+    "published": "2026-09-22T07:01:53Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "metrio",
+    "id": "MAL-2026-17193",
+    "published": "2026-09-27T07:06:20Z",
+    "versions": [
+     "999.0.0",
+     "1000.0.0",
+     "1001.0.0"
+    ]
+   },
+   {
+    "name": "index-forum",
+    "id": "MAL-2026-16268",
+    "published": "2026-09-17T22:00:19Z",
+    "versions": [
+     "2.5.4"
+    ]
+   },
+   {
+    "name": "bq-build-probe-vrp-2026",
+    "id": "MAL-2026-16098",
+    "published": "2026-09-09T19:01:41Z",
+    "versions": [
+     "0.2.0"
+    ]
+   },
+   {
+    "name": "minecraftmodes",
+    "id": "MAL-2026-15937",
+    "published": "2026-09-06T10:37:59Z",
+    "versions": [
+     "0.3.3"
+    ]
+   },
+   {
+    "name": "queeuees",
+    "id": "MAL-2026-17286",
+    "published": "2026-09-29T20:42:09Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "poly-check-b",
+    "id": "MAL-2026-16407",
+    "published": "2026-09-22T18:41:04Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "bfox-build-utils",
+    "id": "MAL-2026-17319",
+    "published": "2026-09-30T03:04:36Z",
+    "versions": [
+     "1.0.997"
+    ]
+   },
+   {
+    "name": "caracas4check",
+    "id": "MAL-2026-17198",
+    "published": "2026-09-27T10:50:14Z",
+    "versions": [
+     "1.1.1",
+     "1.1.2"
+    ]
+   },
+   {
+    "name": "aitextutils-py",
+    "id": "MAL-2026-16131",
+    "published": "2026-09-11T15:24:15Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "snap-queue",
+    "id": "MAL-2026-16408",
+    "published": "2026-09-22T18:42:22Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "aiosendletter",
+    "id": "MAL-2026-16264",
+    "published": "2026-09-17T19:40:07Z",
+    "versions": [
+     "0.2.0",
+     "3.7",
+     "3.8",
+     "3.9",
+     "4.0",
+     "4.1",
+     "4.3",
+     "4.5",
+     "4.6"
+    ]
+   },
+   {
+    "name": "langgrap",
+    "id": "MAL-2026-16133",
+    "published": "2026-09-11T21:00:21Z",
+    "versions": [
+     "0.2.45"
+    ]
+   },
+   {
+    "name": "voxcpmintel",
+    "id": "MAL-2026-17468",
+    "published": "2026-10-03T14:00:06Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "vercel-runtime-python",
+    "id": "MAL-2026-17168",
+    "published": "2026-09-24T23:23:58Z",
+    "versions": [
+     "0.1.0",
+     "99.99.99",
+     "100.99.99",
+     "100.100.99"
+    ]
+   },
+   {
+    "name": "cv-train",
+    "id": "MAL-2026-16016",
+    "published": "2026-09-07T19:15:04Z",
+    "versions": [
+     "0.0.5",
+     "99.0.0"
+    ]
+   },
+   {
+    "name": "aseitylab",
+    "id": "MAL-2026-17240",
+    "published": "2026-09-28T21:24:44Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "telegram-helper",
+    "id": "MAL-2026-16017",
+    "published": "2026-09-07T21:17:35Z",
+    "versions": [
+     "0.1.1",
+     "0.1.2"
+    ]
+   },
+   {
+    "name": "proxycer",
+    "id": "MAL-2026-15935",
+    "published": "2026-09-05T07:39:50Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "transfomers",
+    "id": "MAL-2026-16136",
+    "published": "2026-09-11T21:00:10Z",
+    "versions": [
+     "4.44.2"
+    ]
+   },
+   {
+    "name": "voxcpmtts3",
+    "id": "MAL-2026-17463",
+    "published": "2026-10-03T04:47:46Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1",
+     "0.1.2"
+    ]
+   },
+   {
+    "name": "donutautosellsrc",
+    "id": "MAL-2026-17192",
+    "published": "2026-09-27T00:09:55Z",
+    "versions": [
+     "0.3.7",
+     "0.3.8",
+     "0.3.9"
+    ]
+   },
+   {
+    "name": "scrapetools2",
+    "id": "MAL-2026-17199",
+    "published": "2026-09-27T14:33:48Z",
+    "versions": [
+     "1.2.1",
+     "1.2.0",
+     "0.2.0",
+     "0.2.1"
+    ]
+   },
+   {
+    "name": "echogen",
+    "id": "MAL-2026-17462",
+    "published": "2026-10-03T05:03:06Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "reqparser",
+    "id": "MAL-2026-17181",
+    "published": "2026-09-25T06:00:28Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "azure-langchain-example",
+    "id": "MAL-2026-17213",
+    "published": "2026-09-28T07:34:50Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "bq-sdist-probe-vrp",
+    "id": "MAL-2026-16099",
+    "published": "2026-09-09T19:01:51Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "memoryos",
+    "id": "MAL-2026-16475",
+    "published": "2026-09-23T00:00:00Z",
+    "versions": [
+     "2.0.34"
+    ]
+   },
+   {
+    "name": "friendly-tools",
+    "id": "MAL-2026-17419",
+    "published": "2026-10-01T12:04:42Z",
+    "versions": [
+     "0.1",
+     "0.2"
+    ]
+   },
+   {
+    "name": "dac-tools",
+    "id": "MAL-2026-15938",
+    "published": "2026-09-06T16:35:33Z",
+    "versions": [
+     "999.0.0"
+    ]
+   },
+   {
+    "name": "websetup",
+    "id": "MAL-2026-16121",
+    "published": "2026-09-09T14:00:00Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "web3-eth-account",
+    "id": "MAL-2026-16129",
+    "published": "2026-09-11T14:12:59Z",
+    "versions": [
+     "0.14.0"
+    ]
+   },
+   {
+    "name": "voxeval",
+    "id": "MAL-2026-17457",
+    "published": "2026-10-02T21:28:42Z",
+    "versions": [
+     "0.4.2",
+     "0.4.3",
+     "0.4.4",
+     "0.4.5"
+    ]
+   },
+   {
+    "name": "coinscan",
+    "id": "MAL-2026-17197",
+    "published": "2026-09-27T09:37:17Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "chroma-client",
+    "id": "MAL-2026-16143",
+    "published": "2026-09-13T16:12:34Z",
+    "versions": [
+     "0.5.7"
+    ]
+   },
+   {
+    "name": "lucy-python-script-2030",
+    "id": "MAL-2026-16125",
+    "published": "2026-09-10T20:14:14Z",
+    "versions": [
+     "0.1.1",
+     "0.1.2"
+    ]
+   },
+   {
+    "name": "dbt-sa-cli",
+    "id": "MAL-2026-15934",
+    "published": "2026-09-05T05:59:33Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "py-venv-doctor",
+    "id": "MAL-2026-16296",
+    "published": "2026-09-18T21:42:33Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "aseity",
+    "id": "MAL-2026-17200",
+    "published": "2026-09-27T14:15:46Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "pyjstat-smooth",
+    "id": "MAL-2026-16267",
+    "published": "2026-09-17T21:46:30Z",
+    "versions": [
+     "1.5.0",
+     "2.5.0",
+     "2.5.1",
+     "2.5.2",
+     "2.5.3",
+     "2.5.5",
+     "2.5.6",
+     "2.5.7",
+     "2.5.8",
+     "2.5.9",
+     "2.5.10",
+     "2.5.11",
+     "2.5.12",
+     "2.5.13",
+     "2.5.14",
+     "2.5.15",
+     "2.5.16",
+     "2.5.17"
+    ]
+   },
+   {
+    "name": "kerokwis",
+    "id": "MAL-2026-16421",
+    "published": "2026-09-22T23:52:06Z",
+    "versions": [
+     "99"
+    ]
+   },
+   {
+    "name": "spo365-graph",
+    "id": "MAL-2026-17421",
+    "published": "2026-10-01T18:58:14Z",
+    "versions": [
+     "1.0.0",
+     "1.1.0",
+     "1.1.1",
+     "1.1.2"
+    ]
+   },
+   {
+    "name": "voxcpmruntime",
+    "id": "MAL-2026-17470",
+    "published": "2026-10-03T14:42:59Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "shortneer",
+    "id": "MAL-2026-17422",
+    "published": "2026-10-01T21:00:49Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "cli-anything-ai-market",
+    "id": "MAL-2026-16212",
+    "published": "2026-09-16T06:21:48.646620Z",
+    "versions": [
+     "1.0.17",
+     "1.0.18"
+    ]
+   },
+   {
+    "name": "infrabench",
+    "id": "MAL-2026-17469",
+    "published": "2026-10-03T16:21:40Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1",
+     "0.2.0"
+    ]
+   },
+   {
+    "name": "sherpy",
+    "id": "MAL-2026-17188",
+    "published": "2026-09-25T21:13:33Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "voxcpmui4",
+    "id": "MAL-2026-17467",
+    "published": "2026-10-03T11:51:12Z",
+    "versions": [
+     "0.2.0"
+    ]
+   }
+  ]
+ }
+}

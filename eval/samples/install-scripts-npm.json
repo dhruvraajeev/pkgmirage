@@ -1,0 +1,2697 @@
+{
+ "source": "npm abbreviated records (hasInstallScript on the latest version) of the top 50,000 by downloads (ecosyste.ms)",
+ "fetchedAt": "2026-10-04T23:29:31.130Z",
+ "groups": {
+  "all": [
+   {
+    "name": "esbuild",
+    "rank": 50
+   },
+   {
+    "name": "pnpm",
+    "rank": 132
+   },
+   {
+    "name": "core-js",
+    "rank": 692
+   },
+   {
+    "name": "unrs-resolver",
+    "rank": 994
+   },
+   {
+    "name": "@swc/core",
+    "rank": 1305
+   },
+   {
+    "name": "@parcel/watcher",
+    "rank": 1418
+   },
+   {
+    "name": "msgpackr-extract",
+    "rank": 1552
+   },
+   {
+    "name": "fsevents",
+    "rank": 1595
+   },
+   {
+    "name": "@sentry/cli",
+    "rank": 1732
+   },
+   {
+    "name": "workerd",
+    "rank": 1868
+   },
+   {
+    "name": "@google/genai",
+    "rank": 1955
+   },
+   {
+    "name": "@firebase/util",
+    "rank": 2169
+   },
+   {
+    "name": "core-js-pure",
+    "rank": 2326
+   },
+   {
+    "name": "@prisma/engines",
+    "rank": 2387
+   },
+   {
+    "name": "@anthropic-ai/claude-code",
+    "rank": 2865
+   },
+   {
+    "name": "ssh2",
+    "rank": 2984
+   },
+   {
+    "name": "es5-ext",
+    "rank": 3020
+   },
+   {
+    "name": "@scarf/scarf",
+    "rank": 3032
+   },
+   {
+    "name": "puppeteer",
+    "rank": 3094
+   },
+   {
+    "name": "@pnpm/exe",
+    "rank": 3251
+   },
+   {
+    "name": "cpu-features",
+    "rank": 3318
+   },
+   {
+    "name": "nx",
+    "rank": 3320
+   },
+   {
+    "name": "aws-sdk",
+    "rank": 3460
+   },
+   {
+    "name": "yarn",
+    "rank": 3529
+   },
+   {
+    "name": "vue-demi",
+    "rank": 3822
+   },
+   {
+    "name": "canvas",
+    "rank": 3843
+   },
+   {
+    "name": "union",
+    "rank": 4028
+   },
+   {
+    "name": "bufferutil",
+    "rank": 4136
+   },
+   {
+    "name": "cypress",
+    "rank": 4159
+   },
+   {
+    "name": "utf-8-validate",
+    "rank": 4459
+   },
+   {
+    "name": "lmdb",
+    "rank": 4531
+   },
+   {
+    "name": "bcrypt",
+    "rank": 4613
+   },
+   {
+    "name": "onnxruntime-node",
+    "rank": 4654
+   },
+   {
+    "name": "tree-sitter-bash",
+    "rank": 4765
+   },
+   {
+    "name": "node-pty",
+    "rank": 4950
+   },
+   {
+    "name": "lefthook",
+    "rank": 5016
+   },
+   {
+    "name": "koffi",
+    "rank": 5077
+   },
+   {
+    "name": "@apollo/protobufjs",
+    "rank": 5120
+   },
+   {
+    "name": "bun",
+    "rank": 5465
+   },
+   {
+    "name": "electron-winstaller",
+    "rank": 5628
+   },
+   {
+    "name": "re2",
+    "rank": 5643
+   },
+   {
+    "name": "openclaw",
+    "rank": 5650
+   },
+   {
+    "name": "dtrace-provider",
+    "rank": 5885
+   },
+   {
+    "name": "tesseract.js",
+    "rank": 6020
+   },
+   {
+    "name": "unix-dgram",
+    "rank": 6137
+   },
+   {
+    "name": "tree-sitter",
+    "rank": 6328
+   },
+   {
+    "name": "keytar",
+    "rank": 6508
+   },
+   {
+    "name": "browser-tabs-lock",
+    "rank": 6546
+   },
+   {
+    "name": "sqlite3",
+    "rank": 6587
+   },
+   {
+    "name": "opencode-ai",
+    "rank": 6667
+   },
+   {
+    "name": "secp256k1",
+    "rank": 6841
+   },
+   {
+    "name": "geckodriver",
+    "rank": 6858
+   },
+   {
+    "name": "@bufbuild/buf",
+    "rank": 7042
+   },
+   {
+    "name": "argon2",
+    "rank": 7219
+   },
+   {
+    "name": "ffmpeg-static",
+    "rank": 7328
+   },
+   {
+    "name": "@matrix-org/matrix-sdk-crypto-nodejs",
+    "rank": 7383
+   },
+   {
+    "name": "keccak",
+    "rank": 7417
+   },
+   {
+    "name": "edgedriver",
+    "rank": 7821
+   },
+   {
+    "name": "@mongodb-js/zstd",
+    "rank": 7863
+   },
+   {
+    "name": "mongodb-memory-server",
+    "rank": 7945
+   },
+   {
+    "name": "@reown/appkit",
+    "rank": 8042
+   },
+   {
+    "name": "@posthog/cli",
+    "rank": 8432
+   },
+   {
+    "name": "n8n-nodes-evolution-api",
+    "rank": 8450
+   },
+   {
+    "name": "@ast-grep/cli",
+    "rank": 8528
+   },
+   {
+    "name": "baileys",
+    "rank": 8534
+   },
+   {
+    "name": "@playwright/browser-chromium",
+    "rank": 8709
+   },
+   {
+    "name": "braintrust",
+    "rank": 8763
+   },
+   {
+    "name": "@tloncorp/tlon-skill",
+    "rank": 8769
+   },
+   {
+    "name": "serverless",
+    "rank": 8935
+   },
+   {
+    "name": "@pulumi/docker-build",
+    "rank": 8946
+   },
+   {
+    "name": "agent-browser",
+    "rank": 9222
+   },
+   {
+    "name": "@openapitools/openapi-generator-cli",
+    "rank": 9283
+   },
+   {
+    "name": "nice-napi",
+    "rank": 9533
+   },
+   {
+    "name": "node-sass",
+    "rank": 9595
+   },
+   {
+    "name": "@newrelic/native-metrics",
+    "rank": 9614
+   },
+   {
+    "name": "tree-sitter-python",
+    "rank": 9624
+   },
+   {
+    "name": "appium",
+    "rank": 9705
+   },
+   {
+    "name": "@vscode/vsce-sign",
+    "rank": 9826
+   },
+   {
+    "name": "isolated-vm",
+    "rank": 10093
+   },
+   {
+    "name": "tree-sitter-javascript",
+    "rank": 10108
+   },
+   {
+    "name": "node-liblzma",
+    "rank": 10109
+   },
+   {
+    "name": "@sentry/node-cpu-profiler",
+    "rank": 10242
+   },
+   {
+    "name": "@pulumi/command",
+    "rank": 10283
+   },
+   {
+    "name": "@mui/x-telemetry",
+    "rank": 10307
+   },
+   {
+    "name": "bigint-buffer",
+    "rank": 10368
+   },
+   {
+    "name": "@sentry-internal/node-cpu-profiler",
+    "rank": 10401
+   },
+   {
+    "name": "tree-sitter-json",
+    "rank": 10438
+   },
+   {
+    "name": "postinstall-postinstall",
+    "rank": 10573
+   },
+   {
+    "name": "@tree-sitter-grammars/tree-sitter-yaml",
+    "rank": 10589
+   },
+   {
+    "name": "tldjs",
+    "rank": 10837
+   },
+   {
+    "name": "zeromq",
+    "rank": 10856
+   },
+   {
+    "name": "node",
+    "rank": 10900
+   },
+   {
+    "name": "@ffmpeg-installer/linux-x64",
+    "rank": 11053
+   },
+   {
+    "name": "chromedriver",
+    "rank": 11076
+   },
+   {
+    "name": "@openrouter/sdk",
+    "rank": 11182
+   },
+   {
+    "name": "@pulumi/kubernetes",
+    "rank": 11190
+   },
+   {
+    "name": "tree-sitter-typescript",
+    "rank": 11196
+   },
+   {
+    "name": "aws-crt",
+    "rank": 11378
+   },
+   {
+    "name": "oracledb",
+    "rank": 11443
+   },
+   {
+    "name": "grpc-tools",
+    "rank": 11744
+   },
+   {
+    "name": "snyk",
+    "rank": 11976
+   },
+   {
+    "name": "simple-git-hooks",
+    "rank": 12203
+   },
+   {
+    "name": "lz4",
+    "rank": 12478
+   },
+   {
+    "name": "@datadog/mobile-react-native",
+    "rank": 12791
+   },
+   {
+    "name": "yo",
+    "rank": 13075
+   },
+   {
+    "name": "duckdb",
+    "rank": 13124
+   },
+   {
+    "name": "stream-chat",
+    "rank": 13162
+   },
+   {
+    "name": "leveldown",
+    "rank": 13164
+   },
+   {
+    "name": "autoevals",
+    "rank": 13184
+   },
+   {
+    "name": "@depot/cli",
+    "rank": 13307
+   },
+   {
+    "name": "@percy/core",
+    "rank": 13364
+   },
+   {
+    "name": "inngest-cli",
+    "rank": 13547
+   },
+   {
+    "name": "libxmljs2",
+    "rank": 13704
+   },
+   {
+    "name": "@vscode/deviceid",
+    "rank": 13736
+   },
+   {
+    "name": "svelte-preprocess",
+    "rank": 13814
+   },
+   {
+    "name": "deasync",
+    "rank": 14283
+   },
+   {
+    "name": "@azure/msal-node-extensions",
+    "rank": 14291
+   },
+   {
+    "name": "@hatchet-dev/typescript-sdk",
+    "rank": 14333
+   },
+   {
+    "name": "@andrewstory18/is-real-odd",
+    "rank": 14361
+   },
+   {
+    "name": "optipng-bin",
+    "rank": 14372
+   },
+   {
+    "name": "detox",
+    "rank": 14442
+   },
+   {
+    "name": "@deepseek-ai/dsh-subprocess-local",
+    "rank": 14479
+   },
+   {
+    "name": "@whiskeysockets/baileys",
+    "rank": 14493
+   },
+   {
+    "name": "ttf2woff2",
+    "rank": 14536
+   },
+   {
+    "name": "web3-bzz",
+    "rank": 14690
+   },
+   {
+    "name": "@newrelic/fn-inspect",
+    "rank": 14729
+   },
+   {
+    "name": "free-email-domains",
+    "rank": 14746
+   },
+   {
+    "name": "gifsicle",
+    "rank": 14782
+   },
+   {
+    "name": "yorkie",
+    "rank": 14873
+   },
+   {
+    "name": "web3-shh",
+    "rank": 14993
+   },
+   {
+    "name": "@coze/cli",
+    "rank": 15020
+   },
+   {
+    "name": "@tsparticles/engine",
+    "rank": 15051
+   },
+   {
+    "name": "phantomjs-prebuilt",
+    "rank": 15073
+   },
+   {
+    "name": "netlify-cli",
+    "rank": 15203
+   },
+   {
+    "name": "@launchql/protobufjs",
+    "rank": 15291
+   },
+   {
+    "name": "@salesforce/cli",
+    "rank": 15302
+   },
+   {
+    "name": "tree-sitter-rust",
+    "rank": 15320
+   },
+   {
+    "name": "unicode-animations",
+    "rank": 15321
+   },
+   {
+    "name": "@zowe/secrets-for-zowe-sdk",
+    "rank": 15335
+   },
+   {
+    "name": "@embedded-postgres/linux-x64",
+    "rank": 15337
+   },
+   {
+    "name": "@carbon/icon-helpers",
+    "rank": 15402
+   },
+   {
+    "name": "pre-commit",
+    "rank": 15447
+   },
+   {
+    "name": "@heroui/shared-utils",
+    "rank": 15645
+   },
+   {
+    "name": "node-llama-cpp",
+    "rank": 15697
+   },
+   {
+    "name": "kerberos",
+    "rank": 15958
+   },
+   {
+    "name": "libpq",
+    "rank": 16174
+   },
+   {
+    "name": "netlify",
+    "rank": 16210
+   },
+   {
+    "name": "@railway/cli",
+    "rank": 16309
+   },
+   {
+    "name": "@playwright/browser-webkit",
+    "rank": 16484
+   },
+   {
+    "name": "appium-ios-tuntap",
+    "rank": 16506
+   },
+   {
+    "name": "@carbon/icons-react",
+    "rank": 16563
+   },
+   {
+    "name": "pprof",
+    "rank": 16636
+   },
+   {
+    "name": "jpegtran-bin",
+    "rank": 16638
+   },
+   {
+    "name": "zlib",
+    "rank": 16658
+   },
+   {
+    "name": "react-native-enriched-markdown",
+    "rank": 16704
+   },
+   {
+    "name": "@ibm/plex",
+    "rank": 16707
+   },
+   {
+    "name": "gatsby",
+    "rank": 16822
+   },
+   {
+    "name": "@aws-amplify/cli",
+    "rank": 16838
+   },
+   {
+    "name": "@github/keytar",
+    "rank": 16900
+   },
+   {
+    "name": "dprint",
+    "rank": 17017
+   },
+   {
+    "name": "@vaadin/vaadin-usage-statistics",
+    "rank": 17052
+   },
+   {
+    "name": "gatsby-cli",
+    "rank": 17072
+   },
+   {
+    "name": "@sap/hana-client",
+    "rank": 17143
+   },
+   {
+    "name": "pngquant-bin",
+    "rank": 17223
+   },
+   {
+    "name": "mongodb-client-encryption",
+    "rank": 17268
+   },
+   {
+    "name": "@livekit/local-inference",
+    "rank": 17275
+   },
+   {
+    "name": "mozjpeg",
+    "rank": 17278
+   },
+   {
+    "name": "stream-chat-react",
+    "rank": 17453
+   },
+   {
+    "name": "@serialport/bindings-cpp",
+    "rank": 17476
+   },
+   {
+    "name": "@pulumi/aws-native",
+    "rank": 17479
+   },
+   {
+    "name": "playwright-chromium",
+    "rank": 17557
+   },
+   {
+    "name": "exifreader",
+    "rank": 17746
+   },
+   {
+    "name": "@datadog/mobile-react-native-session-replay",
+    "rank": 17865
+   },
+   {
+    "name": "blake-hash",
+    "rank": 17911
+   },
+   {
+    "name": "@modelcontextprotocol/inspector",
+    "rank": 17921
+   },
+   {
+    "name": "@progress/kendo-licensing",
+    "rank": 17994
+   },
+   {
+    "name": "tree-sitter-java",
+    "rank": 18066
+   },
+   {
+    "name": "btch-downloader",
+    "rank": 18109
+   },
+   {
+    "name": "microtime",
+    "rank": 18164
+   },
+   {
+    "name": "hugo-extended",
+    "rank": 18310
+   },
+   {
+    "name": "@confluentinc/kafka-javascript",
+    "rank": 18489
+   },
+   {
+    "name": "tree-sitter-go",
+    "rank": 18522
+   },
+   {
+    "name": "@central-icons-react/round-outlined-radius-2-stroke-1.5",
+    "rank": 18671
+   },
+   {
+    "name": "tree-sitter-c-sharp",
+    "rank": 18680
+   },
+   {
+    "name": "tree-sitter-cpp",
+    "rank": 18813
+   },
+   {
+    "name": "sse4_crc32",
+    "rank": 18889
+   },
+   {
+    "name": "@memlab/cli",
+    "rank": 19015
+   },
+   {
+    "name": "sleep",
+    "rank": 19236
+   },
+   {
+    "name": "inferno",
+    "rank": 19332
+   },
+   {
+    "name": "tree-sitter-ruby",
+    "rank": 19464
+   },
+   {
+    "name": "memlab",
+    "rank": 19543
+   },
+   {
+    "name": "deno",
+    "rank": 19716
+   },
+   {
+    "name": "tree-sitter-powershell",
+    "rank": 19771
+   },
+   {
+    "name": "react-native-inappbrowser-reborn",
+    "rank": 19835
+   },
+   {
+    "name": "bootstrap-vue",
+    "rank": 19875
+   },
+   {
+    "name": "skia-canvas",
+    "rank": 19995
+   },
+   {
+    "name": "@carbon/colors",
+    "rank": 20287
+   },
+   {
+    "name": "@carbon/layout",
+    "rank": 20288
+   },
+   {
+    "name": "backport",
+    "rank": 20362
+   },
+   {
+    "name": "tree-sitter-php",
+    "rank": 20394
+   },
+   {
+    "name": "@contrast/fn-inspect",
+    "rank": 20398
+   },
+   {
+    "name": "@carbon/grid",
+    "rank": 20552
+   },
+   {
+    "name": "webgpu",
+    "rank": 20617
+   },
+   {
+    "name": "@carbon/feature-flags",
+    "rank": 20625
+   },
+   {
+    "name": "@astryxdesign/core",
+    "rank": 20711
+   },
+   {
+    "name": "tree-sitter-c",
+    "rank": 20718
+   },
+   {
+    "name": "sonar-scanner",
+    "rank": 20784
+   },
+   {
+    "name": "cwebp-bin",
+    "rank": 20831
+   },
+   {
+    "name": "cbor-extract",
+    "rank": 20851
+   },
+   {
+    "name": "classic-level",
+    "rank": 20933
+   },
+   {
+    "name": "@ffmpeg-installer/linux-arm64",
+    "rank": 21011
+   },
+   {
+    "name": "@carbon/motion",
+    "rank": 21083
+   },
+   {
+    "name": "ngrok",
+    "rank": 21172
+   },
+   {
+    "name": "tree-sitter-css",
+    "rank": 21249
+   },
+   {
+    "name": "@openuidev/lang-core",
+    "rank": 21280
+   },
+   {
+    "name": "@sentry/capacitor",
+    "rank": 21292
+   },
+   {
+    "name": "@carbon/styles",
+    "rank": 21309
+   },
+   {
+    "name": "win-ca",
+    "rank": 21611
+   },
+   {
+    "name": "@carbon/type",
+    "rank": 21618
+   },
+   {
+    "name": "@ibm/plex-sans",
+    "rank": 21654
+   },
+   {
+    "name": "@carbon/themes",
+    "rank": 21759
+   },
+   {
+    "name": "cloudflared",
+    "rank": 21932
+   },
+   {
+    "name": "tree-sitter-cli",
+    "rank": 21933
+   },
+   {
+    "name": "@evilmartians/lefthook",
+    "rank": 21978
+   },
+   {
+    "name": "redis-memory-server",
+    "rank": 21980
+   },
+   {
+    "name": "@trufflesuite/bigint-buffer",
+    "rank": 22025
+   },
+   {
+    "name": "@microsoft/m365agentstoolkit-cli",
+    "rank": 22049
+   },
+   {
+    "name": "fs-xattr",
+    "rank": 22081
+   },
+   {
+    "name": "@ibm/plex-serif",
+    "rank": 22227
+   },
+   {
+    "name": "node-hid",
+    "rank": 22237
+   },
+   {
+    "name": "@azure/mcp",
+    "rank": 22279
+   },
+   {
+    "name": "agentdb",
+    "rank": 22354
+   },
+   {
+    "name": "@ibm/plex-sans-arabic",
+    "rank": 22392
+   },
+   {
+    "name": "wd",
+    "rank": 22478
+   },
+   {
+    "name": "lzo",
+    "rank": 22503
+   },
+   {
+    "name": "iltorb",
+    "rank": 22573
+   },
+   {
+    "name": "@carbon/utilities",
+    "rank": 22593
+   },
+   {
+    "name": "@vscode/windows-registry",
+    "rank": 22610
+   },
+   {
+    "name": "@carbon/react",
+    "rank": 22870
+   },
+   {
+    "name": "full-icu",
+    "rank": 22974
+   },
+   {
+    "name": "tree-sitter-html",
+    "rank": 23059
+   },
+   {
+    "name": "vnu-jar",
+    "rank": 23122
+   },
+   {
+    "name": "@vgpu/adapter-node",
+    "rank": 23174
+   },
+   {
+    "name": "grpc",
+    "rank": 23204
+   },
+   {
+    "name": "react-easier",
+    "rank": 23214
+   },
+   {
+    "name": "@infisical/cli",
+    "rank": 23241
+   },
+   {
+    "name": "chrome-local-mcp",
+    "rank": 23277
+   },
+   {
+    "name": "playwright-webkit",
+    "rank": 23336
+   },
+   {
+    "name": "odbc",
+    "rank": 23355
+   },
+   {
+    "name": "@ibm/plex-sans-devanagari",
+    "rank": 23381
+   },
+   {
+    "name": "@ibm/plex-sans-thai-looped",
+    "rank": 23384
+   },
+   {
+    "name": "@medusajs/telemetry",
+    "rank": 23418
+   },
+   {
+    "name": "@letta-ai/letta-code",
+    "rank": 23445
+   },
+   {
+    "name": "@lavamoat/preinstall-always-fail",
+    "rank": 23499
+   },
+   {
+    "name": "typesense-instantsearch-adapter",
+    "rank": 23687
+   },
+   {
+    "name": "@ibm/plex-mono",
+    "rank": 23741
+   },
+   {
+    "name": "azure-functions-core-tools",
+    "rank": 23896
+   },
+   {
+    "name": "@cdktf/node-pty-prebuilt-multiarch",
+    "rank": 24020
+   },
+   {
+    "name": "@opencode/cli",
+    "rank": 24101
+   },
+   {
+    "name": "@ibm/plex-sans-hebrew",
+    "rank": 24185
+   },
+   {
+    "name": "node-jq",
+    "rank": 24267
+   },
+   {
+    "name": "@ladybugdb/core",
+    "rank": 24268
+   },
+   {
+    "name": "@playwright/browser-firefox",
+    "rank": 24279
+   },
+   {
+    "name": "@wonderwhy-er/desktop-commander",
+    "rank": 24606
+   },
+   {
+    "name": "customerio-reactnative",
+    "rank": 24632
+   },
+   {
+    "name": "@hyperjump/json-schema-core",
+    "rank": 24656
+   },
+   {
+    "name": "@ibm/plex-sans-thai",
+    "rank": 24672
+   },
+   {
+    "name": "ccxt",
+    "rank": 24686
+   },
+   {
+    "name": "node-expat",
+    "rank": 24738
+   },
+   {
+    "name": "ibm_db",
+    "rank": 24818
+   },
+   {
+    "name": "@astryxdesign/cli",
+    "rank": 24829
+   },
+   {
+    "name": "@turbodocx/html-to-docx",
+    "rank": 24995
+   },
+   {
+    "name": "chromium",
+    "rank": 25033
+   },
+   {
+    "name": "@carbon/icons",
+    "rank": 25168
+   },
+   {
+    "name": "@central-icons-react/round-outlined-radius-3-stroke-2",
+    "rank": 25214
+   },
+   {
+    "name": "@sentry-internal/node-native-stacktrace",
+    "rank": 25218
+   },
+   {
+    "name": "nodent-runtime",
+    "rank": 25327
+   },
+   {
+    "name": "native-keymap",
+    "rank": 25374
+   },
+   {
+    "name": "cy2",
+    "rank": 25385
+   },
+   {
+    "name": "@tensorflow/tfjs-node",
+    "rank": 25448
+   },
+   {
+    "name": "os-dns-native",
+    "rank": 25603
+   },
+   {
+    "name": "@ffprobe-installer/linux-x64",
+    "rank": 25719
+   },
+   {
+    "name": "postman-code-generators",
+    "rank": 25745
+   },
+   {
+    "name": "@vscode/spdlog",
+    "rank": 25821
+   },
+   {
+    "name": "@vscode/windows-process-tree",
+    "rank": 25945
+   },
+   {
+    "name": "prisma-zod-generator",
+    "rank": 25958
+   },
+   {
+    "name": "@discordjs/opus",
+    "rank": 26028
+   },
+   {
+    "name": "@percy/storybook",
+    "rank": 26276
+   },
+   {
+    "name": "tree-sitter-swift",
+    "rank": 26338
+   },
+   {
+    "name": "hnswlib-node",
+    "rank": 26568
+   },
+   {
+    "name": "@vscode/sqlite3",
+    "rank": 26596
+   },
+   {
+    "name": "@lightdash/cli",
+    "rank": 26678
+   },
+   {
+    "name": "@alibaba-group/open-code-review",
+    "rank": 26724
+   },
+   {
+    "name": "hugo-bin",
+    "rank": 26858
+   },
+   {
+    "name": "@larksuite/cli",
+    "rank": 26942
+   },
+   {
+    "name": "cld",
+    "rank": 26960
+   },
+   {
+    "name": "agentic-flow",
+    "rank": 27027
+   },
+   {
+    "name": "@central-icons-react/round-filled-radius-2-stroke-1.5",
+    "rank": 27094
+   },
+   {
+    "name": "@stream-io/node-sdk",
+    "rank": 27223
+   },
+   {
+    "name": "@vscode/windows-mutex",
+    "rank": 27226
+   },
+   {
+    "name": "libxmljs",
+    "rank": 27334
+   },
+   {
+    "name": "pinst",
+    "rank": 27408
+   },
+   {
+    "name": "sauce-connect-launcher",
+    "rank": 27545
+   },
+   {
+    "name": "gl",
+    "rank": 27597
+   },
+   {
+    "name": "@carbon/charts",
+    "rank": 27681
+   },
+   {
+    "name": "couchbase",
+    "rank": 27734
+   },
+   {
+    "name": "@standardagents/code",
+    "rank": 27769
+   },
+   {
+    "name": "core-js-bundle",
+    "rank": 27900
+   },
+   {
+    "name": "@stripe/stripe-terminal-react-native",
+    "rank": 27901
+   },
+   {
+    "name": "lzma-native",
+    "rank": 27947
+   },
+   {
+    "name": "fs-ext",
+    "rank": 27972
+   },
+   {
+    "name": "@ffmpeg-installer/linux-arm",
+    "rank": 28012
+   },
+   {
+    "name": "hexo-util",
+    "rank": 28022
+   },
+   {
+    "name": "phantomjs",
+    "rank": 28069
+   },
+   {
+    "name": "docsify",
+    "rank": 28073
+   },
+   {
+    "name": "react-native-elements",
+    "rank": 28106
+   },
+   {
+    "name": "pino-datadog-transport",
+    "rank": 28342
+   },
+   {
+    "name": "@hasna/secrets",
+    "rank": 28437
+   },
+   {
+    "name": "segfault-handler",
+    "rank": 28452
+   },
+   {
+    "name": "carbon-components",
+    "rank": 28559
+   },
+   {
+    "name": "@suites/doubles.jest",
+    "rank": 28589
+   },
+   {
+    "name": "vuepress",
+    "rank": 28593
+   },
+   {
+    "name": "@central-icons-react/square-outlined-radius-0-stroke-1.5",
+    "rank": 28658
+   },
+   {
+    "name": "wix-style-react",
+    "rank": 28690
+   },
+   {
+    "name": "@rocicorp/zero-sqlite3",
+    "rank": 28767
+   },
+   {
+    "name": "@central-icons-react/round-filled-radius-2-stroke-2",
+    "rank": 28784
+   },
+   {
+    "name": "@fails-components/webtransport-transport-http3-quiche",
+    "rank": 28883
+   },
+   {
+    "name": "@recallai/desktop-sdk",
+    "rank": 28935
+   },
+   {
+    "name": "aws-lambda-ric",
+    "rank": 28936
+   },
+   {
+    "name": "macos-alias",
+    "rank": 29021
+   },
+   {
+    "name": "rete",
+    "rank": 29044
+   },
+   {
+    "name": "fs-ext-extra-prebuilt",
+    "rank": 29130
+   },
+   {
+    "name": "@opencode-ai/cli",
+    "rank": 29318
+   },
+   {
+    "name": "@zoom/meetingsdk",
+    "rank": 29322
+   },
+   {
+    "name": "customerio-expo-plugin",
+    "rank": 29391
+   },
+   {
+    "name": "iconv",
+    "rank": 29409
+   },
+   {
+    "name": "cline",
+    "rank": 29507
+   },
+   {
+    "name": "foundry-local-sdk",
+    "rank": 29551
+   },
+   {
+    "name": "pngout-bin",
+    "rank": 29604
+   },
+   {
+    "name": "@central-icons-react/square-outlined-radius-0-stroke-2",
+    "rank": 29615
+   },
+   {
+    "name": "@central-icons-react/round-outlined-radius-1-stroke-1.5",
+    "rank": 29635
+   },
+   {
+    "name": "windows-foreground-love",
+    "rank": 29665
+   },
+   {
+    "name": "@ffmpeg-installer/darwin-arm64",
+    "rank": 29668
+   },
+   {
+    "name": "@cubejs-backend/native",
+    "rank": 29718
+   },
+   {
+    "name": "tree-sitter-scala",
+    "rank": 29726
+   },
+   {
+    "name": "@alicloud/openapi-core",
+    "rank": 29755
+   },
+   {
+    "name": "@central-icons-react/round-outlined-radius-2-stroke-2",
+    "rank": 29803
+   },
+   {
+    "name": "eslint-plugin-n8n-nodes-base",
+    "rank": 29830
+   },
+   {
+    "name": "fibers",
+    "rank": 30035
+   },
+   {
+    "name": "@fullscript/fullscript-js",
+    "rank": 30162
+   },
+   {
+    "name": "eccrypto",
+    "rank": 30219
+   },
+   {
+    "name": "@bugsnag/cli",
+    "rank": 30254
+   },
+   {
+    "name": "tsparticles-engine",
+    "rank": 30274
+   },
+   {
+    "name": "@carbon/utils-position",
+    "rank": 30353
+   },
+   {
+    "name": "wasm-pack",
+    "rank": 30434
+   },
+   {
+    "name": "@pdftron/pdfnet-node",
+    "rank": 30689
+   },
+   {
+    "name": "@asyncapi/cli",
+    "rank": 30734
+   },
+   {
+    "name": "@legioncli/cli",
+    "rank": 30862
+   },
+   {
+    "name": "@xai-official/grok",
+    "rank": 30945
+   },
+   {
+    "name": "blake2",
+    "rank": 31108
+   },
+   {
+    "name": "xsd-schema-validator",
+    "rank": 31109
+   },
+   {
+    "name": "@ffmpeg-installer/linux-ia32",
+    "rank": 31172
+   },
+   {
+    "name": "@bike4mind/cli",
+    "rank": 31310
+   },
+   {
+    "name": "rs-module-lexer",
+    "rank": 31427
+   },
+   {
+    "name": "relay-ide",
+    "rank": 31592
+   },
+   {
+    "name": "heapdump",
+    "rank": 31741
+   },
+   {
+    "name": "event-loop-stats",
+    "rank": 31895
+   },
+   {
+    "name": "@suites/di.nestjs",
+    "rank": 31907
+   },
+   {
+    "name": "zstd-napi",
+    "rank": 31978
+   },
+   {
+    "name": "uiohook-napi",
+    "rank": 31999
+   },
+   {
+    "name": "@module-federation/nextjs-mf",
+    "rank": 32037
+   },
+   {
+    "name": "@accio-ai/cli",
+    "rank": 32104
+   },
+   {
+    "name": "@microsoft/teamsapp-cli",
+    "rank": 32137
+   },
+   {
+    "name": "@pact-foundation/pact-node",
+    "rank": 32169
+   },
+   {
+    "name": "@coinbase/x402",
+    "rank": 32174
+   },
+   {
+    "name": "@kie/act-js",
+    "rank": 32221
+   },
+   {
+    "name": "muhammara",
+    "rank": 32227
+   },
+   {
+    "name": "@ffmpeg-installer/darwin-x64",
+    "rank": 32378
+   },
+   {
+    "name": "@danmarshall/deckgl-typings",
+    "rank": 32380
+   },
+   {
+    "name": "@syncfusion/ej2-angular-base",
+    "rank": 32442
+   },
+   {
+    "name": "omniroute",
+    "rank": 32567
+   },
+   {
+    "name": "@ffprobe-installer/linux-arm",
+    "rank": 32614
+   },
+   {
+    "name": "@ffprobe-installer/darwin-x64",
+    "rank": 32617
+   },
+   {
+    "name": "@automock/adapters.nestjs",
+    "rank": 32635
+   },
+   {
+    "name": "lightningcss-cli",
+    "rank": 32738
+   },
+   {
+    "name": "@qwen-code/audio-capture",
+    "rank": 32776
+   },
+   {
+    "name": "@ax-llm/ax",
+    "rank": 32783
+   },
+   {
+    "name": "keyspy",
+    "rank": 32794
+   },
+   {
+    "name": "@jasonscheirer/native-progress-bar",
+    "rank": 32813
+   },
+   {
+    "name": "drivelist",
+    "rank": 33022
+   },
+   {
+    "name": "msedge-tts",
+    "rank": 33025
+   },
+   {
+    "name": "ms-chromium-edge-driver",
+    "rank": 33059
+   },
+   {
+    "name": "9router",
+    "rank": 33090
+   },
+   {
+    "name": "@heroui-pro/react",
+    "rank": 33105
+   },
+   {
+    "name": "weak-napi",
+    "rank": 33168
+   },
+   {
+    "name": "zenstack",
+    "rank": 33265
+   },
+   {
+    "name": "fast-folder-size",
+    "rank": 33270
+   },
+   {
+    "name": "hasura-cli",
+    "rank": 33279
+   },
+   {
+    "name": "parcel-bundler",
+    "rank": 33375
+   },
+   {
+    "name": "youtube-dl-exec",
+    "rank": 33484
+   },
+   {
+    "name": "@vscode/native-watchdog",
+    "rank": 33489
+   },
+   {
+    "name": "gitnexus",
+    "rank": 33502
+   },
+   {
+    "name": "domotz-remote-pawn",
+    "rank": 33533
+   },
+   {
+    "name": "@homebridge/node-pty-prebuilt-multiarch",
+    "rank": 33671
+   },
+   {
+    "name": "tree-sitter-yaml",
+    "rank": 33746
+   },
+   {
+    "name": "mbt",
+    "rank": 33777
+   },
+   {
+    "name": "@netlify/content-engine",
+    "rank": 33849
+   },
+   {
+    "name": "imcodes",
+    "rank": 33928
+   },
+   {
+    "name": "@sandbox-agent/cli-linux-x64",
+    "rank": 33992
+   },
+   {
+    "name": "mediasoup",
+    "rank": 34125
+   },
+   {
+    "name": "node-rdkafka",
+    "rank": 34303
+   },
+   {
+    "name": "@stoprocent/noble",
+    "rank": 34355
+   },
+   {
+    "name": "@googleworkspace/cli",
+    "rank": 34369
+   },
+   {
+    "name": "@strapi/blocks-react-renderer",
+    "rank": 34430
+   },
+   {
+    "name": "tree-sitter-kotlin",
+    "rank": 34458
+   },
+   {
+    "name": "glibc-version",
+    "rank": 34561
+   },
+   {
+    "name": "realm",
+    "rank": 34574
+   },
+   {
+    "name": "@bazel/concatjs",
+    "rank": 34605
+   },
+   {
+    "name": "node-dpapi-prebuilt",
+    "rank": 34686
+   },
+   {
+    "name": "msnodesqlv8",
+    "rank": 34762
+   },
+   {
+    "name": "rudder-sdk-js",
+    "rank": 34779
+   },
+   {
+    "name": "@stoprocent/bluetooth-hci-socket",
+    "rank": 34839
+   },
+   {
+    "name": "growthbook",
+    "rank": 34902
+   },
+   {
+    "name": "native-watchdog",
+    "rank": 34988
+   },
+   {
+    "name": "next-translate-plugin",
+    "rank": 35009
+   },
+   {
+    "name": "@carbon/charts-react",
+    "rank": 35018
+   },
+   {
+    "name": "protoc-gen-js",
+    "rank": 35057
+   },
+   {
+    "name": "@vscode/policy-watcher",
+    "rank": 35178
+   },
+   {
+    "name": "ui5-tooling-transpile",
+    "rank": 35188
+   },
+   {
+    "name": "storybook-addon-react-router-v6",
+    "rank": 35219
+   },
+   {
+    "name": "vuex-module-decorators",
+    "rank": 35336
+   },
+   {
+    "name": "@claude-flow/cli",
+    "rank": 35466
+   },
+   {
+    "name": "@nightwatch/nightwatch-inspector",
+    "rank": 35477
+   },
+   {
+    "name": "typemoq",
+    "rank": 35524
+   },
+   {
+    "name": "@mxyhi/tsgo",
+    "rank": 35538
+   },
+   {
+    "name": "botbuilder-dialogs",
+    "rank": 35690
+   },
+   {
+    "name": "registry-js",
+    "rank": 35707
+   },
+   {
+    "name": "v-code-diff",
+    "rank": 35748
+   },
+   {
+    "name": "@fingerprintjs/fingerprintjs-pro-react",
+    "rank": 35801
+   },
+   {
+    "name": "swiftlint",
+    "rank": 35894
+   },
+   {
+    "name": "v8-profiler-next",
+    "rank": 35902
+   },
+   {
+    "name": "@central-icons-react-native/round-outlined-radius-3-stroke-2",
+    "rank": 35990
+   },
+   {
+    "name": "fhirpath",
+    "rank": 36015
+   },
+   {
+    "name": "@stacksjs/ts-md",
+    "rank": 36080
+   },
+   {
+    "name": "diskusage",
+    "rank": 36099
+   },
+   {
+    "name": "electron-chromedriver",
+    "rank": 36102
+   },
+   {
+    "name": "cf-prefs",
+    "rank": 36108
+   },
+   {
+    "name": "clang-format-node",
+    "rank": 36118
+   },
+   {
+    "name": "parse-server",
+    "rank": 36146
+   },
+   {
+    "name": "faiss-node",
+    "rank": 36258
+   },
+   {
+    "name": "@contentauth/c2pa-node",
+    "rank": 36320
+   },
+   {
+    "name": "@ast-grep/lang-go",
+    "rank": 36366
+   },
+   {
+    "name": "rustywind",
+    "rank": 36398
+   },
+   {
+    "name": "@central-icons-react/round-outlined-radius-3-stroke-1.5",
+    "rank": 36399
+   },
+   {
+    "name": "node-av",
+    "rank": 36477
+   },
+   {
+    "name": "commitlint-config-jira",
+    "rank": 36536
+   },
+   {
+    "name": "truffle",
+    "rank": 36635
+   },
+   {
+    "name": "@flarehr/apollo-import-workspace-app",
+    "rank": 36740
+   },
+   {
+    "name": "cldr-data",
+    "rank": 36862
+   },
+   {
+    "name": "fuse-native",
+    "rank": 36952
+   },
+   {
+    "name": "pulsar-client",
+    "rank": 37003
+   },
+   {
+    "name": "node-red-dashboard",
+    "rank": 37225
+   },
+   {
+    "name": "@stripe/cli",
+    "rank": 37248
+   },
+   {
+    "name": "@nubjs/nub",
+    "rank": 37283
+   },
+   {
+    "name": "unsafe-pointer",
+    "rank": 37326
+   },
+   {
+    "name": "@hasna/todos",
+    "rank": 37328
+   },
+   {
+    "name": "@stoprocent/bleno",
+    "rank": 37340
+   },
+   {
+    "name": "tdl",
+    "rank": 37416
+   },
+   {
+    "name": "fmerge",
+    "rank": 37452
+   },
+   {
+    "name": "@axa-fr/oidc-client",
+    "rank": 37533
+   },
+   {
+    "name": "node-git-server",
+    "rank": 37571
+   },
+   {
+    "name": "carbon-components-svelte",
+    "rank": 37602
+   },
+   {
+    "name": "@bobfrankston/rmfmail",
+    "rank": 37629
+   },
+   {
+    "name": "hyochan-welcome",
+    "rank": 37648
+   },
+   {
+    "name": "@sematext/gc-stats",
+    "rank": 37661
+   },
+   {
+    "name": "@pulumi/std",
+    "rank": 37722
+   },
+   {
+    "name": "nucleo-ui-outline-18",
+    "rank": 37754
+   },
+   {
+    "name": "autorest",
+    "rank": 37788
+   },
+   {
+    "name": "@prelude.so/react-native-sdk",
+    "rank": 37923
+   },
+   {
+    "name": "@tree-sitter-grammars/tree-sitter-hcl",
+    "rank": 38014
+   },
+   {
+    "name": "frida",
+    "rank": 38151
+   },
+   {
+    "name": "mongodb-memory-server-global",
+    "rank": 38156
+   },
+   {
+    "name": "@ffprobe-installer/linux-ia32",
+    "rank": 38206
+   },
+   {
+    "name": "@code-yeongyu/comment-checker",
+    "rank": 38260
+   },
+   {
+    "name": "command-join",
+    "rank": 38283
+   },
+   {
+    "name": "@ffprobe-installer/linux-arm64",
+    "rank": 38371
+   },
+   {
+    "name": "@lobehub/editor",
+    "rank": 38518
+   },
+   {
+    "name": "@kilocode/cli",
+    "rank": 38588
+   },
+   {
+    "name": "elm",
+    "rank": 38748
+   },
+   {
+    "name": "ghooks",
+    "rank": 38749
+   },
+   {
+    "name": "@central-icons-react/round-outlined-radius-1-stroke-2",
+    "rank": 38758
+   },
+   {
+    "name": "@import-meta-env/unplugin",
+    "rank": 38784
+   },
+   {
+    "name": "typeorm-fixtures-cli",
+    "rank": 38799
+   },
+   {
+    "name": "@cubejs-backend/cubestore",
+    "rank": 38818
+   },
+   {
+    "name": "@quobix/vacuum",
+    "rank": 38826
+   },
+   {
+    "name": "swc-plugin-import-meta-env",
+    "rank": 39149
+   },
+   {
+    "name": "git-commit-msg-linter",
+    "rank": 39234
+   },
+   {
+    "name": "@anysphere/policy-watcher",
+    "rank": 39237
+   },
+   {
+    "name": "@companion-ai/feynman",
+    "rank": 39268
+   },
+   {
+    "name": "@nx-dotnet/core",
+    "rank": 39421
+   },
+   {
+    "name": "@netlify/esbuild",
+    "rank": 39432
+   },
+   {
+    "name": "@moonshot-ai/kimi-code",
+    "rank": 39479
+   },
+   {
+    "name": "@codyswann/lisa",
+    "rank": 39494
+   },
+   {
+    "name": "dooboolab-welcome",
+    "rank": 39526
+   },
+   {
+    "name": "react-tsparticles",
+    "rank": 39660
+   },
+   {
+    "name": "@appthreat/sqlite3",
+    "rank": 39664
+   },
+   {
+    "name": "@splunk/otel",
+    "rank": 39773
+   },
+   {
+    "name": "@opensea/seaport-js",
+    "rank": 39802
+   },
+   {
+    "name": "@instana/autoprofile",
+    "rank": 39816
+   },
+   {
+    "name": "@ampcode/cli",
+    "rank": 39870
+   },
+   {
+    "name": "@central-icons-react/square-filled-radius-0-stroke-2",
+    "rank": 39894
+   },
+   {
+    "name": "mcrypt",
+    "rank": 40167
+   },
+   {
+    "name": "bun-git-hooks",
+    "rank": 40181
+   },
+   {
+    "name": "@forge/cli",
+    "rank": 40232
+   },
+   {
+    "name": "@vvago/vale",
+    "rank": 40367
+   },
+   {
+    "name": "@sap/hana-theme-vscode",
+    "rank": 40412
+   },
+   {
+    "name": "chdb",
+    "rank": 40448
+   },
+   {
+    "name": "contextify",
+    "rank": 40479
+   },
+   {
+    "name": "zapatos",
+    "rank": 40571
+   },
+   {
+    "name": "postinstall-prepare",
+    "rank": 40629
+   },
+   {
+    "name": "gc-stats",
+    "rank": 40654
+   },
+   {
+    "name": "@carbon/pictograms-react",
+    "rank": 40717
+   },
+   {
+    "name": "mongodb-crypt-library-version",
+    "rank": 40725
+   },
+   {
+    "name": "rome",
+    "rank": 40835
+   },
+   {
+    "name": "expo-superwall",
+    "rank": 40870
+   },
+   {
+    "name": "@go-task/cli",
+    "rank": 40963
+   },
+   {
+    "name": "saucectl",
+    "rank": 41228
+   },
+   {
+    "name": "@askjo/camofox-browser",
+    "rank": 41246
+   },
+   {
+    "name": "ajv-cmd",
+    "rank": 41367
+   },
+   {
+    "name": "@stacksjs/ts-xml",
+    "rank": 41630
+   },
+   {
+    "name": "@gitlab/web-ide",
+    "rank": 41675
+   },
+   {
+    "name": "oh-my-openagent",
+    "rank": 41717
+   },
+   {
+    "name": "@evervault/react",
+    "rank": 41838
+   },
+   {
+    "name": "@metagptx/vite-plugin-source-locator",
+    "rank": 41871
+   },
+   {
+    "name": "@central-icons-react/round-outlined-radius-0-stroke-2",
+    "rank": 41904
+   },
+   {
+    "name": "@evervault/js",
+    "rank": 41931
+   },
+   {
+    "name": "cos-js-sdk-v5",
+    "rank": 41937
+   },
+   {
+    "name": "@pulumi/terraform",
+    "rank": 41977
+   },
+   {
+    "name": "modern-syslog",
+    "rank": 42046
+   },
+   {
+    "name": "avo",
+    "rank": 42073
+   },
+   {
+    "name": "@tree-sitter-grammars/tree-sitter-markdown",
+    "rank": 42110
+   },
+   {
+    "name": "stockfish",
+    "rank": 42111
+   },
+   {
+    "name": "nucleo-ui-fill-18",
+    "rank": 42159
+   },
+   {
+    "name": "@gouvfr/dsfr",
+    "rank": 42238
+   },
+   {
+    "name": "@tacticlaunch/mcp-linear",
+    "rank": 42312
+   },
+   {
+    "name": "@tree-sitter-grammars/tree-sitter-zig",
+    "rank": 42336
+   },
+   {
+    "name": "add-asset-html-webpack-plugin",
+    "rank": 42405
+   },
+   {
+    "name": "@aws-amplify/cli-internal",
+    "rank": 42437
+   },
+   {
+    "name": "cmark-gfm",
+    "rank": 42515
+   },
+   {
+    "name": "@hasna/mementos",
+    "rank": 42529
+   },
+   {
+    "name": "rebrowser-puppeteer",
+    "rank": 42567
+   },
+   {
+    "name": "puppeteer-chromium-resolver",
+    "rank": 42583
+   },
+   {
+    "name": "execSync",
+    "rank": 42648
+   },
+   {
+    "name": "clientjs",
+    "rank": 42683
+   },
+   {
+    "name": "local-cypress",
+    "rank": 42739
+   },
+   {
+    "name": "@mongodb-js/native-machine-id",
+    "rank": 42752
+   },
+   {
+    "name": "@ffprobe-installer/darwin-arm64",
+    "rank": 42809
+   },
+   {
+    "name": "react-native-calendar-strip",
+    "rank": 42830
+   },
+   {
+    "name": "@bazel/typescript",
+    "rank": 42837
+   },
+   {
+    "name": "@arkweid/lefthook",
+    "rank": 43012
+   },
+   {
+    "name": "heroui-native-pro",
+    "rank": 43222
+   },
+   {
+    "name": "node-zopfli-es",
+    "rank": 43233
+   },
+   {
+    "name": "git-win",
+    "rank": 43341
+   },
+   {
+    "name": "@loxia-labs/loxia-autopilot-one",
+    "rank": 43345
+   },
+   {
+    "name": "@stacksjs/gitlint",
+    "rank": 43349
+   },
+   {
+    "name": "accessibility-checker",
+    "rank": 43367
+   },
+   {
+    "name": "@metamask/streams",
+    "rank": 43395
+   },
+   {
+    "name": "@serialport/bindings",
+    "rank": 43491
+   },
+   {
+    "name": "scrypt",
+    "rank": 43516
+   },
+   {
+    "name": "@ast-grep/lang-cpp",
+    "rank": 43675
+   },
+   {
+    "name": "@ast-grep/lang-c",
+    "rank": 43705
+   },
+   {
+    "name": "gcstats.js",
+    "rank": 43723
+   },
+   {
+    "name": "@central-icons-react/round-filled-radius-1-stroke-2",
+    "rank": 43728
+   },
+   {
+    "name": "java",
+    "rank": 43813
+   },
+   {
+    "name": "@vellumai/assistant",
+    "rank": 43863
+   },
+   {
+    "name": "usearch",
+    "rank": 43909
+   },
+   {
+    "name": "playwright-firefox",
+    "rank": 43913
+   },
+   {
+    "name": "@ariga/atlas",
+    "rank": 43934
+   },
+   {
+    "name": "get-windows",
+    "rank": 43957
+   },
+   {
+    "name": "@indigoai-us/hq-cli",
+    "rank": 43986
+   },
+   {
+    "name": "spectron",
+    "rank": 44041
+   },
+   {
+    "name": "node-libcurl",
+    "rank": 44189
+   },
+   {
+    "name": "react-particles",
+    "rank": 44284
+   },
+   {
+    "name": "print-this",
+    "rank": 44294
+   },
+   {
+    "name": "elm-format",
+    "rank": 44394
+   },
+   {
+    "name": "@carbon/ibm-products-styles",
+    "rank": 44601
+   },
+   {
+    "name": "@opensearch-project/oui",
+    "rank": 44617
+   },
+   {
+    "name": "@suites/doubles.vitest",
+    "rank": 44731
+   },
+   {
+    "name": "@jscad/cli",
+    "rank": 44771
+   },
+   {
+    "name": "native-machine-id",
+    "rank": 44772
+   },
+   {
+    "name": "@central-icons-react/round-outlined-radius-0-stroke-1.5",
+    "rank": 44804
+   },
+   {
+    "name": "contentlayer",
+    "rank": 44997
+   },
+   {
+    "name": "@carbon/ibm-products",
+    "rank": 45002
+   },
+   {
+    "name": "@launchdarkly/ldcli",
+    "rank": 45043
+   },
+   {
+    "name": "@tree-sitter-grammars/tree-sitter-lua",
+    "rank": 45067
+   },
+   {
+    "name": "@tarojs/cli",
+    "rank": 45120
+   },
+   {
+    "name": "bcrypto",
+    "rank": 45137
+   },
+   {
+    "name": "babylonjs",
+    "rank": 45159
+   },
+   {
+    "name": "llama.rn",
+    "rank": 45176
+   },
+   {
+    "name": "@central-icons-react-native/round-filled-radius-2-stroke-2",
+    "rank": 45208
+   },
+   {
+    "name": "@higgsfield/cli",
+    "rank": 45246
+   },
+   {
+    "name": "openclaw-cn",
+    "rank": 45462
+   },
+   {
+    "name": "dist-exiftool",
+    "rank": 45501
+   },
+   {
+    "name": "nemar-cli",
+    "rank": 45616
+   },
+   {
+    "name": "ui5-tooling-modules",
+    "rank": 45626
+   },
+   {
+    "name": "@hasna/projects",
+    "rank": 45684
+   },
+   {
+    "name": "ffmpeg-ffprobe-static",
+    "rank": 45796
+   },
+   {
+    "name": "tree-sitter-elixir",
+    "rank": 45817
+   },
+   {
+    "name": "@embedded-postgres/linux-arm64",
+    "rank": 45890
+   },
+   {
+    "name": "@capacitor/background-runner",
+    "rank": 45899
+   },
+   {
+    "name": "meta-json-schema",
+    "rank": 45902
+   },
+   {
+    "name": "@nativescript/core",
+    "rank": 46069
+   },
+   {
+    "name": "oniguruma",
+    "rank": 46098
+   },
+   {
+    "name": "context-mode",
+    "rank": 46171
+   },
+   {
+    "name": "tree-sitter-batch",
+    "rank": 46261
+   },
+   {
+    "name": "agent-afk",
+    "rank": 46379
+   },
+   {
+    "name": "oh-my-opencode",
+    "rank": 46429
+   },
+   {
+    "name": "@cypress/snapshot",
+    "rank": 46466
+   },
+   {
+    "name": "@sitespeed.io/geckodriver",
+    "rank": 46545
+   },
+   {
+    "name": "ttag-cli",
+    "rank": 46584
+   },
+   {
+    "name": "bluefairy",
+    "rank": 46729
+   },
+   {
+    "name": "@axa-fr/react-oidc",
+    "rank": 46739
+   },
+   {
+    "name": "@carbon/utilities-react",
+    "rank": 46781
+   },
+   {
+    "name": "nodegit",
+    "rank": 46841
+   },
+   {
+    "name": "@ghaiklor/x509",
+    "rank": 46854
+   },
+   {
+    "name": "@carbon-labs/react-resizer",
+    "rank": 46859
+   },
+   {
+    "name": "tree-sitter-haskell",
+    "rank": 46863
+   },
+   {
+    "name": "@jackchuka/mdschema",
+    "rank": 47021
+   },
+   {
+    "name": "@ast-grep/lang-json",
+    "rank": 47078
+   },
+   {
+    "name": "ref-napi",
+    "rank": 47136
+   },
+   {
+    "name": "interruptor",
+    "rank": 47156
+   },
+   {
+    "name": "@fragment-dev/node-client",
+    "rank": 47175
+   },
+   {
+    "name": "@polarsignals/custom-labels",
+    "rank": 47183
+   },
+   {
+    "name": "@bitdisaster/exe-icon-extractor",
+    "rank": 47283
+   },
+   {
+    "name": "@tarojs/binding",
+    "rank": 47302
+   },
+   {
+    "name": "@pulumi/google-native",
+    "rank": 47414
+   },
+   {
+    "name": "fastify-socket.io",
+    "rank": 47470
+   },
+   {
+    "name": "@tree-sitter-grammars/tree-sitter-kotlin",
+    "rank": 47537
+   },
+   {
+    "name": "iobroker.js-controller",
+    "rank": 47538
+   },
+   {
+    "name": "@arbitrum/nitro-contracts",
+    "rank": 47539
+   },
+   {
+    "name": "@embedded-postgres/windows-x64",
+    "rank": 47601
+   },
+   {
+    "name": "sliccy",
+    "rank": 47651
+   },
+   {
+    "name": "install-peers",
+    "rank": 47769
+   },
+   {
+    "name": "@hasna/files",
+    "rank": 47812
+   },
+   {
+    "name": "compresion",
+    "rank": 47888
+   },
+   {
+    "name": "@servicetitan/startup",
+    "rank": 47980
+   },
+   {
+    "name": "@sitespeed.io/chromedriver",
+    "rank": 48193
+   },
+   {
+    "name": "react-native-calendar-picker",
+    "rank": 48226
+   },
+   {
+    "name": "@aurodesignsystem/webcorestylesheets",
+    "rank": 48351
+   },
+   {
+    "name": "ntn",
+    "rank": 48418
+   },
+   {
+    "name": "@drawio/mcp",
+    "rank": 48577
+   },
+   {
+    "name": "secretjs",
+    "rank": 48627
+   },
+   {
+    "name": "itwcw-package-analytics",
+    "rank": 48670
+   },
+   {
+    "name": "vd-tool",
+    "rank": 48713
+   },
+   {
+    "name": "faunadb",
+    "rank": 48758
+   },
+   {
+    "name": "janusweb",
+    "rank": 48777
+   },
+   {
+    "name": "@danhachuel/thunderbolt",
+    "rank": 48794
+   },
+   {
+    "name": "c2pa-node",
+    "rank": 48834
+   },
+   {
+    "name": "@pb33f/openapi-changes",
+    "rank": 48888
+   },
+   {
+    "name": "paqad-ai",
+    "rank": 48905
+   },
+   {
+    "name": "egg-bin",
+    "rank": 49010
+   },
+   {
+    "name": "dugite",
+    "rank": 49142
+   },
+   {
+    "name": "@snaplet/seed",
+    "rank": 49392
+   },
+   {
+    "name": "@carbon/web-components",
+    "rank": 49477
+   },
+   {
+    "name": "compress-pdf",
+    "rank": 49648
+   },
+   {
+    "name": "@dynatrace/react-native-plugin",
+    "rank": 49660
+   },
+   {
+    "name": "@osohq/dev-server",
+    "rank": 49717
+   },
+   {
+    "name": "@vellumai/vellum-gateway",
+    "rank": 49810
+   },
+   {
+    "name": "mneme-ai",
+    "rank": 49815
+   },
+   {
+    "name": "cordova.plugins.diagnostic",
+    "rank": 49903
+   },
+   {
+    "name": "@central-icons-react/round-filled-radius-0-stroke-1.5",
+    "rank": 49946
+   },
+   {
+    "name": "carbon-components-react",
+    "rank": 49993
+   }
+  ]
+ },
+ "failed": 118
+}

@@ -4,3 +4,4 @@ node_modules
 CLAUDE.md
 AGENTS.md
 .claude/
+eval/raw.json

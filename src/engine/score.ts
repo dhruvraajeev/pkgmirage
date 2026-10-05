@@ -24,8 +24,8 @@ export interface CheckResult {
   checkedAt: string;
 }
 
-// Starting points, not tuned yet: loose enough that established small packages pass, tight enough to
-// catch a freshly registered squat. Revisit once there is accuracy data.
+// Loose enough that established small packages pass, tight enough to catch a freshly registered squat. Checked against
+// eval/results.md (2026-10-04): none of 2,978 legitimate packages was blocked by them.
 export const RISK = {
   newPackageDays: 30,
   minWeeklyDownloads: 100,
@@ -55,6 +55,7 @@ const FINDING_WORDS: Record<FindingId, [verb: string, what: string]> = {
   dynamic: ["runs", "code built from strings"],
   obfuscated: ["is", "obfuscated"],
 };
+const SHELL_REASON = findingReason("install", [{ id: "shell", where: "install" }])[0];
 
 export function score(ecosystem: Ecosystem, name: string, checks: Checks, now = Date.now()): CheckResult {
   const { registry, osv, lookalike, code } = checks;
@@ -93,7 +94,8 @@ export function score(ecosystem: Ecosystem, name: string, checks: Checks, now = 
     // npm age comes from download history, so its absence is already covered by the download reasons.
     strong.push("unverified: publish date unavailable");
   }
-  if (registry.installScripts.length) strong.push(`runs install scripts (${registry.installScripts.join(", ")})`);
+  const installScripts = registry.installScripts.length ? `runs install scripts (${registry.installScripts.join(", ")})` : "";
+  if (installScripts) strong.push(installScripts);
   // A package that suddenly gains an install script is the shape of a hijacked release.
   if (registry.installScriptAdded) strong.push("install script added in the latest version");
   // `npm install` runs the scripts the registry lists, but an install from a lockfile runs the archive's own.
@@ -124,10 +126,14 @@ export function score(ecosystem: Ecosystem, name: string, checks: Checks, now = 
     return result("block", [...codeReasons, ...copycat, ...strong.filter((reason) => !codeReasons.includes(reason)), ...weak]);
   }
   if (lookalike.length) {
-    // A copycat name on a package that is also new, unused or unverifiable is how slopsquats look.
-    return strong.length
+    // A copycat name on a package that is also new, unused or unverifiable is how slopsquats look. Install scripts and
+    // the shell commands they run are ordinary for native builds: on their own they made 12 of 672 popular npm packages
+    // with install scripts (parse-server, libpq, bcrypto) and 5 of 989 PyPI packages ranked 10,001-100,000 into blocks
+    // (2026-10-04, eval/results.md), so they leave a look-alike a caution.
+    const ordinary = [installScripts, SHELL_REASON];
+    return strong.some((reason) => !ordinary.includes(reason))
       ? result("block", [...copycat, ...strong, ...weak])
-      : result("caution", [`name is close to popular package "${lookalike[0]}"`]);
+      : result("caution", [`name is close to popular package "${lookalike[0]}"`, ...strong, ...(strong.length ? weak : [])]);
   }
   const reasons = strong.length ? [...strong, ...weak] : [];
   return result(reasons.length ? "caution" : "safe", reasons);
@@ -153,7 +159,9 @@ function findingReason(where: Finding["where"], findings: Finding[]): string[] {
   return [`${where === "install" ? "install script" : "package code"} ${listed(phrases, phrases.length > 2 ? ", and " : " and ")}`];
 }
 
-const listed = (items: string[], last: string) => (items.length > 1 ? items.slice(0, -1).join(", ") + last + items.at(-1) : items[0]!);
+function listed(items: string[], last: string): string {
+  return items.length > 1 ? items.slice(0, -1).join(", ") + last + items.at(-1) : items[0]!;
+}
 
 function vulnerabilityReason(ids: string[]): string {
   const listed = ids.slice(0, MAX_LISTED_ADVISORIES).map(shownId).join(", ") + (ids.length > MAX_LISTED_ADVISORIES ? ", ..." : "");

@@ -1,0 +1,62 @@
+{
+ "source": "https://raw.githubusercontent.com/churik5/slopsquatting-replication-2026/v0.2-preprint/disclosure/npm_universal_hallucinations.csv",
+ "fetchedAt": "2026-10-04T23:19:36.125Z",
+ "groups": {
+  "all": [
+   {
+    "name": "@ember/service"
+   },
+   {
+    "name": "@ember/object"
+   },
+   {
+    "name": "@ember/routing"
+   },
+   {
+    "name": "@ember/controller"
+   },
+   {
+    "name": "metro-evaluator"
+   },
+   {
+    "name": "css-color-stop"
+   },
+   {
+    "name": "unhandled-promise-rejections"
+   },
+   {
+    "name": "terminal-align"
+   },
+   {
+    "name": "ssh-keys"
+   },
+   {
+    "name": "rollup-plugin-es6"
+   },
+   {
+    "name": "react-randomized"
+   },
+   {
+    "name": "network-util"
+   },
+   {
+    "name": "jest-xml"
+   },
+   {
+    "name": "istanbul-instrumenter-babel"
+   },
+   {
+    "name": "istanbul-converter"
+   },
+   {
+    "name": "iana-language-tag"
+   },
+   {
+    "name": "dom-ains"
+   },
+   {
+    "name": "dns-sd"
+   }
+  ]
+ }
+}

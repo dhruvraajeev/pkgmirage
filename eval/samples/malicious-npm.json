@@ -1,0 +1,4848 @@
+{
+ "source": "OSV https://osv-vulnerabilities.storage.googleapis.com/npm/ (MAL- advisories, not withdrawn)",
+ "fetchedAt": "2026-10-04T23:19:35.808Z",
+ "groups": {
+  "2022": [
+   {
+    "name": "ethereum-freeton-bridge-contracts-test",
+    "id": "MAL-2022-2864",
+    "published": "2022-07-25T09:56:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "@lowes/fetlife-assets",
+    "id": "MAL-2022-401",
+    "published": "2022-06-20T18:20:23Z",
+    "versions": "all"
+   },
+   {
+    "name": "supertest222222",
+    "id": "MAL-2022-6355",
+    "published": "2022-06-20T20:22:33Z",
+    "versions": "all"
+   },
+   {
+    "name": "internallib_v678",
+    "id": "MAL-2022-3903",
+    "published": "2022-09-13T06:05:52Z",
+    "versions": "all"
+   },
+   {
+    "name": "defillama-adapters",
+    "id": "MAL-2022-2415",
+    "published": "2022-06-20T20:13:34Z",
+    "versions": "all"
+   },
+   {
+    "name": "jet-anchor-test",
+    "id": "MAL-2022-4020",
+    "published": "2022-07-25T09:56:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "oktcpwyrzkhdsgnx",
+    "id": "MAL-2022-5054",
+    "published": "2022-07-11T21:57:57Z",
+    "versions": "all"
+   },
+   {
+    "name": "@nexthink/apollo-components",
+    "id": "MAL-2022-455",
+    "published": "2022-10-19T23:50:41Z",
+    "versions": []
+   },
+   {
+    "name": "gd-user-login",
+    "id": "MAL-2022-3321",
+    "published": "2022-06-20T20:09:55Z",
+    "versions": "all"
+   },
+   {
+    "name": "iv-api-call-tracker",
+    "id": "MAL-2022-3986",
+    "published": "2022-06-20T20:10:03Z",
+    "versions": "all"
+   },
+   {
+    "name": "tribe-api",
+    "id": "MAL-2022-6648",
+    "published": "2022-06-20T20:19:40Z",
+    "versions": "all"
+   },
+   {
+    "name": "@maui-mf/app-auth",
+    "id": "MAL-2022-422",
+    "published": "2022-06-20T20:15:37Z",
+    "versions": "all"
+   },
+   {
+    "name": "@zohocalendar/resource-loader",
+    "id": "MAL-2022-798",
+    "published": "2022-06-20T20:15:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "ionicons-json",
+    "id": "MAL-2022-3934",
+    "published": "2022-07-06T19:02:31Z",
+    "versions": "all"
+   },
+   {
+    "name": "com.unity.modules.vr",
+    "id": "MAL-2022-2095",
+    "published": "2022-06-20T20:20:35Z",
+    "versions": "all"
+   },
+   {
+    "name": "weact-d5tepicker",
+    "id": "MAL-2022-7062",
+    "published": "2022-08-19T03:55:22Z",
+    "versions": "all"
+   },
+   {
+    "name": "shared-library-webpack-plugin",
+    "id": "MAL-2022-6079",
+    "published": "2022-06-20T20:15:47Z",
+    "versions": "all"
+   },
+   {
+    "name": "eth-balance-adapter",
+    "id": "MAL-2022-2859",
+    "published": "2022-06-20T20:11:57Z",
+    "versions": "all"
+   },
+   {
+    "name": "rcv-desktop-sdk",
+    "id": "MAL-2022-5614",
+    "published": "2022-06-20T20:15:06Z",
+    "versions": "all"
+   },
+   {
+    "name": "rfjuqaiomzcdgxtv",
+    "id": "MAL-2022-5779",
+    "published": "2022-07-11T22:07:34Z",
+    "versions": "all"
+   },
+   {
+    "name": "@trp-gims-usi-cip/web-portal-lib",
+    "id": "MAL-2022-670",
+    "published": "2022-07-05T11:58:55Z",
+    "versions": "all"
+   },
+   {
+    "name": "dev_pro",
+    "id": "MAL-2022-2454",
+    "published": "2022-07-21T10:55:48Z",
+    "versions": "all"
+   },
+   {
+    "name": "wix-bi-logger-client",
+    "id": "MAL-2022-7159",
+    "published": "2022-09-02T02:40:44Z",
+    "versions": "all"
+   },
+   {
+    "name": "dev-desktop",
+    "id": "MAL-2022-2452",
+    "published": "2022-06-20T20:16:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "quantum-jobs",
+    "id": "MAL-2022-5561",
+    "published": "2022-06-20T20:11:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "azure-arm-labservices-samples-ts-beta",
+    "id": "MAL-2022-1249",
+    "published": "2022-06-20T20:10:52Z",
+    "versions": "all"
+   },
+   {
+    "name": "iswpdl",
+    "id": "MAL-2022-3976",
+    "published": "2022-08-19T03:55:10Z",
+    "versions": "all"
+   },
+   {
+    "name": "reveal-js-multiplex",
+    "id": "MAL-2022-5772",
+    "published": "2022-06-20T20:15:45Z",
+    "versions": "all"
+   },
+   {
+    "name": "nqbcksuatvlgpkfy",
+    "id": "MAL-2022-4953",
+    "published": "2022-07-11T21:18:16Z",
+    "versions": "all"
+   },
+   {
+    "name": "jclqbomyxrkfwpug",
+    "id": "MAL-2022-4008",
+    "published": "2022-07-11T22:05:37Z",
+    "versions": "all"
+   },
+   {
+    "name": "mollie-shopware",
+    "id": "MAL-2022-4671",
+    "published": "2022-06-20T20:17:22Z",
+    "versions": "all"
+   },
+   {
+    "name": "azure-pipelines-dependency-track",
+    "id": "MAL-2022-1362",
+    "published": "2022-06-01T09:27:58Z",
+    "versions": "all"
+   },
+   {
+    "name": "@homebrew/fetlife-assets",
+    "id": "MAL-2022-336",
+    "published": "2022-06-20T18:20:15Z",
+    "versions": "all"
+   },
+   {
+    "name": "wkpbyuamcqjrkefd",
+    "id": "MAL-2022-7185",
+    "published": "2022-07-11T22:03:28Z",
+    "versions": "all"
+   },
+   {
+    "name": "hakunamatata",
+    "id": "MAL-2022-3554",
+    "published": "2022-06-20T20:24:22Z",
+    "versions": "all"
+   },
+   {
+    "name": "sbtydhovriufmpqx",
+    "id": "MAL-2022-5947",
+    "published": "2022-07-11T20:31:07Z",
+    "versions": "all"
+   },
+   {
+    "name": "eslintpl5ijginnode",
+    "id": "MAL-2022-2837",
+    "published": "2022-08-19T03:55:08Z",
+    "versions": "all"
+   },
+   {
+    "name": "totaralms",
+    "id": "MAL-2022-6616",
+    "published": "2022-07-26T13:40:50Z",
+    "versions": "all"
+   },
+   {
+    "name": "yahoo-react-formsy-input",
+    "id": "MAL-2022-7308",
+    "published": "2022-06-20T21:10:08Z",
+    "versions": "all"
+   },
+   {
+    "name": "dorimedepen",
+    "id": "MAL-2022-2572",
+    "published": "2022-07-26T13:41:21Z",
+    "versions": "all"
+   },
+   {
+    "name": "kcupgbynzelovifq",
+    "id": "MAL-2022-4133",
+    "published": "2022-07-11T21:12:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "perf-eventgrid",
+    "id": "MAL-2022-5284",
+    "published": "2022-06-20T20:16:52Z",
+    "versions": "all"
+   },
+   {
+    "name": "samples-web-workers-ts",
+    "id": "MAL-2022-5926",
+    "published": "2022-06-20T20:10:41Z",
+    "versions": "all"
+   },
+   {
+    "name": "r2estkler",
+    "id": "MAL-2022-5571",
+    "published": "2022-08-19T03:55:19Z",
+    "versions": "all"
+   },
+   {
+    "name": "@coinalpha/fetlife-assets",
+    "id": "MAL-2022-179",
+    "published": "2022-06-20T18:20:03Z",
+    "versions": "all"
+   },
+   {
+    "name": "bcp-ui",
+    "id": "MAL-2022-1483",
+    "published": "2022-06-20T18:19:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "com.thomsonreuters.project",
+    "id": "MAL-2022-2050",
+    "published": "2022-06-20T20:23:58Z",
+    "versions": "all"
+   },
+   {
+    "name": "com.unity.modules.audio",
+    "id": "MAL-2022-2071",
+    "published": "2022-06-20T20:20:30Z",
+    "versions": "all"
+   },
+   {
+    "name": "@replyify/fetlife-assets",
+    "id": "MAL-2022-560",
+    "published": "2022-06-20T18:20:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "www.uniswap.org",
+    "id": "MAL-2022-7257",
+    "published": "2022-07-25T14:20:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "byrujmzenxpvfkgs",
+    "id": "MAL-2022-1742",
+    "published": "2022-07-11T21:05:23Z",
+    "versions": "all"
+   },
+   {
+    "name": "@navyfederal/fetlife-assets",
+    "id": "MAL-2022-449",
+    "published": "2022-06-20T18:20:27Z",
+    "versions": "all"
+   },
+   {
+    "name": "color2.0",
+    "id": "MAL-2022-1999",
+    "published": "2022-06-20T20:08:35Z",
+    "versions": "all"
+   },
+   {
+    "name": "renvm-address-set-adapter",
+    "id": "MAL-2022-5750",
+    "published": "2022-06-20T20:12:09Z",
+    "versions": "all"
+   },
+   {
+    "name": "@exor/fetlife-assets",
+    "id": "MAL-2022-260",
+    "published": "2022-06-20T18:20:08Z",
+    "versions": "all"
+   },
+   {
+    "name": "thisisourgoal1",
+    "id": "MAL-2022-6558",
+    "published": "2022-06-30T09:46:06Z",
+    "versions": "all"
+   },
+   {
+    "name": "rskovkpznxiydjmu",
+    "id": "MAL-2022-5857",
+    "published": "2022-07-11T20:20:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "dragox-utilities",
+    "id": "MAL-2022-2590",
+    "published": "2022-05-31T12:53:57Z",
+    "versions": "all"
+   },
+   {
+    "name": "functionteszt",
+    "id": "MAL-2022-3245",
+    "published": "2022-06-20T20:18:52Z",
+    "versions": "all"
+   },
+   {
+    "name": "twitch-sandstorm",
+    "id": "MAL-2022-6705",
+    "published": "2022-06-20T20:15:48Z",
+    "versions": "all"
+   },
+   {
+    "name": "loki-price",
+    "id": "MAL-2022-4387",
+    "published": "2022-06-20T20:18:18Z",
+    "versions": "all"
+   },
+   {
+    "name": "google_modes",
+    "id": "MAL-2022-3415",
+    "published": "2022-06-20T20:22:10Z",
+    "versions": "all"
+   },
+   {
+    "name": "youtrack-board-status-widget",
+    "id": "MAL-2022-7362",
+    "published": "2022-06-20T20:17:38Z",
+    "versions": "all"
+   },
+   {
+    "name": "hope-center",
+    "id": "MAL-2022-3663",
+    "published": "2022-06-20T20:25:53Z",
+    "versions": "all"
+   },
+   {
+    "name": "ent-unified-logon-template",
+    "id": "MAL-2022-2750",
+    "published": "2022-06-20T20:13:09Z",
+    "versions": "all"
+   },
+   {
+    "name": "opstimlst",
+    "id": "MAL-2022-5109",
+    "published": "2022-08-19T03:55:18Z",
+    "versions": "all"
+   },
+   {
+    "name": "azure-confidential-ledger-ts",
+    "id": "MAL-2022-1309",
+    "published": "2022-06-20T20:16:27Z",
+    "versions": "all"
+   },
+   {
+    "name": "wafer-form",
+    "id": "MAL-2022-7023",
+    "published": "2022-06-20T20:15:58Z",
+    "versions": "all"
+   },
+   {
+    "name": "codefest-internal-dependency",
+    "id": "MAL-2022-1971",
+    "published": "2022-06-20T21:13:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "coinapi-adapter",
+    "id": "MAL-2022-1977",
+    "published": "2022-06-20T20:11:50Z",
+    "versions": "all"
+   },
+   {
+    "name": "qeralport",
+    "id": "MAL-2022-5542",
+    "published": "2022-08-19T03:55:12Z",
+    "versions": "all"
+   },
+   {
+    "name": "arm-webpubsub",
+    "id": "MAL-2022-1118",
+    "published": "2022-06-20T20:11:20Z",
+    "versions": "all"
+   },
+   {
+    "name": "hapks",
+    "id": "MAL-2022-3558",
+    "published": "2022-06-20T20:08:52Z",
+    "versions": "all"
+   },
+   {
+    "name": "@kindred-feature/deposit-limits",
+    "id": "MAL-2022-381",
+    "published": "2022-06-20T20:14:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "jhasj-sum",
+    "id": "MAL-2022-4028",
+    "published": "2022-08-19T03:55:16Z",
+    "versions": "all"
+   },
+   {
+    "name": "vr-webpack",
+    "id": "MAL-2022-6969",
+    "published": "2022-06-20T20:18:46Z",
+    "versions": "all"
+   },
+   {
+    "name": "libfuzzer-sys",
+    "id": "MAL-2022-4299",
+    "published": "2022-06-20T20:24:39Z",
+    "versions": "all"
+   },
+   {
+    "name": "dsfcord.js",
+    "id": "MAL-2022-2598",
+    "published": "2022-08-19T03:55:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "loaypexrnbszqvjh",
+    "id": "MAL-2022-4346",
+    "published": "2022-07-11T21:58:22Z",
+    "versions": "all"
+   },
+   {
+    "name": "duplex-child-rocess",
+    "id": "MAL-2022-2615",
+    "published": "2022-08-19T03:55:22Z",
+    "versions": "all"
+   },
+   {
+    "name": "@xvideos/facade",
+    "id": "MAL-2022-762",
+    "published": "2022-06-20T20:18:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "com.unity.ide.rider",
+    "id": "MAL-2022-2063",
+    "published": "2022-06-20T20:20:28Z",
+    "versions": "all"
+   },
+   {
+    "name": "bcoin-mongo-models",
+    "id": "MAL-2022-1481",
+    "published": "2022-06-20T20:17:18Z",
+    "versions": "all"
+   },
+   {
+    "name": "npm-cli-docs",
+    "id": "MAL-2022-4933",
+    "published": "2022-06-20T20:16:58Z",
+    "versions": "all"
+   },
+   {
+    "name": "eleventy-high-performance-blog",
+    "id": "MAL-2022-2698",
+    "published": "2022-06-20T20:22:18Z",
+    "versions": "all"
+   },
+   {
+    "name": "connectflasjh",
+    "id": "MAL-2022-2157",
+    "published": "2022-08-19T03:55:07Z",
+    "versions": "all"
+   },
+   {
+    "name": "webfundamentals",
+    "id": "MAL-2022-7093",
+    "published": "2022-06-20T20:22:24Z",
+    "versions": "all"
+   },
+   {
+    "name": "ganache-core-coverage",
+    "id": "MAL-2022-3270",
+    "published": "2022-06-20T20:13:15Z",
+    "versions": "all"
+   },
+   {
+    "name": "dropins_sdk_refactor",
+    "id": "MAL-2022-2595",
+    "published": "2022-06-20T20:18:40Z",
+    "versions": "all"
+   },
+   {
+    "name": "internal_package_goludev",
+    "id": "MAL-2022-3871",
+    "published": "2022-06-20T20:24:39Z",
+    "versions": "all"
+   },
+   {
+    "name": "usaa-accessible-text",
+    "id": "MAL-2022-6826",
+    "published": "2022-06-20T20:20:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "enify",
+    "id": "MAL-2022-2746",
+    "published": "2022-08-19T03:55:07Z",
+    "versions": "all"
+   },
+   {
+    "name": "trello-canonical-components",
+    "id": "MAL-2022-6640",
+    "published": "2022-06-20T20:24:52Z",
+    "versions": "all"
+   },
+   {
+    "name": "okbirthday2015",
+    "id": "MAL-2022-5051",
+    "published": "2022-07-21T10:55:48Z",
+    "versions": "all"
+   },
+   {
+    "name": "@youporn/fetlife-assets",
+    "id": "MAL-2022-790",
+    "published": "2022-06-20T18:20:39Z",
+    "versions": "all"
+   },
+   {
+    "name": "kg_portal",
+    "id": "MAL-2022-4158",
+    "published": "2022-06-20T20:21:34Z",
+    "versions": "all"
+   },
+   {
+    "name": "azure-arm-oep-samples-js-beta",
+    "id": "MAL-2022-1264",
+    "published": "2022-06-20T20:10:28Z",
+    "versions": "all"
+   },
+   {
+    "name": "aeux",
+    "id": "MAL-2022-880",
+    "published": "2022-06-20T20:22:23Z",
+    "versions": "all"
+   },
+   {
+    "name": "bootlstap",
+    "id": "MAL-2022-1648",
+    "published": "2022-08-19T03:55:06Z",
+    "versions": "all"
+   },
+   {
+    "name": "environment-ebay",
+    "id": "MAL-2022-2754",
+    "published": "2022-09-14T07:23:09Z",
+    "versions": "all"
+   }
+  ],
+  "2023": [
+   {
+    "name": "yandex-yt-proto",
+    "id": "MAL-2023-993",
+    "published": "2023-01-30T10:11:59Z",
+    "versions": "all"
+   },
+   {
+    "name": "schibsted-ufo",
+    "id": "MAL-2023-8525",
+    "published": "2023-11-17T12:20:54Z",
+    "versions": "all"
+   },
+   {
+    "name": "meta-titik",
+    "id": "MAL-2023-8285",
+    "published": "2023-10-03T01:16:58Z",
+    "versions": "all"
+   },
+   {
+    "name": "loveapple",
+    "id": "MAL-2023-1230",
+    "published": "2023-04-26T06:31:14Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "@zettle-bo/react-router-dom",
+    "id": "MAL-2023-8204",
+    "published": "2023-09-21T01:42:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "@emon-bhai/fca-emon-bhai-api",
+    "id": "MAL-2023-8334",
+    "published": "2023-10-12T04:31:28Z",
+    "versions": "all"
+   },
+   {
+    "name": "@ms-atlas-module/datastudio-datafactory",
+    "id": "MAL-2023-1091",
+    "published": "2023-07-25T03:47:45Z",
+    "versions": [
+     "0.1.36"
+    ]
+   },
+   {
+    "name": "fca-sang-remake",
+    "id": "MAL-2023-419",
+    "published": "2023-02-28T22:54:58Z",
+    "versions": "all"
+   },
+   {
+    "name": "core-site-speed-ebay",
+    "id": "MAL-2023-208",
+    "published": "2023-03-16T05:27:49Z",
+    "versions": "all"
+   },
+   {
+    "name": "allianz",
+    "id": "MAL-2023-8715",
+    "published": "2023-12-19T07:18:10Z",
+    "versions": "all"
+   },
+   {
+    "name": "lc-config",
+    "id": "MAL-2023-8629",
+    "published": "2023-11-29T21:01:23Z",
+    "versions": [
+     "5.5.0"
+    ]
+   },
+   {
+    "name": "spaceman-an-astronauts-unlikely-journey-to-unlock-the-secrets-of-the-universe-by-mike-massimino-on-a",
+    "id": "MAL-2023-786",
+    "published": "2023-05-10T13:24:31Z",
+    "versions": "all"
+   },
+   {
+    "name": "blockly-mirror-demo",
+    "id": "MAL-2023-1450",
+    "published": "2023-08-13T16:20:46Z",
+    "versions": [
+     "99.99.9"
+    ]
+   },
+   {
+    "name": "frontend-style-janus",
+    "id": "MAL-2023-8514",
+    "published": "2023-11-14T15:05:55Z",
+    "versions": "all"
+   },
+   {
+    "name": "3commas-api-client",
+    "id": "MAL-2023-18",
+    "published": "2023-04-11T00:32:19Z",
+    "versions": "all"
+   },
+   {
+    "name": "sankson",
+    "id": "MAL-2023-1496",
+    "published": "2023-08-20T05:38:07Z",
+    "versions": [
+     "1.1.2",
+     "1.1.4"
+    ]
+   },
+   {
+    "name": "xsolla-paystation-widget",
+    "id": "MAL-2023-8379",
+    "published": "2023-10-15T18:55:02Z",
+    "versions": [
+     "1.0.0",
+     "4.0.0"
+    ]
+   },
+   {
+    "name": "zenfi-sdk",
+    "id": "MAL-2023-8256",
+    "published": "2023-09-27T14:00:47Z",
+    "versions": [
+     "1.5.2",
+     "1.5.5",
+     "1.5.7",
+     "1.5.3"
+    ]
+   },
+   {
+    "name": "matomo-screenshot-testing",
+    "id": "MAL-2023-1507",
+    "published": "2023-08-20T19:24:21Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "objectish",
+    "id": "MAL-2023-8510",
+    "published": "2023-11-13T14:33:03Z",
+    "versions": "all"
+   },
+   {
+    "name": "@klapp-shopping-search-v2/data-types-public",
+    "id": "MAL-2023-8471",
+    "published": "2023-11-07T13:20:44Z",
+    "versions": [
+     "0.0.0"
+    ]
+   },
+   {
+    "name": "com.unity.meshopt.decompress",
+    "id": "MAL-2023-1139",
+    "published": "2023-06-07T05:12:11Z",
+    "versions": [
+     "0.1.0-preview.5"
+    ]
+   },
+   {
+    "name": "opium-contracts",
+    "id": "MAL-2023-656",
+    "published": "2023-03-06T00:47:54Z",
+    "versions": "all"
+   },
+   {
+    "name": "jscrambler-cookies",
+    "id": "MAL-2023-1498",
+    "published": "2023-08-20T07:12:15Z",
+    "versions": [
+     "9.9.9"
+    ]
+   },
+   {
+    "name": "tessa-npm-plugin",
+    "id": "MAL-2023-8614",
+    "published": "2023-11-24T18:30:41Z",
+    "versions": "all"
+   },
+   {
+    "name": "bynderweb",
+    "id": "MAL-2023-8681",
+    "published": "2023-12-11T10:30:53Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "do_not_install_this_is_a_test_package_norwegianwood",
+    "id": "MAL-2023-266",
+    "published": "2023-07-26T23:58:45Z",
+    "versions": "all"
+   },
+   {
+    "name": "@siigo-arquitectura/mf-helper",
+    "id": "MAL-2023-8301",
+    "published": "2023-10-05T22:56:45Z",
+    "versions": [
+     "5.0.1",
+     "5.0.2"
+    ]
+   },
+   {
+    "name": "web3-core-subscription",
+    "id": "MAL-2023-8699",
+    "published": "2023-12-14T23:54:44Z",
+    "versions": "all"
+   },
+   {
+    "name": "react-dropzone-legacy",
+    "id": "MAL-2023-1440",
+    "published": "2023-08-10T06:17:06Z",
+    "versions": "all"
+   },
+   {
+    "name": "fc-persoonlijke-pas",
+    "id": "MAL-2023-362",
+    "published": "2023-06-05T14:06:53Z",
+    "versions": "all"
+   },
+   {
+    "name": "the-subtle-art-of-not-giving-a-fck-a-counterintuitive-approach-to-living-a-good-life-by-mark-manson-",
+    "id": "MAL-2023-877",
+    "published": "2023-05-10T13:24:33Z",
+    "versions": "all"
+   },
+   {
+    "name": "ktarco",
+    "id": "MAL-2023-8251",
+    "published": "2023-09-26T04:39:03Z",
+    "versions": "all"
+   },
+   {
+    "name": "prathmi",
+    "id": "MAL-2023-692",
+    "published": "2023-01-13T00:55:40Z",
+    "versions": "all"
+   },
+   {
+    "name": "test-npm-com-test",
+    "id": "MAL-2023-8038",
+    "published": "2023-02-04T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "@zettle-bo/cash-register",
+    "id": "MAL-2023-8194",
+    "published": "2023-09-21T01:39:49Z",
+    "versions": "all"
+   },
+   {
+    "name": "web3tool-eth-personal",
+    "id": "MAL-2023-8084",
+    "published": "2023-09-11T07:53:34Z",
+    "versions": "all"
+   },
+   {
+    "name": "milo-cute",
+    "id": "MAL-2023-597",
+    "published": "2023-03-07T23:35:01Z",
+    "versions": "all"
+   },
+   {
+    "name": "cherry_corrupt",
+    "id": "MAL-2023-8014",
+    "published": "2023-07-27T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "twisted-palace-the-royals-3-by-erin-watt-on-kindle-full-edition-",
+    "id": "MAL-2023-915",
+    "published": "2023-05-10T13:24:33Z",
+    "versions": "all"
+   },
+   {
+    "name": "tdv2-applet-stream-her",
+    "id": "MAL-2023-841",
+    "published": "2023-03-31T02:16:07Z",
+    "versions": "all"
+   },
+   {
+    "name": "postcss-file-match",
+    "id": "MAL-2023-690",
+    "published": "2023-01-30T11:42:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "prathooi",
+    "id": "MAL-2023-693",
+    "published": "2023-01-13T00:55:40Z",
+    "versions": "all"
+   },
+   {
+    "name": "fca-jelongz",
+    "id": "MAL-2023-407",
+    "published": "2023-07-14T00:57:06Z",
+    "versions": "all"
+   },
+   {
+    "name": "usaa-mock-server",
+    "id": "MAL-2023-1528",
+    "published": "2023-08-21T02:27:26Z",
+    "versions": "all"
+   },
+   {
+    "name": "planetbuf",
+    "id": "MAL-2023-685",
+    "published": "2023-06-05T05:22:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "web3tool-eth-accounts",
+    "id": "MAL-2023-8082",
+    "published": "2023-09-11T07:53:34Z",
+    "versions": "all"
+   },
+   {
+    "name": "cloud-room-video",
+    "id": "MAL-2023-1457",
+    "published": "2023-08-14T03:21:53Z",
+    "versions": "all"
+   },
+   {
+    "name": "hardhat-web3-utility",
+    "id": "MAL-2023-494",
+    "published": "2023-03-01T05:46:20Z",
+    "versions": "all"
+   },
+   {
+    "name": "milo-api",
+    "id": "MAL-2023-596",
+    "published": "2023-03-07T23:35:01Z",
+    "versions": "all"
+   },
+   {
+    "name": "seafoam-desktop",
+    "id": "MAL-2023-1292",
+    "published": "2023-05-09T05:33:10Z",
+    "versions": [
+     "10.0.0"
+    ]
+   },
+   {
+    "name": "hellodependency3",
+    "id": "MAL-2023-1196",
+    "published": "2023-07-25T04:48:59Z",
+    "versions": [
+     "1.0.4",
+     "1.0.1",
+     "1.0.2"
+    ]
+   },
+   {
+    "name": "very-bad-npm",
+    "id": "MAL-2023-8385",
+    "published": "2023-10-16T06:50:01Z",
+    "versions": "all"
+   },
+   {
+    "name": "fca-zeid",
+    "id": "MAL-2023-7903",
+    "published": "2023-08-24T05:28:45Z",
+    "versions": "all"
+   },
+   {
+    "name": "rocketship-validator",
+    "id": "MAL-2023-748",
+    "published": "2023-04-20T16:32:27Z",
+    "versions": "all"
+   },
+   {
+    "name": "sofa1-shop",
+    "id": "MAL-2023-8604",
+    "published": "2023-11-23T10:44:55Z",
+    "versions": "all"
+   },
+   {
+    "name": "@hihihehehaha/vgujsonfrankfurtola",
+    "id": "MAL-2023-1080",
+    "published": "2023-07-18T04:32:51Z",
+    "versions": [
+     "2.5.0"
+    ]
+   },
+   {
+    "name": "mmolecule-httprequester",
+    "id": "MAL-2023-7969",
+    "published": "2023-08-31T01:51:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "flp_hk",
+    "id": "MAL-2023-1183",
+    "published": "2023-04-29T09:43:31Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "@jackshanyeshuzi/curvess",
+    "id": "MAL-2023-1055",
+    "published": "2023-08-08T11:39:29Z",
+    "versions": "all"
+   },
+   {
+    "name": "samuelpoctester",
+    "id": "MAL-2023-757",
+    "published": "2023-02-03T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "fca-ivancotacte2",
+    "id": "MAL-2023-405",
+    "published": "2023-07-27T23:43:26Z",
+    "versions": "all"
+   },
+   {
+    "name": "verycoolzpac",
+    "id": "MAL-2023-1334",
+    "published": "2023-05-12T03:49:58Z",
+    "versions": [
+     "0.3.7",
+     "0.39.9999",
+     "0.3.1",
+     "0.3.4",
+     "0.3.9",
+     "0.2.9",
+     "0.3.3",
+     "0.3.2",
+     "0.2.5",
+     "0.3.8",
+     "0.2.6",
+     "0.3.6",
+     "0.2.7",
+     "0.3.0",
+     "0.3.5",
+     "0.2.8"
+    ]
+   },
+   {
+    "name": "@miro-site/localization",
+    "id": "MAL-2023-44",
+    "published": "2023-03-23T03:37:21Z",
+    "versions": "all"
+   },
+   {
+    "name": "my-fallen-web",
+    "id": "MAL-2023-1052",
+    "published": "2023-08-04T12:04:50Z",
+    "versions": "all"
+   },
+   {
+    "name": "test-op-solhint",
+    "id": "MAL-2023-851",
+    "published": "2023-05-25T10:23:06Z",
+    "versions": "all"
+   },
+   {
+    "name": "fca-abdulla-api",
+    "id": "MAL-2023-8173",
+    "published": "2023-09-19T04:47:59Z",
+    "versions": "all"
+   },
+   {
+    "name": "@superbet-group/web.lib.global-styles",
+    "id": "MAL-2023-62",
+    "published": "2023-02-09T00:26:23Z",
+    "versions": "all"
+   },
+   {
+    "name": "@esmpfrontend/ui",
+    "id": "MAL-2023-36",
+    "published": "2023-04-21T03:34:56Z",
+    "versions": "all"
+   },
+   {
+    "name": "fca-emon-bhai-api",
+    "id": "MAL-2023-8340",
+    "published": "2023-10-12T04:31:28Z",
+    "versions": "all"
+   },
+   {
+    "name": "axio-https",
+    "id": "MAL-2023-8749",
+    "published": "2023-12-27T15:15:53Z",
+    "versions": "all"
+   },
+   {
+    "name": "pruebalol1",
+    "id": "MAL-2023-708",
+    "published": "2023-05-29T01:12:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "helio_tawa",
+    "id": "MAL-2023-7921",
+    "published": "2023-08-27T18:56:41Z",
+    "versions": [
+     "4.0.0",
+     "4.0.1",
+     "5.0.1"
+    ]
+   },
+   {
+    "name": "chart-vxe",
+    "id": "MAL-2023-172",
+    "published": "2023-06-15T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "env-cross",
+    "id": "MAL-2023-307",
+    "published": "2023-07-04T03:29:07Z",
+    "versions": "all"
+   },
+   {
+    "name": "loveslack",
+    "id": "MAL-2023-1231",
+    "published": "2023-04-26T06:38:05Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "usamaturk",
+    "id": "MAL-2023-927",
+    "published": "2023-02-09T00:00:44Z",
+    "versions": "all"
+   },
+   {
+    "name": "discord.js-self2",
+    "id": "MAL-2023-8753",
+    "published": "2023-12-24T11:28:24Z",
+    "versions": "all"
+   },
+   {
+    "name": "ng-iw-auth-tools",
+    "id": "MAL-2023-8658",
+    "published": "2023-12-04T19:08:20Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "usaa-progress-indicator",
+    "id": "MAL-2023-1530",
+    "published": "2023-08-21T02:32:27Z",
+    "versions": "all"
+   },
+   {
+    "name": "test-hacker-sharma",
+    "id": "MAL-2023-1023",
+    "published": "2023-07-31T05:32:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "@lognex/services-event",
+    "id": "MAL-2023-8633",
+    "published": "2023-11-29T02:54:57Z",
+    "versions": "all"
+   },
+   {
+    "name": "pathkit-local",
+    "id": "MAL-2023-8116",
+    "published": "2023-09-16T23:09:35Z",
+    "versions": "all"
+   },
+   {
+    "name": "materialxview",
+    "id": "MAL-2023-8287",
+    "published": "2023-10-04T04:36:19Z",
+    "versions": "all"
+   },
+   {
+    "name": "dow-load-twisted-palace-the-royals-3-by-erin-watt-on-kindle-full-edition-",
+    "id": "MAL-2023-285",
+    "published": "2023-05-10T13:24:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "shein-lego",
+    "id": "MAL-2023-8523",
+    "published": "2023-11-17T11:10:40Z",
+    "versions": "all"
+   },
+   {
+    "name": "usaa-pagination",
+    "id": "MAL-2023-1331",
+    "published": "2023-06-19T17:55:18Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "fca_kaizen",
+    "id": "MAL-2023-8135",
+    "published": "2023-09-18T04:41:40Z",
+    "versions": "all"
+   },
+   {
+    "name": "bluehost-wordpress-plugin",
+    "id": "MAL-2023-1029",
+    "published": "2023-08-01T05:35:52Z",
+    "versions": "all"
+   },
+   {
+    "name": "brum-global-variable",
+    "id": "MAL-2023-8099",
+    "published": "2023-09-13T11:36:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "the-self-taught-programmer-the-definitive-guide-to-programming-professionally-by-cory-althoff-on-kin",
+    "id": "MAL-2023-873",
+    "published": "2023-05-10T13:24:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "@manomano-internal/mf-seller-xp-commons-error-handlers",
+    "id": "MAL-2023-7964",
+    "published": "2023-08-31T01:48:35Z",
+    "versions": "all"
+   },
+   {
+    "name": "topcoderhomepage_3.0",
+    "id": "MAL-2023-8624",
+    "published": "2023-11-28T21:40:10Z",
+    "versions": [
+     "1.0.2",
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "ic_27_health_insurance_pdf_h2g28",
+    "id": "MAL-2023-512",
+    "published": "2023-05-09T00:00:20Z",
+    "versions": "all"
+   },
+   {
+    "name": "int_access_worldpay_sfra",
+    "id": "MAL-2023-1213",
+    "published": "2023-05-24T00:37:06Z",
+    "versions": [
+     "99.19.19"
+    ]
+   },
+   {
+    "name": "toh-doc-files",
+    "id": "MAL-2023-891",
+    "published": "2023-01-31T05:07:46Z",
+    "versions": "all"
+   },
+   {
+    "name": "finalact",
+    "id": "MAL-2023-8743",
+    "published": "2023-12-26T06:27:32Z",
+    "versions": [
+     "1.1.3",
+     "1.1.5",
+     "1.1.4",
+     "1.1.6",
+     "1.1.9",
+     "1.2.1"
+    ]
+   },
+   {
+    "name": "the-universe-has-your-back-transform-fear-to-faith-by-gabrielle-bernstein-on-iphone-full-pages-",
+    "id": "MAL-2023-878",
+    "published": "2023-05-10T13:24:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "ent-cas-common-utils",
+    "id": "MAL-2023-1516",
+    "published": "2023-08-21T02:31:17Z",
+    "versions": "all"
+   },
+   {
+    "name": "npm-base-template",
+    "id": "MAL-2023-8600",
+    "published": "2023-11-23T10:44:55Z",
+    "versions": "all"
+   }
+  ],
+  "2024": [
+   {
+    "name": "airbnb-o2",
+    "id": "MAL-2024-1613",
+    "published": "2024-06-17T00:09:33Z",
+    "versions": "all"
+   },
+   {
+    "name": "new-dependency-test",
+    "id": "MAL-2024-1012",
+    "published": "2024-02-19T04:15:01Z",
+    "versions": "all"
+   },
+   {
+    "name": "ethquer",
+    "id": "MAL-2024-10931",
+    "published": "2024-11-25T02:03:15Z",
+    "versions": "all"
+   },
+   {
+    "name": "updated-tricks-roblox-robux-generator-2023-deated-2023-h4wzfs8s-4rjz3f-hk",
+    "id": "MAL-2024-3355",
+    "published": "2024-06-25T13:09:04Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "eslint-plugin-mui-custom",
+    "id": "MAL-2024-7857",
+    "published": "2024-07-30T20:08:40Z",
+    "versions": [
+     "2.0.0"
+    ]
+   },
+   {
+    "name": "down_load_epub_by_the_time_you_read_this_i_ll_be_dead_h4icbn",
+    "id": "MAL-2024-2230",
+    "published": "2024-06-25T12:39:48Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "jquery-ui-dialog",
+    "id": "MAL-2024-7743",
+    "published": "2024-07-14T06:29:27Z",
+    "versions": [
+     "0.0.0"
+    ]
+   },
+   {
+    "name": "sap-cb",
+    "id": "MAL-2024-7690",
+    "published": "2024-07-11T03:32:21Z",
+    "versions": [
+     "0.0.0"
+    ]
+   },
+   {
+    "name": "alloy-icons",
+    "id": "MAL-2024-9499",
+    "published": "2024-06-25T12:25:49Z",
+    "versions": [
+     "1.17.0"
+    ]
+   },
+   {
+    "name": "eslint-config-finance-rn",
+    "id": "MAL-2024-10488",
+    "published": "2024-11-07T07:15:35Z",
+    "versions": "all"
+   },
+   {
+    "name": "wlwz-2312-2903",
+    "id": "MAL-2024-434",
+    "published": "2024-01-24T20:23:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "ethers-aaa",
+    "id": "MAL-2024-9422",
+    "published": "2024-10-16T17:36:18Z",
+    "versions": "all"
+   },
+   {
+    "name": "jfrog-jfconfig-grpc",
+    "id": "MAL-2024-7753",
+    "published": "2024-07-15T03:14:03Z",
+    "versions": "all"
+   },
+   {
+    "name": "citi-gcg-173875",
+    "id": "MAL-2024-1986",
+    "published": "2024-06-25T12:33:11Z",
+    "versions": [
+     "99.0.0"
+    ]
+   },
+   {
+    "name": "pdm-skeleton",
+    "id": "MAL-2024-8794",
+    "published": "2024-09-04T08:01:49Z",
+    "versions": "all"
+   },
+   {
+    "name": "textfx",
+    "id": "MAL-2024-7426",
+    "published": "2024-07-06T17:46:59Z",
+    "versions": [
+     "2.2.1"
+    ]
+   },
+   {
+    "name": "wlwz-2312-2002",
+    "id": "MAL-2024-352",
+    "published": "2024-01-24T20:23:07Z",
+    "versions": "all"
+   },
+   {
+    "name": "@zitterorg/nihil-illo-minima",
+    "id": "MAL-2024-7296",
+    "published": "2024-07-04T05:10:26Z",
+    "versions": "all"
+   },
+   {
+    "name": "sap-blockid",
+    "id": "MAL-2024-7626",
+    "published": "2024-07-11T02:33:07Z",
+    "versions": [
+     "0.0.0"
+    ]
+   },
+   {
+    "name": "down_load_epub_the_shadow_sister_3jrxsm",
+    "id": "MAL-2024-2253",
+    "published": "2024-06-25T12:40:13Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "@diotoborg/natus-similique-nemo",
+    "id": "MAL-2024-8448",
+    "published": "2024-09-02T01:42:12Z",
+    "versions": "all"
+   },
+   {
+    "name": "tpg-tc-ui-components",
+    "id": "MAL-2024-3151",
+    "published": "2024-06-25T13:04:39Z",
+    "versions": [
+     "2.0.1",
+     "1.0.999",
+     "1.1.1"
+    ]
+   },
+   {
+    "name": "wlwz-2312-5704",
+    "id": "MAL-2024-687",
+    "published": "2024-01-24T20:23:16Z",
+    "versions": "all"
+   },
+   {
+    "name": "updated-tricks-v-bucks-generator-free_2023-6mlymefi2",
+    "id": "MAL-2024-3524",
+    "published": "2024-06-25T13:12:35Z",
+    "versions": [
+     "5.2.7"
+    ]
+   },
+   {
+    "name": "sber-sberx-prime",
+    "id": "MAL-2024-2985",
+    "published": "2024-06-25T12:59:52Z",
+    "versions": [
+     "689.0.0"
+    ]
+   },
+   {
+    "name": "hw-tooltip",
+    "id": "MAL-2024-2494",
+    "published": "2024-06-25T12:46:07Z",
+    "versions": [
+     "66.6.6"
+    ]
+   },
+   {
+    "name": "@zitterorg/eum-veritatis-placeat",
+    "id": "MAL-2024-7204",
+    "published": "2024-07-04T05:10:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "@diotoborg/blanditiis-fugiat",
+    "id": "MAL-2024-8172",
+    "published": "2024-09-02T01:42:08Z",
+    "versions": "all"
+   },
+   {
+    "name": "dx-virtual-assistent-sdk",
+    "id": "MAL-2024-7952",
+    "published": "2024-08-07T23:58:01Z",
+    "versions": "all"
+   },
+   {
+    "name": "wlwz-2312-3900",
+    "id": "MAL-2024-521",
+    "published": "2024-01-24T20:23:06Z",
+    "versions": "all"
+   },
+   {
+    "name": "algolia-analyzer",
+    "id": "MAL-2024-9021",
+    "published": "2024-09-28T06:54:31Z",
+    "versions": [
+     "9.9.9"
+    ]
+   },
+   {
+    "name": "lunar-sb.js",
+    "id": "MAL-2024-141",
+    "published": "2024-01-21T23:56:59Z",
+    "versions": "all"
+   },
+   {
+    "name": "advertising-api-javascript-client",
+    "id": "MAL-2024-7923",
+    "published": "2024-08-07T23:58:01Z",
+    "versions": "all"
+   },
+   {
+    "name": "@zitterorg/eaque-quis-culpa",
+    "id": "MAL-2024-7185",
+    "published": "2024-07-04T05:10:28Z",
+    "versions": "all"
+   },
+   {
+    "name": "language-rego",
+    "id": "MAL-2024-9160",
+    "published": "2024-10-09T05:06:26Z",
+    "versions": "all"
+   },
+   {
+    "name": "milowebsdk",
+    "id": "MAL-2024-8081",
+    "published": "2024-08-29T09:17:20Z",
+    "versions": "all"
+   },
+   {
+    "name": "nextcloud2",
+    "id": "MAL-2024-11244",
+    "published": "2024-12-08T15:24:53Z",
+    "versions": "all"
+   },
+   {
+    "name": "mixtral-llm",
+    "id": "MAL-2024-1369",
+    "published": "2024-05-19T23:57:16Z",
+    "versions": "all"
+   },
+   {
+    "name": "agilent.pl29.voldemort.frontend",
+    "id": "MAL-2024-11294",
+    "published": "2024-12-08T22:08:24Z",
+    "versions": [
+     "99.9.9"
+    ]
+   },
+   {
+    "name": "sap-alpha",
+    "id": "MAL-2024-7542",
+    "published": "2024-07-11T01:56:03Z",
+    "versions": [
+     "0.0.0"
+    ]
+   },
+   {
+    "name": "overflood",
+    "id": "MAL-2024-7806",
+    "published": "2024-07-25T03:52:51Z",
+    "versions": "all"
+   },
+   {
+    "name": "evolve-base-assets",
+    "id": "MAL-2024-9045",
+    "published": "2024-09-30T12:37:19Z",
+    "versions": "all"
+   },
+   {
+    "name": "updated-tricks-v-bucks-generator-free_2023-m8pvel",
+    "id": "MAL-2024-3676",
+    "published": "2024-06-25T13:15:42Z",
+    "versions": [
+     "4.2.7"
+    ]
+   },
+   {
+    "name": "storefront_h5_sdk",
+    "id": "MAL-2024-132",
+    "published": "2024-01-18T10:41:04Z",
+    "versions": [
+     "1.1.1",
+     "2.0.0",
+     "2.0.1"
+    ]
+   },
+   {
+    "name": "ct-helpers",
+    "id": "MAL-2024-1566",
+    "published": "2024-06-11T07:51:12Z",
+    "versions": "all"
+   },
+   {
+    "name": "watch-perfect-addiction-fullmovies-on-line-stream-at-home-fresdgk",
+    "id": "MAL-2024-3897",
+    "published": "2024-06-25T13:20:40Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "@vk-tech/d11n-preparer",
+    "id": "MAL-2024-2058",
+    "published": "2024-06-25T12:22:53Z",
+    "versions": [
+     "80.80.80",
+     "3.80.80",
+     "3.0.80",
+     "3.0.8"
+    ]
+   },
+   {
+    "name": "bigcommerce-monit",
+    "id": "MAL-2024-11312",
+    "published": "2024-12-08T22:50:12Z",
+    "versions": [
+     "55.55.56"
+    ]
+   },
+   {
+    "name": "sync-dsc",
+    "id": "MAL-2024-3075",
+    "published": "2024-06-25T13:02:41Z",
+    "versions": [
+     "1.0.1",
+     "1.0.2",
+     "1.0.3",
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "bounty123ay",
+    "id": "MAL-2024-11844",
+    "published": "2024-12-14T16:40:46Z",
+    "versions": "all"
+   },
+   {
+    "name": "@lbnqduy11805/potential-giggle",
+    "id": "MAL-2024-1224",
+    "published": "2024-04-10T05:55:21Z",
+    "versions": "all"
+   },
+   {
+    "name": "npmnewtest-avisheknayal1",
+    "id": "MAL-2024-1518",
+    "published": "2024-06-03T18:53:28Z",
+    "versions": "all"
+   },
+   {
+    "name": "internallib_v268",
+    "id": "MAL-2024-10979",
+    "published": "2024-11-27T00:15:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "eslint-plugin-add-display-name",
+    "id": "MAL-2024-10656",
+    "published": "2024-11-12T05:00:43Z",
+    "versions": "all"
+   },
+   {
+    "name": "usaa-wdio-utils",
+    "id": "MAL-2024-1027",
+    "published": "2024-02-20T02:50:47Z",
+    "versions": "all"
+   },
+   {
+    "name": "updated-tricks-v-bucks-generator-free_2023-v0mwcss",
+    "id": "MAL-2024-3759",
+    "published": "2024-06-25T13:17:26Z",
+    "versions": [
+     "5.2.7"
+    ]
+   },
+   {
+    "name": "nayan-video-downloader",
+    "id": "MAL-2024-11809",
+    "published": "2024-12-12T05:28:57Z",
+    "versions": "all"
+   },
+   {
+    "name": "dhoeiwoe",
+    "id": "MAL-2024-9584",
+    "published": "2024-10-16T12:43:49Z",
+    "versions": [
+     "3.25.83"
+    ]
+   },
+   {
+    "name": "updated-tricks-roblox-robux-generator-2023-get-verify_ylly6j",
+    "id": "MAL-2024-3483",
+    "published": "2024-06-25T13:11:41Z",
+    "versions": [
+     "4.2.7"
+    ]
+   },
+   {
+    "name": "http-long-poll-server",
+    "id": "MAL-2024-10669",
+    "published": "2024-11-13T17:17:31Z",
+    "versions": "all"
+   },
+   {
+    "name": "http-api-lookup",
+    "id": "MAL-2024-2489",
+    "published": "2024-06-25T12:46:00Z",
+    "versions": [
+     "2.8.0"
+    ]
+   },
+   {
+    "name": "kurxjy",
+    "id": "MAL-2024-7457",
+    "published": "2024-07-11T00:14:03Z",
+    "versions": "all"
+   },
+   {
+    "name": "configure-pages",
+    "id": "MAL-2024-11959",
+    "published": "2024-12-19T09:55:09Z",
+    "versions": "all"
+   },
+   {
+    "name": "vortexter",
+    "id": "MAL-2024-9909",
+    "published": "2024-10-16T13:42:20Z",
+    "versions": [
+     "17.71.82"
+    ]
+   },
+   {
+    "name": "bigto",
+    "id": "MAL-2024-10606",
+    "published": "2024-11-12T12:02:10Z",
+    "versions": "all"
+   },
+   {
+    "name": "updated-tricks-v-bucks-generator-free_2023-b2psc",
+    "id": "MAL-2024-3560",
+    "published": "2024-06-25T13:13:20Z",
+    "versions": [
+     "4.2.7"
+    ]
+   },
+   {
+    "name": "xuworu",
+    "id": "MAL-2024-8812",
+    "published": "2024-09-04T09:05:35Z",
+    "versions": "all"
+   },
+   {
+    "name": "lean-coffee",
+    "id": "MAL-2024-9003",
+    "published": "2024-09-27T17:10:50Z",
+    "versions": [
+     "9.0.1"
+    ]
+   },
+   {
+    "name": "wlwz-2312-4600",
+    "id": "MAL-2024-584",
+    "published": "2024-01-24T20:23:09Z",
+    "versions": "all"
+   },
+   {
+    "name": "dowload_ebok_maria_theresia_by_elisabeth_badinter_w1uoa",
+    "id": "MAL-2024-8715",
+    "published": "2024-09-03T08:25:31Z",
+    "versions": "all"
+   },
+   {
+    "name": "wlwz-2312-3000",
+    "id": "MAL-2024-440",
+    "published": "2024-01-24T20:23:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "nflx-blesk",
+    "id": "MAL-2024-2753",
+    "published": "2024-06-25T12:52:48Z",
+    "versions": [
+     "9.0.1"
+    ]
+   },
+   {
+    "name": "arcverc",
+    "id": "MAL-2024-11161",
+    "published": "2024-12-01T14:11:36Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "updated-tricks-roblox-robux-generator-2023-get-verify_adft8",
+    "id": "MAL-2024-3396",
+    "published": "2024-06-25T13:09:54Z",
+    "versions": [
+     "5.2.7"
+    ]
+   },
+   {
+    "name": "chokader",
+    "id": "MAL-2024-11032",
+    "published": "2024-11-27T00:52:22Z",
+    "versions": "all"
+   },
+   {
+    "name": "robotodraft",
+    "id": "MAL-2024-2967",
+    "published": "2024-06-25T12:59:11Z",
+    "versions": [
+     "9999.0.99"
+    ]
+   },
+   {
+    "name": "spid-csvautofilljs",
+    "id": "MAL-2024-12041",
+    "published": "2024-12-19T13:15:09Z",
+    "versions": "all"
+   },
+   {
+    "name": "imagegs",
+    "id": "MAL-2024-7451",
+    "published": "2024-07-11T00:13:08Z",
+    "versions": "all"
+   },
+   {
+    "name": "es7.symbol.async-iterator",
+    "id": "MAL-2024-2317",
+    "published": "2024-06-25T12:41:37Z",
+    "versions": [
+     "49.6.0"
+    ]
+   },
+   {
+    "name": "wlwz-2312-4106",
+    "id": "MAL-2024-545",
+    "published": "2024-01-24T20:23:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "@dp-bpsc-tiktok/ogc-analytics",
+    "id": "MAL-2024-8965",
+    "published": "2024-09-25T20:56:03Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "kak-kupit-kriptovaliutu-v-rossii-cherez-tinkoff-investitsii-s21dt6n0d",
+    "id": "MAL-2024-8096",
+    "published": "2024-08-30T00:36:53Z",
+    "versions": "all"
+   },
+   {
+    "name": "@diotoborg/nobis-mollitia",
+    "id": "MAL-2024-8472",
+    "published": "2024-09-02T01:42:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "djangopeopletest",
+    "id": "MAL-2024-9043",
+    "published": "2024-09-30T02:54:47Z",
+    "versions": [
+     "2.1.1"
+    ]
+   },
+   {
+    "name": "@mosfe/arender-vue",
+    "id": "MAL-2024-1770",
+    "published": "2024-06-25T12:21:04Z",
+    "versions": [
+     "1.3.22"
+    ]
+   },
+   {
+    "name": "govuk-frontend-v4",
+    "id": "MAL-2024-8957",
+    "published": "2024-09-24T02:50:49Z",
+    "versions": "all"
+   },
+   {
+    "name": "updated-tricks-v-bucks-generator-free_2023-gcv5g",
+    "id": "MAL-2024-3625",
+    "published": "2024-06-25T13:14:40Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "eventstream-codec",
+    "id": "MAL-2024-9602",
+    "published": "2024-10-16T12:51:21Z",
+    "versions": [
+     "213.21.24"
+    ]
+   },
+   {
+    "name": "bootstrap-npm-webpack",
+    "id": "MAL-2024-1573",
+    "published": "2024-06-11T10:18:49Z",
+    "versions": "all"
+   },
+   {
+    "name": "wdio-common",
+    "id": "MAL-2024-12108",
+    "published": "2024-12-23T14:26:10Z",
+    "versions": "all"
+   },
+   {
+    "name": "@zitterorg/ipsa-in-aliquam",
+    "id": "MAL-2024-7236",
+    "published": "2024-07-04T05:10:27Z",
+    "versions": "all"
+   },
+   {
+    "name": "cash-app-money-generator-new-2023-update-ey45e",
+    "id": "MAL-2024-1876",
+    "published": "2024-06-25T12:30:56Z",
+    "versions": [
+     "4.2.7"
+    ]
+   },
+   {
+    "name": "profectus-components",
+    "id": "MAL-2024-1067",
+    "published": "2024-03-09T06:39:12Z",
+    "versions": "all"
+   },
+   {
+    "name": "cliwoerr",
+    "id": "MAL-2024-9556",
+    "published": "2024-10-16T12:40:20Z",
+    "versions": [
+     "7.20.10"
+    ]
+   },
+   {
+    "name": "oss-feature-flags",
+    "id": "MAL-2024-11415",
+    "published": "2024-12-09T03:27:42Z",
+    "versions": [
+     "7.7.7",
+     "7.7.8"
+    ]
+   },
+   {
+    "name": "ckeditor5-block-quote",
+    "id": "MAL-2024-9539",
+    "published": "2024-10-16T12:39:50Z",
+    "versions": [
+     "213.21.24"
+    ]
+   },
+   {
+    "name": "komcaxx",
+    "id": "MAL-2024-7714",
+    "published": "2024-07-11T00:35:52Z",
+    "versions": "all"
+   },
+   {
+    "name": "distube-fast",
+    "id": "MAL-2024-7869",
+    "published": "2024-07-31T11:56:14Z",
+    "versions": [
+     "5.0.2"
+    ]
+   },
+   {
+    "name": "wlwz-2312-0206",
+    "id": "MAL-2024-194",
+    "published": "2024-01-24T20:23:10Z",
+    "versions": "all"
+   },
+   {
+    "name": "testien1",
+    "id": "MAL-2024-1053",
+    "published": "2024-03-03T11:23:29Z",
+    "versions": [
+     "1.0.0"
+    ]
+   }
+  ],
+  "2025": [
+   {
+    "name": "gita-kupang19-breki",
+    "id": "MAL-2025-120305",
+    "published": "2025-11-11T20:11:48Z",
+    "versions": "all"
+   },
+   {
+    "name": "nokire-nakala46",
+    "id": "MAL-2025-162999",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "ocha-sego17-miaww",
+    "id": "MAL-2025-116160",
+    "published": "2025-11-11T15:19:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "shilang-poke70",
+    "id": "MAL-2025-165892",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "@zalastax/nolb-_typesw",
+    "id": "MAL-2025-10538",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "absolute_sparrow_z3n",
+    "id": "MAL-2025-112510",
+    "published": "2025-11-11T15:19:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "kiki-poke25",
+    "id": "MAL-2025-175509",
+    "published": "2025-11-12T19:18:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "uninstall-octans-procyon-soap",
+    "id": "MAL-2025-148963",
+    "published": "2025-11-12T04:29:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "zain-miemee47-sluey",
+    "id": "MAL-2025-138426",
+    "published": "2025-11-11T22:56:38Z",
+    "versions": "all"
+   },
+   {
+    "name": "tunis-kt-gahuvfaduffadi",
+    "id": "MAL-2025-185319",
+    "published": "2025-11-12T22:25:03Z",
+    "versions": "all"
+   },
+   {
+    "name": "umi-tek40-breki",
+    "id": "MAL-2025-75885",
+    "published": "2025-11-11T02:29:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "agus-klipo97-breki",
+    "id": "MAL-2025-49754",
+    "published": "2025-11-10T04:05:19Z",
+    "versions": "all"
+   },
+   {
+    "name": "siska-gembus92-sukiwir",
+    "id": "MAL-2025-81374",
+    "published": "2025-11-11T03:48:15Z",
+    "versions": "all"
+   },
+   {
+    "name": "topaz-leopard-kdb618-project",
+    "id": "MAL-2025-37063",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "characteristic_reptile_z3n",
+    "id": "MAL-2025-93512",
+    "published": "2025-11-11T05:18:27Z",
+    "versions": "all"
+   },
+   {
+    "name": "nokire-nakaocil2",
+    "id": "MAL-2025-176475",
+    "published": "2025-11-12T19:18:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "@zalastax/nolb-pas-",
+    "id": "MAL-2025-13027",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "tealove-poke10",
+    "id": "MAL-2025-168636",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "keyla-poke69",
+    "id": "MAL-2025-157639",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "nebula-7agn9-zp9t3-whisper-project",
+    "id": "MAL-2025-27153",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "tiara-gembus35-ruro",
+    "id": "MAL-2025-109661",
+    "published": "2025-11-11T07:16:30Z",
+    "versions": "all"
+   },
+   {
+    "name": "helios-configstore-orbit-meteor",
+    "id": "MAL-2025-143228",
+    "published": "2025-11-12T04:29:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "mahesa-kupat46-sukiwir",
+    "id": "MAL-2025-79834",
+    "published": "2025-11-11T03:48:15Z",
+    "versions": "all"
+   },
+   {
+    "name": "@zalastax/nolb-_chig",
+    "id": "MAL-2025-9869",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "diplomatic-copper-rabbit",
+    "id": "MAL-2025-67761",
+    "published": "2025-11-11T00:41:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "react-x-twitter",
+    "id": "MAL-2025-3274",
+    "published": "2025-04-19T14:09:59Z",
+    "versions": "all"
+   },
+   {
+    "name": "kurnia-klanting18-breki",
+    "id": "MAL-2025-73951",
+    "published": "2025-11-11T02:29:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "kamoah",
+    "id": "MAL-2025-24207",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "@zalastax/nolb-_trivikr-test_p",
+    "id": "MAL-2025-43085",
+    "published": "2025-09-05T17:10:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "nokire-rara59",
+    "id": "MAL-2025-163349",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "citra-ikan11-crottsekebon",
+    "id": "MAL-2025-84081",
+    "published": "2025-11-11T04:25:34Z",
+    "versions": "all"
+   },
+   {
+    "name": "anais-papmoa-0pimaoaa",
+    "id": "MAL-2025-179523",
+    "published": "2025-11-12T20:46:07Z",
+    "versions": "all"
+   },
+   {
+    "name": "chief_chicken_z3n",
+    "id": "MAL-2025-93531",
+    "published": "2025-11-11T05:18:27Z",
+    "versions": "all"
+   },
+   {
+    "name": "nabuf-otimmn-afoqoga",
+    "id": "MAL-2025-161458",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "nestjs-equinox-fomalhaut-mutation",
+    "id": "MAL-2025-188239",
+    "published": "2025-11-13T03:23:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "@crabas0npm/amet-quas-quo",
+    "id": "MAL-2025-42210",
+    "published": "2025-09-05T17:10:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "loyal_louse_z3n",
+    "id": "MAL-2025-105363",
+    "published": "2025-11-11T07:31:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "joko-gepuk1-sluey",
+    "id": "MAL-2025-52078",
+    "published": "2025-11-10T04:40:39Z",
+    "versions": "all"
+   },
+   {
+    "name": "ignite-stop-castor-triton",
+    "id": "MAL-2025-143528",
+    "published": "2025-11-12T04:29:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "pino-virtualreality-cluster-tool",
+    "id": "MAL-2025-188712",
+    "published": "2025-11-13T03:23:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "dewanto-lumpur20-sluey",
+    "id": "MAL-2025-132717",
+    "published": "2025-11-11T22:56:38Z",
+    "versions": "all"
+   },
+   {
+    "name": "indus-commitlint-config-angular-cross-env-xanadu",
+    "id": "MAL-2025-143562",
+    "published": "2025-11-12T04:29:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "uinsu-lsit-diunsaivu",
+    "id": "MAL-2025-170067",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "andi-empal7-sukiwir",
+    "id": "MAL-2025-55178",
+    "published": "2025-11-10T17:21:43Z",
+    "versions": "all"
+   },
+   {
+    "name": "mimi-ruhe-gaibianle-wode-shenghuo",
+    "id": "MAL-2025-45191",
+    "published": "2025-09-05T17:10:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "lobac-ubb-badadfu",
+    "id": "MAL-2025-183429",
+    "published": "2025-11-12T22:25:03Z",
+    "versions": "all"
+   },
+   {
+    "name": "vina-menjes48-riris",
+    "id": "MAL-2025-131097",
+    "published": "2025-11-11T20:46:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "horizontal_elephant_z3n",
+    "id": "MAL-2025-103787",
+    "published": "2025-11-11T07:16:30Z",
+    "versions": "all"
+   },
+   {
+    "name": "passport-barnard-server-transport",
+    "id": "MAL-2025-145977",
+    "published": "2025-11-12T04:29:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "elated_sturgeon_z3n",
+    "id": "MAL-2025-77878",
+    "published": "2025-11-11T03:48:15Z",
+    "versions": "all"
+   },
+   {
+    "name": "utomo-keripik55-breki",
+    "id": "MAL-2025-50613",
+    "published": "2025-11-10T04:05:19Z",
+    "versions": "all"
+   },
+   {
+    "name": "project-r0x8y-charlie",
+    "id": "MAL-2025-30478",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "evoke_d4ses_oo44u_yonder",
+    "id": "MAL-2025-19999",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "galih-taiwan39-miaww",
+    "id": "MAL-2025-114159",
+    "published": "2025-11-11T15:19:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "sagitta-lint-staged-io-boson",
+    "id": "MAL-2025-45946",
+    "published": "2025-09-05T17:10:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "hookie.js",
+    "id": "MAL-2025-22623",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "tiltco",
+    "id": "MAL-2025-36935",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "uplift-h5yn2-4sfmq-orbit-project",
+    "id": "MAL-2025-37919",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "eko-taiwan42-sluey",
+    "id": "MAL-2025-62725",
+    "published": "2025-11-11T00:17:57Z",
+    "versions": "all"
+   },
+   {
+    "name": "dono-lapis99-breki",
+    "id": "MAL-2025-72597",
+    "published": "2025-11-11T02:29:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "wawan-keripik58-sukiwir",
+    "id": "MAL-2025-82274",
+    "published": "2025-11-11T03:48:15Z",
+    "versions": "all"
+   },
+   {
+    "name": "agus-kembang44-miaww",
+    "id": "MAL-2025-112590",
+    "published": "2025-11-11T15:19:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "rina-teh7-sukiwir",
+    "id": "MAL-2025-58508",
+    "published": "2025-11-10T17:21:43Z",
+    "versions": "all"
+   },
+   {
+    "name": "dewi-ronde45-sukiwir",
+    "id": "MAL-2025-77569",
+    "published": "2025-11-11T03:48:15Z",
+    "versions": "all"
+   },
+   {
+    "name": "wati-teh20-riris",
+    "id": "MAL-2025-131201",
+    "published": "2025-11-11T20:46:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "zesty_cicada_z3n",
+    "id": "MAL-2025-118478",
+    "published": "2025-11-11T15:19:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "fellow-magenta-magpie",
+    "id": "MAL-2025-68300",
+    "published": "2025-11-11T00:41:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "jovian-nodemon-winston-andromeda",
+    "id": "MAL-2025-187612",
+    "published": "2025-11-13T03:23:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "avomainah-frasu-ofuarau",
+    "id": "MAL-2025-153549",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "zulu-8tp-project",
+    "id": "MAL-2025-41176",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "misdigest",
+    "id": "MAL-2025-26479",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "erick-taiwan35-sukiwir",
+    "id": "MAL-2025-77947",
+    "published": "2025-11-11T03:48:15Z",
+    "versions": "all"
+   },
+   {
+    "name": "citra-bika9-breki",
+    "id": "MAL-2025-119179",
+    "published": "2025-11-11T20:11:48Z",
+    "versions": "all"
+   },
+   {
+    "name": "cz-conventional-changelog-dotenv-parse-variables-optimize-css-assets-webpack-plugin-elektra",
+    "id": "MAL-2025-141417",
+    "published": "2025-11-12T04:29:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "indah-rendang90-riris",
+    "id": "MAL-2025-127393",
+    "published": "2025-11-11T20:46:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "difficult_cattle_z3n",
+    "id": "MAL-2025-55894",
+    "published": "2025-11-10T17:21:43Z",
+    "versions": "all"
+   },
+   {
+    "name": "@mipta1/ersius",
+    "id": "MAL-2025-150010",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "maya-peyek45-miaww",
+    "id": "MAL-2025-88384",
+    "published": "2025-11-11T04:25:34Z",
+    "versions": "all"
+   },
+   {
+    "name": "shilang-poke58",
+    "id": "MAL-2025-165878",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "lookingan-nalako58",
+    "id": "MAL-2025-158469",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "typlesmod",
+    "id": "MAL-2025-37413",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "algol-elektra-rollup-style-loader",
+    "id": "MAL-2025-185429",
+    "published": "2025-11-13T03:23:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "divata-tusintabi-ivau",
+    "id": "MAL-2025-174108",
+    "published": "2025-11-12T19:18:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "maya-serabi83-ruro",
+    "id": "MAL-2025-105714",
+    "published": "2025-11-11T07:16:30Z",
+    "versions": "all"
+   },
+   {
+    "name": "putri-rojak71-riris",
+    "id": "MAL-2025-129596",
+    "published": "2025-11-11T20:46:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "hendra-ikan23-breki",
+    "id": "MAL-2025-120573",
+    "published": "2025-11-11T20:11:48Z",
+    "versions": "all"
+   },
+   {
+    "name": "@miptaa02/fja",
+    "id": "MAL-2025-150658",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "yanti-semur47-riris",
+    "id": "MAL-2025-131576",
+    "published": "2025-11-11T20:46:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "yuni-gado-gado66-breki",
+    "id": "MAL-2025-124550",
+    "published": "2025-11-11T20:11:48Z",
+    "versions": "all"
+   },
+   {
+    "name": "yarrow-zenith-vkd694-project",
+    "id": "MAL-2025-40363",
+    "published": "2025-08-14T18:52:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "verify-ain-ukasiamun",
+    "id": "MAL-2025-170311",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "thick_firefly_0xrequest",
+    "id": "MAL-2025-109601",
+    "published": "2025-11-11T07:26:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "hilarious-rose-kangaroo",
+    "id": "MAL-2025-68675",
+    "published": "2025-11-11T00:41:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "icha-5",
+    "id": "MAL-2025-156030",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "zephyr-antares-sqlite-xenos",
+    "id": "MAL-2025-149879",
+    "published": "2025-11-12T04:29:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "zaki-ketoprak51-breki",
+    "id": "MAL-2025-76567",
+    "published": "2025-11-11T02:29:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "bigcommerce.github.io",
+    "id": "MAL-2025-326",
+    "published": "2025-01-22T17:16:01Z",
+    "versions": "all"
+   },
+   {
+    "name": "aji-poke23",
+    "id": "MAL-2025-152092",
+    "published": "2025-11-12T16:47:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "eko-brengkes60-sumpek",
+    "id": "MAL-2025-62695",
+    "published": "2025-11-11T00:17:57Z",
+    "versions": "all"
+   },
+   {
+    "name": "xaver-taiwan74-sluey",
+    "id": "MAL-2025-66231",
+    "published": "2025-11-11T00:17:57Z",
+    "versions": "all"
+   }
+  ],
+  "2026": [
+   {
+    "name": "@years18/n8n-nodes-utils-helper-n",
+    "id": "MAL-2026-13858",
+    "published": "2026-08-12T12:16:21Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "marked-prettier",
+    "id": "MAL-2026-10143",
+    "published": "2026-07-10T16:05:17Z",
+    "versions": "all"
+   },
+   {
+    "name": "@breeze-ai/ui-library",
+    "id": "MAL-2026-3292",
+    "published": "2026-05-03T12:37:25Z",
+    "versions": "all"
+   },
+   {
+    "name": "vitest-chalk-pro",
+    "id": "MAL-2026-15563",
+    "published": "2026-08-29T02:12:51Z",
+    "versions": [
+     "10.0.7"
+    ]
+   },
+   {
+    "name": "align-configer",
+    "id": "MAL-2026-1653",
+    "published": "2026-03-18T12:38:26Z",
+    "versions": [
+     "3.4.2",
+     "3.4.3"
+    ]
+   },
+   {
+    "name": "exodus-checkout-signer",
+    "id": "MAL-2026-5439",
+    "published": "2026-06-09T17:44:56Z",
+    "versions": [
+     "99.0.0-canary.1"
+    ]
+   },
+   {
+    "name": "despicable-me",
+    "id": "MAL-2026-882",
+    "published": "2026-02-13T13:50:54Z",
+    "versions": "all"
+   },
+   {
+    "name": "lvldragdrop",
+    "id": "MAL-2026-592",
+    "published": "2026-01-28T16:39:23Z",
+    "versions": "all"
+   },
+   {
+    "name": "@citi-icg-158830/elemental-chameleon",
+    "id": "MAL-2026-3806",
+    "published": "2026-05-16T19:55:24Z",
+    "versions": [
+     "0.0.0-defensive-callback.1",
+     "0.0.0-defensive-callback"
+    ]
+   },
+   {
+    "name": "cursed-ecto-d3ab00",
+    "id": "MAL-2026-10061",
+    "published": "2026-07-09T15:54:19Z",
+    "versions": "all"
+   },
+   {
+    "name": "devplatform-npm-versions-checker",
+    "id": "MAL-2026-12721",
+    "published": "2026-08-05T13:50:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "3layerdipstackvaovrs",
+    "id": "MAL-2026-14956",
+    "published": "2026-08-28T15:35:28Z",
+    "versions": "all"
+   },
+   {
+    "name": "cloudpivot",
+    "id": "MAL-2026-4529",
+    "published": "2026-05-23T08:02:30Z",
+    "versions": [
+     "1.0.3",
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "@ccfly/setup-linux-arm64",
+    "id": "MAL-2026-13417",
+    "published": "2026-08-06T13:51:36Z",
+    "versions": [
+     "0.1.0"
+    ]
+   },
+   {
+    "name": "@gocortexio/npmgremlinbox-cc-by-nc-sa-2-0-fr",
+    "id": "MAL-2026-10800",
+    "published": "2026-07-20T03:00:59Z",
+    "versions": "all"
+   },
+   {
+    "name": "skyoauth2",
+    "id": "MAL-2026-1849",
+    "published": "2026-03-18T13:09:53Z",
+    "versions": [
+     "2.0.2"
+    ]
+   },
+   {
+    "name": "expreeeess",
+    "id": "MAL-2026-2442",
+    "published": "2026-04-02T18:11:34Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "vite-tsconfig-svg",
+    "id": "MAL-2026-11497",
+    "published": "2026-07-31T16:10:06Z",
+    "versions": "all"
+   },
+   {
+    "name": "abuden22",
+    "id": "MAL-2026-6129",
+    "published": "2026-06-18T16:29:47Z",
+    "versions": "all"
+   },
+   {
+    "name": "zenith-utils",
+    "id": "MAL-2026-6401",
+    "published": "2026-06-24T18:05:07Z",
+    "versions": [
+     "12.0.14",
+     "12.0.15"
+    ]
+   },
+   {
+    "name": "internallib_v782",
+    "id": "MAL-2026-681",
+    "published": "2026-02-03T07:27:28Z",
+    "versions": "all"
+   },
+   {
+    "name": "3layerdipstack3vept",
+    "id": "MAL-2026-14618",
+    "published": "2026-08-28T15:35:23Z",
+    "versions": "all"
+   },
+   {
+    "name": "tether-dev-docs",
+    "id": "MAL-2026-1258",
+    "published": "2026-03-06T00:01:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "@cloudplatform-single-spa/smk",
+    "id": "MAL-2026-4970",
+    "published": "2026-05-28T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "web3-terminal",
+    "id": "MAL-2026-11007",
+    "published": "2026-07-22T20:40:05Z",
+    "versions": [
+     "2.1.6"
+    ]
+   },
+   {
+    "name": "dolyame-boxy-independent-bnpl-mobile-application",
+    "id": "MAL-2026-13321",
+    "published": "2026-08-05T15:21:57Z",
+    "versions": "all"
+   },
+   {
+    "name": "secure-test-browser-lb0mxh9x",
+    "id": "MAL-2026-15383",
+    "published": "2026-08-28T15:35:10Z",
+    "versions": "all"
+   },
+   {
+    "name": "google-caja-bower",
+    "id": "MAL-2026-10186",
+    "published": "2026-07-11T21:32:53Z",
+    "versions": "all"
+   },
+   {
+    "name": "clients-structure",
+    "id": "MAL-2026-12649",
+    "published": "2026-08-05T14:00:13Z",
+    "versions": [
+     "35.9.8"
+    ]
+   },
+   {
+    "name": "@3stripes/common",
+    "id": "MAL-2026-1426",
+    "published": "2026-03-15T05:46:19Z",
+    "versions": [
+     "999.0.2"
+    ]
+   },
+   {
+    "name": "scan-store",
+    "id": "MAL-2026-969",
+    "published": "2026-02-20T16:59:55Z",
+    "versions": "all"
+   },
+   {
+    "name": "2fa-secretkey",
+    "id": "MAL-2026-15547",
+    "published": "2026-08-29T01:54:48Z",
+    "versions": [
+     "1.0.3",
+     "1.0.5",
+     "1.0.7",
+     "1.0.4",
+     "1.0.2",
+     "1.0.6",
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "sme-rko-finance-front-payments-feed-display-list",
+    "id": "MAL-2026-13662",
+    "published": "2026-08-08T00:45:22Z",
+    "versions": [
+     "35.8.1"
+    ]
+   },
+   {
+    "name": "@engagehub/core",
+    "id": "MAL-2026-4258",
+    "published": "2026-05-22T20:02:41Z",
+    "versions": "all"
+   },
+   {
+    "name": "int_sezzle_sfra",
+    "id": "MAL-2026-6577",
+    "published": "2026-06-29T05:34:59Z",
+    "versions": "all"
+   },
+   {
+    "name": "secp256k1-lib",
+    "id": "MAL-2026-14255",
+    "published": "2026-08-19T04:43:49Z",
+    "versions": [
+     "1.0.0",
+     "1.0.2",
+     "1.0.1",
+     "1.0.3"
+    ]
+   },
+   {
+    "name": "svelte-streak-map",
+    "id": "MAL-2026-14500",
+    "published": "2026-08-25T14:52:12Z",
+    "versions": "all"
+   },
+   {
+    "name": "@cloudplatform-single-spa/vdi",
+    "id": "MAL-2026-4996",
+    "published": "2026-05-28T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "infomedia",
+    "id": "MAL-2026-14530",
+    "published": "2026-08-26T13:28:03Z",
+    "versions": "all"
+   },
+   {
+    "name": "internal-api-insights",
+    "id": "MAL-2026-1752",
+    "published": "2026-03-18T12:54:54Z",
+    "versions": [
+     "100.0.0"
+    ]
+   },
+   {
+    "name": "@ozon-complt/split",
+    "id": "MAL-2026-3067",
+    "published": "2026-04-26T12:39:46Z",
+    "versions": "all"
+   },
+   {
+    "name": "node-ipc",
+    "id": "MAL-2026-3744",
+    "published": "2026-05-14T16:53:17Z",
+    "versions": [
+     "9.1.6",
+     "9.2.3",
+     "12.0.1"
+    ]
+   },
+   {
+    "name": "gekko-mev-bot",
+    "id": "MAL-2026-12387",
+    "published": "2026-08-05T12:45:54Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "boxy-debugger",
+    "id": "MAL-2026-13036",
+    "published": "2026-08-05T14:32:15Z",
+    "versions": [
+     "35.3.4"
+    ]
+   },
+   {
+    "name": "3layerdipstackvdy7nf",
+    "id": "MAL-2026-14960",
+    "published": "2026-08-28T15:35:29Z",
+    "versions": "all"
+   },
+   {
+    "name": "chief-proxy-out",
+    "id": "MAL-2026-2674",
+    "published": "2026-04-15T03:12:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "@or-sdk/billing",
+    "id": "MAL-2026-11675",
+    "published": "2026-08-04T15:25:17Z",
+    "versions": [
+     "27.2.1",
+     "27.2.2",
+     "27.2.3"
+    ]
+   },
+   {
+    "name": "deposits-overnight",
+    "id": "MAL-2026-12361",
+    "published": "2026-08-05T12:38:59Z",
+    "versions": "all"
+   },
+   {
+    "name": "chalk-tempalte",
+    "id": "MAL-2026-4517",
+    "published": "2026-05-20T02:07:31Z",
+    "versions": [
+     "1.0.15",
+     "1.0.16",
+     "1.0.14",
+     "1.0.17",
+     "1.0.19",
+     "1.0.20"
+    ]
+   },
+   {
+    "name": "elephant-array-utils",
+    "id": "MAL-2026-12369",
+    "published": "2026-08-05T12:32:11Z",
+    "versions": [
+     "1.0.6"
+    ]
+   },
+   {
+    "name": "metrics-probe-88ad",
+    "id": "MAL-2026-6114",
+    "published": "2026-06-18T03:27:53Z",
+    "versions": "all"
+   },
+   {
+    "name": "chai-as-resolved",
+    "id": "MAL-2026-1671",
+    "published": "2026-03-18T12:42:37Z",
+    "versions": [
+     "2.3.2"
+    ]
+   },
+   {
+    "name": "element-utils-guci",
+    "id": "MAL-2026-15882",
+    "published": "2026-09-03T08:38:43Z",
+    "versions": "all"
+   },
+   {
+    "name": "@alluxio/common-ui",
+    "id": "MAL-2026-451",
+    "published": "2026-01-22T09:07:19Z",
+    "versions": "all"
+   },
+   {
+    "name": "eslint-config-compact-base",
+    "id": "MAL-2026-17157",
+    "published": "2026-09-24T13:17:49Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "atomic-notes",
+    "id": "MAL-2026-4486",
+    "published": "2026-05-26T01:00:33Z",
+    "versions": [
+     "0.5.3"
+    ]
+   },
+   {
+    "name": "upshift-finance",
+    "id": "MAL-2026-13777",
+    "published": "2026-08-11T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "stylelint-preference",
+    "id": "MAL-2026-1859",
+    "published": "2026-03-18T13:11:21Z",
+    "versions": [
+     "1.0.8"
+    ]
+   },
+   {
+    "name": "sickle-wrapper",
+    "id": "MAL-2026-4178",
+    "published": "2026-05-19T04:00:10Z",
+    "versions": [
+     "0.2.0"
+    ]
+   },
+   {
+    "name": "@cloudplatform-single-spa/support",
+    "id": "MAL-2026-4975",
+    "published": "2026-05-28T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "@or-sdk/chat",
+    "id": "MAL-2026-11682",
+    "published": "2026-08-04T13:23:11Z",
+    "versions": [
+     "0.3.1",
+     "0.3.2",
+     "0.3.3"
+    ]
+   },
+   {
+    "name": "limit-size",
+    "id": "MAL-2026-4143",
+    "published": "2026-05-19T00:00:00Z",
+    "versions": [
+     "0.2.4",
+     "0.3.4"
+    ]
+   },
+   {
+    "name": "@onereach/ckeditor5-build-classic",
+    "id": "MAL-2026-11594",
+    "published": "2026-08-04T15:20:27Z",
+    "versions": [
+     "30.0.1",
+     "30.0.2",
+     "30.0.3"
+    ]
+   },
+   {
+    "name": "redis-type-os",
+    "id": "MAL-2026-5882",
+    "published": "2026-06-16T11:54:37Z",
+    "versions": "all"
+   },
+   {
+    "name": "serverless-twi-testing",
+    "id": "MAL-2026-7418",
+    "published": "2026-07-07T13:10:22Z",
+    "versions": [
+     "1.0.7"
+    ]
+   },
+   {
+    "name": "@girirajravichandran/corp-build-utils-poc",
+    "id": "MAL-2026-2331",
+    "published": "2026-03-24T15:28:29Z",
+    "versions": [
+     "99.9.29",
+     "99.9.31"
+    ]
+   },
+   {
+    "name": "@antv/xflow-diff",
+    "id": "MAL-2026-4120",
+    "published": "2026-05-19T00:00:00Z",
+    "versions": [
+     "1.1.0",
+     "1.2.0"
+    ]
+   },
+   {
+    "name": "react-dropzone-truffle",
+    "id": "MAL-2026-999",
+    "published": "2026-02-23T02:22:35Z",
+    "versions": "all"
+   },
+   {
+    "name": "@atlaskit-internal_.smart-card/hover-card",
+    "id": "MAL-2026-10870",
+    "published": "2026-07-20T10:17:11Z",
+    "versions": [
+     "99.0.0"
+    ]
+   },
+   {
+    "name": "@mastra/auth",
+    "id": "MAL-2026-5940",
+    "published": "2026-06-17T03:12:26Z",
+    "versions": [
+     "1.0.3"
+    ]
+   },
+   {
+    "name": "@doaction/examples",
+    "id": "MAL-2026-5372",
+    "published": "2026-06-09T14:17:42Z",
+    "versions": "all"
+   },
+   {
+    "name": "typescrit-cli",
+    "id": "MAL-2026-14153",
+    "published": "2026-08-18T23:21:03Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "@zzzgenesis00/solana-wallet-adapter",
+    "id": "MAL-2026-11532",
+    "published": "2026-08-04T22:08:32Z",
+    "versions": [
+     "0.18.0"
+    ]
+   },
+   {
+    "name": "trevlo",
+    "id": "MAL-2026-3340",
+    "published": "2026-05-05T11:51:48Z",
+    "versions": [
+     "15.0.0",
+     "10.0.1",
+     "10.0.0",
+     "4.0.0",
+     "3.0.0",
+     "2.0.0",
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "wallet-backup-verifier",
+    "id": "MAL-2026-4250",
+    "published": "2026-05-20T12:52:54Z",
+    "versions": "all"
+   },
+   {
+    "name": "@insiderintelligence/componentlibrary",
+    "id": "MAL-2026-16353",
+    "published": "2026-09-21T17:14:44Z",
+    "versions": "all"
+   },
+   {
+    "name": "@ikeacn/ui",
+    "id": "MAL-2026-462",
+    "published": "2026-01-22T12:23:23Z",
+    "versions": "all"
+   },
+   {
+    "name": "@lucideproxy/svg",
+    "id": "MAL-2026-15600",
+    "published": "2026-08-30T23:25:26Z",
+    "versions": "all"
+   },
+   {
+    "name": "sysdo",
+    "id": "MAL-2026-14215",
+    "published": "2026-08-19T02:50:52Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "classlink-w1k2id3o",
+    "id": "MAL-2026-15165",
+    "published": "2026-08-28T15:35:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "strapi-plugin-feedmeeb",
+    "id": "MAL-2026-16230",
+    "published": "2026-09-16T13:57:47Z",
+    "versions": [
+     "3.6.8"
+    ]
+   },
+   {
+    "name": "plugin-vue",
+    "id": "MAL-2026-425",
+    "published": "2026-01-21T04:48:23Z",
+    "versions": "all"
+   },
+   {
+    "name": "internal-company-sdk",
+    "id": "MAL-2026-338",
+    "published": "2026-01-19T00:59:52Z",
+    "versions": "all"
+   },
+   {
+    "name": "shopee-chat",
+    "id": "MAL-2026-198",
+    "published": "2026-01-11T13:21:17Z",
+    "versions": "all"
+   },
+   {
+    "name": "corp-internal-logger",
+    "id": "MAL-2026-1700",
+    "published": "2026-03-18T12:45:09Z",
+    "versions": [
+     "99.99.99",
+     "99.99.100",
+     "99.99.101"
+    ]
+   },
+   {
+    "name": "kiki-baileys",
+    "id": "MAL-2026-16033",
+    "published": "2026-09-07T14:32:26Z",
+    "versions": "all"
+   },
+   {
+    "name": "storage-types",
+    "id": "MAL-2026-430",
+    "published": "2026-01-21T04:48:23Z",
+    "versions": "all"
+   },
+   {
+    "name": "fhj8cv9dkwm4",
+    "id": "MAL-2026-13809",
+    "published": "2026-08-12T10:29:52Z",
+    "versions": "all"
+   },
+   {
+    "name": "@orion-design-system/components",
+    "id": "MAL-2026-5522",
+    "published": "2026-06-10T18:22:00Z",
+    "versions": [
+     "9999.0.2",
+     "9999.0.0",
+     "9999.0.1",
+     "9999.0.3"
+    ]
+   },
+   {
+    "name": "@the-coca-cola-company/receipt-scanner-admin-lib",
+    "id": "MAL-2026-2718",
+    "published": "2026-04-16T09:39:26Z",
+    "versions": [
+     "9.9.0",
+     "9.9.9"
+    ]
+   },
+   {
+    "name": "egair0810",
+    "id": "MAL-2026-13805",
+    "published": "2026-08-12T10:29:54Z",
+    "versions": "all"
+   },
+   {
+    "name": "axios-test-one",
+    "id": "MAL-2026-10727",
+    "published": "2026-07-16T18:45:35Z",
+    "versions": [
+     "1.19.0",
+     "1.19.1",
+     "1.19.6",
+     "1.19.5",
+     "1.19.2",
+     "1.19.4",
+     "1.19.7",
+     "1.19.3"
+    ]
+   },
+   {
+    "name": "@antv/translator",
+    "id": "MAL-2026-4091",
+    "published": "2026-05-19T00:00:00Z",
+    "versions": [
+     "1.1.1",
+     "1.2.1"
+    ]
+   },
+   {
+    "name": "@servicetitan/data-query",
+    "id": "MAL-2026-11849",
+    "published": "2026-08-04T13:18:52Z",
+    "versions": [
+     "41.3.1",
+     "41.3.2",
+     "41.3.3",
+     "41.3.4",
+     "41.3.5",
+     "41.3.6",
+     "41.3.7"
+    ]
+   },
+   {
+    "name": "jsonify-core",
+    "id": "MAL-2026-1298",
+    "published": "2026-03-09T22:44:51Z",
+    "versions": "all"
+   },
+   {
+    "name": "twork-data-services-counterfree",
+    "id": "MAL-2026-12289",
+    "published": "2026-08-05T09:15:13Z",
+    "versions": [
+     "20.1.3"
+    ]
+   },
+   {
+    "name": "yuji-baileys",
+    "id": "MAL-2026-1135",
+    "published": "2026-03-02T15:48:43Z",
+    "versions": "all"
+   },
+   {
+    "name": "@t-in-one/safe_local_storage_token",
+    "id": "MAL-2026-5045",
+    "published": "2026-05-29T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "private-payment-lib",
+    "id": "MAL-2026-345",
+    "published": "2026-01-19T00:59:52Z",
+    "versions": "all"
+   },
+   {
+    "name": "tinkoff-codeceptjs-storyshots-alpha",
+    "id": "MAL-2026-12237",
+    "published": "2026-08-05T08:57:26Z",
+    "versions": "all"
+   }
+  ],
+  "recent": [
+   {
+    "name": "strapi-plugin-persh-meeb",
+    "id": "MAL-2026-16237",
+    "published": "2026-09-16T13:58:49Z",
+    "versions": [
+     "3.6.8"
+    ]
+   },
+   {
+    "name": "@rutxploit-sec/waves-icons",
+    "id": "MAL-2026-17291",
+    "published": "2026-09-29T22:11:59Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "@vite-tab/tabui",
+    "id": "MAL-2026-16371",
+    "published": "2026-09-21T23:16:23Z",
+    "versions": "all"
+   },
+   {
+    "name": "itsmeeaizat-bailey",
+    "id": "MAL-2026-17311",
+    "published": "2026-09-30T01:46:43Z",
+    "versions": [
+     "1.0.4",
+     "1.0.3",
+     "1.0.5"
+    ]
+   },
+   {
+    "name": "@revizahoshii/hoshino",
+    "id": "MAL-2026-17376",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "@yggbrasil/api",
+    "id": "MAL-2026-16163",
+    "published": "2026-09-14T21:40:59Z",
+    "versions": "all"
+   },
+   {
+    "name": "vinzzsync-wacli",
+    "id": "MAL-2026-17211",
+    "published": "2026-09-28T05:55:23Z",
+    "versions": "all"
+   },
+   {
+    "name": "@woodpecker-web-shared/components",
+    "id": "MAL-2026-16354",
+    "published": "2026-09-21T17:20:37Z",
+    "versions": "all"
+   },
+   {
+    "name": "dotenv-native",
+    "id": "MAL-2026-17231",
+    "published": "2026-09-28T22:04:24Z",
+    "versions": [
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "strapi-plugin-conresh-meeb",
+    "id": "MAL-2026-16229",
+    "published": "2026-09-16T13:57:55Z",
+    "versions": [
+     "3.6.8"
+    ]
+   },
+   {
+    "name": "etoro-charts",
+    "id": "MAL-2026-16118",
+    "published": "2026-09-10T04:43:46Z",
+    "versions": [
+     "999.0.0",
+     "99.0.0"
+    ]
+   },
+   {
+    "name": "n8n-nodes-flowstats",
+    "id": "MAL-2026-17175",
+    "published": "2026-09-25T02:39:04Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "exptred",
+    "id": "MAL-2026-17246",
+    "published": "2026-09-29T07:12:49Z",
+    "versions": [
+     "5.2.1"
+    ]
+   },
+   {
+    "name": "@hrmony/pladddform-core",
+    "id": "MAL-2026-17275",
+    "published": "2026-09-29T16:29:18Z",
+    "versions": "all"
+   },
+   {
+    "name": "zero-baileys",
+    "id": "MAL-2026-16280",
+    "published": "2026-09-18T02:54:59Z",
+    "versions": [
+     "2.7.0"
+    ]
+   },
+   {
+    "name": "strapi-plugin-ccresh-meeb",
+    "id": "MAL-2026-16180",
+    "published": "2026-09-15T15:52:37Z",
+    "versions": [
+     "3.6.8"
+    ]
+   },
+   {
+    "name": "app-sca-info-banking",
+    "id": "MAL-2026-17182",
+    "published": "2026-09-25T08:35:37Z",
+    "versions": [
+     "0.0.24"
+    ]
+   },
+   {
+    "name": "node-env-buffer",
+    "id": "MAL-2026-16403",
+    "published": "2026-09-22T18:22:20Z",
+    "versions": "all"
+   },
+   {
+    "name": "jexkcode",
+    "id": "MAL-2026-16220",
+    "published": "2026-09-16T00:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "ui.dist.min.js",
+    "id": "MAL-2026-17460",
+    "published": "2026-10-02T21:26:23Z",
+    "versions": "all"
+   },
+   {
+    "name": "pf25262",
+    "id": "MAL-2026-16340",
+    "published": "2026-09-21T03:31:42Z",
+    "versions": "all"
+   },
+   {
+    "name": "tailwindcss-forms-ui",
+    "id": "MAL-2026-16295",
+    "published": "2026-09-18T20:25:14Z",
+    "versions": [
+     "0.5.2"
+    ]
+   },
+   {
+    "name": "element-plus-vite-cli",
+    "id": "MAL-2026-16331",
+    "published": "2026-09-21T03:30:48Z",
+    "versions": [
+     "2.9.3",
+     "2.9.5"
+    ]
+   },
+   {
+    "name": "z-deno-truth-bwhlsz",
+    "id": "MAL-2026-16470",
+    "published": "2026-09-23T05:08:32Z",
+    "versions": "all"
+   },
+   {
+    "name": "@saazkira/baileys",
+    "id": "MAL-2026-17377",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "xcvrenzcompany",
+    "id": "MAL-2026-17452",
+    "published": "2026-10-01T23:05:37Z",
+    "versions": "all"
+   },
+   {
+    "name": "tailwindcss-aspectratio-styles",
+    "id": "MAL-2026-16049",
+    "published": "2026-09-08T19:05:59Z",
+    "versions": [
+     "0.3.5",
+     "0.3.4"
+    ]
+   },
+   {
+    "name": "speaker_tagging_media_player",
+    "id": "MAL-2026-16539",
+    "published": "2026-09-22T17:41:03Z",
+    "versions": [
+     "9999.0.0"
+    ]
+   },
+   {
+    "name": "luftzxyuiwgbgsp",
+    "id": "MAL-2026-16451",
+    "published": "2026-09-23T02:44:19Z",
+    "versions": "all"
+   },
+   {
+    "name": "@kartyk-github-org/takedown-b",
+    "id": "MAL-2026-16266",
+    "published": "2026-09-17T20:18:03Z",
+    "versions": "all"
+   },
+   {
+    "name": "internallib_v949",
+    "id": "MAL-2026-16294",
+    "published": "2026-09-18T20:24:12Z",
+    "versions": "all"
+   },
+   {
+    "name": "@xayz/baileys",
+    "id": "MAL-2026-17384",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "hardhat-zet",
+    "id": "MAL-2026-17234",
+    "published": "2026-09-28T22:07:01Z",
+    "versions": "all"
+   },
+   {
+    "name": "@auction-fe/ui-kit",
+    "id": "MAL-2026-16109",
+    "published": "2026-09-09T22:26:40Z",
+    "versions": "all"
+   },
+   {
+    "name": "@firelordzuka/pulse-poc",
+    "id": "MAL-2026-17335",
+    "published": "2026-09-30T05:46:52Z",
+    "versions": "all"
+   },
+   {
+    "name": "dcftunnel",
+    "id": "MAL-2026-15975",
+    "published": "2026-09-06T03:12:58Z",
+    "versions": "all"
+   },
+   {
+    "name": "exodus-firestore-synchronize",
+    "id": "MAL-2026-16533",
+    "published": "2026-09-22T17:25:36Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "focaleys",
+    "id": "MAL-2026-17329",
+    "published": "2026-09-30T04:52:31Z",
+    "versions": [
+     "1.1.0"
+    ]
+   },
+   {
+    "name": "strapi-plugin-tryccresh-meeb",
+    "id": "MAL-2026-16190",
+    "published": "2026-09-15T15:53:02Z",
+    "versions": [
+     "3.6.8"
+    ]
+   },
+   {
+    "name": "@hrmony/benefit-sachbezug",
+    "id": "MAL-2026-17256",
+    "published": "2026-09-29T16:32:56Z",
+    "versions": "all"
+   },
+   {
+    "name": "z-deno-truth-ya1t4m",
+    "id": "MAL-2026-16472",
+    "published": "2026-09-23T05:08:33Z",
+    "versions": "all"
+   },
+   {
+    "name": "strapi-plugin-proccresh-meeb",
+    "id": "MAL-2026-16182",
+    "published": "2026-09-15T15:53:35Z",
+    "versions": [
+     "3.6.8"
+    ]
+   },
+   {
+    "name": "@bellaxchuu/belbails",
+    "id": "MAL-2026-17342",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "strapi-plugin-os-info-meeb322k",
+    "id": "MAL-2026-16152",
+    "published": "2026-09-14T16:44:18Z",
+    "versions": [
+     "3.6.8"
+    ]
+   },
+   {
+    "name": "uuid-date",
+    "id": "MAL-2026-17210",
+    "published": "2026-09-28T06:37:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "twilio-hackerone-poc-b8f21a",
+    "id": "MAL-2026-16097",
+    "published": "2026-09-09T17:45:31Z",
+    "versions": [
+     "1.0.1",
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "tempjs-template",
+    "id": "MAL-2026-16002",
+    "published": "2026-09-05T19:49:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "@client-web-next/cms",
+    "id": "MAL-2026-16498",
+    "published": "2026-09-22T17:02:21Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "xzvexpzcbailey",
+    "id": "MAL-2026-17412",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "fabric-asset-pipeline",
+    "id": "MAL-2026-17224",
+    "published": "2026-09-28T16:37:36Z",
+    "versions": [
+     "1.0.1",
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "@sahril2nd/baileys",
+    "id": "MAL-2026-16105",
+    "published": "2026-09-09T22:26:53Z",
+    "versions": [
+     "1.0.21"
+    ]
+   },
+   {
+    "name": "@siriusbeyond/utils",
+    "id": "MAL-2026-16322",
+    "published": "2026-09-21T03:28:40Z",
+    "versions": [
+     "99.0.0"
+    ]
+   },
+   {
+    "name": "plogme",
+    "id": "MAL-2026-16199",
+    "published": "2026-09-08T00:00:00Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1",
+     "1.0.2",
+     "1.0.3"
+    ]
+   },
+   {
+    "name": "common-fs",
+    "id": "MAL-2026-17300",
+    "published": "2026-09-29T23:24:07Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "oracle-redis",
+    "id": "MAL-2026-16390",
+    "published": "2026-09-22T18:08:06Z",
+    "versions": [
+     "5.11.3"
+    ]
+   },
+   {
+    "name": "puppeteer-obscura",
+    "id": "MAL-2026-16001",
+    "published": "2026-09-05T19:49:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "@baanx/solana-lib",
+    "id": "MAL-2026-16300",
+    "published": "2026-09-21T03:09:52Z",
+    "versions": "all"
+   },
+   {
+    "name": "easypanel-hosting",
+    "id": "MAL-2026-16075",
+    "published": "2026-09-09T05:33:15Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "imgbundle",
+    "id": "MAL-2026-17330",
+    "published": "2026-09-30T04:50:10Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "@nimbusedge/auth",
+    "id": "MAL-2026-16132",
+    "published": "2026-09-11T17:49:23Z",
+    "versions": [
+     "19999.1359.6",
+     "19999.0.4",
+     "19999.1337.7",
+     "19999.0.7",
+     "19999.1359.5",
+     "19999.1338.1",
+     "19999.1359.3",
+     "19999.1338.5",
+     "19999.1338.3",
+     "19999.1337.6",
+     "19999.1339.4",
+     "19999.1359.2",
+     "19999.1339.1",
+     "19999.1339.3",
+     "19999.1338.4",
+     "19999.0.5",
+     "19999.1360.4",
+     "19999.1337.5",
+     "19999.1339.2",
+     "19999.1338.7",
+     "19999.1359.4",
+     "19999.0.3",
+     "19999.1337.1",
+     "19999.0.2",
+     "19999.1360.5",
+     "19999.1360.3",
+     "19999.1338.6",
+     "19999.1337.4",
+     "19999.1338.8",
+     "19999.1359.1",
+     "19999.1339.5",
+     "19999.1360.2",
+     "19999.1337.2",
+     "19999.1337.8",
+     "19999.0.1",
+     "19999.1349.5",
+     "221.1.0",
+     "19999.0.6",
+     "19999.1360.1",
+     "19999.1338.2"
+    ]
+   },
+   {
+    "name": "enqueu",
+    "id": "MAL-2026-15979",
+    "published": "2026-09-05T19:49:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "c2-client",
+    "id": "MAL-2026-17165",
+    "published": "2026-09-24T14:49:22Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "runhelper",
+    "id": "MAL-2026-17332",
+    "published": "2026-09-30T05:29:04Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "discord-players",
+    "id": "MAL-2026-16213",
+    "published": "2026-09-16T06:37:12Z",
+    "versions": "all"
+   },
+   {
+    "name": "@hrmony/pladddform-frontend",
+    "id": "MAL-2026-17276",
+    "published": "2026-09-29T16:29:29Z",
+    "versions": "all"
+   },
+   {
+    "name": "@client-web-next/ab-tests",
+    "id": "MAL-2026-16494",
+    "published": "2026-09-22T17:02:19Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "sql-limit-enforcer",
+    "id": "MAL-2026-16151",
+    "published": "2026-09-14T16:52:54Z",
+    "versions": [
+     "10.0.0",
+     "10.0.1",
+     "10.0.2"
+    ]
+   },
+   {
+    "name": "strapi-plugin-ccrev-meeb",
+    "id": "MAL-2026-16228",
+    "published": "2026-09-16T13:59:29Z",
+    "versions": [
+     "3.6.8"
+    ]
+   },
+   {
+    "name": "@siriusbeyond/auth",
+    "id": "MAL-2026-16320",
+    "published": "2026-09-20T09:35:26Z",
+    "versions": [
+     "99.0.0"
+    ]
+   },
+   {
+    "name": "@traktis/environment",
+    "id": "MAL-2026-16223",
+    "published": "2026-09-16T13:59:51Z",
+    "versions": [
+     "99.99.1",
+     "99.99.2"
+    ]
+   },
+   {
+    "name": "sams-run-style",
+    "id": "MAL-2026-16090",
+    "published": "2026-09-09T15:09:14Z",
+    "versions": "all"
+   },
+   {
+    "name": "n8n-nodes-sysdiag2",
+    "id": "MAL-2026-16162",
+    "published": "2026-09-14T22:01:42Z",
+    "versions": [
+     "2.0.0"
+    ]
+   },
+   {
+    "name": "@tvg-mar/utils",
+    "id": "MAL-2026-16416",
+    "published": "2026-09-22T21:50:18Z",
+    "versions": [
+     "9.9.10"
+    ]
+   },
+   {
+    "name": "@cat-gen/material",
+    "id": "MAL-2026-17334",
+    "published": "2026-09-30T05:54:48Z",
+    "versions": "all"
+   },
+   {
+    "name": "strapi-plugin-ccip-meeb",
+    "id": "MAL-2026-16226",
+    "published": "2026-09-16T13:58:20Z",
+    "versions": [
+     "3.6.8"
+    ]
+   },
+   {
+    "name": "hardhat-base",
+    "id": "MAL-2026-16348",
+    "published": "2026-09-21T16:41:31Z",
+    "versions": [
+     "2.2.2",
+     "2.2.0"
+    ]
+   },
+   {
+    "name": "ragacateslikodi",
+    "id": "MAL-2026-16252",
+    "published": "2026-09-17T14:29:34Z",
+    "versions": "all"
+   },
+   {
+    "name": "@bellaxchuu/flowblue",
+    "id": "MAL-2026-17345",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "eth-query-utils",
+    "id": "MAL-2026-15982",
+    "published": "2026-09-05T19:26:13Z",
+    "versions": "all"
+   },
+   {
+    "name": "@sairidev/baileys-new",
+    "id": "MAL-2026-17378",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "test1sdsd2",
+    "id": "MAL-2026-16316",
+    "published": "2026-09-21T03:24:04Z",
+    "versions": [
+     "99.99.99"
+    ]
+   },
+   {
+    "name": "sk-lib-enc",
+    "id": "MAL-2026-17284",
+    "published": "2026-09-29T17:30:01Z",
+    "versions": "all"
+   },
+   {
+    "name": "@client-web-next/footer",
+    "id": "MAL-2026-16502",
+    "published": "2026-09-22T17:02:33Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "@uol-afiliados/affiliated-config-lib",
+    "id": "MAL-2026-16370",
+    "published": "2026-09-21T21:31:29Z",
+    "versions": "all"
+   },
+   {
+    "name": "test12vv36",
+    "id": "MAL-2026-16311",
+    "published": "2026-09-21T03:23:35Z",
+    "versions": [
+     "99.99.99"
+    ]
+   },
+   {
+    "name": "@hrmony/cdk-constructs",
+    "id": "MAL-2026-17258",
+    "published": "2026-09-29T16:33:26Z",
+    "versions": "all"
+   },
+   {
+    "name": "wos-library",
+    "id": "MAL-2026-16373",
+    "published": "2026-09-21T23:37:27Z",
+    "versions": "all"
+   },
+   {
+    "name": "@auction-fe/reporting-system",
+    "id": "MAL-2026-16108",
+    "published": "2026-09-09T22:26:40Z",
+    "versions": "all"
+   },
+   {
+    "name": "@bellaxchuu/privatebails",
+    "id": "MAL-2026-17346",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "strapi-plugin-vinsoc-1109",
+    "id": "MAL-2026-16126",
+    "published": "2026-09-11T07:51:51Z",
+    "versions": [
+     "3.6.8"
+    ]
+   },
+   {
+    "name": "memov",
+    "id": "MAL-2026-15994",
+    "published": "2026-09-05T19:49:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "@wizloft/harness-evidence",
+    "id": "MAL-2026-16426",
+    "published": "2026-09-23T00:24:45Z",
+    "versions": "all"
+   },
+   {
+    "name": "@aircanada/components",
+    "id": "MAL-2026-16018",
+    "published": "2026-09-07T16:37:50Z",
+    "versions": "all"
+   },
+   {
+    "name": "@noxleyss/baileys",
+    "id": "MAL-2026-17369",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "@egencia/uitk-global-styles-6",
+    "id": "MAL-2026-16517",
+    "published": "2026-09-22T17:03:38Z",
+    "versions": [
+     "99.99.9"
+    ]
+   },
+   {
+    "name": "chai-testing",
+    "id": "MAL-2026-16307",
+    "published": "2026-09-21T03:20:32Z",
+    "versions": [
+     "1.1.4"
+    ]
+   },
+   {
+    "name": "@client-web-next/api-metrics",
+    "id": "MAL-2026-16497",
+    "published": "2026-09-22T17:02:21Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "@hrmony/lohndateien",
+    "id": "MAL-2026-17267",
+    "published": "2026-09-29T16:29:39Z",
+    "versions": "all"
+   },
+   {
+    "name": "tailwindcss-form-utils",
+    "id": "MAL-2026-16263",
+    "published": "2026-09-17T19:51:00Z",
+    "versions": [
+     "0.5.1"
+    ]
+   },
+   {
+    "name": "@neroxkira/vangal-baileys",
+    "id": "MAL-2026-16103",
+    "published": "2026-09-09T22:27:01Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "caphsmgiwy",
+    "id": "MAL-2026-16447",
+    "published": "2026-09-23T02:44:19Z",
+    "versions": "all"
+   },
+   {
+    "name": "testmgkregme",
+    "id": "MAL-2026-16317",
+    "published": "2026-09-21T03:23:55Z",
+    "versions": [
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "chai-as-indexed",
+    "id": "MAL-2026-16293",
+    "published": "2026-09-18T20:25:47Z",
+    "versions": [
+     "7.2.8"
+    ]
+   },
+   {
+    "name": "kartyk-github-token-pkg",
+    "id": "MAL-2026-16246",
+    "published": "2026-09-16T23:31:17Z",
+    "versions": "all"
+   },
+   {
+    "name": "spark-common",
+    "id": "MAL-2026-16537",
+    "published": "2026-09-22T17:40:51Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "@kanaraa/baileys",
+    "id": "MAL-2026-17361",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "luftmvfiwgxydes",
+    "id": "MAL-2026-16398",
+    "published": "2026-09-22T18:13:09Z",
+    "versions": "all"
+   },
+   {
+    "name": "lazy-attr",
+    "id": "MAL-2026-15992",
+    "published": "2026-09-05T19:49:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "tailwindcss-form",
+    "id": "MAL-2026-16282",
+    "published": "2026-09-18T04:31:16Z",
+    "versions": [
+     "0.5.1"
+    ]
+   },
+   {
+    "name": "@nimbusedge2/auth",
+    "id": "MAL-2026-16302",
+    "published": "2026-09-21T03:06:56Z",
+    "versions": [
+     "1.1.1"
+    ]
+   },
+   {
+    "name": "swnwall",
+    "id": "MAL-2026-16211",
+    "published": "2026-09-16T06:28:43Z",
+    "versions": [
+     "1.2.10"
+    ]
+   },
+   {
+    "name": "@client-web-next/navigation-link",
+    "id": "MAL-2026-16505",
+    "published": "2026-09-22T17:02:34Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "polygon-toolkits-validator",
+    "id": "MAL-2026-16087",
+    "published": "2026-09-09T14:00:00Z",
+    "versions": "all"
+   },
+   {
+    "name": "@wizloft/harness-commands",
+    "id": "MAL-2026-16425",
+    "published": "2026-09-23T00:24:46Z",
+    "versions": "all"
+   },
+   {
+    "name": "n8n-nodes-data-transformer-utils",
+    "id": "MAL-2026-16418",
+    "published": "2026-09-22T21:52:37Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "link-age-great",
+    "id": "MAL-2026-17337",
+    "published": "2026-09-30T05:45:42Z",
+    "versions": "all"
+   },
+   {
+    "name": "@hrmony/benefit-mobilitaet",
+    "id": "MAL-2026-17255",
+    "published": "2026-09-29T16:33:17Z",
+    "versions": "all"
+   },
+   {
+    "name": "exptrdd",
+    "id": "MAL-2026-17245",
+    "published": "2026-09-29T07:12:49Z",
+    "versions": [
+     "5.2.1"
+    ]
+   },
+   {
+    "name": "webp-https-errors",
+    "id": "MAL-2026-16459",
+    "published": "2026-09-23T02:48:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "kartykp-prod-oidc-test-pkg",
+    "id": "MAL-2026-16197",
+    "published": "2026-09-15T22:39:53Z",
+    "versions": [
+     "1.0.3",
+     "1.0.4"
+    ]
+   },
+   {
+    "name": "react-nodejs",
+    "id": "MAL-2026-17294",
+    "published": "2026-09-29T07:12:49Z",
+    "versions": [
+     "19.3.0"
+    ]
+   },
+   {
+    "name": "randompkge",
+    "id": "MAL-2026-16259",
+    "published": "2026-09-17T14:59:20Z",
+    "versions": "all"
+   },
+   {
+    "name": "@hrmony/pladddform-shared-infrastructure",
+    "id": "MAL-2026-17279",
+    "published": "2026-09-29T16:31:18Z",
+    "versions": "all"
+   },
+   {
+    "name": "zeal-util-hooks",
+    "id": "MAL-2026-16541",
+    "published": "2026-09-22T17:46:48Z",
+    "versions": [
+     "0.0.0"
+    ]
+   },
+   {
+    "name": "my-skibidi",
+    "id": "MAL-2026-17217",
+    "published": "2026-09-28T15:54:30Z",
+    "versions": [
+     "1.1.6",
+     "1.1.5",
+     "1.1.4",
+     "1.1.3",
+     "1.1.2",
+     "1.1.1",
+     "1.0.3",
+     "1.0.2",
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "test1df23",
+    "id": "MAL-2026-16312",
+    "published": "2026-09-21T03:23:16Z",
+    "versions": [
+     "99.99.99"
+    ]
+   },
+   {
+    "name": "xzvbailey",
+    "id": "MAL-2026-16278",
+    "published": "2026-09-18T02:57:47Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "tailwind-forms-styles",
+    "id": "MAL-2026-16195",
+    "published": "2026-09-15T15:54:48Z",
+    "versions": "all"
+   },
+   {
+    "name": "riot-private",
+    "id": "MAL-2026-17208",
+    "published": "2026-09-28T06:15:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "mfahelper",
+    "id": "MAL-2026-17308",
+    "published": "2026-09-30T01:00:23Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "kartykp-token-pkg",
+    "id": "MAL-2026-16198",
+    "published": "2026-09-15T22:27:22Z",
+    "versions": [
+     "1.0.2"
+    ]
+   },
+   {
+    "name": "linkpreview-simple",
+    "id": "MAL-2026-15993",
+    "published": "2026-09-05T19:49:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "esm-dotenv",
+    "id": "MAL-2026-17305",
+    "published": "2026-09-30T01:28:18Z",
+    "versions": [
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "tailwind-aspect-styles",
+    "id": "MAL-2026-16056",
+    "published": "2026-09-08T23:55:46Z",
+    "versions": [
+     "0.4.2"
+    ]
+   },
+   {
+    "name": "action-slack-message-root",
+    "id": "MAL-2026-16323",
+    "published": "2026-09-21T03:30:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "tetotest",
+    "id": "MAL-2026-16217",
+    "published": "2026-09-16T06:35:28Z",
+    "versions": [
+     "14.0.0"
+    ]
+   },
+   {
+    "name": "ui-base-colors",
+    "id": "MAL-2026-17459",
+    "published": "2026-10-02T21:26:23Z",
+    "versions": "all"
+   },
+   {
+    "name": "node-helper",
+    "id": "MAL-2026-15997",
+    "published": "2026-09-06T03:02:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "nebula-llm",
+    "id": "MAL-2026-17227",
+    "published": "2026-09-28T18:07:36Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "@wizloft/harness-plugin-file-events",
+    "id": "MAL-2026-16429",
+    "published": "2026-09-23T00:24:45Z",
+    "versions": "all"
+   },
+   {
+    "name": "kartykgithub-multiversion-a",
+    "id": "MAL-2026-16272",
+    "published": "2026-09-17T21:53:44Z",
+    "versions": [
+     "1.0.1",
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "noverojava",
+    "id": "MAL-2026-16389",
+    "published": "2026-09-22T18:07:09Z",
+    "versions": [
+     "1.1.0",
+     "1.0.9"
+    ]
+   },
+   {
+    "name": "kartykgithub-ph-f",
+    "id": "MAL-2026-17426",
+    "published": "2026-10-02T04:17:20Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "llm-nebula",
+    "id": "MAL-2026-17230",
+    "published": "2026-09-28T19:36:11Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "oce-configurator-wireless-frontend",
+    "id": "MAL-2026-15940",
+    "published": "2026-09-06T20:35:56Z",
+    "versions": [
+     "0.0.1",
+     "9999.0.0"
+    ]
+   },
+   {
+    "name": "muswish",
+    "id": "MAL-2026-15996",
+    "published": "2026-09-05T19:49:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "strapi-plugin-maylog-meeb",
+    "id": "MAL-2026-16233",
+    "published": "2026-09-16T13:57:29Z",
+    "versions": [
+     "3.6.8"
+    ]
+   },
+   {
+    "name": "@httttt/mcp-npx-fetch-1",
+    "id": "MAL-2026-16422",
+    "published": "2026-09-23T00:24:09Z",
+    "versions": "all"
+   },
+   {
+    "name": "@ikanngeming/ikannbail",
+    "id": "MAL-2026-17355",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "envforge3",
+    "id": "MAL-2026-16393",
+    "published": "2026-09-22T18:22:20Z",
+    "versions": "all"
+   },
+   {
+    "name": "eslint-config-compact-utils",
+    "id": "MAL-2026-16417",
+    "published": "2026-09-22T17:31:11Z",
+    "versions": [
+     "1.0.2",
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "arsya-baileys",
+    "id": "MAL-2026-17387",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "live-detection-dashboard",
+    "id": "MAL-2026-17434",
+    "published": "2026-09-30T07:11:22Z",
+    "versions": "all"
+   },
+   {
+    "name": "@hrmony/pladddform-cli",
+    "id": "MAL-2026-17272",
+    "published": "2026-09-29T16:31:38Z",
+    "versions": "all"
+   },
+   {
+    "name": "agency-testts",
+    "id": "MAL-2026-17171",
+    "published": "2026-09-25T02:38:03Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "@wbnr/lottiefiles-loader",
+    "id": "MAL-2026-17205",
+    "published": "2026-09-28T06:46:04Z",
+    "versions": "all"
+   },
+   {
+    "name": "test89078-auth",
+    "id": "MAL-2026-16271",
+    "published": "2026-09-17T23:12:41Z",
+    "versions": [
+     "99.99.99"
+    ]
+   },
+   {
+    "name": "debounce-throttle-base",
+    "id": "MAL-2026-16448",
+    "published": "2026-09-23T02:48:05Z",
+    "versions": "all"
+   },
+   {
+    "name": "@dbbhk/ui-components",
+    "id": "MAL-2026-16319",
+    "published": "2026-09-21T03:28:30Z",
+    "versions": [
+     "99.0.0"
+    ]
+   },
+   {
+    "name": "easypanel-agent",
+    "id": "MAL-2026-16072",
+    "published": "2026-09-09T05:33:53Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "cb-wallet-env",
+    "id": "MAL-2026-16028",
+    "published": "2026-09-07T04:56:55Z",
+    "versions": "all"
+   },
+   {
+    "name": "xa424234657567",
+    "id": "MAL-2026-16277",
+    "published": "2026-09-18T02:56:09Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "@usemosaik/template-react-js",
+    "id": "MAL-2026-16047",
+    "published": "2026-09-08T16:37:43Z",
+    "versions": [
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "exprdd",
+    "id": "MAL-2026-17241",
+    "published": "2026-09-29T07:12:49Z",
+    "versions": [
+     "5.2.1"
+    ]
+   },
+   {
+    "name": "randompkgc",
+    "id": "MAL-2026-16257",
+    "published": "2026-09-17T14:59:20Z",
+    "versions": "all"
+   },
+   {
+    "name": "tibcwmpoeafh",
+    "id": "MAL-2026-16457",
+    "published": "2026-09-23T02:44:19Z",
+    "versions": "all"
+   },
+   {
+    "name": "shadowmd",
+    "id": "MAL-2026-17405",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "fabric-render-bridge",
+    "id": "MAL-2026-17225",
+    "published": "2026-09-28T18:02:39Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "strapi-plugin-resh-meeb322k",
+    "id": "MAL-2026-16183",
+    "published": "2026-09-15T15:53:09Z",
+    "versions": [
+     "3.6.8"
+    ]
+   },
+   {
+    "name": "@ikyyjee/ikkysingle",
+    "id": "MAL-2026-17356",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "@cartradetech/example-package",
+    "id": "MAL-2026-16492",
+    "published": "2026-09-22T17:01:48Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "@client-web-next/logger",
+    "id": "MAL-2026-16504",
+    "published": "2026-09-22T17:02:34Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "siriusbeyond",
+    "id": "MAL-2026-16343",
+    "published": "2026-09-21T03:29:11Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "@bb1ptest23/test-paket",
+    "id": "MAL-2026-17201",
+    "published": "2026-09-28T01:30:57Z",
+    "versions": [
+     "1.0.3"
+    ]
+   },
+   {
+    "name": "@akapaki/baileys",
+    "id": "MAL-2026-17285",
+    "published": "2026-09-29T21:11:58Z",
+    "versions": [
+     "1.0.0",
+     "1.0.2",
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "@client-web-next/origination-microfront",
+    "id": "MAL-2026-16506",
+    "published": "2026-09-22T17:02:35Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "@client-web-next/adaptive",
+    "id": "MAL-2026-16495",
+    "published": "2026-09-22T17:02:19Z",
+    "versions": [
+     "0.0.1"
+    ]
+   },
+   {
+    "name": "@bluewin/utils",
+    "id": "MAL-2026-17437",
+    "published": "2026-10-01T02:40:08Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "base-account-core",
+    "id": "MAL-2026-16022",
+    "published": "2026-09-07T04:56:56Z",
+    "versions": "all"
+   },
+   {
+    "name": "sea-baileys",
+    "id": "MAL-2026-16473",
+    "published": "2026-09-23T09:07:47Z",
+    "versions": [
+     "1.0.2"
+    ]
+   },
+   {
+    "name": "@larocas-bbresearch/tp-probe-e29834ce",
+    "id": "MAL-2026-16529",
+    "published": "2026-09-22T17:06:36Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "@tvg-mar/promos-context",
+    "id": "MAL-2026-16412",
+    "published": "2026-09-22T21:50:59Z",
+    "versions": [
+     "9.9.10"
+    ]
+   },
+   {
+    "name": "@yoannchb/cattract",
+    "id": "MAL-2026-15964",
+    "published": "2026-09-05T19:49:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "starbucks-sdk",
+    "id": "MAL-2026-16345",
+    "published": "2026-09-20T00:45:28Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "@yuva2210/poc-depconf",
+    "id": "MAL-2026-16532",
+    "published": "2026-09-22T17:14:21Z",
+    "versions": [
+     "1.0.0",
+     "1.0.1"
+    ]
+   },
+   {
+    "name": "my-company-device",
+    "id": "MAL-2026-16443",
+    "published": "2026-09-23T02:43:06Z",
+    "versions": [
+     "0.1.0",
+     "0.1.1"
+    ]
+   },
+   {
+    "name": "nebula-sdk",
+    "id": "MAL-2026-17219",
+    "published": "2026-09-28T16:05:39Z",
+    "versions": "all"
+   },
+   {
+    "name": "@wanzlonely/bails4u",
+    "id": "MAL-2026-17381",
+    "published": "2026-09-30T09:57:36Z",
+    "versions": "all"
+   },
+   {
+    "name": "@yoannchb/tokenize",
+    "id": "MAL-2026-15966",
+    "published": "2026-09-05T19:49:11Z",
+    "versions": "all"
+   },
+   {
+    "name": "simple-date-formatter-new-14",
+    "id": "MAL-2026-17160",
+    "published": "2026-09-24T13:17:15Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "tanksync",
+    "id": "MAL-2026-17209",
+    "published": "2026-09-28T05:54:47Z",
+    "versions": "all"
+   },
+   {
+    "name": "n8n-nodes-buildcheck",
+    "id": "MAL-2026-16177",
+    "published": "2026-09-15T15:53:20Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "openmct-heatmap",
+    "id": "MAL-2026-16287",
+    "published": "2026-09-18T16:01:51Z",
+    "versions": "all"
+   },
+   {
+    "name": "@asenfotech/unplugin-element-plus",
+    "id": "MAL-2026-16318",
+    "published": "2026-09-21T03:31:05Z",
+    "versions": [
+     "2.9.5",
+     "2.9.3"
+    ]
+   },
+   {
+    "name": "@hrmony/gutscheinverwaltung",
+    "id": "MAL-2026-17261",
+    "published": "2026-09-29T16:29:09Z",
+    "versions": "all"
+   },
+   {
+    "name": "@biz44/runtime-utils",
+    "id": "MAL-2026-16172",
+    "published": "2026-09-14T03:39:58Z",
+    "versions": [
+     "1.1.11",
+     "1.1.13",
+     "1.1.81",
+     "1.1.96",
+     "1.1.100"
+    ]
+   },
+   {
+    "name": "fca-raihan",
+    "id": "MAL-2026-17328",
+    "published": "2026-09-30T04:51:09Z",
+    "versions": [
+     "37.2.5",
+     "37.2.6"
+    ]
+   },
+   {
+    "name": "@digift/cli",
+    "id": "MAL-2026-17187",
+    "published": "2026-09-25T18:29:23Z",
+    "versions": "all"
+   },
+   {
+    "name": "vishal_312pkg",
+    "id": "MAL-2026-16006",
+    "published": "2026-09-06T12:45:40Z",
+    "versions": [
+     "1.0.0"
+    ]
+   },
+   {
+    "name": "tuxcmdfhjkw",
+    "id": "MAL-2026-16458",
+    "published": "2026-09-23T02:44:19Z",
+    "versions": "all"
+   }
+  ]
+ }
+}

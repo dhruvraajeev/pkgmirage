@@ -1,0 +1,6010 @@
+{
+ "source": "ecosyste.ms https://packages.ecosyste.ms/api/v1/registries/pypi.org/package_names?sort=downloads (data CC BY-SA 4.0)",
+ "fetchedAt": "2026-10-04T23:29:44.767Z",
+ "groups": {
+  "top": [
+   {
+    "name": "mkl",
+    "rank": 6772
+   },
+   {
+    "name": "svcs",
+    "rank": 1928
+   },
+   {
+    "name": "cos-python-sdk-v5",
+    "rank": 5315
+   },
+   {
+    "name": "pyfiglet",
+    "rank": 1658
+   },
+   {
+    "name": "cron-descriptor",
+    "rank": 882
+   },
+   {
+    "name": "aa-memberaudit-dashboard",
+    "rank": 7610
+   },
+   {
+    "name": "mypy-boto3-transcribe",
+    "rank": 2826
+   },
+   {
+    "name": "quantstats",
+    "rank": 5468
+   },
+   {
+    "name": "boa-str",
+    "rank": 2574
+   },
+   {
+    "name": "django-pg-zero-downtime-migrations",
+    "rank": 6837
+   },
+   {
+    "name": "pyfftw",
+    "rank": 7968
+   },
+   {
+    "name": "azure-mgmt-reservations",
+    "rank": 3058
+   },
+   {
+    "name": "tweepy",
+    "rank": 2369
+   },
+   {
+    "name": "types-six",
+    "rank": 1996
+   },
+   {
+    "name": "diff-parser",
+    "rank": 6312
+   },
+   {
+    "name": "opentelemetry-exporter-zipkin-json",
+    "rank": 7393
+   },
+   {
+    "name": "rarfile",
+    "rank": 2947
+   },
+   {
+    "name": "mypy-boto3-codestar-connections",
+    "rank": 4846
+   },
+   {
+    "name": "tsdownsample",
+    "rank": 6918
+   },
+   {
+    "name": "pyiso8583",
+    "rank": 6706
+   },
+   {
+    "name": "sigfig",
+    "rank": 5571
+   },
+   {
+    "name": "nanopb",
+    "rank": 6095
+   },
+   {
+    "name": "pvporcupine",
+    "rank": 5663
+   },
+   {
+    "name": "leanclient",
+    "rank": 4073
+   },
+   {
+    "name": "nvidia-cusparse-cu12",
+    "rank": 661
+   },
+   {
+    "name": "omegaconf",
+    "rank": 663
+   },
+   {
+    "name": "voyager",
+    "rank": 8769
+   },
+   {
+    "name": "mypy-boto3-compute-optimizer-automation",
+    "rank": 3226
+   },
+   {
+    "name": "flask-threads",
+    "rank": 4261
+   },
+   {
+    "name": "browserstack-local",
+    "rank": 6361
+   },
+   {
+    "name": "botbuilder-integration-aiohttp",
+    "rank": 6063
+   },
+   {
+    "name": "ecdsa",
+    "rank": 492
+   },
+   {
+    "name": "sacrebleu",
+    "rank": 2324
+   },
+   {
+    "name": "llama-index-vector-stores-pinecone",
+    "rank": 8037
+   },
+   {
+    "name": "google-cloud-dataproc",
+    "rank": 1082
+   },
+   {
+    "name": "soldr",
+    "rank": 9572
+   },
+   {
+    "name": "aws-embedded-metrics",
+    "rank": 3228
+   },
+   {
+    "name": "asyncssh",
+    "rank": 1127
+   },
+   {
+    "name": "trackio",
+    "rank": 7193
+   },
+   {
+    "name": "safehttpx",
+    "rank": 2001
+   },
+   {
+    "name": "pin",
+    "rank": 3933
+   },
+   {
+    "name": "compoundfiles",
+    "rank": 7281
+   },
+   {
+    "name": "pydot",
+    "rank": 911
+   },
+   {
+    "name": "pybaseball",
+    "rank": 7648
+   },
+   {
+    "name": "pymemcache",
+    "rank": 2512
+   },
+   {
+    "name": "pydes",
+    "rank": 8127
+   },
+   {
+    "name": "scikit-survival",
+    "rank": 9226
+   },
+   {
+    "name": "kedro-viz",
+    "rank": 3600
+   },
+   {
+    "name": "tree-sitter-language-pack",
+    "rank": 1906
+   },
+   {
+    "name": "aws-encryption-sdk",
+    "rank": 2302
+   },
+   {
+    "name": "diskcache-stubs",
+    "rank": 8049
+   },
+   {
+    "name": "anyconfig",
+    "rank": 5629
+   },
+   {
+    "name": "warc3-wet-clueweb09",
+    "rank": 7034
+   },
+   {
+    "name": "jinja2-humanize-extension",
+    "rank": 1301
+   },
+   {
+    "name": "types-stripe",
+    "rank": 4792
+   },
+   {
+    "name": "polars-ds",
+    "rank": 9221
+   },
+   {
+    "name": "runai-model-streamer-s3",
+    "rank": 5897
+   },
+   {
+    "name": "numpy-groupies",
+    "rank": 8379
+   },
+   {
+    "name": "openapi-schema-validator",
+    "rank": 883
+   },
+   {
+    "name": "tb-nightly",
+    "rank": 7773
+   },
+   {
+    "name": "click-compose",
+    "rank": 9504
+   },
+   {
+    "name": "yamale",
+    "rank": 2745
+   },
+   {
+    "name": "sendgrid",
+    "rank": 811
+   },
+   {
+    "name": "seqlog",
+    "rank": 6828
+   },
+   {
+    "name": "prefect",
+    "rank": 1487
+   },
+   {
+    "name": "trame-client",
+    "rank": 3507
+   },
+   {
+    "name": "brevo-python",
+    "rank": 7593
+   },
+   {
+    "name": "pytest-assume",
+    "rank": 6627
+   },
+   {
+    "name": "click",
+    "rank": 21
+   },
+   {
+    "name": "types-aiobotocore-elbv2",
+    "rank": 6692
+   },
+   {
+    "name": "unicode-rbnf",
+    "rank": 8164
+   },
+   {
+    "name": "chacha20poly1305-reuseable",
+    "rank": 7441
+   },
+   {
+    "name": "pytest-anyio",
+    "rank": 4397
+   },
+   {
+    "name": "ml-dtypes",
+    "rank": 662
+   },
+   {
+    "name": "mmhash3",
+    "rank": 6625
+   },
+   {
+    "name": "cfgrib",
+    "rank": 5172
+   },
+   {
+    "name": "umf",
+    "rank": 6322
+   },
+   {
+    "name": "celery",
+    "rank": 466
+   },
+   {
+    "name": "vokativ",
+    "rank": 9460
+   },
+   {
+    "name": "statsmodels",
+    "rank": 594
+   },
+   {
+    "name": "mysql-replication",
+    "rank": 5555
+   },
+   {
+    "name": "types-croniter",
+    "rank": 1206
+   },
+   {
+    "name": "snapshot-restore-py",
+    "rank": 3256
+   },
+   {
+    "name": "klayout",
+    "rank": 4849
+   },
+   {
+    "name": "llama-index-vector-stores-postgres",
+    "rank": 5602
+   },
+   {
+    "name": "mutagen",
+    "rank": 1506
+   },
+   {
+    "name": "janaf",
+    "rank": 4787
+   },
+   {
+    "name": "swanlab",
+    "rank": 7918
+   },
+   {
+    "name": "rich-toolkit",
+    "rank": 325
+   },
+   {
+    "name": "s3tokenizer",
+    "rank": 7702
+   },
+   {
+    "name": "ramp-packer",
+    "rank": 9294
+   },
+   {
+    "name": "google-cloud-alloydb-connector",
+    "rank": 4150
+   },
+   {
+    "name": "types-aiobotocore-iam",
+    "rank": 9062
+   },
+   {
+    "name": "python-whois",
+    "rank": 3162
+   },
+   {
+    "name": "pydantic-handlebars",
+    "rank": 2954
+   },
+   {
+    "name": "daqp",
+    "rank": 5599
+   },
+   {
+    "name": "stactools-met-office-deterministic",
+    "rank": 3212
+   },
+   {
+    "name": "launchdarkly-server-sdk",
+    "rank": 1254
+   },
+   {
+    "name": "taplo",
+    "rank": 6065
+   },
+   {
+    "name": "django-filter-stubs",
+    "rank": 7950
+   },
+   {
+    "name": "django-types",
+    "rank": 3795
+   },
+   {
+    "name": "git-python",
+    "rank": 5421
+   },
+   {
+    "name": "rclone-python",
+    "rank": 5727
+   },
+   {
+    "name": "pyobjc-framework-mediaplayer",
+    "rank": 6260
+   },
+   {
+    "name": "sglang",
+    "rank": 2580
+   },
+   {
+    "name": "marshmallow-mongoengine",
+    "rank": 9271
+   },
+   {
+    "name": "pytest-cache",
+    "rank": 4329
+   },
+   {
+    "name": "litdata",
+    "rank": 9298
+   },
+   {
+    "name": "sklearn-crfsuite",
+    "rank": 5835
+   },
+   {
+    "name": "cosmic-ray",
+    "rank": 5581
+   },
+   {
+    "name": "django-permissions-policy",
+    "rank": 6650
+   },
+   {
+    "name": "dvc-render",
+    "rank": 2966
+   },
+   {
+    "name": "requests-hardened",
+    "rank": 8104
+   },
+   {
+    "name": "impyla",
+    "rank": 3994
+   },
+   {
+    "name": "aiomqtt",
+    "rank": 4049
+   },
+   {
+    "name": "requests-oauthlib",
+    "rank": 115
+   },
+   {
+    "name": "snowflake-snowpark-python",
+    "rank": 1201
+   },
+   {
+    "name": "pypika",
+    "rank": 1332
+   },
+   {
+    "name": "mypy-boto3-chime-sdk-messaging",
+    "rank": 3472
+   },
+   {
+    "name": "pycln",
+    "rank": 6789
+   },
+   {
+    "name": "patsy",
+    "rank": 625
+   },
+   {
+    "name": "jstyleson",
+    "rank": 6005
+   },
+   {
+    "name": "srsly",
+    "rank": 794
+   },
+   {
+    "name": "openapi-python-client",
+    "rank": 2335
+   },
+   {
+    "name": "schedule",
+    "rank": 1629
+   },
+   {
+    "name": "newrelic-telemetry-sdk",
+    "rank": 5353
+   },
+   {
+    "name": "zhon",
+    "rank": 5798
+   },
+   {
+    "name": "setoptconf-tmp",
+    "rank": 6783
+   },
+   {
+    "name": "dspy",
+    "rank": 1703
+   },
+   {
+    "name": "watchdog",
+    "rank": 302
+   },
+   {
+    "name": "pqdm",
+    "rank": 6732
+   },
+   {
+    "name": "pyobjc-framework-diskarbitration",
+    "rank": 9264
+   },
+   {
+    "name": "croniter",
+    "rank": 318
+   },
+   {
+    "name": "rootutils",
+    "rank": 8485
+   },
+   {
+    "name": "pydantic-collections",
+    "rank": 5129
+   },
+   {
+    "name": "pyap",
+    "rank": 6463
+   },
+   {
+    "name": "pg8000",
+    "rank": 461
+   },
+   {
+    "name": "openccu-loom-client",
+    "rank": 9193
+   },
+   {
+    "name": "faster-whisper",
+    "rank": 1329
+   },
+   {
+    "name": "azure-mgmt-logic",
+    "rank": 3720
+   },
+   {
+    "name": "clipboard",
+    "rank": 5779
+   },
+   {
+    "name": "setuptools-scm-git-archive",
+    "rank": 4187
+   },
+   {
+    "name": "mecab",
+    "rank": 5477
+   },
+   {
+    "name": "langdetect",
+    "rank": 1224
+   },
+   {
+    "name": "image-similarity-measures",
+    "rank": 9981
+   },
+   {
+    "name": "pykdtree",
+    "rank": 9205
+   },
+   {
+    "name": "python-lsp-ruff",
+    "rank": 6197
+   },
+   {
+    "name": "django-picklefield",
+    "rank": 3752
+   },
+   {
+    "name": "databricks",
+    "rank": 2719
+   },
+   {
+    "name": "google-cloud-os-config",
+    "rank": 4064
+   },
+   {
+    "name": "pact-python",
+    "rank": 3777
+   },
+   {
+    "name": "future",
+    "rank": 465
+   },
+   {
+    "name": "mozilla-repo-urls",
+    "rank": 4890
+   },
+   {
+    "name": "ijson",
+    "rank": 493
+   },
+   {
+    "name": "z3-solver",
+    "rank": 1748
+   },
+   {
+    "name": "nvidia-nvshmem-cu12",
+    "rank": 1430
+   },
+   {
+    "name": "correctionlib",
+    "rank": 5686
+   },
+   {
+    "name": "posthoganalytics",
+    "rank": 3281
+   },
+   {
+    "name": "datadog-checks-base",
+    "rank": 5022
+   },
+   {
+    "name": "axe-selenium-python",
+    "rank": 8186
+   },
+   {
+    "name": "pyaescrypt",
+    "rank": 8838
+   },
+   {
+    "name": "attr",
+    "rank": 5598
+   },
+   {
+    "name": "texterrors",
+    "rank": 8557
+   },
+   {
+    "name": "pytest-httpx",
+    "rank": 828
+   },
+   {
+    "name": "mypy-boto3-auditmanager",
+    "rank": 5801
+   },
+   {
+    "name": "mypy-boto3-ce",
+    "rank": 3078
+   },
+   {
+    "name": "nbdime",
+    "rank": 9091
+   },
+   {
+    "name": "types-pyopenssl",
+    "rank": 1009
+   },
+   {
+    "name": "opencensus-ext-logging",
+    "rank": 6785
+   },
+   {
+    "name": "gzip-stream",
+    "rank": 5130
+   },
+   {
+    "name": "opentelemetry-instrumentation-aiopg",
+    "rank": 2565
+   },
+   {
+    "name": "types-aiobotocore-sqs",
+    "rank": 2374
+   },
+   {
+    "name": "pcpp",
+    "rank": 4556
+   },
+   {
+    "name": "daytona_toolbox_api_client",
+    "rank": 1268
+   },
+   {
+    "name": "nvidia-cuda-nvrtc-cu12",
+    "rank": 679
+   },
+   {
+    "name": "sphinxcontrib-mermaid",
+    "rank": 2305
+   },
+   {
+    "name": "math-verify",
+    "rank": 2451
+   },
+   {
+    "name": "azure-ai-agentserver-core",
+    "rank": 5960
+   },
+   {
+    "name": "types-sqlalchemy",
+    "rank": 8889
+   },
+   {
+    "name": "opentelemetry-propagator-jaeger",
+    "rank": 2697
+   },
+   {
+    "name": "mypy-boto3-athena",
+    "rank": 1895
+   },
+   {
+    "name": "sqlakeyset",
+    "rank": 3576
+   },
+   {
+    "name": "pymc-extras",
+    "rank": 9658
+   },
+   {
+    "name": "clang",
+    "rank": 4441
+   },
+   {
+    "name": "python-stdnum",
+    "rank": 1802
+   },
+   {
+    "name": "crewai-core",
+    "rank": 3081
+   },
+   {
+    "name": "texttable",
+    "rank": 841
+   },
+   {
+    "name": "pylzss",
+    "rank": 7852
+   },
+   {
+    "name": "alibabacloud-darabonba-map",
+    "rank": 9619
+   },
+   {
+    "name": "google-cloud-automl",
+    "rank": 1450
+   },
+   {
+    "name": "types-redis",
+    "rank": 932
+   },
+   {
+    "name": "pytest-pep8",
+    "rank": 6768
+   },
+   {
+    "name": "pipreqs",
+    "rank": 5244
+   },
+   {
+    "name": "yoyo-migrations",
+    "rank": 4781
+   },
+   {
+    "name": "pymysqllock",
+    "rank": 7838
+   },
+   {
+    "name": "mypy-boto3-nova-act",
+    "rank": 6827
+   },
+   {
+    "name": "enum-compat",
+    "rank": 1512
+   },
+   {
+    "name": "altgraph",
+    "rank": 1013
+   },
+   {
+    "name": "momepy",
+    "rank": 8997
+   },
+   {
+    "name": "anywidget",
+    "rank": 2706
+   },
+   {
+    "name": "django-admin-data-views",
+    "rank": 9673
+   },
+   {
+    "name": "cassandra-driver",
+    "rank": 2110
+   },
+   {
+    "name": "microsoft-agents-hosting-aiohttp",
+    "rank": 8195
+   },
+   {
+    "name": "cron-validator",
+    "rank": 4029
+   },
+   {
+    "name": "qwen-tts",
+    "rank": 8407
+   },
+   {
+    "name": "veracode-api-signing",
+    "rank": 5257
+   },
+   {
+    "name": "markdownlit",
+    "rank": 7765
+   },
+   {
+    "name": "pystac-ext-pointcloud",
+    "rank": 2910
+   },
+   {
+    "name": "wsproto",
+    "rank": 366
+   },
+   {
+    "name": "svgpathtools",
+    "rank": 4228
+   },
+   {
+    "name": "pyudev",
+    "rank": 4265
+   },
+   {
+    "name": "langchain-anthropic",
+    "rank": 863
+   },
+   {
+    "name": "pick",
+    "rank": 6938
+   },
+   {
+    "name": "columnar",
+    "rank": 3230
+   },
+   {
+    "name": "pyobjc-framework-gamekit",
+    "rank": 5519
+   },
+   {
+    "name": "python-coveralls",
+    "rank": 9246
+   },
+   {
+    "name": "plantuml-markdown",
+    "rank": 5046
+   },
+   {
+    "name": "wcwidth",
+    "rank": 118
+   },
+   {
+    "name": "compressed-tensors",
+    "rank": 2064
+   },
+   {
+    "name": "stdlib-list",
+    "rank": 4002
+   },
+   {
+    "name": "onyx-devtools",
+    "rank": 8044
+   },
+   {
+    "name": "cycler",
+    "rank": 202
+   },
+   {
+    "name": "loess",
+    "rank": 7326
+   },
+   {
+    "name": "jq",
+    "rank": 1680
+   },
+   {
+    "name": "eccodeslib",
+    "rank": 5013
+   },
+   {
+    "name": "kornia-rs",
+    "rank": 2864
+   },
+   {
+    "name": "coiled",
+    "rank": 4786
+   },
+   {
+    "name": "mypy-boto3-redshift-serverless",
+    "rank": 2959
+   },
+   {
+    "name": "lerobot",
+    "rank": 8043
+   },
+   {
+    "name": "types-requests",
+    "rank": 319
+   },
+   {
+    "name": "dsnparse",
+    "rank": 6404
+   },
+   {
+    "name": "kiwipiepy-model",
+    "rank": 7646
+   },
+   {
+    "name": "mlx-metal",
+    "rank": 4768
+   },
+   {
+    "name": "spark-parser",
+    "rank": 7514
+   },
+   {
+    "name": "sglang-kernel",
+    "rank": 4922
+   },
+   {
+    "name": "pytest-reporter",
+    "rank": 8139
+   },
+   {
+    "name": "posthog",
+    "rank": 495
+   },
+   {
+    "name": "vonage-utils",
+    "rank": 8107
+   },
+   {
+    "name": "django-classy-tags",
+    "rank": 7510
+   },
+   {
+    "name": "tencentcloud-sdk-python",
+    "rank": 6126
+   },
+   {
+    "name": "pysubtypes",
+    "rank": 5406
+   },
+   {
+    "name": "opentelemetry-instrumentation-openai-agents-v2",
+    "rank": 3041
+   },
+   {
+    "name": "pypi-simple",
+    "rank": 6349
+   },
+   {
+    "name": "g711",
+    "rank": 9365
+   },
+   {
+    "name": "azure-mgmt-databoxedge",
+    "rank": 6301
+   },
+   {
+    "name": "dunamai",
+    "rank": 845
+   },
+   {
+    "name": "pulumi-snowflake",
+    "rank": 6473
+   },
+   {
+    "name": "types-boto3-kms",
+    "rank": 5744
+   },
+   {
+    "name": "keystoneauth1",
+    "rank": 3775
+   },
+   {
+    "name": "databricksapi",
+    "rank": 9318
+   },
+   {
+    "name": "starkbank-ecdsa",
+    "rank": 1507
+   },
+   {
+    "name": "pydantic-evals",
+    "rank": 1361
+   },
+   {
+    "name": "pyqt6",
+    "rank": 3623
+   },
+   {
+    "name": "prefixmaps",
+    "rank": 6691
+   },
+   {
+    "name": "triad",
+    "rank": 3348
+   },
+   {
+    "name": "lasio",
+    "rank": 7334
+   },
+   {
+    "name": "backports.zoneinfo",
+    "rank": 1938
+   },
+   {
+    "name": "cmeel-tinyxml2",
+    "rank": 4744
+   },
+   {
+    "name": "nemo-relay",
+    "rank": 2035
+   },
+   {
+    "name": "imgui-bundle",
+    "rank": 7552
+   },
+   {
+    "name": "types-aiobotocore-sesv2",
+    "rank": 9127
+   },
+   {
+    "name": "phonenumbers",
+    "rank": 559
+   },
+   {
+    "name": "querystring-parser",
+    "rank": 1866
+   },
+   {
+    "name": "audioread",
+    "rank": 1599
+   },
+   {
+    "name": "pynput",
+    "rank": 3374
+   },
+   {
+    "name": "pyvo",
+    "rank": 7051
+   },
+   {
+    "name": "tflite-runtime",
+    "rank": 6253
+   },
+   {
+    "name": "peakrdl-systemrdl",
+    "rank": 9573
+   },
+   {
+    "name": "planetary-computer",
+    "rank": 8816
+   },
+   {
+    "name": "nvidia-sphinx-theme",
+    "rank": 8066
+   },
+   {
+    "name": "azure-ai-projects",
+    "rank": 1316
+   },
+   {
+    "name": "pid",
+    "rank": 8907
+   },
+   {
+    "name": "azure-ai-inference",
+    "rank": 1791
+   },
+   {
+    "name": "django-flags",
+    "rank": 8596
+   },
+   {
+    "name": "zeep",
+    "rank": 620
+   },
+   {
+    "name": "superqt",
+    "rank": 7263
+   },
+   {
+    "name": "whatthepatch",
+    "rank": 2534
+   },
+   {
+    "name": "sepaxml",
+    "rank": 7001
+   },
+   {
+    "name": "apache-airflow-providers-mongo",
+    "rank": 5090
+   },
+   {
+    "name": "tox-gh",
+    "rank": 7408
+   },
+   {
+    "name": "requests-auth-aws-sigv4",
+    "rank": 2274
+   },
+   {
+    "name": "quart-cors",
+    "rank": 6289
+   },
+   {
+    "name": "kfactory",
+    "rank": 9627
+   },
+   {
+    "name": "autocommand",
+    "rank": 3289
+   },
+   {
+    "name": "mkdocs-macros-plugin",
+    "rank": 3222
+   },
+   {
+    "name": "user-agent",
+    "rank": 9126
+   },
+   {
+    "name": "atlasclient",
+    "rank": 3909
+   },
+   {
+    "name": "sftpretty",
+    "rank": 9072
+   },
+   {
+    "name": "nats-py",
+    "rank": 1891
+   },
+   {
+    "name": "nvidia-cuda-cccl",
+    "rank": 2825
+   },
+   {
+    "name": "zmq",
+    "rank": 5714
+   },
+   {
+    "name": "pytest-twisted",
+    "rank": 7384
+   },
+   {
+    "name": "pdoc3",
+    "rank": 9139
+   },
+   {
+    "name": "mypy-boto3-sagemaker-runtime",
+    "rank": 5228
+   },
+   {
+    "name": "pytailwindcss",
+    "rank": 7361
+   },
+   {
+    "name": "coreschema",
+    "rank": 4328
+   },
+   {
+    "name": "opentelemetry-processor-baggage",
+    "rank": 2105
+   },
+   {
+    "name": "oauth-cli-kit",
+    "rank": 7694
+   },
+   {
+    "name": "taskiq-redis",
+    "rank": 3551
+   },
+   {
+    "name": "uart-devices",
+    "rank": 5889
+   },
+   {
+    "name": "pytest-helpers-namespace",
+    "rank": 8042
+   },
+   {
+    "name": "googleapis-common-protos",
+    "rank": 68
+   },
+   {
+    "name": "python-string-utils",
+    "rank": 5886
+   },
+   {
+    "name": "algoliasearch",
+    "rank": 2232
+   },
+   {
+    "name": "undetected-chromedriver",
+    "rank": 2929
+   },
+   {
+    "name": "torchsde",
+    "rank": 3896
+   },
+   {
+    "name": "promql-parser",
+    "rank": 6019
+   },
+   {
+    "name": "pyclean",
+    "rank": 7296
+   },
+   {
+    "name": "getmac",
+    "rank": 6586
+   },
+   {
+    "name": "cocotb-test",
+    "rank": 8182
+   },
+   {
+    "name": "sqlalchemy-utc",
+    "rank": 9911
+   },
+   {
+    "name": "google-cloud-container",
+    "rank": 1295
+   },
+   {
+    "name": "youtube_dl",
+    "rank": 9756
+   },
+   {
+    "name": "cleanlab-tlm",
+    "rank": 9859
+   },
+   {
+    "name": "webauthn",
+    "rank": 1534
+   },
+   {
+    "name": "impit",
+    "rank": 2984
+   },
+   {
+    "name": "awslabs.cloudwatch-mcp-server",
+    "rank": 9055
+   },
+   {
+    "name": "persisting-theory",
+    "rank": 9215
+   },
+   {
+    "name": "eyes-selenium",
+    "rank": 5626
+   },
+   {
+    "name": "eclipse-zenoh",
+    "rank": 5745
+   },
+   {
+    "name": "smartsheet-python-sdk",
+    "rank": 3445
+   },
+   {
+    "name": "iterable-io",
+    "rank": 5497
+   },
+   {
+    "name": "janome",
+    "rank": 8338
+   },
+   {
+    "name": "dvc-azure",
+    "rank": 9869
+   },
+   {
+    "name": "aiohttp-session",
+    "rank": 8950
+   },
+   {
+    "name": "snowflake-connector-python",
+    "rank": 263
+   },
+   {
+    "name": "translate",
+    "rank": 6269
+   },
+   {
+    "name": "eth-abi",
+    "rank": 1597
+   },
+   {
+    "name": "django-admin-inline-paginator-plus",
+    "rank": 9049
+   },
+   {
+    "name": "sap-ai-sdk-base",
+    "rank": 9536
+   },
+   {
+    "name": "gtfs-realtime-bindings",
+    "rank": 5169
+   },
+   {
+    "name": "iab-tcf",
+    "rank": 7855
+   },
+   {
+    "name": "django-contrib-comments",
+    "rank": 8570
+   },
+   {
+    "name": "flask-shell-ipython",
+    "rank": 2766
+   },
+   {
+    "name": "pymeshfix",
+    "rank": 7938
+   },
+   {
+    "name": "jpholiday",
+    "rank": 5322
+   },
+   {
+    "name": "obspec",
+    "rank": 9093
+   },
+   {
+    "name": "pytest-doctestplus",
+    "rank": 5906
+   },
+   {
+    "name": "shellescape",
+    "rank": 3585
+   },
+   {
+    "name": "botframework-connector",
+    "rank": 3688
+   },
+   {
+    "name": "gcloud-aio-taskqueue",
+    "rank": 8728
+   },
+   {
+    "name": "aws-cdk.aws-s3-assets",
+    "rank": 9251
+   },
+   {
+    "name": "djangorestframework-camel-case",
+    "rank": 5153
+   },
+   {
+    "name": "winrt-windows.foundation",
+    "rank": 8075
+   },
+   {
+    "name": "kernels-data",
+    "rank": 4698
+   },
+   {
+    "name": "protobuf-decoder",
+    "rank": 9814
+   },
+   {
+    "name": "flash-attn",
+    "rank": 6852
+   },
+   {
+    "name": "samplerate",
+    "rank": 6726
+   },
+   {
+    "name": "avro",
+    "rank": 1087
+   },
+   {
+    "name": "pymongocrypt",
+    "rank": 4054
+   },
+   {
+    "name": "opentelemetry-instrumentation-httpx",
+    "rank": 449
+   },
+   {
+    "name": "zope.deprecation",
+    "rank": 2772
+   },
+   {
+    "name": "execnet",
+    "rank": 209
+   },
+   {
+    "name": "colcon-cd",
+    "rank": 8203
+   },
+   {
+    "name": "lime",
+    "rank": 6343
+   },
+   {
+    "name": "mmh3",
+    "rank": 389
+   },
+   {
+    "name": "rply",
+    "rank": 7256
+   },
+   {
+    "name": "redlock",
+    "rank": 9098
+   },
+   {
+    "name": "allianceauth-afat",
+    "rank": 7942
+   },
+   {
+    "name": "simile",
+    "rank": 9267
+   },
+   {
+    "name": "mautrix",
+    "rank": 7974
+   },
+   {
+    "name": "resampy",
+    "rank": 2498
+   },
+   {
+    "name": "azure-mgmt-cognitiveservices",
+    "rank": 1803
+   },
+   {
+    "name": "yapf",
+    "rank": 1764
+   },
+   {
+    "name": "csvkit",
+    "rank": 8123
+   },
+   {
+    "name": "pyscf",
+    "rank": 7924
+   },
+   {
+    "name": "scp",
+    "rank": 1284
+   },
+   {
+    "name": "easydict",
+    "rank": 2160
+   },
+   {
+    "name": "awkward-cpp",
+    "rank": 2757
+   },
+   {
+    "name": "bump-my-version",
+    "rank": 4277
+   },
+   {
+    "name": "aiocontextvars",
+    "rank": 8980
+   },
+   {
+    "name": "azure-mgmt-managementgroups",
+    "rank": 1965
+   },
+   {
+    "name": "dvc-data",
+    "rank": 2817
+   },
+   {
+    "name": "pyclipper",
+    "rank": 1155
+   },
+   {
+    "name": "selenium-stealth",
+    "rank": 7116
+   },
+   {
+    "name": "pyobjc-framework-corebluetooth",
+    "rank": 7825
+   },
+   {
+    "name": "datasketch",
+    "rank": 2092
+   },
+   {
+    "name": "gmsh",
+    "rank": 6387
+   },
+   {
+    "name": "pyfzf",
+    "rank": 8576
+   },
+   {
+    "name": "mypy-boto3-voice-id",
+    "rank": 3114
+   },
+   {
+    "name": "idf-component-manager",
+    "rank": 4688
+   },
+   {
+    "name": "cognite-sdk",
+    "rank": 7266
+   },
+   {
+    "name": "toml-fmt-common",
+    "rank": 6930
+   },
+   {
+    "name": "pyjanitor",
+    "rank": 8597
+   },
+   {
+    "name": "fabric-analytics-sdk",
+    "rank": 4690
+   },
+   {
+    "name": "yandex-query-client",
+    "rank": 2078
+   },
+   {
+    "name": "pantab",
+    "rank": 8761
+   },
+   {
+    "name": "celery-progress",
+    "rank": 6158
+   },
+   {
+    "name": "mozdebug",
+    "rank": 9452
+   },
+   {
+    "name": "sympy",
+    "rank": 231
+   },
+   {
+    "name": "common",
+    "rank": 6688
+   },
+   {
+    "name": "snowflake",
+    "rank": 2162
+   },
+   {
+    "name": "uv",
+    "rank": 226
+   },
+   {
+    "name": "requirements-detector",
+    "rank": 5607
+   },
+   {
+    "name": "pyobjc-framework-avkit",
+    "rank": 7076
+   },
+   {
+    "name": "openfga-sdk",
+    "rank": 3539
+   },
+   {
+    "name": "odfdo",
+    "rank": 6866
+   },
+   {
+    "name": "dbt-snowflake",
+    "rank": 1698
+   },
+   {
+    "name": "sphinxcontrib-redoc",
+    "rank": 4280
+   },
+   {
+    "name": "glum",
+    "rank": 7265
+   },
+   {
+    "name": "hypothesis-jsonschema",
+    "rank": 3316
+   },
+   {
+    "name": "aws-shell",
+    "rank": 8213
+   },
+   {
+    "name": "montecarlodata",
+    "rank": 8843
+   },
+   {
+    "name": "procrastinate",
+    "rank": 3265
+   },
+   {
+    "name": "klaviyo-api",
+    "rank": 7475
+   },
+   {
+    "name": "textparser",
+    "rank": 2178
+   },
+   {
+    "name": "smartypants",
+    "rank": 8860
+   },
+   {
+    "name": "alias-free-torch",
+    "rank": 9655
+   },
+   {
+    "name": "pkce",
+    "rank": 2655
+   },
+   {
+    "name": "webrtcvad-wheels",
+    "rank": 4323
+   },
+   {
+    "name": "aiohttp-sse-client",
+    "rank": 9538
+   },
+   {
+    "name": "mypy-boto3-cleanroomsml",
+    "rank": 6354
+   },
+   {
+    "name": "types-aiobotocore-ecs",
+    "rank": 7063
+   },
+   {
+    "name": "pysmi",
+    "rank": 3042
+   },
+   {
+    "name": "types-docker",
+    "rank": 3565
+   },
+   {
+    "name": "readme-renderer",
+    "rank": 862
+   },
+   {
+    "name": "py-builder-signing-sdk",
+    "rank": 6430
+   },
+   {
+    "name": "argparse-ext",
+    "rank": 9185
+   },
+   {
+    "name": "pytest-benchmark",
+    "rank": 1220
+   },
+   {
+    "name": "itanium-demangler",
+    "rank": 8428
+   },
+   {
+    "name": "mypy-boto3-mpa",
+    "rank": 3144
+   },
+   {
+    "name": "whylabs-client",
+    "rank": 9718
+   },
+   {
+    "name": "tinynetrc",
+    "rank": 9441
+   },
+   {
+    "name": "pysmb",
+    "rank": 2237
+   },
+   {
+    "name": "mypy-boto3-payment-cryptography",
+    "rank": 7118
+   },
+   {
+    "name": "flufl.i18n",
+    "rank": 5195
+   },
+   {
+    "name": "rnet",
+    "rank": 5429
+   },
+   {
+    "name": "jpype1",
+    "rank": 995
+   },
+   {
+    "name": "simple-term-menu",
+    "rank": 2657
+   },
+   {
+    "name": "crayons",
+    "rank": 5988
+   },
+   {
+    "name": "pyxlsx",
+    "rank": 7826
+   },
+   {
+    "name": "aiotask-context",
+    "rank": 5996
+   },
+   {
+    "name": "boostedblob",
+    "rank": 919
+   },
+   {
+    "name": "jschon",
+    "rank": 7935
+   },
+   {
+    "name": "more-click",
+    "rank": 9444
+   },
+   {
+    "name": "shot-scraper",
+    "rank": 7515
+   },
+   {
+    "name": "ultralytics-thop",
+    "rank": 2096
+   },
+   {
+    "name": "google-cloud-build",
+    "rank": 1307
+   },
+   {
+    "name": "in-place",
+    "rank": 9680
+   },
+   {
+    "name": "pytdc",
+    "rank": 9209
+   },
+   {
+    "name": "django-environ",
+    "rank": 1515
+   },
+   {
+    "name": "fitz",
+    "rank": 6741
+   },
+   {
+    "name": "tables",
+    "rank": 3209
+   },
+   {
+    "name": "zenml",
+    "rank": 8771
+   },
+   {
+    "name": "pgserver",
+    "rank": 5484
+   },
+   {
+    "name": "txtorcon",
+    "rank": 7908
+   },
+   {
+    "name": "nv-one-logger-training-telemetry",
+    "rank": 8137
+   },
+   {
+    "name": "prefixcommons",
+    "rank": 9007
+   },
+   {
+    "name": "purify",
+    "rank": 9693
+   },
+   {
+    "name": "flask-executor",
+    "rank": 5469
+   },
+   {
+    "name": "pyclang",
+    "rank": 6231
+   },
+   {
+    "name": "aiven-client",
+    "rank": 6090
+   },
+   {
+    "name": "dataclasses-json-speakeasy",
+    "rank": 3475
+   },
+   {
+    "name": "elasticsearch8",
+    "rank": 4147
+   },
+   {
+    "name": "cron-schedule-triggers",
+    "rank": 8714
+   },
+   {
+    "name": "types-termcolor",
+    "rank": 4770
+   },
+   {
+    "name": "fastapi-users",
+    "rank": 3768
+   },
+   {
+    "name": "mypy-boto3-license-manager",
+    "rank": 5127
+   },
+   {
+    "name": "nvidia-nat-atif",
+    "rank": 9882
+   },
+   {
+    "name": "atlassian-jwt-auth",
+    "rank": 5956
+   },
+   {
+    "name": "django-impersonate",
+    "rank": 9334
+   },
+   {
+    "name": "tenacity",
+    "rank": 84
+   },
+   {
+    "name": "pylint-actions",
+    "rank": 5701
+   },
+   {
+    "name": "mypy-boto3-chime-sdk-identity",
+    "rank": 2868
+   },
+   {
+    "name": "langchainplus-sdk",
+    "rank": 7213
+   },
+   {
+    "name": "pyspark-test",
+    "rank": 6875
+   },
+   {
+    "name": "randomname",
+    "rank": 4915
+   },
+   {
+    "name": "mypy-boto3-verifiedpermissions",
+    "rank": 3150
+   },
+   {
+    "name": "openexr",
+    "rank": 5221
+   },
+   {
+    "name": "conan",
+    "rank": 2213
+   },
+   {
+    "name": "mplhep-data",
+    "rank": 7236
+   },
+   {
+    "name": "yasoo",
+    "rank": 5089
+   },
+   {
+    "name": "weave",
+    "rank": 4693
+   },
+   {
+    "name": "pyvex",
+    "rank": 7961
+   },
+   {
+    "name": "hyperframe",
+    "rank": 200
+   },
+   {
+    "name": "mlflow-tracing",
+    "rank": 948
+   },
+   {
+    "name": "dramatiq",
+    "rank": 3411
+   },
+   {
+    "name": "pytest-mypy-plugins",
+    "rank": 8595
+   },
+   {
+    "name": "python-lsp-server",
+    "rank": 3811
+   },
+   {
+    "name": "webrtc-models",
+    "rank": 6357
+   },
+   {
+    "name": "py4j",
+    "rank": 342
+   },
+   {
+    "name": "sagemaker-containers",
+    "rank": 9057
+   },
+   {
+    "name": "ibm-quantum-schemas",
+    "rank": 7574
+   },
+   {
+    "name": "msgraph-core",
+    "rank": 1418
+   },
+   {
+    "name": "llama-models",
+    "rank": 9653
+   },
+   {
+    "name": "pyserial-asyncio-fast",
+    "rank": 8789
+   },
+   {
+    "name": "pynvml",
+    "rank": 3180
+   },
+   {
+    "name": "memory-profiler",
+    "rank": 2008
+   },
+   {
+    "name": "systemd-python",
+    "rank": 5494
+   },
+   {
+    "name": "cfnresponse",
+    "rank": 7937
+   },
+   {
+    "name": "dictor",
+    "rank": 5692
+   },
+   {
+    "name": "geoalchemy2",
+    "rank": 1981
+   },
+   {
+    "name": "dagster-pandas",
+    "rank": 4462
+   },
+   {
+    "name": "azure-mgmt-batch",
+    "rank": 1969
+   },
+   {
+    "name": "haystack-ai",
+    "rank": 5564
+   },
+   {
+    "name": "odc-geo",
+    "rank": 9255
+   },
+   {
+    "name": "pyfmodex",
+    "rank": 9963
+   },
+   {
+    "name": "nvidia-cudnn-cu13",
+    "rank": 473
+   },
+   {
+    "name": "alt-profanity-check",
+    "rank": 7522
+   },
+   {
+    "name": "coacd",
+    "rank": 4595
+   }
+  ],
+  "mid": [
+   {
+    "name": "glyphs-cli",
+    "rank": 70939
+   },
+   {
+    "name": "botocore-a-la-carte-workmail",
+    "rank": 27339
+   },
+   {
+    "name": "chaine",
+    "rank": 57822
+   },
+   {
+    "name": "otter-grader",
+    "rank": 24894
+   },
+   {
+    "name": "viv-utils",
+    "rank": 17904
+   },
+   {
+    "name": "smartx-rfid",
+    "rank": 78470
+   },
+   {
+    "name": "llama-benchy",
+    "rank": 35394
+   },
+   {
+    "name": "helm-client",
+    "rank": 59180
+   },
+   {
+    "name": "scidatetime",
+    "rank": 33113
+   },
+   {
+    "name": "changedetection.io-cloak-browser",
+    "rank": 71503
+   },
+   {
+    "name": "odds-api-io",
+    "rank": 81690
+   },
+   {
+    "name": "wxauto4",
+    "rank": 37452
+   },
+   {
+    "name": "tornado-prometheus",
+    "rank": 31245
+   },
+   {
+    "name": "gtfs-kit",
+    "rank": 27879
+   },
+   {
+    "name": "doudian",
+    "rank": 66756
+   },
+   {
+    "name": "iamai",
+    "rank": 76498
+   },
+   {
+    "name": "giotto-ph",
+    "rank": 36431
+   },
+   {
+    "name": "vivarium-engine",
+    "rank": 53534
+   },
+   {
+    "name": "hassette",
+    "rank": 72205
+   },
+   {
+    "name": "nooverlap",
+    "rank": 70297
+   },
+   {
+    "name": "ffpb",
+    "rank": 60064
+   },
+   {
+    "name": "biocontext_kb",
+    "rank": 64781
+   },
+   {
+    "name": "aws-cdk.aws-waf",
+    "rank": 60881
+   },
+   {
+    "name": "ranger-fm",
+    "rank": 46540
+   },
+   {
+    "name": "sio4onnx",
+    "rank": 15767
+   },
+   {
+    "name": "json-fingerprint",
+    "rank": 15778
+   },
+   {
+    "name": "gnuhealth-disability",
+    "rank": 88887
+   },
+   {
+    "name": "vllm-nccl-cu12",
+    "rank": 38881
+   },
+   {
+    "name": "sphinxnotes-markdown-builder",
+    "rank": 48213
+   },
+   {
+    "name": "mantyx-sdk",
+    "rank": 67153
+   },
+   {
+    "name": "ferrum-viz",
+    "rank": 64466
+   },
+   {
+    "name": "html-slacker",
+    "rank": 14183
+   },
+   {
+    "name": "nomad-schema-plugin-run",
+    "rank": 30709
+   },
+   {
+    "name": "netsnmp-cffi",
+    "rank": 82274
+   },
+   {
+    "name": "idrive-e2-client",
+    "rank": 19489
+   },
+   {
+    "name": "qoqo-qiskit-devices",
+    "rank": 96128
+   },
+   {
+    "name": "certsrv",
+    "rank": 38849
+   },
+   {
+    "name": "alibabacloud-bailian20231229",
+    "rank": 19872
+   },
+   {
+    "name": "numgrid",
+    "rank": 74646
+   },
+   {
+    "name": "ckantoolkit",
+    "rank": 27756
+   },
+   {
+    "name": "infix",
+    "rank": 45197
+   },
+   {
+    "name": "lestari-classifier",
+    "rank": 75434
+   },
+   {
+    "name": "pysignalclirestapi",
+    "rank": 17891
+   },
+   {
+    "name": "ubdcc-mgmt",
+    "rank": 78741
+   },
+   {
+    "name": "wsq",
+    "rank": 32340
+   },
+   {
+    "name": "crypto-kline-vision-data",
+    "rank": 83065
+   },
+   {
+    "name": "vuefinder-wsgi",
+    "rank": 92994
+   },
+   {
+    "name": "alibabacloud-dts20200101",
+    "rank": 42153
+   },
+   {
+    "name": "sutoppu",
+    "rank": 26837
+   },
+   {
+    "name": "python-msgraph",
+    "rank": 30408
+   },
+   {
+    "name": "alix-graphql-mcp-knowledge-base-tool",
+    "rank": 82350
+   },
+   {
+    "name": "memoryos",
+    "rank": 60478
+   },
+   {
+    "name": "gitopsctr",
+    "rank": 73173
+   },
+   {
+    "name": "pynum",
+    "rank": 21330
+   },
+   {
+    "name": "card-validator",
+    "rank": 52894
+   },
+   {
+    "name": "mimical",
+    "rank": 92943
+   },
+   {
+    "name": "contextbase-plugin-slack",
+    "rank": 62876
+   },
+   {
+    "name": "lao",
+    "rank": 85323
+   },
+   {
+    "name": "ropper",
+    "rank": 17521
+   },
+   {
+    "name": "rlog",
+    "rank": 79838
+   },
+   {
+    "name": "django-tastypie-oauth",
+    "rank": 95505
+   },
+   {
+    "name": "ipaplatform",
+    "rank": 34344
+   },
+   {
+    "name": "python-gc100",
+    "rank": 16833
+   },
+   {
+    "name": "longchain",
+    "rank": 71286
+   },
+   {
+    "name": "changedetection.io",
+    "rank": 22942
+   },
+   {
+    "name": "bool-hybrid-array",
+    "rank": 41218
+   },
+   {
+    "name": "k9-aif",
+    "rank": 78195
+   },
+   {
+    "name": "dydx-python",
+    "rank": 69452
+   },
+   {
+    "name": "dbagent-cli",
+    "rank": 59888
+   },
+   {
+    "name": "botocore-a-la-carte-route53",
+    "rank": 70039
+   },
+   {
+    "name": "tscat",
+    "rank": 83358
+   },
+   {
+    "name": "eurocropsml",
+    "rank": 76818
+   },
+   {
+    "name": "doc2text",
+    "rank": 49242
+   },
+   {
+    "name": "soda-core-postgres",
+    "rank": 15402
+   },
+   {
+    "name": "jemail",
+    "rank": 69419
+   },
+   {
+    "name": "ros2docker",
+    "rank": 56246
+   },
+   {
+    "name": "t2iapi",
+    "rank": 66667
+   },
+   {
+    "name": "holehe",
+    "rank": 13600
+   },
+   {
+    "name": "metrik-explorer",
+    "rank": 95096
+   },
+   {
+    "name": "scann",
+    "rank": 14738
+   },
+   {
+    "name": "flask-whooshalchemy",
+    "rank": 59705
+   },
+   {
+    "name": "itermate",
+    "rank": 20276
+   },
+   {
+    "name": "rainbow-rb-flat-buffers",
+    "rank": 38851
+   },
+   {
+    "name": "fdia-graph",
+    "rank": 53287
+   },
+   {
+    "name": "stcgal",
+    "rank": 60112
+   },
+   {
+    "name": "readtime",
+    "rank": 22971
+   },
+   {
+    "name": "boto3-helpers",
+    "rank": 52715
+   },
+   {
+    "name": "py-tree-sitter-rst",
+    "rank": 81104
+   },
+   {
+    "name": "mypy-boto3-networkmonitor",
+    "rank": 12232
+   },
+   {
+    "name": "pyxplora-api",
+    "rank": 79140
+   },
+   {
+    "name": "owoi-audiotoclip",
+    "rank": 93588
+   },
+   {
+    "name": "arcade-github-api",
+    "rank": 46916
+   },
+   {
+    "name": "pycine",
+    "rank": 91474
+   },
+   {
+    "name": "fuelsdk",
+    "rank": 37936
+   },
+   {
+    "name": "wespeakerruntime",
+    "rank": 36043
+   },
+   {
+    "name": "helm-python",
+    "rank": 60048
+   },
+   {
+    "name": "pymysql-pooling",
+    "rank": 38373
+   },
+   {
+    "name": "adaptive-classifier",
+    "rank": 20599
+   },
+   {
+    "name": "mlserver-xgboost",
+    "rank": 64267
+   },
+   {
+    "name": "mlflow-mcp-server",
+    "rank": 81374
+   },
+   {
+    "name": "llama-index-readers-twitter",
+    "rank": 43647
+   },
+   {
+    "name": "differt",
+    "rank": 58403
+   },
+   {
+    "name": "ovos-audio-plugin-mpv",
+    "rank": 61179
+   },
+   {
+    "name": "curator",
+    "rank": 66020
+   },
+   {
+    "name": "cache",
+    "rank": 32595
+   },
+   {
+    "name": "spectestrunner",
+    "rank": 93364
+   },
+   {
+    "name": "pynqmetadata",
+    "rank": 48466
+   },
+   {
+    "name": "swpy",
+    "rank": 93607
+   },
+   {
+    "name": "plone.app.referenceablebehavior",
+    "rank": 62147
+   },
+   {
+    "name": "django-generic-positions",
+    "rank": 59830
+   },
+   {
+    "name": "multitrackpro",
+    "rank": 69539
+   },
+   {
+    "name": "flogging",
+    "rank": 36061
+   },
+   {
+    "name": "fsutil",
+    "rank": 82754
+   },
+   {
+    "name": "namespace",
+    "rank": 45394
+   },
+   {
+    "name": "planfile",
+    "rank": 45889
+   },
+   {
+    "name": "types-boto3-route53profiles",
+    "rank": 45878
+   },
+   {
+    "name": "pugsql",
+    "rank": 19978
+   },
+   {
+    "name": "tradingview-datafeed",
+    "rank": 21158
+   },
+   {
+    "name": "pdfmerger",
+    "rank": 40618
+   },
+   {
+    "name": "pelican-feed-planet",
+    "rank": 70780
+   },
+   {
+    "name": "yeref",
+    "rank": 14714
+   },
+   {
+    "name": "funpayparsers",
+    "rank": 63646
+   },
+   {
+    "name": "types-prettytable",
+    "rank": 16233
+   },
+   {
+    "name": "iree-tools-tflite",
+    "rank": 30245
+   },
+   {
+    "name": "volare",
+    "rank": 23817
+   },
+   {
+    "name": "preset-sqlalchemy-redshift",
+    "rank": 57695
+   },
+   {
+    "name": "networktest",
+    "rank": 61746
+   },
+   {
+    "name": "netutils-linux",
+    "rank": 70708
+   },
+   {
+    "name": "fast-stark-crypto",
+    "rank": 24462
+   },
+   {
+    "name": "impi-rt",
+    "rank": 11696
+   },
+   {
+    "name": "plone.mocktestcase",
+    "rank": 70233
+   },
+   {
+    "name": "alt-model-checkpoint",
+    "rank": 93290
+   },
+   {
+    "name": "types-boto3-route53",
+    "rank": 11820
+   },
+   {
+    "name": "omni-nli",
+    "rank": 86195
+   },
+   {
+    "name": "dronekit-sitl",
+    "rank": 55622
+   },
+   {
+    "name": "reflectapi-runtime",
+    "rank": 67774
+   },
+   {
+    "name": "jupyter-mcp-server",
+    "rank": 13097
+   },
+   {
+    "name": "llm-web-crawler",
+    "rank": 92637
+   },
+   {
+    "name": "nv-air-sdk",
+    "rank": 20985
+   },
+   {
+    "name": "ged4py",
+    "rank": 42761
+   },
+   {
+    "name": "hexopy",
+    "rank": 61522
+   },
+   {
+    "name": "lazarus-cms",
+    "rank": 47007
+   },
+   {
+    "name": "xarray-behave",
+    "rank": 58768
+   },
+   {
+    "name": "types-aiobotocore-mailmanager",
+    "rank": 19989
+   },
+   {
+    "name": "django-driverjs",
+    "rank": 99818
+   },
+   {
+    "name": "jsm-transactional-ruler",
+    "rank": 92739
+   },
+   {
+    "name": "django-admin-sync",
+    "rank": 65318
+   },
+   {
+    "name": "requests-xml",
+    "rank": 43019
+   },
+   {
+    "name": "trulens-apps-langchain",
+    "rank": 33589
+   },
+   {
+    "name": "types-boto3-pca-connector-scep",
+    "rank": 45853
+   },
+   {
+    "name": "pxr-js-dev",
+    "rank": 43230
+   },
+   {
+    "name": "mypy-boto3-route53-recovery-readiness",
+    "rank": 13008
+   },
+   {
+    "name": "omu-chat-youtube",
+    "rank": 53375
+   },
+   {
+    "name": "mat73",
+    "rank": 13254
+   },
+   {
+    "name": "txsni",
+    "rank": 24694
+   },
+   {
+    "name": "unicodeit",
+    "rank": 21788
+   },
+   {
+    "name": "temporian",
+    "rank": 60623
+   },
+   {
+    "name": "cloudcosttree",
+    "rank": 38666
+   },
+   {
+    "name": "djangoql-iplweb",
+    "rank": 54556
+   },
+   {
+    "name": "webots-mcp-kit",
+    "rank": 83427
+   },
+   {
+    "name": "yandex-search-api",
+    "rank": 89377
+   },
+   {
+    "name": "ptxcompiler-cu11",
+    "rank": 59796
+   },
+   {
+    "name": "discord-rpc",
+    "rank": 86813
+   },
+   {
+    "name": "aiobmsble",
+    "rank": 16232
+   },
+   {
+    "name": "zlayer-sdk",
+    "rank": 61644
+   },
+   {
+    "name": "opster",
+    "rank": 36767
+   },
+   {
+    "name": "stelar-deploy",
+    "rank": 91688
+   },
+   {
+    "name": "python-homeassistant-analytics",
+    "rank": 17856
+   },
+   {
+    "name": "ad-components",
+    "rank": 70620
+   },
+   {
+    "name": "featomic-torch",
+    "rank": 55493
+   },
+   {
+    "name": "hazm",
+    "rank": 32047
+   },
+   {
+    "name": "avrotool",
+    "rank": 30302
+   },
+   {
+    "name": "color-palette-extract",
+    "rank": 50235
+   },
+   {
+    "name": "moteus",
+    "rank": 20181
+   },
+   {
+    "name": "types-aiobotocore-cloud9",
+    "rank": 14787
+   },
+   {
+    "name": "opentrons-http-api-client",
+    "rank": 29640
+   },
+   {
+    "name": "keep-skill",
+    "rank": 30968
+   },
+   {
+    "name": "xyzrender",
+    "rank": 63049
+   },
+   {
+    "name": "pyoctaveband",
+    "rank": 89834
+   },
+   {
+    "name": "yasi",
+    "rank": 33202
+   },
+   {
+    "name": "lse-data",
+    "rank": 25865
+   },
+   {
+    "name": "yamldown",
+    "rank": 41228
+   },
+   {
+    "name": "ezmodels",
+    "rank": 96861
+   },
+   {
+    "name": "jxaj",
+    "rank": 49136
+   },
+   {
+    "name": "itk-elastix",
+    "rank": 24983
+   },
+   {
+    "name": "pyvalet",
+    "rank": 36679
+   },
+   {
+    "name": "pymiele",
+    "rank": 16179
+   },
+   {
+    "name": "dtool-ibeis",
+    "rank": 80331
+   },
+   {
+    "name": "streamlit-inline-text-fields",
+    "rank": 96498
+   },
+   {
+    "name": "bec-lib",
+    "rank": 21731
+   },
+   {
+    "name": "streamlit-sortables",
+    "rank": 16983
+   },
+   {
+    "name": "interpax-fft",
+    "rank": 70403
+   },
+   {
+    "name": "ubt-sphinx",
+    "rank": 56444
+   },
+   {
+    "name": "pairtree",
+    "rank": 52197
+   },
+   {
+    "name": "properly-models",
+    "rank": 80191
+   },
+   {
+    "name": "pdf-language-detector",
+    "rank": 70925
+   },
+   {
+    "name": "openinference-instrumentation-strands-agents",
+    "rank": 22250
+   },
+   {
+    "name": "flake8-class-newline",
+    "rank": 17668
+   },
+   {
+    "name": "sentience-governor",
+    "rank": 90803
+   },
+   {
+    "name": "dynamodb",
+    "rank": 33168
+   },
+   {
+    "name": "edgegate-runner",
+    "rank": 96990
+   },
+   {
+    "name": "django-oscar-stubs",
+    "rank": 27693
+   },
+   {
+    "name": "weavingspace",
+    "rank": 83449
+   },
+   {
+    "name": "streamlit-toggle",
+    "rank": 45266
+   },
+   {
+    "name": "crudkit",
+    "rank": 85388
+   },
+   {
+    "name": "ftb-snbt-lib",
+    "rank": 56516
+   },
+   {
+    "name": "adguard-home-agent",
+    "rank": 79498
+   },
+   {
+    "name": "drf-openapi-tester",
+    "rank": 34986
+   },
+   {
+    "name": "filestack-python",
+    "rank": 11649
+   },
+   {
+    "name": "psola",
+    "rank": 47057
+   },
+   {
+    "name": "tensorflow-neuronx",
+    "rank": 47395
+   },
+   {
+    "name": "pylaunches",
+    "rank": 16183
+   },
+   {
+    "name": "scrapyx-stormproxies",
+    "rank": 71899
+   },
+   {
+    "name": "uuid-by-string",
+    "rank": 37890
+   },
+   {
+    "name": "stups-fullstop",
+    "rank": 58877
+   },
+   {
+    "name": "ble2mqtt",
+    "rank": 93068
+   },
+   {
+    "name": "celery-with-redis",
+    "rank": 54535
+   },
+   {
+    "name": "deprecation-alias",
+    "rank": 20449
+   },
+   {
+    "name": "marshmallow-objects",
+    "rank": 27157
+   },
+   {
+    "name": "merlin-models",
+    "rank": 44937
+   },
+   {
+    "name": "codechat-server",
+    "rank": 82032
+   },
+   {
+    "name": "pyxdf",
+    "rank": 27556
+   },
+   {
+    "name": "dippy",
+    "rank": 75436
+   },
+   {
+    "name": "urwid-mitmproxy",
+    "rank": 23600
+   },
+   {
+    "name": "crossfiledialog",
+    "rank": 54195
+   },
+   {
+    "name": "dag-ml",
+    "rank": 34454
+   },
+   {
+    "name": "myosuite",
+    "rank": 52105
+   },
+   {
+    "name": "django-digid-eherkenning",
+    "rank": 35317
+   },
+   {
+    "name": "probabilistic-model",
+    "rank": 82013
+   },
+   {
+    "name": "rendercv",
+    "rank": 11051
+   },
+   {
+    "name": "leafnlp",
+    "rank": 66950
+   },
+   {
+    "name": "embeddix",
+    "rank": 78358
+   },
+   {
+    "name": "shopcloud-streams",
+    "rank": 51909
+   },
+   {
+    "name": "tkinter-page",
+    "rank": 77142
+   },
+   {
+    "name": "gamfit",
+    "rank": 53319
+   },
+   {
+    "name": "sciplot-academic",
+    "rank": 82885
+   },
+   {
+    "name": "iterative-stratification",
+    "rank": 12613
+   },
+   {
+    "name": "finanfut-billing-sdk",
+    "rank": 82582
+   },
+   {
+    "name": "deeptrack",
+    "rank": 77092
+   },
+   {
+    "name": "flirimageextractor",
+    "rank": 64370
+   },
+   {
+    "name": "pyvidaa",
+    "rank": 57738
+   },
+   {
+    "name": "flagright",
+    "rank": 35989
+   },
+   {
+    "name": "snowflake-native-apps-permission-stub",
+    "rank": 66408
+   },
+   {
+    "name": "s2mosaic",
+    "rank": 94150
+   },
+   {
+    "name": "chartpy",
+    "rank": 65960
+   },
+   {
+    "name": "bbox-visualizer",
+    "rank": 15762
+   },
+   {
+    "name": "mcumgr-client-wrapper",
+    "rank": 67539
+   },
+   {
+    "name": "albi0",
+    "rank": 60825
+   },
+   {
+    "name": "pulumiverse-cockroach",
+    "rank": 42704
+   },
+   {
+    "name": "fink-anomaly-detection-model",
+    "rank": 93713
+   },
+   {
+    "name": "pybetter",
+    "rank": 21812
+   },
+   {
+    "name": "vimgolf",
+    "rank": 20461
+   },
+   {
+    "name": "haystack",
+    "rank": 41278
+   },
+   {
+    "name": "tk-builder",
+    "rank": 69524
+   },
+   {
+    "name": "spyrrow",
+    "rank": 38739
+   },
+   {
+    "name": "plyara",
+    "rank": 10042
+   },
+   {
+    "name": "sigprofilermatrixgenerator",
+    "rank": 25743
+   },
+   {
+    "name": "embedl-deploy",
+    "rank": 51581
+   },
+   {
+    "name": "browsergym-experiments",
+    "rank": 26624
+   },
+   {
+    "name": "django-versionlog",
+    "rank": 77435
+   },
+   {
+    "name": "jinja-vanish",
+    "rank": 91944
+   },
+   {
+    "name": "virtualizarr",
+    "rank": 13001
+   },
+   {
+    "name": "real-time-monitor",
+    "rank": 25040
+   },
+   {
+    "name": "livekit-plugins-tavus",
+    "rank": 22570
+   },
+   {
+    "name": "fgo-api-types",
+    "rank": 38927
+   },
+   {
+    "name": "pyblp",
+    "rank": 72809
+   },
+   {
+    "name": "transformers-modules",
+    "rank": 65448
+   },
+   {
+    "name": "adutils",
+    "rank": 96049
+   },
+   {
+    "name": "galore",
+    "rank": 89073
+   },
+   {
+    "name": "odoo-addon-account-analytic-distribution-manual",
+    "rank": 82156
+   },
+   {
+    "name": "django-http-compression",
+    "rank": 19916
+   },
+   {
+    "name": "pmesh",
+    "rank": 89912
+   },
+   {
+    "name": "modelcontextprotocol",
+    "rank": 24277
+   },
+   {
+    "name": "azure-maps-render",
+    "rank": 87043
+   },
+   {
+    "name": "koodaus",
+    "rank": 13463
+   },
+   {
+    "name": "coop-sql-review",
+    "rank": 74742
+   },
+   {
+    "name": "pylint-print",
+    "rank": 31110
+   },
+   {
+    "name": "icetea",
+    "rank": 72316
+   },
+   {
+    "name": "canalystii",
+    "rank": 54683
+   },
+   {
+    "name": "pulumi-fivetran",
+    "rank": 76072
+   },
+   {
+    "name": "libfsext-python",
+    "rank": 28677
+   },
+   {
+    "name": "custom-materializations",
+    "rank": 65736
+   },
+   {
+    "name": "adaptive-pipeline",
+    "rank": 96550
+   },
+   {
+    "name": "matlabengine",
+    "rank": 38031
+   },
+   {
+    "name": "brunette",
+    "rank": 37407
+   },
+   {
+    "name": "ctpbee-api",
+    "rank": 91920
+   },
+   {
+    "name": "pupil-labs-video",
+    "rank": 43744
+   },
+   {
+    "name": "messagingclient",
+    "rank": 91417
+   },
+   {
+    "name": "pyseq",
+    "rank": 25093
+   },
+   {
+    "name": "pydumpck",
+    "rank": 33708
+   },
+   {
+    "name": "nr.collections",
+    "rank": 60398
+   },
+   {
+    "name": "flask-celery",
+    "rank": 75823
+   },
+   {
+    "name": "conda-pypi",
+    "rank": 92030
+   },
+   {
+    "name": "autocedar",
+    "rank": 55888
+   },
+   {
+    "name": "python-gitea",
+    "rank": 75600
+   },
+   {
+    "name": "llconfig",
+    "rank": 47561
+   },
+   {
+    "name": "mandrill-37",
+    "rank": 27011
+   },
+   {
+    "name": "mong",
+    "rank": 78669
+   },
+   {
+    "name": "neat-python",
+    "rank": 40365
+   },
+   {
+    "name": "archiveis",
+    "rank": 61981
+   },
+   {
+    "name": "xa",
+    "rank": 81886
+   },
+   {
+    "name": "laser-ethereum",
+    "rank": 68794
+   },
+   {
+    "name": "dimo-python-sdk",
+    "rank": 61945
+   },
+   {
+    "name": "flask-ckeditor",
+    "rank": 28141
+   },
+   {
+    "name": "pulumi-wavefront",
+    "rank": 34581
+   },
+   {
+    "name": "pddlgym",
+    "rank": 43522
+   },
+   {
+    "name": "aed-utilities",
+    "rank": 63161
+   },
+   {
+    "name": "vfhe",
+    "rank": 74974
+   },
+   {
+    "name": "wdiff",
+    "rank": 68400
+   },
+   {
+    "name": "upd-cli",
+    "rank": 83163
+   },
+   {
+    "name": "pynvjpeg",
+    "rank": 99168
+   },
+   {
+    "name": "motioneye-client",
+    "rank": 19413
+   },
+   {
+    "name": "blark",
+    "rank": 97731
+   },
+   {
+    "name": "cstar-forge",
+    "rank": 98685
+   },
+   {
+    "name": "passagemath-libbraiding",
+    "rank": 21602
+   },
+   {
+    "name": "dewloosh.geom",
+    "rank": 35021
+   },
+   {
+    "name": "rivet-rs",
+    "rank": 91240
+   },
+   {
+    "name": "requests-retry",
+    "rank": 92723
+   },
+   {
+    "name": "bc-django-modeltranslator",
+    "rank": 59473
+   },
+   {
+    "name": "ipregistry",
+    "rank": 60579
+   },
+   {
+    "name": "jupyter-ai-jupyternaut",
+    "rank": 39262
+   },
+   {
+    "name": "kollabor-tui",
+    "rank": 58269
+   },
+   {
+    "name": "fairspec-metadata",
+    "rank": 84592
+   },
+   {
+    "name": "mtmtrain",
+    "rank": 98773
+   },
+   {
+    "name": "time-it",
+    "rank": 90258
+   },
+   {
+    "name": "pandablocks",
+    "rank": 24603
+   },
+   {
+    "name": "furu",
+    "rank": 65408
+   },
+   {
+    "name": "pdf417",
+    "rank": 22096
+   },
+   {
+    "name": "edgar-toolbox",
+    "rank": 91170
+   },
+   {
+    "name": "convertio",
+    "rank": 95683
+   },
+   {
+    "name": "readthedocs-cli",
+    "rank": 55195
+   },
+   {
+    "name": "pybloomfilter",
+    "rank": 80099
+   },
+   {
+    "name": "astro-metadata-translator",
+    "rank": 86726
+   },
+   {
+    "name": "cf-remote",
+    "rank": 32891
+   },
+   {
+    "name": "cryptol",
+    "rank": 80862
+   },
+   {
+    "name": "conviso-cli",
+    "rank": 56589
+   },
+   {
+    "name": "pulumi-django-azure",
+    "rank": 91574
+   },
+   {
+    "name": "evercycle-models",
+    "rank": 62006
+   },
+   {
+    "name": "zenlog",
+    "rank": 40460
+   },
+   {
+    "name": "torchrbf",
+    "rank": 41418
+   },
+   {
+    "name": "plib.stdlib",
+    "rank": 88187
+   },
+   {
+    "name": "timespan",
+    "rank": 93037
+   },
+   {
+    "name": "eea.facetednavigation",
+    "rank": 54999
+   },
+   {
+    "name": "fdjangodog",
+    "rank": 82115
+   },
+   {
+    "name": "odoo14-addon-partner-contact-personal-information-page",
+    "rank": 50766
+   },
+   {
+    "name": "pyagentx",
+    "rank": 98264
+   },
+   {
+    "name": "splunkctl",
+    "rank": 70760
+   },
+   {
+    "name": "thermostat-datasets",
+    "rank": 69580
+   },
+   {
+    "name": "nostradamus",
+    "rank": 17207
+   },
+   {
+    "name": "yolox",
+    "rank": 44763
+   },
+   {
+    "name": "pyrtcm",
+    "rank": 11266
+   },
+   {
+    "name": "bettercam",
+    "rank": 32835
+   },
+   {
+    "name": "dash-svg",
+    "rank": 10482
+   },
+   {
+    "name": "whisper-cpp-pybind",
+    "rank": 83287
+   },
+   {
+    "name": "pdm-version",
+    "rank": 66000
+   },
+   {
+    "name": "pyobjc-framework-accessibility",
+    "rank": 10664
+   },
+   {
+    "name": "duckdb-extension-ducklake",
+    "rank": 74480
+   },
+   {
+    "name": "neuralk",
+    "rank": 91600
+   },
+   {
+    "name": "aidial-rag-eval",
+    "rank": 80856
+   },
+   {
+    "name": "gdolim",
+    "rank": 93172
+   },
+   {
+    "name": "minters",
+    "rank": 81148
+   },
+   {
+    "name": "nudged",
+    "rank": 30227
+   },
+   {
+    "name": "winshlex",
+    "rank": 23758
+   },
+   {
+    "name": "django-learngual",
+    "rank": 23391
+   },
+   {
+    "name": "time-series-dataset",
+    "rank": 82535
+   },
+   {
+    "name": "metachip2",
+    "rank": 80680
+   },
+   {
+    "name": "pulumi-automation",
+    "rank": 18901
+   },
+   {
+    "name": "h2o-pysparkling-3.3",
+    "rank": 27049
+   },
+   {
+    "name": "redis-data-structures",
+    "rank": 32596
+   },
+   {
+    "name": "rips",
+    "rank": 46728
+   },
+   {
+    "name": "elsapy",
+    "rank": 90500
+   },
+   {
+    "name": "flopscope",
+    "rank": 25199
+   },
+   {
+    "name": "plugin-jm-server",
+    "rank": 33131
+   },
+   {
+    "name": "ctypeslib2",
+    "rank": 17653
+   },
+   {
+    "name": "summarize-ranges",
+    "rank": 73141
+   },
+   {
+    "name": "yb",
+    "rank": 79733
+   },
+   {
+    "name": "alibabacloud.mcp-proxy",
+    "rank": 26348
+   },
+   {
+    "name": "tdl",
+    "rank": 66343
+   },
+   {
+    "name": "reactpy_django",
+    "rank": 86724
+   },
+   {
+    "name": "flytekitplugins-onnxpytorch",
+    "rank": 35848
+   },
+   {
+    "name": "pystatsd",
+    "rank": 50506
+   },
+   {
+    "name": "b-labs-models",
+    "rank": 74519
+   },
+   {
+    "name": "pytmhmm-binaries",
+    "rank": 71386
+   },
+   {
+    "name": "rslearn-ml",
+    "rank": 86912
+   },
+   {
+    "name": "regtest",
+    "rank": 50507
+   },
+   {
+    "name": "flake8-printf-formatting",
+    "rank": 26155
+   },
+   {
+    "name": "transfer-nlp",
+    "rank": 88440
+   },
+   {
+    "name": "cyapi",
+    "rank": 64180
+   },
+   {
+    "name": "pbirest",
+    "rank": 94884
+   },
+   {
+    "name": "img_rotate",
+    "rank": 66465
+   },
+   {
+    "name": "sphinx-c-autodoc",
+    "rank": 69104
+   },
+   {
+    "name": "railmux",
+    "rank": 26904
+   },
+   {
+    "name": "petsc",
+    "rank": 33444
+   },
+   {
+    "name": "skosprovider-getty",
+    "rank": 59021
+   },
+   {
+    "name": "gpubk",
+    "rank": 72712
+   },
+   {
+    "name": "ovos-skill-fallback-unknown",
+    "rank": 39723
+   },
+   {
+    "name": "pofile",
+    "rank": 70754
+   },
+   {
+    "name": "bioio-tifffile",
+    "rank": 22535
+   },
+   {
+    "name": "moleditpy",
+    "rank": 46620
+   },
+   {
+    "name": "gitsource",
+    "rank": 74469
+   },
+   {
+    "name": "dftracer-utils",
+    "rank": 37610
+   },
+   {
+    "name": "soltrannet",
+    "rank": 83314
+   },
+   {
+    "name": "flask-bower",
+    "rank": 89186
+   },
+   {
+    "name": "jsonschema-validator-new",
+    "rank": 37119
+   },
+   {
+    "name": "integv",
+    "rank": 76413
+   },
+   {
+    "name": "derpconf",
+    "rank": 26955
+   },
+   {
+    "name": "mkdocs-apidoc",
+    "rank": 89342
+   },
+   {
+    "name": "pgcontents",
+    "rank": 96771
+   },
+   {
+    "name": "ffmpeg-binaries-compat",
+    "rank": 31386
+   },
+   {
+    "name": "ansys-api-cfx",
+    "rank": 46963
+   },
+   {
+    "name": "mkpipe-extractor-snowflake",
+    "rank": 95678
+   },
+   {
+    "name": "methodosintscan",
+    "rank": 65924
+   },
+   {
+    "name": "cangling-broker",
+    "rank": 72547
+   },
+   {
+    "name": "scsgate",
+    "rank": 34971
+   },
+   {
+    "name": "flask-recaptcha",
+    "rank": 39855
+   },
+   {
+    "name": "shipyard-neo-sdk",
+    "rank": 14584
+   },
+   {
+    "name": "jarl-linter",
+    "rank": 66618
+   },
+   {
+    "name": "gographer",
+    "rank": 92367
+   },
+   {
+    "name": "osam",
+    "rank": 17907
+   },
+   {
+    "name": "wordstats",
+    "rank": 85288
+   },
+   {
+    "name": "athena-ballerina",
+    "rank": 35881
+   },
+   {
+    "name": "pypnm",
+    "rank": 97352
+   },
+   {
+    "name": "markdown-image-caption",
+    "rank": 94762
+   },
+   {
+    "name": "dagster-modal",
+    "rank": 27380
+   },
+   {
+    "name": "satori-python-core",
+    "rank": 73031
+   },
+   {
+    "name": "tetrascience-streamlit-ui",
+    "rank": 55043
+   },
+   {
+    "name": "peclet-voro",
+    "rank": 57222
+   },
+   {
+    "name": "aqt",
+    "rank": 15734
+   },
+   {
+    "name": "betterpath",
+    "rank": 31280
+   },
+   {
+    "name": "bluezero",
+    "rank": 62443
+   },
+   {
+    "name": "clipmaster",
+    "rank": 79646
+   },
+   {
+    "name": "tigrcorn-core",
+    "rank": 62514
+   },
+   {
+    "name": "streamlit-drawable-canvas",
+    "rank": 14989
+   },
+   {
+    "name": "random-text-generator",
+    "rank": 80659
+   },
+   {
+    "name": "malwaredetector",
+    "rank": 94780
+   },
+   {
+    "name": "socialia",
+    "rank": 76721
+   },
+   {
+    "name": "chromecontroller",
+    "rank": 25978
+   },
+   {
+    "name": "shipyard-dbt",
+    "rank": 18583
+   },
+   {
+    "name": "galaxy-cli",
+    "rank": 96995
+   },
+   {
+    "name": "xarpes",
+    "rank": 92582
+   },
+   {
+    "name": "ocrmac",
+    "rank": 20509
+   },
+   {
+    "name": "modeltranslation-lokalise",
+    "rank": 69460
+   },
+   {
+    "name": "zappa-scheduler",
+    "rank": 36364
+   },
+   {
+    "name": "experiment-generator",
+    "rank": 88471
+   },
+   {
+    "name": "jararaca",
+    "rank": 57671
+   },
+   {
+    "name": "pulsar",
+    "rank": 80380
+   },
+   {
+    "name": "nwp500-python",
+    "rank": 82527
+   },
+   {
+    "name": "griffon",
+    "rank": 90683
+   },
+   {
+    "name": "rancher-client",
+    "rank": 97111
+   },
+   {
+    "name": "scenic",
+    "rank": 57509
+   },
+   {
+    "name": "intake-geopandas",
+    "rank": 64651
+   },
+   {
+    "name": "mecord-cli",
+    "rank": 63320
+   },
+   {
+    "name": "mockrdd",
+    "rank": 38798
+   },
+   {
+    "name": "codat-assess",
+    "rank": 45093
+   },
+   {
+    "name": "ai-pack-cli",
+    "rank": 87927
+   },
+   {
+    "name": "appmesh",
+    "rank": 50924
+   },
+   {
+    "name": "openyuanrong-sdk",
+    "rank": 41527
+   },
+   {
+    "name": "pycparser-fake-libc",
+    "rank": 54269
+   },
+   {
+    "name": "monobit",
+    "rank": 98877
+   },
+   {
+    "name": "ton",
+    "rank": 62039
+   },
+   {
+    "name": "s3-log-extraction",
+    "rank": 93738
+   },
+   {
+    "name": "awslabs.elasticache-mcp-server",
+    "rank": 51641
+   },
+   {
+    "name": "cw-test",
+    "rank": 59639
+   },
+   {
+    "name": "robodk",
+    "rank": 33037
+   },
+   {
+    "name": "scriptman",
+    "rank": 73821
+   },
+   {
+    "name": "ovos-skill-youtube-music",
+    "rank": 70647
+   },
+   {
+    "name": "lib-list",
+    "rank": 52236
+   },
+   {
+    "name": "grantex",
+    "rank": 35655
+   },
+   {
+    "name": "csrd-migration",
+    "rank": 55103
+   },
+   {
+    "name": "written",
+    "rank": 26848
+   },
+   {
+    "name": "searchts",
+    "rank": 74028
+   },
+   {
+    "name": "opentelemetry-instrumentation-oslo-log",
+    "rank": 53854
+   },
+   {
+    "name": "trdg",
+    "rank": 50126
+   },
+   {
+    "name": "pymcu-sdk",
+    "rank": 80828
+   },
+   {
+    "name": "libcloudforensics",
+    "rank": 31442
+   },
+   {
+    "name": "types-aiobotocore-backup-gateway",
+    "rank": 14914
+   },
+   {
+    "name": "grpc",
+    "rank": 38059
+   },
+   {
+    "name": "pyessv",
+    "rank": 86784
+   },
+   {
+    "name": "empyre",
+    "rank": 41807
+   },
+   {
+    "name": "obscure_stats",
+    "rank": 65738
+   },
+   {
+    "name": "pyjpmesh",
+    "rank": 92949
+   },
+   {
+    "name": "ascender-framework",
+    "rank": 91124
+   },
+   {
+    "name": "taiwan-holidays",
+    "rank": 77172
+   },
+   {
+    "name": "pytorchvideo",
+    "rank": 19272
+   },
+   {
+    "name": "edetek-words",
+    "rank": 96722
+   },
+   {
+    "name": "gnuhealth-icd10",
+    "rank": 88593
+   },
+   {
+    "name": "docvortex",
+    "rank": 35827
+   },
+   {
+    "name": "ablang2",
+    "rank": 24795
+   },
+   {
+    "name": "structlog-round",
+    "rank": 57590
+   },
+   {
+    "name": "bosos-dev-tools",
+    "rank": 80577
+   },
+   {
+    "name": "multidecoder",
+    "rank": 59448
+   },
+   {
+    "name": "stx-security-filter",
+    "rank": 24512
+   },
+   {
+    "name": "khoca",
+    "rank": 47855
+   },
+   {
+    "name": "click-man",
+    "rank": 24383
+   },
+   {
+    "name": "m3-xlwt",
+    "rank": 58225
+   },
+   {
+    "name": "midas-ssg",
+    "rank": 92972
+   },
+   {
+    "name": "energyml-witsml2-0",
+    "rank": 99640
+   },
+   {
+    "name": "emzed",
+    "rank": 50009
+   },
+   {
+    "name": "doxygen-guard",
+    "rank": 76649
+   },
+   {
+    "name": "videoio",
+    "rank": 49076
+   },
+   {
+    "name": "olbrain-python-sdk",
+    "rank": 97777
+   },
+   {
+    "name": "hats-import",
+    "rank": 55240
+   },
+   {
+    "name": "analyzerl-parser",
+    "rank": 95331
+   },
+   {
+    "name": "pywilight",
+    "rank": 18963
+   },
+   {
+    "name": "qwen-cli",
+    "rank": 93084
+   },
+   {
+    "name": "oemetadata",
+    "rank": 84434
+   },
+   {
+    "name": "pytest-mh",
+    "rank": 98071
+   },
+   {
+    "name": "django-admin-honeypot-blag",
+    "rank": 63211
+   },
+   {
+    "name": "rocrate",
+    "rank": 11827
+   },
+   {
+    "name": "cepmex",
+    "rank": 81559
+   },
+   {
+    "name": "cc-context-stats",
+    "rank": 58242
+   },
+   {
+    "name": "termqt",
+    "rank": 47236
+   },
+   {
+    "name": "ncloud-vautoscaling",
+    "rank": 92712
+   },
+   {
+    "name": "jmespath-community",
+    "rank": 15962
+   },
+   {
+    "name": "pydotdict",
+    "rank": 65870
+   },
+   {
+    "name": "pytest-plt",
+    "rank": 33488
+   },
+   {
+    "name": "isis-streaming-data-types",
+    "rank": 74990
+   },
+   {
+    "name": "anthemav",
+    "rank": 25107
+   },
+   {
+    "name": "liburing",
+    "rank": 88421
+   },
+   {
+    "name": "ipyvasp",
+    "rank": 90266
+   },
+   {
+    "name": "django-eventhandler",
+    "rank": 90468
+   },
+   {
+    "name": "pythonictestcase",
+    "rank": 81635
+   },
+   {
+    "name": "simforge-py",
+    "rank": 63639
+   },
+   {
+    "name": "certbot-dns-dnsmadeeasy",
+    "rank": 33507
+   },
+   {
+    "name": "cortex-code-agent-sdk",
+    "rank": 18073
+   },
+   {
+    "name": "segeval",
+    "rank": 92647
+   },
+   {
+    "name": "docuseal",
+    "rank": 22416
+   },
+   {
+    "name": "omnibase-compat",
+    "rank": 11394
+   },
+   {
+    "name": "graph-seeder",
+    "rank": 64605
+   },
+   {
+    "name": "espeak-phonemizer",
+    "rank": 27156
+   },
+   {
+    "name": "wolfxl",
+    "rank": 49655
+   },
+   {
+    "name": "neuralcoref",
+    "rank": 80541
+   },
+   {
+    "name": "describe-image",
+    "rank": 92152
+   },
+   {
+    "name": "dash-resizable-panels",
+    "rank": 57470
+   },
+   {
+    "name": "llm-wasm-sandbox",
+    "rank": 92140
+   },
+   {
+    "name": "stepwise-regression",
+    "rank": 22768
+   },
+   {
+    "name": "cutensornet-cu11",
+    "rank": 51392
+   },
+   {
+    "name": "kstopit",
+    "rank": 34267
+   },
+   {
+    "name": "odoo-addon-account-banking-pain-base",
+    "rank": 99970
+   },
+   {
+    "name": "types-pysaml2",
+    "rank": 11177
+   },
+   {
+    "name": "adyanutils",
+    "rank": 53460
+   },
+   {
+    "name": "hydraflow",
+    "rank": 94671
+   },
+   {
+    "name": "pytest-suite-timeout",
+    "rank": 30596
+   },
+   {
+    "name": "girder-download-statistics",
+    "rank": 37628
+   },
+   {
+    "name": "sleuth-kit",
+    "rank": 99720
+   },
+   {
+    "name": "redress",
+    "rank": 58945
+   },
+   {
+    "name": "veevatools",
+    "rank": 67550
+   },
+   {
+    "name": "mypy-boto3-budgets",
+    "rank": 10908
+   },
+   {
+    "name": "oscontrol",
+    "rank": 92077
+   },
+   {
+    "name": "keke",
+    "rank": 11035
+   },
+   {
+    "name": "alibabacloud-ess20220222",
+    "rank": 99921
+   },
+   {
+    "name": "spire.barcode.free",
+    "rank": 89301
+   },
+   {
+    "name": "cellpy",
+    "rank": 58506
+   },
+   {
+    "name": "trulens-providers-google",
+    "rank": 87763
+   },
+   {
+    "name": "sincpro-siat-soap",
+    "rank": 69497
+   },
+   {
+    "name": "word-mcp-live",
+    "rank": 54695
+   },
+   {
+    "name": "stinger-python-utils",
+    "rank": 58311
+   },
+   {
+    "name": "pycrypt",
+    "rank": 29110
+   },
+   {
+    "name": "pyclef",
+    "rank": 99963
+   },
+   {
+    "name": "fastembed-imagin-studio",
+    "rank": 91899
+   },
+   {
+    "name": "pydeephaven",
+    "rank": 31202
+   },
+   {
+    "name": "django-form-admin",
+    "rank": 44132
+   },
+   {
+    "name": "socratic-agents",
+    "rank": 77264
+   },
+   {
+    "name": "awesome-depth-anything-3",
+    "rank": 55451
+   },
+   {
+    "name": "plover-clippy-2",
+    "rank": 90783
+   },
+   {
+    "name": "howler-sentinel-plugin",
+    "rank": 67993
+   },
+   {
+    "name": "haka-playwright-engine",
+    "rank": 53682
+   },
+   {
+    "name": "flask-http-middleware",
+    "rank": 40101
+   },
+   {
+    "name": "botocore-a-la-carte-sagemaker-featurestore-runtime",
+    "rank": 59209
+   },
+   {
+    "name": "proton",
+    "rank": 46985
+   },
+   {
+    "name": "pepperize.cdk-ssm-parameters-cross-region",
+    "rank": 60509
+   },
+   {
+    "name": "modgrammar",
+    "rank": 46862
+   },
+   {
+    "name": "yahoo-oauth",
+    "rank": 21668
+   },
+   {
+    "name": "odoo-addon-l10n-fr-state",
+    "rank": 63836
+   },
+   {
+    "name": "cello-classify",
+    "rank": 97022
+   },
+   {
+    "name": "geocachingapi",
+    "rank": 20834
+   },
+   {
+    "name": "yewtube-search-python",
+    "rank": 56176
+   },
+   {
+    "name": "areixio",
+    "rank": 95948
+   },
+   {
+    "name": "pyobjc-framework-metalkit",
+    "rank": 10722
+   },
+   {
+    "name": "jacobs-json-schema",
+    "rank": 48248
+   },
+   {
+    "name": "croc-cli",
+    "rank": 78791
+   },
+   {
+    "name": "ghttp-tool",
+    "rank": 78391
+   },
+   {
+    "name": "syncpg",
+    "rank": 73905
+   },
+   {
+    "name": "prezzemolo",
+    "rank": 39313
+   },
+   {
+    "name": "botocore-a-la-carte-sso-admin",
+    "rank": 26182
+   },
+   {
+    "name": "filtration",
+    "rank": 32925
+   },
+   {
+    "name": "serializall",
+    "rank": 29663
+   },
+   {
+    "name": "scanf",
+    "rank": 15440
+   },
+   {
+    "name": "autosubmitconfigparser",
+    "rank": 59154
+   },
+   {
+    "name": "llama-index-embeddings-openai-like",
+    "rank": 16133
+   },
+   {
+    "name": "odoo14-addon-server-environment",
+    "rank": 85864
+   },
+   {
+    "name": "django-alive-checks",
+    "rank": 86646
+   },
+   {
+    "name": "geode-background",
+    "rank": 24957
+   },
+   {
+    "name": "aek-auto-mlbuilder",
+    "rank": 92147
+   },
+   {
+    "name": "vgi-python",
+    "rank": 41430
+   },
+   {
+    "name": "moq-rs",
+    "rank": 78308
+   },
+   {
+    "name": "azure-cli-vm",
+    "rank": 40513
+   },
+   {
+    "name": "pyeryx",
+    "rank": 41702
+   },
+   {
+    "name": "tencentcloud-sdk-python-csip",
+    "rank": 52004
+   },
+   {
+    "name": "kratosfsiapplication",
+    "rank": 56898
+   },
+   {
+    "name": "crispy-forms-gds",
+    "rank": 16635
+   },
+   {
+    "name": "cooldict",
+    "rank": 66707
+   },
+   {
+    "name": "botocore-a-la-carte-snowball",
+    "rank": 90294
+   },
+   {
+    "name": "wars",
+    "rank": 24152
+   },
+   {
+    "name": "trovesuite-auth-service",
+    "rank": 95571
+   },
+   {
+    "name": "version",
+    "rank": 12290
+   },
+   {
+    "name": "qawolf-socket-pypi",
+    "rank": 28164
+   },
+   {
+    "name": "pytest-beartype",
+    "rank": 18399
+   },
+   {
+    "name": "ialdev-core",
+    "rank": 78649
+   },
+   {
+    "name": "flask-mvc2",
+    "rank": 80710
+   },
+   {
+    "name": "searchads-api",
+    "rank": 26952
+   },
+   {
+    "name": "netaudio",
+    "rank": 95440
+   },
+   {
+    "name": "apollo-client-python",
+    "rank": 88295
+   },
+   {
+    "name": "fear-greed-index",
+    "rank": 86970
+   },
+   {
+    "name": "fluxmedia",
+    "rank": 69063
+   },
+   {
+    "name": "xberg",
+    "rank": 15367
+   },
+   {
+    "name": "jsontest",
+    "rank": 79281
+   },
+   {
+    "name": "nextcord",
+    "rank": 14246
+   },
+   {
+    "name": "aioconnectors",
+    "rank": 53590
+   },
+   {
+    "name": "vorim",
+    "rank": 90263
+   },
+   {
+    "name": "flask-env",
+    "rank": 20748
+   },
+   {
+    "name": "leetvault",
+    "rank": 63640
+   },
+   {
+    "name": "prcoords",
+    "rank": 44033
+   },
+   {
+    "name": "aries-cloudcontroller",
+    "rank": 70889
+   },
+   {
+    "name": "saio",
+    "rank": 60502
+   },
+   {
+    "name": "netbluemind5",
+    "rank": 94234
+   },
+   {
+    "name": "create-awesome-python-app",
+    "rank": 38189
+   },
+   {
+    "name": "classdiff",
+    "rank": 27211
+   },
+   {
+    "name": "agt-agent",
+    "rank": 34968
+   },
+   {
+    "name": "hatch-pip-compile",
+    "rank": 14208
+   },
+   {
+    "name": "fyndata-django-accounts",
+    "rank": 64734
+   },
+   {
+    "name": "aws-cdk.aws-appconfig-alpha",
+    "rank": 67887
+   },
+   {
+    "name": "commonware",
+    "rank": 28590
+   },
+   {
+    "name": "chuk-mcp-runtime",
+    "rank": 36958
+   },
+   {
+    "name": "genblaze-core",
+    "rank": 31146
+   },
+   {
+    "name": "esa-snappy",
+    "rank": 60011
+   },
+   {
+    "name": "pymca",
+    "rank": 35272
+   },
+   {
+    "name": "netbox-plugin-dns-bridge",
+    "rank": 79702
+   },
+   {
+    "name": "yepkit-pykush",
+    "rank": 22830
+   },
+   {
+    "name": "turbinia",
+    "rank": 86555
+   },
+   {
+    "name": "tabtabtab",
+    "rank": 60684
+   },
+   {
+    "name": "logging-utilities",
+    "rank": 35987
+   },
+   {
+    "name": "cfn-lsp-extra",
+    "rank": 56074
+   },
+   {
+    "name": "sqlalchemy-postgres-copy",
+    "rank": 14463
+   },
+   {
+    "name": "mongodb-toolkit",
+    "rank": 80339
+   },
+   {
+    "name": "fa6-icons",
+    "rank": 83962
+   },
+   {
+    "name": "littlebigbrain",
+    "rank": 87365
+   },
+   {
+    "name": "astropods-adapter-core",
+    "rank": 95509
+   },
+   {
+    "name": "deepspeech",
+    "rank": 50922
+   },
+   {
+    "name": "tollgate",
+    "rank": 96133
+   },
+   {
+    "name": "kometautils",
+    "rank": 80735
+   },
+   {
+    "name": "os-apply-config",
+    "rank": 57598
+   },
+   {
+    "name": "count-tokens",
+    "rank": 16811
+   },
+   {
+    "name": "netboxlabs-diode-netbox-plugin",
+    "rank": 41345
+   },
+   {
+    "name": "iter-backoff",
+    "rank": 68479
+   },
+   {
+    "name": "cordia",
+    "rank": 67843
+   },
+   {
+    "name": "finefettle",
+    "rank": 69221
+   },
+   {
+    "name": "ssm-parameter-store-cc",
+    "rank": 24385
+   },
+   {
+    "name": "gophish",
+    "rank": 55610
+   },
+   {
+    "name": "agentic_security",
+    "rank": 80660
+   },
+   {
+    "name": "rl-language-core",
+    "rank": 77235
+   },
+   {
+    "name": "annex4risk-detector",
+    "rank": 60314
+   },
+   {
+    "name": "peclet-flow",
+    "rank": 95915
+   },
+   {
+    "name": "dwave-embedding-utilities",
+    "rank": 91447
+   },
+   {
+    "name": "xfields",
+    "rank": 51843
+   },
+   {
+    "name": "lru-expiring-cache",
+    "rank": 65727
+   },
+   {
+    "name": "next-plaid-client",
+    "rank": 82089
+   },
+   {
+    "name": "samplerate-ledfx",
+    "rank": 50527
+   },
+   {
+    "name": "otdrparser",
+    "rank": 95850
+   },
+   {
+    "name": "ovos-stt-plugin-vosk",
+    "rank": 63701
+   },
+   {
+    "name": "appsync-client",
+    "rank": 21297
+   },
+   {
+    "name": "databricks-bb-plugin",
+    "rank": 78137
+   },
+   {
+    "name": "pytransitions",
+    "rank": 58487
+   },
+   {
+    "name": "pipslim",
+    "rank": 89293
+   },
+   {
+    "name": "image-dataset-converter-video",
+    "rank": 96145
+   },
+   {
+    "name": "pdex",
+    "rank": 20926
+   },
+   {
+    "name": "asyncoss",
+    "rank": 98956
+   },
+   {
+    "name": "accera-gpu",
+    "rank": 68407
+   },
+   {
+    "name": "ultradict",
+    "rank": 51430
+   },
+   {
+    "name": "mcp-applemusic",
+    "rank": 26010
+   },
+   {
+    "name": "assoc-scan",
+    "rank": 62129
+   },
+   {
+    "name": "br-rapp-sdk",
+    "rank": 94031
+   },
+   {
+    "name": "tree-sitter-pgn",
+    "rank": 56766
+   },
+   {
+    "name": "polyglot-tokenizer",
+    "rank": 97515
+   },
+   {
+    "name": "fleetglue-client",
+    "rank": 76599
+   },
+   {
+    "name": "hueclipse",
+    "rank": 85079
+   },
+   {
+    "name": "miditok",
+    "rank": 30600
+   },
+   {
+    "name": "azure-monitor-querymetrics",
+    "rank": 12947
+   },
+   {
+    "name": "django-imagefield",
+    "rank": 45218
+   },
+   {
+    "name": "tensorflow-io-plugin-gs-nightly",
+    "rank": 89133
+   },
+   {
+    "name": "vaf",
+    "rank": 92804
+   },
+   {
+    "name": "bitmex",
+    "rank": 68119
+   },
+   {
+    "name": "dagster-looker",
+    "rank": 34635
+   },
+   {
+    "name": "garth",
+    "rank": 13115
+   },
+   {
+    "name": "logging3",
+    "rank": 73200
+   },
+   {
+    "name": "huaweicloudsdklts",
+    "rank": 51196
+   },
+   {
+    "name": "django-iam-dbauth",
+    "rank": 18542
+   },
+   {
+    "name": "marm-mcp-server",
+    "rank": 64434
+   },
+   {
+    "name": "seqpro",
+    "rank": 57937
+   },
+   {
+    "name": "exejs",
+    "rank": 16425
+   },
+   {
+    "name": "recap",
+    "rank": 75356
+   },
+   {
+    "name": "jsonschema-lexer",
+    "rank": 27112
+   },
+   {
+    "name": "macrocosmos",
+    "rank": 73706
+   },
+   {
+    "name": "certbot-dns-simply",
+    "rank": 58841
+   },
+   {
+    "name": "dflango",
+    "rank": 46951
+   },
+   {
+    "name": "stayawakebot",
+    "rank": 57641
+   },
+   {
+    "name": "lbforaging",
+    "rank": 70804
+   },
+   {
+    "name": "django-connection-url",
+    "rank": 72743
+   },
+   {
+    "name": "gcf-python",
+    "rank": 28379
+   },
+   {
+    "name": "configs",
+    "rank": 17129
+   },
+   {
+    "name": "mlrl-boomer",
+    "rank": 46835
+   },
+   {
+    "name": "keboola_streamlit",
+    "rank": 38899
+   },
+   {
+    "name": "sphinx-mdolab-theme",
+    "rank": 94183
+   },
+   {
+    "name": "pyats.templates",
+    "rank": 70485
+   },
+   {
+    "name": "ast-canopy",
+    "rank": 65141
+   },
+   {
+    "name": "browser-control-and-automation-cli",
+    "rank": 69630
+   },
+   {
+    "name": "nepali-datetime",
+    "rank": 19188
+   },
+   {
+    "name": "creditcard-identifier",
+    "rank": 19110
+   },
+   {
+    "name": "pyedge-dot",
+    "rank": 91885
+   },
+   {
+    "name": "spacy-cld",
+    "rank": 34564
+   },
+   {
+    "name": "pydantic_walk_core_schema",
+    "rank": 37245
+   },
+   {
+    "name": "nomy-data-models",
+    "rank": 95180
+   },
+   {
+    "name": "pyfaaster",
+    "rank": 33410
+   },
+   {
+    "name": "ob-metaflow-stubs",
+    "rank": 10039
+   },
+   {
+    "name": "omniopt2",
+    "rank": 17328
+   },
+   {
+    "name": "bigplanet",
+    "rank": 92099
+   },
+   {
+    "name": "dragonfly-display",
+    "rank": 34143
+   },
+   {
+    "name": "tkinter-icons-mat",
+    "rank": 75712
+   },
+   {
+    "name": "cicerone",
+    "rank": 38174
+   },
+   {
+    "name": "txtai",
+    "rank": 27259
+   },
+   {
+    "name": "flask-appconfig",
+    "rank": 84026
+   },
+   {
+    "name": "aiuti",
+    "rank": 45089
+   },
+   {
+    "name": "langchain-auth",
+    "rank": 22409
+   },
+   {
+    "name": "emojidb",
+    "rank": 54968
+   },
+   {
+    "name": "aqora-cli",
+    "rank": 57127
+   },
+   {
+    "name": "python-kucoin",
+    "rank": 28353
+   },
+   {
+    "name": "id-echo",
+    "rank": 62588
+   },
+   {
+    "name": "django-autoparsed-address-field",
+    "rank": 68671
+   },
+   {
+    "name": "types-characteristic",
+    "rank": 45419
+   },
+   {
+    "name": "otio-kdenlive-adapter",
+    "rank": 84243
+   },
+   {
+    "name": "gradlint",
+    "rank": 63679
+   },
+   {
+    "name": "gptme",
+    "rank": 18259
+   },
+   {
+    "name": "funhub-scroll-shooter",
+    "rank": 98772
+   },
+   {
+    "name": "pyfastaq",
+    "rank": 28147
+   },
+   {
+    "name": "kisters.network_store.model_library.water",
+    "rank": 24125
+   },
+   {
+    "name": "hcom",
+    "rank": 83921
+   },
+   {
+    "name": "desilofhe-cu130",
+    "rank": 69263
+   },
+   {
+    "name": "simplicio-loop",
+    "rank": 85835
+   },
+   {
+    "name": "alpaqa",
+    "rank": 42172
+   },
+   {
+    "name": "klayout-tools",
+    "rank": 54277
+   },
+   {
+    "name": "pythonfinder",
+    "rank": 50854
+   },
+   {
+    "name": "django-read-only",
+    "rank": 20241
+   },
+   {
+    "name": "signac",
+    "rank": 19140
+   },
+   {
+    "name": "bgen-reader",
+    "rank": 51815
+   },
+   {
+    "name": "osyris",
+    "rank": 86137
+   },
+   {
+    "name": "zipunicode",
+    "rank": 32614
+   },
+   {
+    "name": "name-tools",
+    "rank": 62595
+   },
+   {
+    "name": "didppy",
+    "rank": 57098
+   },
+   {
+    "name": "asynclog",
+    "rank": 79343
+   },
+   {
+    "name": "wireguard-tools",
+    "rank": 42010
+   },
+   {
+    "name": "f3dasm",
+    "rank": 47081
+   },
+   {
+    "name": "types-idlelib",
+    "rank": 96318
+   },
+   {
+    "name": "hiveplotlib",
+    "rank": 62942
+   },
+   {
+    "name": "ecr-scan-reporter",
+    "rank": 44339
+   },
+   {
+    "name": "peco",
+    "rank": 20581
+   },
+   {
+    "name": "fixtup",
+    "rank": 37990
+   },
+   {
+    "name": "mjpl",
+    "rank": 26862
+   },
+   {
+    "name": "freesolo-flash",
+    "rank": 38578
+   },
+   {
+    "name": "fastpluggy-auth-user",
+    "rank": 42106
+   },
+   {
+    "name": "jl-ecms-server",
+    "rank": 88346
+   },
+   {
+    "name": "pynma",
+    "rank": 48484
+   },
+   {
+    "name": "globalwarmingpotentials",
+    "rank": 40308
+   },
+   {
+    "name": "brython",
+    "rank": 67693
+   },
+   {
+    "name": "tls_test_tools",
+    "rank": 34910
+   },
+   {
+    "name": "acq400-hapi",
+    "rank": 70235
+   },
+   {
+    "name": "lifx-emulator-core",
+    "rank": 38576
+   },
+   {
+    "name": "agentsummons",
+    "rank": 70172
+   },
+   {
+    "name": "json-normalize",
+    "rank": 12861
+   },
+   {
+    "name": "trusted-router-py",
+    "rank": 21160
+   },
+   {
+    "name": "kv-search",
+    "rank": 97704
+   },
+   {
+    "name": "deepstack-python",
+    "rank": 44151
+   },
+   {
+    "name": "bigdl-llm",
+    "rank": 58755
+   },
+   {
+    "name": "cpppo",
+    "rank": 18049
+   },
+   {
+    "name": "ae-core",
+    "rank": 61655
+   },
+   {
+    "name": "centra-sdk",
+    "rank": 17354
+   },
+   {
+    "name": "cloudify-rest-client",
+    "rank": 90153
+   },
+   {
+    "name": "rfc3161ng",
+    "rank": 11664
+   },
+   {
+    "name": "cumulus-library",
+    "rank": 90003
+   },
+   {
+    "name": "mawk",
+    "rank": 24411
+   },
+   {
+    "name": "azure-mgmt-cosmosdbforpostgresql",
+    "rank": 21639
+   },
+   {
+    "name": "palantir-oauth-client",
+    "rank": 22606
+   },
+   {
+    "name": "rogue-ai-sdk",
+    "rank": 68258
+   },
+   {
+    "name": "drf-tus",
+    "rank": 44299
+   },
+   {
+    "name": "iqa-pytorch",
+    "rank": 70687
+   },
+   {
+    "name": "ibm-agent-analytics-common",
+    "rank": 34543
+   },
+   {
+    "name": "pyparallel",
+    "rank": 24781
+   },
+   {
+    "name": "invenio-records-ui",
+    "rank": 17881
+   },
+   {
+    "name": "drf-haystack",
+    "rank": 22758
+   },
+   {
+    "name": "ddadevops",
+    "rank": 60144
+   },
+   {
+    "name": "pylint-json2checkstyle",
+    "rank": 59657
+   },
+   {
+    "name": "pymdownx-blocks",
+    "rank": 89126
+   },
+   {
+    "name": "brain-agent",
+    "rank": 99476
+   },
+   {
+    "name": "cliparse",
+    "rank": 86197
+   },
+   {
+    "name": "gpt2lm",
+    "rank": 83151
+   },
+   {
+    "name": "electrickiwi-api",
+    "rank": 12999
+   },
+   {
+    "name": "tkinterweb",
+    "rank": 18913
+   },
+   {
+    "name": "msal-streamlit-authentication",
+    "rank": 28715
+   },
+   {
+    "name": "mock-firestore",
+    "rank": 10775
+   },
+   {
+    "name": "esi-extern-openquake",
+    "rank": 41019
+   },
+   {
+    "name": "msgspec-ext",
+    "rank": 58471
+   },
+   {
+    "name": "genblaze-runway",
+    "rank": 98332
+   },
+   {
+    "name": "nest-simulator",
+    "rank": 75367
+   },
+   {
+    "name": "pysqlcipher3-binary",
+    "rank": 61885
+   },
+   {
+    "name": "solax-py-library",
+    "rank": 91483
+   },
+   {
+    "name": "django-mojo",
+    "rank": 41612
+   },
+   {
+    "name": "simple-sarif",
+    "rank": 44139
+   },
+   {
+    "name": "django-string-renderer",
+    "rank": 78387
+   },
+   {
+    "name": "pydantic-changedetect",
+    "rank": 18055
+   },
+   {
+    "name": "cpi",
+    "rank": 10070
+   },
+   {
+    "name": "deepspeech-gpu",
+    "rank": 75993
+   },
+   {
+    "name": "openalchemy",
+    "rank": 34679
+   },
+   {
+    "name": "loya-client",
+    "rank": 80616
+   },
+   {
+    "name": "aws-solutions-constructs.aws-apigateway-sagemakerendpoint",
+    "rank": 45356
+   },
+   {
+    "name": "lulu-ads",
+    "rank": 58167
+   },
+   {
+    "name": "seamm-exec",
+    "rank": 58200
+   },
+   {
+    "name": "wavio",
+    "rank": 12195
+   },
+   {
+    "name": "sectionminer",
+    "rank": 93042
+   },
+   {
+    "name": "whichlang-py",
+    "rank": 35772
+   },
+   {
+    "name": "python-pskc",
+    "rank": 24710
+   },
+   {
+    "name": "modisco",
+    "rank": 57180
+   },
+   {
+    "name": "pixee-eval-sdk",
+    "rank": 41207
+   },
+   {
+    "name": "hatasmota",
+    "rank": 16656
+   },
+   {
+    "name": "marrow.util",
+    "rank": 28480
+   },
+   {
+    "name": "cpsvisualizer",
+    "rank": 90084
+   },
+   {
+    "name": "django-river",
+    "rank": 88534
+   },
+   {
+    "name": "neurio",
+    "rank": 35113
+   },
+   {
+    "name": "pickle-mixin",
+    "rank": 13036
+   },
+   {
+    "name": "tom-registration",
+    "rank": 75785
+   },
+   {
+    "name": "types-aiobotocore-resource-groups",
+    "rank": 27376
+   },
+   {
+    "name": "botocore-a-la-carte-oam",
+    "rank": 54178
+   },
+   {
+    "name": "lark-js",
+    "rank": 16263
+   },
+   {
+    "name": "yjs-widgets",
+    "rank": 34350
+   },
+   {
+    "name": "marmot-agents",
+    "rank": 37001
+   },
+   {
+    "name": "pysisf",
+    "rank": 66865
+   },
+   {
+    "name": "mcp-searxng",
+    "rank": 52960
+   },
+   {
+    "name": "rock-physics-open",
+    "rank": 74362
+   },
+   {
+    "name": "hypothesis-awkward",
+    "rank": 39881
+   },
+   {
+    "name": "kaptan",
+    "rank": 40883
+   },
+   {
+    "name": "strpdatetime",
+    "rank": 22102
+   },
+   {
+    "name": "plone.formwidget.recurrence",
+    "rank": 17429
+   },
+   {
+    "name": "pyread-eagle",
+    "rank": 98477
+   },
+   {
+    "name": "sora-sdk",
+    "rank": 20605
+   },
+   {
+    "name": "servicing",
+    "rank": 72576
+   },
+   {
+    "name": "botocore-a-la-carte-scheduler",
+    "rank": 62919
+   },
+   {
+    "name": "django-sundial",
+    "rank": 77971
+   },
+   {
+    "name": "pofmt",
+    "rank": 67337
+   },
+   {
+    "name": "greeclimate",
+    "rank": 16131
+   },
+   {
+    "name": "sqlframe",
+    "rank": 14622
+   },
+   {
+    "name": "pyapollo-zenkilan",
+    "rank": 71527
+   },
+   {
+    "name": "botocore-a-la-carte-osis",
+    "rank": 84612
+   },
+   {
+    "name": "mkl-devel",
+    "rank": 25477
+   },
+   {
+    "name": "adafruit-circuitpython-ili9341",
+    "rank": 55650
+   },
+   {
+    "name": "llamaapi",
+    "rank": 30287
+   },
+   {
+    "name": "celery-cloudwatch-logs",
+    "rank": 69147
+   },
+   {
+    "name": "aiocfscrape",
+    "rank": 20602
+   },
+   {
+    "name": "tipg",
+    "rank": 45960
+   },
+   {
+    "name": "crystals",
+    "rank": 52570
+   },
+   {
+    "name": "inpaint",
+    "rank": 49025
+   },
+   {
+    "name": "itolapi",
+    "rank": 77877
+   },
+   {
+    "name": "npstructures",
+    "rank": 41165
+   },
+   {
+    "name": "irrep",
+    "rank": 28194
+   },
+   {
+    "name": "json-serializer",
+    "rank": 58556
+   },
+   {
+    "name": "odoo-addon-web-chatter-position",
+    "rank": 66625
+   },
+   {
+    "name": "django-cryptographic-fields-bihealth",
+    "rank": 90736
+   },
+   {
+    "name": "dfine-seg",
+    "rank": 84286
+   },
+   {
+    "name": "axmlparserpy",
+    "rank": 76093
+   },
+   {
+    "name": "llama-index-finetuning",
+    "rank": 31716
+   },
+   {
+    "name": "flask-accept",
+    "rank": 29403
+   },
+   {
+    "name": "obvyr-agent",
+    "rank": 82267
+   },
+   {
+    "name": "laserbeamsize",
+    "rank": 55993
+   },
+   {
+    "name": "covcheck",
+    "rank": 23087
+   },
+   {
+    "name": "sightengine",
+    "rank": 81290
+   },
+   {
+    "name": "batou",
+    "rank": 24755
+   },
+   {
+    "name": "tinyhumansai",
+    "rank": 91853
+   },
+   {
+    "name": "getuseragent",
+    "rank": 45752
+   },
+   {
+    "name": "teamtomo-basemodel",
+    "rank": 63374
+   },
+   {
+    "name": "hatch-mypyc",
+    "rank": 19245
+   },
+   {
+    "name": "autokeras-pretrained",
+    "rank": 92941
+   },
+   {
+    "name": "godot-parser",
+    "rank": 49512
+   },
+   {
+    "name": "ttastromech",
+    "rank": 87471
+   },
+   {
+    "name": "paddle-python-sdk",
+    "rank": 10130
+   },
+   {
+    "name": "yoomoney-async",
+    "rank": 87924
+   },
+   {
+    "name": "llama-index-readers-gcs",
+    "rank": 18949
+   },
+   {
+    "name": "slc.publications",
+    "rank": 46933
+   },
+   {
+    "name": "os_diskconfig_python_novaclient_ext",
+    "rank": 38029
+   },
+   {
+    "name": "lantz-core",
+    "rank": 66103
+   },
+   {
+    "name": "cli-support",
+    "rank": 45568
+   },
+   {
+    "name": "rainbow-rb-sdk",
+    "rank": 61991
+   },
+   {
+    "name": "aws-quota-checker",
+    "rank": 51538
+   },
+   {
+    "name": "wattrex-battery-cycler-datatypes",
+    "rank": 88573
+   },
+   {
+    "name": "thinc-apple-ops",
+    "rank": 77618
+   },
+   {
+    "name": "computer-control-mcp",
+    "rank": 44466
+   },
+   {
+    "name": "tensornetwork",
+    "rank": 23178
+   },
+   {
+    "name": "uel",
+    "rank": 54980
+   },
+   {
+    "name": "single-cell-metabolomics",
+    "rank": 55915
+   },
+   {
+    "name": "horovod",
+    "rank": 18565
+   },
+   {
+    "name": "swarmauri_embedding_doc2vec",
+    "rank": 93191
+   },
+   {
+    "name": "pykonal",
+    "rank": 97347
+   },
+   {
+    "name": "dynoscale",
+    "rank": 69086
+   },
+   {
+    "name": "alibabacloud-dytnsapi20200217",
+    "rank": 96698
+   },
+   {
+    "name": "data-collect",
+    "rank": 70632
+   },
+   {
+    "name": "cvat-cli",
+    "rank": 41834
+   },
+   {
+    "name": "scitex-io",
+    "rank": 26742
+   },
+   {
+    "name": "nomad-parser-plugins-electronic",
+    "rank": 30575
+   },
+   {
+    "name": "csrd-service",
+    "rank": 56144
+   },
+   {
+    "name": "meshcoredecoder",
+    "rank": 78271
+   },
+   {
+    "name": "cdk8s-plus-33",
+    "rank": 55478
+   },
+   {
+    "name": "mag-agent",
+    "rank": 78407
+   },
+   {
+    "name": "payjp",
+    "rank": 13203
+   },
+   {
+    "name": "beans-logging",
+    "rank": 69960
+   },
+   {
+    "name": "olefileio_pl",
+    "rank": 12284
+   },
+   {
+    "name": "gruut-lang-pt",
+    "rank": 90962
+   },
+   {
+    "name": "factorio-draftsman",
+    "rank": 74858
+   },
+   {
+    "name": "buckethandler",
+    "rank": 80227
+   },
+   {
+    "name": "opencensus-ext-flask",
+    "rank": 14733
+   },
+   {
+    "name": "mapca",
+    "rank": 31730
+   },
+   {
+    "name": "parametrix",
+    "rank": 99971
+   },
+   {
+    "name": "contextmodel",
+    "rank": 67430
+   },
+   {
+    "name": "akosha",
+    "rank": 60203
+   },
+   {
+    "name": "tree-sitter-bsl",
+    "rank": 85178
+   },
+   {
+    "name": "wordtodigits",
+    "rank": 14616
+   },
+   {
+    "name": "django-mptt-admin",
+    "rank": 20069
+   },
+   {
+    "name": "mkdocs-categories-plugin",
+    "rank": 52358
+   },
+   {
+    "name": "knmi-py",
+    "rank": 71338
+   },
+   {
+    "name": "python-glmnet",
+    "rank": 43327
+   },
+   {
+    "name": "aio.run.checker",
+    "rank": 25689
+   },
+   {
+    "name": "copydf",
+    "rank": 40274
+   },
+   {
+    "name": "pyawshelper",
+    "rank": 25449
+   },
+   {
+    "name": "gojsonnet",
+    "rank": 26554
+   },
+   {
+    "name": "termcc",
+    "rank": 68310
+   },
+   {
+    "name": "python-edgar",
+    "rank": 71040
+   },
+   {
+    "name": "django-workflow-engine",
+    "rank": 62292
+   },
+   {
+    "name": "m3u-parser",
+    "rank": 77314
+   },
+   {
+    "name": "types-boto3-qldb-session",
+    "rank": 40898
+   },
+   {
+    "name": "oct2py",
+    "rank": 15526
+   },
+   {
+    "name": "datasette-enrichments-gpt",
+    "rank": 82318
+   },
+   {
+    "name": "ioc-hunter",
+    "rank": 34141
+   },
+   {
+    "name": "hermes",
+    "rank": 54114
+   },
+   {
+    "name": "torchstain",
+    "rank": 33197
+   },
+   {
+    "name": "aep8",
+    "rank": 62988
+   },
+   {
+    "name": "simphile",
+    "rank": 29346
+   },
+   {
+    "name": "llama-index-vector-stores-typesense",
+    "rank": 25537
+   },
+   {
+    "name": "symbol-sdk-python",
+    "rank": 72379
+   },
+   {
+    "name": "tap-amplitude",
+    "rank": 86529
+   },
+   {
+    "name": "mupdf",
+    "rank": 24843
+   },
+   {
+    "name": "moai-adk",
+    "rank": 65500
+   },
+   {
+    "name": "ibm-cos-sdk-config",
+    "rank": 33848
+   },
+   {
+    "name": "clustergrammer2",
+    "rank": 64940
+   },
+   {
+    "name": "anipy-cli",
+    "rank": 54373
+   },
+   {
+    "name": "django-drf-coy-apis",
+    "rank": 52759
+   },
+   {
+    "name": "grnhse-api",
+    "rank": 64409
+   },
+   {
+    "name": "mpt-extension-sdk",
+    "rank": 64422
+   },
+   {
+    "name": "stitch-core",
+    "rank": 39312
+   },
+   {
+    "name": "horillasetup",
+    "rank": 52129
+   },
+   {
+    "name": "soliday.sdds",
+    "rank": 72870
+   },
+   {
+    "name": "cloudmesh-inventory",
+    "rank": 59943
+   },
+   {
+    "name": "tesseract-core",
+    "rank": 25820
+   },
+   {
+    "name": "rtl-buddy",
+    "rank": 44095
+   },
+   {
+    "name": "fast-bert",
+    "rank": 53922
+   },
+   {
+    "name": "memprocfs",
+    "rank": 52527
+   },
+   {
+    "name": "cryptochief-crypto-processing-python",
+    "rank": 78674
+   },
+   {
+    "name": "pydantic-graphql",
+    "rank": 94018
+   },
+   {
+    "name": "passagemath-iml",
+    "rank": 27214
+   },
+   {
+    "name": "pyspectra",
+    "rank": 63870
+   },
+   {
+    "name": "lncrawl-scraper",
+    "rank": 55654
+   },
+   {
+    "name": "dash-datetimepicker",
+    "rank": 86120
+   },
+   {
+    "name": "lectern",
+    "rank": 52472
+   },
+   {
+    "name": "fabricsync",
+    "rank": 94910
+   },
+   {
+    "name": "django-charid-field",
+    "rank": 26698
+   },
+   {
+    "name": "pandas-vet",
+    "rank": 17813
+   },
+   {
+    "name": "atom",
+    "rank": 31383
+   },
+   {
+    "name": "fastdist",
+    "rank": 52756
+   },
+   {
+    "name": "galaxy-tool-util-models",
+    "rank": 19842
+   },
+   {
+    "name": "mlir",
+    "rank": 73135
+   },
+   {
+    "name": "django-admin-sort",
+    "rank": 80999
+   },
+   {
+    "name": "botocore-a-la-carte-service-quotas",
+    "rank": 53997
+   },
+   {
+    "name": "yabadaba",
+    "rank": 46704
+   },
+   {
+    "name": "qfieldcloud-sdk",
+    "rank": 31754
+   },
+   {
+    "name": "sumo",
+    "rank": 27969
+   },
+   {
+    "name": "fastapi-sitemap",
+    "rank": 83128
+   },
+   {
+    "name": "django_audit_fields",
+    "rank": 38621
+   },
+   {
+    "name": "flask-rq2",
+    "rank": 15191
+   },
+   {
+    "name": "geolens-cli",
+    "rank": 75126
+   },
+   {
+    "name": "geometamaker",
+    "rank": 56751
+   },
+   {
+    "name": "vacuum-map-parser-dreame",
+    "rank": 23245
+   },
+   {
+    "name": "django-reverse-admin",
+    "rank": 13822
+   },
+   {
+    "name": "trailblazer",
+    "rank": 70232
+   },
+   {
+    "name": "rules-engine",
+    "rank": 61696
+   },
+   {
+    "name": "vision-agents",
+    "rank": 52950
+   },
+   {
+    "name": "dashclaw",
+    "rank": 34383
+   }
+  ]
+ }
+}
