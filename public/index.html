@@ -3,33 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="light">
   <title>pkgMirage: check a package before you install it</title>
   <link rel="icon" href="/favicon.svg">
   <link rel="stylesheet" href="/style.css">
   <script src="/app.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>pkgMirage</h1>
-    <p>Check a package name before you install it: does it exist, is it known malware, is it a copycat of a popular package, and for a risky npm package, what does its code do at install?</p>
+  <header class="bar">
+    <span class="brand">pkgMirage</span>
+    <span class="muted">npm and PyPI · checked before install</span>
   </header>
   <main>
-    <form id="check">
-      <fieldset>
-        <legend>Registry</legend>
-        <label><input type="radio" name="ecosystem" value="npm" checked> npm</label>
-        <label><input type="radio" name="ecosystem" value="pypi"> PyPI</label>
-      </fieldset>
-      <label for="name">Package name</label>
-      <div class="row">
-        <input id="name" name="name" required autocomplete="off" autocapitalize="off" spellcheck="false">
-        <button type="submit">Check</button>
-      </div>
-    </form>
-    <noscript><p>This page needs JavaScript. The same check works without it: <code>POST /api/check</code>.</p></noscript>
-    <p id="status" role="status"></p>
-    <section id="result" aria-label="Result"></section>
+    <section class="panel check">
+      <h1>Check a package</h1>
+      <p class="muted">Does it exist, is it known malware, is it a copycat of a popular package, and for a risky npm package, what does its code do at install?</p>
+      <form id="check">
+        <fieldset class="seg">
+          <legend class="sr">Registry</legend>
+          <label><input type="radio" name="ecosystem" value="npm" checked><span>npm</span></label>
+          <label><input type="radio" name="ecosystem" value="pypi"><span>PyPI</span></label>
+        </fieldset>
+        <label for="name" class="sr">Package name</label>
+        <div class="row">
+          <input id="name" name="name" required autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="package name">
+          <button type="submit">Check</button>
+        </div>
+      </form>
+      <noscript><p>This page needs JavaScript. The same check works without it: <code>POST /api/check</code>.</p></noscript>
+      <p id="status" role="status"></p>
+      <section id="result" aria-label="Result"></section>
+    </section>
+    <aside class="panel" aria-labelledby="stats-h">
+      <h2 id="stats-h">Last 7 days</h2>
+      <dl class="totals" id="totals"></dl>
+      <div class="chart" id="chart" aria-hidden="true"></div>
+      <p class="legend muted"><i class="k-safe"></i> passed <i class="k-caution"></i> caution <i class="k-block"></i> blocked</p>
+      <h2>Invented names watched</h2>
+      <p class="muted">Names assistants asked about that didn't exist, rechecked nightly.</p>
+      <dl class="totals" id="watch"></dl>
+      <p class="muted small" id="stats-note"></p>
+    </aside>
   </main>
 </body>
 </html>

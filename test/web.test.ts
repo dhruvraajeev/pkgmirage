@@ -59,7 +59,7 @@ describe("web", () => {
     expectPageHeaders(index);
   });
 
-  it("the page builds no markup from data and calls only /api/check", async () => {
+  it("the page builds no markup from data and calls only /api/check and /api/stats", async () => {
     const text = async (path: string) => (await page(path)).text();
     const [html, js, css] = await Promise.all([text("/"), text("/app.js"), text("/style.css")]);
     for (const code of [html, js]) expect(code).not.toMatch(/innerHTML|outerHTML|insertAdjacentHTML|document\.write|eval\(|new Function/);
@@ -69,9 +69,9 @@ describe("web", () => {
     expect(html.match(/<script[^>]*>/g)).toEqual(['<script src="/app.js" defer>']);
     expect(html).not.toMatch(/<style|\sstyle=/i);
     expect(html.match(/(?:src|href)="[^"]*"/g)).toEqual(['href="/favicon.svg"', 'href="/style.css"', 'src="/app.js"']);
-    // Nothing on another origin, and one request: a POST to /api/check.
+    // Nothing on another origin, and two requests: a POST to /api/check and a GET of /api/stats.
     for (const code of [html, js, css]) expect(code).not.toMatch(/\/\/[a-z0-9-]+\.|url\(|@import/i);
-    expect(js.match(/fetch\([^,)]*/g)).toEqual(['fetch("/api/check"']);
+    expect(js.match(/fetch\([^,)]*/g)).toEqual(['fetch("/api/check"', 'fetch("/api/stats"']);
     expect(js).not.toMatch(/XMLHttpRequest|WebSocket|EventSource|sendBeacon|import\(/);
   });
 });

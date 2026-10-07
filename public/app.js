@@ -80,7 +80,9 @@ function el(tag, text, className) {
 function card(verdict) {
   const article = el("article", undefined, `card ${verdict.verdict}`);
   const registry = verdict.checks.registry;
-  article.append(el("h2", shown(verdict.name)), el("p", label(verdict), "verdict"));
+  const heading = el("h2", shown(verdict.name));
+  heading.append(el("span", label(verdict), "verdict"));
+  article.append(heading);
   if (registry.latestVersion) article.append(el("p", `Latest version: ${registry.latestVersion}`));
   if (verdict.reasons.length) {
     const reasons = el("ul");
@@ -145,3 +147,44 @@ function checksList({ checks }) {
 
 // The findings themselves are in the reasons, in pkgMirage's own words.
 const findings = (code) => (code.findings.length ? "findings in the reasons above" : "no findings");
+
+// The side panel: counts only, from /api/stats. Failing quietly is fine here; it never affects a check.
+loadStats();
+async function loadStats() {
+  const note = document.getElementById("stats-note");
+  const stats = await fetch("/api/stats").then((res) => (res.ok ? res.json() : null)).catch(() => null);
+  if (!stats) {
+    for (const id of ["chart", "totals", "watch"]) document.getElementById(id).hidden = true;
+    document.querySelector(".legend").hidden = true;
+    return void (note.textContent = "Activity is unavailable right now.");
+  }
+  const sum = (key) => stats.days.reduce((total, day) => total + day[key], 0);
+  totals("totals", [["checks", sum("checks")], ["cautions", sum("cautions")], ["blocked", sum("blocks")]]);
+  const { total, unregistered, registered } = stats.watchlist;
+  totals("watch", [["watched", total], ["still free", unregistered], ["since registered", registered]]);
+
+  const chart = document.getElementById("chart");
+  const max = Math.max(1, ...stats.days.map((day) => day.checks));
+  for (const day of [...stats.days].reverse()) {
+    const bar = el("div");
+    bar.title = `${day.day}: ${day.checks} checks, ${day.cautions} caution, ${day.blocks} blocked`;
+    bar.style.height = `${(day.checks / max) * 100}%`;
+    const passed = day.checks - day.cautions - day.blocks;
+    for (const [count, kind] of [[passed, "safe"], [day.cautions, "caution"], [day.blocks, "block"]]) {
+      const part = el("b", undefined, `k-${kind}`);
+      part.style.flexGrow = count;
+      bar.append(part);
+    }
+    chart.append(bar);
+  }
+  note.textContent = `Updated ${new Date(stats.generatedAt).toLocaleTimeString()}`;
+}
+
+function totals(id, pairs) {
+  const list = document.getElementById(id);
+  for (const [term, value] of pairs) {
+    const item = el("div");
+    item.append(el("dt", term), el("dd", value.toLocaleString()));
+    list.append(item);
+  }
+}
