@@ -1,8 +1,7 @@
 # Setup
 
-pkgMirage isn't deployed yet: `https://pkgmirage.example` below stands for its address and won't resolve. To try
-everything against your own copy, start it as in the README's [Run locally](../README.md#run-locally) and use
-`http://localhost:8787` instead.
+The commands below use the live address, `https://pkgmirage.dhruvr.workers.dev`. To use your own copy instead,
+start it as in the README's [Run locally](../README.md#run-locally) and use `http://localhost:8787`.
 
 ## Connect an AI assistant (MCP)
 
@@ -14,7 +13,7 @@ pkgMirage's own wording (what the tools return: [README](../README.md#connect-yo
 Claude Code:
 
 ```bash
-claude mcp add --transport http pkgmirage https://pkgmirage.example/mcp
+claude mcp add --transport http pkgmirage https://pkgmirage.dhruvr.workers.dev/mcp
 ```
 
 Add `--scope project` to write it to the project's `.mcp.json` for the whole team (Claude Code asks each person to
@@ -25,7 +24,7 @@ Cursor: add this to `.cursor/mcp.json` in a project, or `~/.cursor/mcp.json` for
 ```json
 {
   "mcpServers": {
-    "pkgmirage": { "url": "https://pkgmirage.example/mcp" }
+    "pkgmirage": { "url": "https://pkgmirage.dhruvr.workers.dev/mcp" }
   }
 }
 ```
@@ -35,7 +34,7 @@ Cursor: add this to `.cursor/mcp.json` in a project, or `~/.cursor/mcp.json` for
 Turn the guard on for every project on this machine:
 
 ```bash
-npm config set registry https://pkgmirage.example/npm/
+npm config set registry https://pkgmirage.dhruvr.workers.dev/npm/
 npm config set prefer-online true
 ```
 
@@ -54,7 +53,7 @@ npm config delete prefer-online
 For one project only, put these lines in a `.npmrc` next to its `package.json` (commit it to guard the whole team):
 
 ```ini
-registry=https://pkgmirage.example/npm/
+registry=https://pkgmirage.dhruvr.workers.dev/npm/
 prefer-online=true
 ```
 
@@ -115,7 +114,7 @@ jobs:
           persist-credentials: false
       - name: Check packages with pkgMirage
         run: |
-          curl -sS --fail-with-body --data-binary @package-lock.json https://pkgmirage.example/api/scan -o scan.json \
+          curl -sS --fail-with-body --data-binary @package-lock.json https://pkgmirage.dhruvr.workers.dev/api/scan -o scan.json \
             || { cat scan.json; exit 1; }
           jq -r '.results[] | select(.verdict == "block") | "blocked: \(.name): \(.reasons | join("; "))"' scan.json
           jq -e '.summary.block == 0' scan.json > /dev/null
@@ -123,7 +122,7 @@ jobs:
 
 Use `@requirements.txt` for a Python project. A refused scan fails the job too, with the reason (too many packages,
 a file too large, or the rate limit; see [Use the API](#use-the-api)). To install through the guard in CI instead, run
-`npm ci --prefer-online --registry=https://pkgmirage.example/npm/` (`--prefer-online` so a cached `~/.npm` can't skip
+`npm ci --prefer-online --registry=https://pkgmirage.dhruvr.workers.dev/npm/` (`--prefer-online` so a cached `~/.npm` can't skip
 the check).
 
 ## Use the API
@@ -131,7 +130,7 @@ the check).
 Check up to 50 names at once; `ecosystem` is `npm` or `pypi`:
 
 ```bash
-curl -s https://pkgmirage.example/api/check \
+curl -s https://pkgmirage.dhruvr.workers.dev/api/check \
   -H 'content-type: application/json' \
   -d '{"ecosystem": "npm", "names": ["react", "expres"]}'
 ```
@@ -141,8 +140,8 @@ Each result has the `verdict`, the `reasons`, any `suggestions` and what was che
 ### Scan a project
 
 ```bash
-curl -s https://pkgmirage.example/api/scan --data-binary @package-lock.json
-curl -s https://pkgmirage.example/api/scan --data-binary @requirements.txt
+curl -s https://pkgmirage.dhruvr.workers.dev/api/scan --data-binary @package-lock.json
+curl -s https://pkgmirage.dhruvr.workers.dev/api/scan --data-binary @requirements.txt
 ```
 
 Send a `package-lock.json` (npm 7 or newer), a `package.json` or a pip requirements file as it is. Every package in a
@@ -170,7 +169,7 @@ were already installed).
 ### Usage stats
 
 ```bash
-curl -s https://pkgmirage.example/api/stats
+curl -s https://pkgmirage.dhruvr.workers.dev/api/stats
 ```
 
 Counts for the last 7 UTC days (today first, so far) and the watchlist, never names:

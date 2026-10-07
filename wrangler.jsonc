@@ -7,9 +7,8 @@
   // tests use the binding, to read the files the way the platform serves them.
   "assets": { "directory": "./public", "binding": "ASSETS" },
   "observability": { "enabled": true },
-  "kv_namespaces": [{ "binding": "CACHE" }],
-  // No database_id until the database is created on the production account; local dev and tests don't need one.
-  "d1_databases": [{ "binding": "DB", "database_name": "pkgmirage" }],
+  "kv_namespaces": [{ "binding": "CACHE", "id": "2544125dc6624d68a12275e7b34929fd" }],
+  "d1_databases": [{ "binding": "DB", "database_name": "pkgmirage", "database_id": "621a2450-a204-47d5-b995-f37db653f006" }],
   // Nightly re-check of watched names, off the hour. Fires only once deployed; locally: wrangler dev --test-scheduled.
   "triggers": { "crons": ["17 4 * * *"] },
   // Keys the hashes that count sightings once per caller per day; locally from .dev.vars.

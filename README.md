@@ -8,15 +8,16 @@ checks that the package exists, isn't known malware or a copycat of a popular na
 the code that would run at install (it never runs it). It also remembers the names it was asked about that didn't
 exist, and checks every night whether someone has registered one.
 
-pkgMirage isn't deployed yet: `https://pkgmirage.example` below stands for its address. To try it now, run your own
-copy ([Run locally](#run-locally)).
+**Live: [pkgmirage.dhruvr.workers.dev](https://pkgmirage.dhruvr.workers.dev)** (Cloudflare Workers, Free plan:
+see [Hosting plan](#hosting-plan-waiting-on-the-cloudflare-for-students-plan)). To run your own copy:
+[Run locally](#run-locally).
 
 ## Connect your AI assistant (MCP)
 
 Claude Code:
 
 ```bash
-claude mcp add --transport http pkgmirage https://pkgmirage.example/mcp
+claude mcp add --transport http pkgmirage https://pkgmirage.dhruvr.workers.dev/mcp
 ```
 
 Cursor, project-wide setup and the other options: [docs/setup.md](docs/setup.md#connect-an-ai-assistant-mcp).
@@ -37,8 +38,9 @@ esbuild (npm): CAUTION. runs install scripts (postinstall); install script runs 
 react (npm): SAFE
 ```
 
-When Claude Code was asked to install `typescirpt` through it (Claude Code 2.1.278, 2026-10-02), it called the
-tool, said not to run that command and suggested `npm install typescript`. Answers carry only pkgMirage's own
+The assistant decides when to call the tool. In a Claude Code session on 2026-10-02 (2.1.278) it called it for
+`typescirpt`, said not to run that command and suggested `npm install typescript`; in one against the live Worker on
+2026-10-07 it corrected the typo itself and never called it. To make the check certain, use the guard below. Answers carry only pkgMirage's own
 wording: nothing written by a package's author (descriptions, READMEs, code) reaches the assistant, so a package
 can't talk to it.
 
@@ -48,7 +50,7 @@ The assistant only checks what it's about to install. To check everything npm in
 dependencies and installs from a lockfile, point npm at pkgMirage:
 
 ```bash
-npm config set registry https://pkgmirage.example/npm/
+npm config set registry https://pkgmirage.dhruvr.workers.dev/npm/
 npm config set prefer-online true
 ```
 
@@ -74,7 +76,7 @@ There's no guard for pip: Python projects get the assistant's tools, the website
 The website (`/`) checks one package by hand and shows what was checked. Scripts and CI can call the same check:
 
 ```bash
-curl -s https://pkgmirage.example/api/check \
+curl -s https://pkgmirage.dhruvr.workers.dev/api/check \
   -H 'content-type: application/json' \
   -d '{"ecosystem": "pypi", "names": ["requests", "fastjson-parse-xyz"]}'
 ```
@@ -178,6 +180,9 @@ Measured on 2026-10-04 with a local Worker (`wrangler dev`) on a Mac (arm64, hom
 | Scan of that project's lockfile (267 names), cold / warm | 5.4–7.2 s / 23 ms | |
 | Scan of `requirements.txt` files of 26 and 212 packages, cold / warm | 6.9–7.6 s and 14.3–16.5 s / under 20 ms | |
 
+On the live Worker (Free plan, 2026-10-07, same Mac and connection, empty npm cache, one run): the same install
+took 118 s (199 packages), with the caution notices for esbuild, canvas and fsevents.
+
 The first install of a package through the guard is slower: each package is checked before npm gets it, and npm's
 download-count service rate-limits. Repeat installs and checks come from the cache. Reading a package's code took
 22–53 ms of CPU for esbuild, 57–97 ms for core-js and 618–787 ms for nx, whose install script loads a large module
@@ -206,6 +211,24 @@ tree (measured in Node, an upper bound); packages that aren't opened take a few 
 - **A cold scan of a large npm project** can come back with a few packages unverified when npm's download-count
   service rate-limits; scanning again checks just those.
 - **The watchlist starts empty** and learns only from names people actually ask about.
+
+### Hosting plan (waiting on the Cloudflare for Students plan)
+
+pkgMirage was built for Workers Paid, through the Cloudflare for Students plan. Until that's active it runs on Workers
+Free, which has the same features but lower limits
+([Workers](https://developers.cloudflare.com/workers/platform/limits/),
+[KV](https://developers.cloudflare.com/kv/platform/limits/),
+[D1](https://developers.cloudflare.com/d1/platform/pricing/), read 2026-10-06):
+
+| Limit on Free (Paid) | What it means here |
+|---|---|
+| 10 ms CPU per request (30 s default) | Reading a package's code measured 22–53 ms for esbuild and 618–787 ms for nx (in Node, an upper bound). A request over the limit is stopped, so installing a package whose code gets read can fail; on the live Worker esbuild's was read without hitting it (2026-10-07). Packages that aren't opened take a few milliseconds. |
+| 50 outbound requests per request (10,000) | A large `/api/check` or `/api/scan` batch can run out, and the names it can't look up come back unverified, never safe. |
+| 1,000 KV writes a day (unlimited) | One cold install of the project above writes about 267 verdicts, so after a few cold installs a day new verdicts stop being cached and repeats are as slow as the first time. |
+| 100,000 KV reads and 100,000 requests a day (unlimited) | Enough for a demo, but one 267-package install uses hundreds of each. |
+| D1: 5 million rows read and 100,000 written a day | Past them the watchlist and daily counts return errors until 00:00 UTC. |
+
+Moving to Paid changes only the account's plan; the code and configuration stay the same.
 
 ## Rate limits and privacy
 
