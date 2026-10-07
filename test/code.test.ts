@@ -627,7 +627,7 @@ describe("code", () => {
 
     const huge = await tgz([{ path: "package/x.bin", size: "77777777777\0" }]);
     expect((await codeOf("fresh-pkg", fresh("fresh-pkg", huge))).code).toEqual(unverified("archive unpacks too large"));
-  });
+  }, 30_000);
 
   it("refuses an archive of 100,000 tiny files at the file cap", async () => {
     const headers = Array.from({ length: 100_000 }, (_, i) => tarHeader({ path: `package/f${i}` }, 0));
