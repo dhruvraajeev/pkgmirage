@@ -62,6 +62,15 @@ describe("mcp", () => {
     expect(many!.description).toBe("Same as check_package for 1-50 packages in one call (e.g. a project's dependencies), before installing them.");
   });
 
+  it("tells the assistant at connection to check before installing", async () => {
+    const { result } = await rpc("initialize", {
+      protocolVersion: "2025-06-18",
+      capabilities: {},
+      clientInfo: { name: "test", version: "1" },
+    });
+    expect(result!.instructions).toMatch(/^Before suggesting, adding or installing any npm or PyPI package/);
+  });
+
   it("refuses GET", async () => {
     const res = await exports.default.fetch("http://localhost/mcp", { headers: { accept: "text/event-stream" } });
     expect(res.status).toBe(405);

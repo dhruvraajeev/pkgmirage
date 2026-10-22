@@ -31,7 +31,16 @@ const annotations = { readOnlyHint: true, idempotentHint: true, openWorldHint: t
 const handler = createMcpHandler(
   ({ requestInfo }) => {
     // The tools never change, so no change notifications are offered (the SDK offers them by default).
-    const server = new McpServer({ name: "pkgmirage", version: "0.1.0" }, { capabilities: { tools: { listChanged: false } } });
+    // Sent once at connection; assistants that only read a tool's description when they look it up still get told to.
+    const server = new McpServer(
+      { name: "pkgmirage", version: "0.1.0" },
+      {
+        capabilities: { tools: { listChanged: false } },
+        instructions:
+          "Before suggesting, adding or installing any npm or PyPI package, check every name with check_package or " +
+          "check_packages, and follow the verdict: block means don't install it.",
+      },
+    );
     server.registerTool(
       "check_package",
       {

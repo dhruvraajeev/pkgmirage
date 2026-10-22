@@ -1,7 +1,4 @@
 node_modules
 .wrangler
 .dev.vars*
-CLAUDE.md
-AGENTS.md
-.claude/
 eval/raw.json
