@@ -12,7 +12,7 @@
     "eval": "esbuild scripts/eval.ts --bundle --platform=node --format=esm --alias:cloudflare:workers=./scripts/workers-stub.ts --outfile=node_modules/.cache/pkgmirage-eval.mjs --log-level=warning && node node_modules/.cache/pkgmirage-eval.mjs"
   },
   "dependencies": {
-    "@modelcontextprotocol/server": "^2.2.0",
+    "@modelcontextprotocol/server": "^2.3.1",
     "zod": "^4.6.5"
   },
   "devDependencies": {

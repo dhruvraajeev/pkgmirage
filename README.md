@@ -51,7 +51,9 @@ From [eval/results.md](eval/results.md) (2026-10-04): **100%** of 1,181 known-ma
 
 ## Limitations
 
-- The assistant decides when to call the tool, so it can skip the check. The guard makes it certain, but only for npm.
+- The assistant decides when to call the tool. The server asks it to check every package when it connects (one
+  assistant, 4 of 4 runs against 0 of 2 before, 2026-10-22), but it can still skip the check. The guard makes it
+  certain, but only for npm.
 - Code checks are pattern matches: they can be evaded, and legitimate packages trip them, so one finding only warns.
 - Against new malware that OSV doesn't list yet, it mostly warns rather than blocks.
 - Only the latest version is checked, and archives over 10 MiB aren't read (they come back unverified).
